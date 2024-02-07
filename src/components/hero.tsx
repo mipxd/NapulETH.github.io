@@ -36,9 +36,9 @@ function Hero() {
             <p className=" text-[#606060] Medium text-center lg:text-left text-2xl lg:text-3xl mt-2 relative z-50s">
                 Santa Maria la Nova, Naples
             </p>
-            <div className="w-fit h-fit flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-3">
+            <div className="w-fit h-fit flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-3 lg:mt-10">
                 <Link href={'/tickets'} className=" relative z-50 p-0 w-fit h-fit">
-                    <div className="min-w-[75vw] lg:min-w-[15vw] h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#E38B84] buttonShadow mt-10">
+                    <div className="min-w-[75vw] lg:min-w-[15vw] h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#E38B84] buttonShadow ">
                         <svg width="39" height="34" viewBox="0 0 39 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_6_362)">
                                 <path d="M37.1874 0H16.9219C15.0456 0 13.2474 0.712784 11.9183 1.96397C8.32417 5.37095 5.67745 7.89076 2.08104 11.2912C0.751935 12.5402 0 14.2535 0 16.0322V32.5374C0 33.3439 0.694448 34 1.55446 34H20.8127C22.6984 34 24.4965 33.2872 25.8257 32.0273C29.7923 28.2672 32.685 25.5338 36.6609 21.765C37.9808 20.5051 38.7327 18.8005 38.7327 17.0218V1.47352C38.7327 0.65829 38.0382 0 37.1874 0ZM34.6074 11.1517L26.9662 27.5457C25.8026 30.0568 22.7168 31.1859 20.0677 30.083L5.04049 23.7943C4.14139 23.4151 3.74128 22.4233 4.13219 21.571L11.7734 5.17695C12.9369 2.66803 16.0229 1.53674 18.6719 2.6397L33.6991 8.92832C34.5982 9.3076 34.9983 10.2994 34.6074 11.1517Z" fill="black" />
@@ -53,7 +53,7 @@ function Hero() {
                         <h5 className=" text-black Medium text-2xl">Get Tickets</h5>
                     </div>
                 </Link>
-                <Link href={'/apply'} className=" relative z-50 p-0 w-fit h-fit">
+                <Link href={'/join'} className=" relative z-50 p-0 w-fit h-fit">
                     <div className="min-w-[75vw] lg:min-w-[15vw] h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#E38B84] buttonShadow">
 
 
