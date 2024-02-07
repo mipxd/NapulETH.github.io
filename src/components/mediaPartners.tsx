@@ -2,6 +2,8 @@
 
 import Image from "next/image"
 import Link from "next/link"
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 import degate from '@assets/degate.svg'
 import square from '@assets/20square.svg'
@@ -17,6 +19,7 @@ import nexlabs from '@assets/nexlabs.webp'
 import hg from '@assets/hg.png'
 import evLabs from '@assets/ev labs.webp'
 import niftyz from '@/assets/Niftyz.webp'
+
 import cryptoGirl from '@assets/cryptogirl.webp'
 import decripto from '@assets/decripto.webp'
 import sc from '@assets/sc.webp'
@@ -35,11 +38,11 @@ import hrc from '@assets/HRC.webp'
 
 function MediaPartners() {
     return (
-        <section className="w-full flex flex-col items-center justify-start mt-32">
+        <section className="w-full flex flex-col items-center justify-start mt-20 lg:mt-32">
             <h5 className=" text-black text-5xl mb-10 SemiBold leading-normal text-center">
                 Media Partners
             </h5>
-            <div className="flex flex-row items-stretch justify-between w-9/12 mt-16 gap-24">
+            <div className="hidden lg:flex flex-row items-stretch justify-between w-9/12 mt-16 gap-24">
                 <div className="w-1/3 flex-grow flex flex-col items-center justify-center" >
                     <Link href={'https://cryptogirl.it/'} target="_blank" className="p-0 w-full h-fit">
                         <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white buttonShadow">
@@ -69,7 +72,7 @@ function MediaPartners() {
                 </div>
 
             </div>
-            <div className="h-fit flex flex-row items-stretch justify-between w-9/12 mt-16 gap-24">
+            <div className="h-fit hidden lg:flex flex-row items-stretch justify-between w-9/12 mt-16 gap-24">
                 <div className="w-1/3 flex-grow flex flex-col items-center justify-center">
                     <Link href={'https://www.instagram.com/cryptoromaofficial/'} target="_blank" className="w-full h-fit">
                         <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
@@ -99,7 +102,7 @@ function MediaPartners() {
                 </div>
 
             </div>
-            <div className="h-fit flex flex-row items-stretch justify-between w-9/12 mt-16 gap-24">
+            <div className="h-fit hidden lg:flex flex-row items-stretch justify-between w-9/12 mt-16 gap-24">
                 <div className="w-1/3 flex-grow flex flex-col items-center justify-center">
                     <Link href={'https://m.youtube.com/channel/UCxJcRPk2BkYT4Tihz9kxi0w'} target="_blank" className=" w-full h-fit">
                         <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
@@ -129,7 +132,7 @@ function MediaPartners() {
                 </div>
 
             </div>
-            <div className="h-fit flex flex-row items-stretch justify-between w-9/12 mt-16 gap-24">
+            <div className="h-fit hidden lg:flex flex-row items-stretch justify-between w-9/12 mt-16 gap-24">
                 <div className="w-1/3 flex-grow flex flex-col items-center justify-center">
                     <Link href={'https://www.instagram.com/0xbusiness/'} target="_blank" className=" w-full h-fit">
                         <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
@@ -159,7 +162,7 @@ function MediaPartners() {
                 </div>
 
             </div>
-            <div className="h-fit flex flex-row items-stretch justify-between w-9/12 mt-16 gap-24">
+            <div className="h-fit hidden lg:flex flex-row items-stretch justify-between w-9/12 mt-16 gap-24">
                 <div className="w-1/3 flex-grow flex flex-col items-center justify-center">
                     <Link href={'https://instagram.com/defi_italia_?igshid=OGQ5ZDc2ODk2ZA=='} target="_blank" className=" w-full h-fit">
                         <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
@@ -189,6 +192,206 @@ function MediaPartners() {
                 </div>
 
             </div>
+            <Carousel className="w-full h-fit block lg:hidden" showIndicators={false} swipeable={true}
+                preventMovementUntilSwipeScrollTolerance={true}
+                swipeScrollTolerance={50} interval={3000} autoPlay infiniteLoop showArrows={false} showStatus={false} showThumbs={false}>
+                <div className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="w-10/12 flex flex-col items-center justify-center">
+                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                            <Link href={'https://cryptogirl.it/'} target="_blank" className="p-0 w-full h-fit">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white buttonShadow">
+
+                                    <Image className=" w-10 h-20" alt="degate" src={cryptoGirl}></Image>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="w-10/12 flex flex-col items-center justify-center">
+                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                            <Link href={'https://decripto.org/'} target="_blank" className="w-full h-fit">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+
+                                    <Image className="w-auto h-20" alt="degate" src={decripto}></Image>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="w-10/12 flex flex-col items-center justify-center">
+                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                            <Link href={'https://www.youtube.com/channel/UCj9aWwSuPvHvXH-iSfc3ZUA'} target="_blank" className=" w-full h-fit">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+
+                                    <Image className=" invert w-auto h-20" alt="degate" src={sc}></Image>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="w-10/12 flex flex-col items-center justify-center">
+                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                            <Link href={'https://www.instagram.com/cryptoromaofficial/'} target="_blank" className="w-full h-fit">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+
+                                    <Image className=" w-auto h-20" alt="degate" src={cryptorama}></Image>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="w-10/12 flex flex-col items-center justify-center">
+                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                            <Link href={'https://www.instagram.com/coinstudy/'} target="_blank" className="w-full h-fit">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+
+                                    <Image className="w-auto h-20" alt="degate" src={coinstudy}></Image>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="w-10/12 flex flex-col items-center justify-center">
+                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                            <Link href={'https://instagram.com/crypto_agora?igshid=OGQ5ZDc2ODk2ZA=='} target="_blank" className="w-full h-fit">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+
+                                    <Image className=" invert w-auto h-20 scale-150" alt="degate" src={agora}></Image>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="w-10/12 flex flex-col items-center justify-center">
+                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                            <Link href={'https://m.youtube.com/channel/UCxJcRPk2BkYT4Tihz9kxi0w'} target="_blank" className=" w-full h-fit">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+
+                                    <Image className=" w-auto h-20" alt="degate" src={confidential}></Image>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="w-10/12 flex flex-col items-center justify-center">
+                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                            <Link href={'https://instagram.com/albertogarlaschi.crypto?igshid=M2RkZGJiMzhjOQ=='} target="_blank" className="w-full h-fit">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+
+                                    <Image className="w-auto h-20" alt="degate" src={alberto}></Image>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="w-10/12 flex flex-col items-center justify-center">
+                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                            <Link href={'https://m.youtube.com/@mzmastercrypto'} target="_blank" className=" w-full h-fit">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+
+                                    <Image className=" invert w-auto h-20" alt="degate" src={mz}></Image>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="w-10/12 flex flex-col items-center justify-center">
+                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                            <Link href={'https://www.instagram.com/0xbusiness/'} target="_blank" className="w-full h-full">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+
+                                    <Image className="w-auto h-20" alt="degate" src={xb}></Image>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="w-10/12 flex flex-col items-center justify-center">
+                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                            <Link href={'https://www.cryptoexpomilan.com/it'} target="_blank" className="w-full h-full">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+
+                                    <Image className="w-auto h-20" alt="degate" src={cem}></Image>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="w-10/12 flex flex-col items-center justify-center">
+                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                            <Link href={'https://m.youtube.com/@BernardoMascellani'} target="_blank" className="w-full h-full">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+
+                                    <Image className="w-auto h-20" alt="degate" src={be}></Image>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="w-10/12 flex flex-col items-center justify-center">
+                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                            <Link href={'https://instagram.com/defi_italia_?igshid=OGQ5ZDc2ODk2ZA=='} target="_blank" className="w-full h-full">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+
+                                    <Image className="w-auto h-20" alt="degate" src={defi}></Image>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="w-10/12 flex flex-col items-center justify-center">
+                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                            <Link href={'https://www.instagram.com/onchain_podcast?igshid=OGQ5ZDc2ODk2ZA=='} target="_blank" className="w-full h-full">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+
+                                    <Image className="w-auto h-20" alt="degate" src={onchain}></Image>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="w-10/12 flex flex-col items-center justify-center">
+                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                            <Link href={'https://www.youtube.com/@HardRockCrypto'} target="_blank" className="w-full h-full">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+
+                                    <Image className="w-auto h-20" alt="degate" src={hrc}></Image>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+                </div>
+
+            </Carousel>
         </section>
     )
 }

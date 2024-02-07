@@ -19,21 +19,21 @@ import stampOnCloud from '@assets/stampOnCloud.svg'
 function Hero() {
     
     return (
-        <section className="w-full h-fit relative flex flex-col items-center justify-start pt-40">
+        <section className="w-full h-fit relative flex flex-col items-center justify-start pt-24 lg:pt-40">
             
-            <Image src={cloud1} alt="cloud" className=" cloud absolute -left-24 scale-50 lg:scale-100 lg:-left-10 top-[12%] "></Image>
-            <Image src={cloud2} alt="cloud" className=" cloud absolute -right-10 top-40"></Image>
-            <Image src={boatOncloud} alt="cloud" className=" boat absolute -left-[5%] top-[27%] scale-[.5] "></Image>
-            <Image src={castleOncloud} alt="cloud" className=" castle absolute -right-[7%] top-[40%] scale-[.4] "></Image>
-            <Image src={templeOncloud} alt="cloud" className=" boat absolute -left-[8%] top-[65%] scale-[.5] "></Image>
-            <Image src={stampOnCloud} alt="cloud" className=" castle absolute -right-[7%] top-[70%] scale-[.4] "></Image>
+            <Image src={cloud1} alt="cloud" className=" cloud hidden lg:block absolute -left-24 scale-50 lg:scale-100 lg:-left-10 top-[12%] "></Image>
+            <Image src={cloud2} alt="cloud" className=" cloud hidden lg:block absolute -right-10 top-40"></Image>
+            <Image src={boatOncloud} alt="cloud" className=" boat hidden lg:block absolute -left-[5%] top-[27%] scale-[.5] "></Image>
+            <Image src={castleOncloud} alt="cloud" className=" castle hidden lg:block absolute -right-[7%] top-[40%] scale-[.4] "></Image>
+            <Image src={templeOncloud} alt="cloud" className=" boat hidden lg:block absolute -left-[8%] top-[65%] scale-[.5] "></Image>
+            <Image src={stampOnCloud} alt="cloud" className=" castle hidden lg:block absolute -right-[7%] top-[70%] scale-[.4] "></Image>
             <h5 className=" text-black text-5xl SemiBold leading-normal text-center relative z-50">
                 The First Web3 Event<br />in Naples
             </h5>
-            <p className=" text-[#606060] Medium text-3xl mt-6 relative z-50">
+            <p className=" text-[#606060] Medium lg:mt-0 text-center lg:text-left text-3xl mt-6 relative z-50">
                 12th - 14th September, 2024
             </p>
-            <p className=" text-[#606060] Medium text-3xl mt-2 relative z-50s">
+            <p className=" text-[#606060] Medium text-center lg:text-left text-3xl mt-2 relative z-50s">
                 Santa Maria la Nova, Naples
             </p>
             <Link href={'/tickets'} className=" relative z-50 p-0 w-fit h-fit">
@@ -63,17 +63,17 @@ function Hero() {
 
             <Image src={commune} alt="commune de napoli" className=" scale-50 -mt-20 ml-4"></Image>
 
-            <Image src={logo} alt="big logo" className=" mt-20"></Image>
+            <Image src={logo} alt="big logo" className=" lg:mt-20 w-11/12"></Image>
 
             <h5 className=" text-black text-5xl SemiBold leading-normal text-center mt-20 mb-6">
                 Bringing new faces to Ethereum
             </h5>
-            <p className=" text-[#606060] Medium text-3xl text-center leading-normal w-5/12">
+            <p className=" text-[#606060] Medium text-2xl lg:text-3xl text-center leading-normal w-11/12 lg:w-5/12">
                 offering a real incentive for those not yet familiar with web3 to participate in significant events, both accessible and high-profile
             </p>
 
-            <div className="w-[200vw] h-fit my-40 relative flex flex-row items-center justify-center">
-                <div className="w-[200vw] h-fit relative rotate-6 bg-[#E38B84] border-t-4 border-b-4 border-t-black border-b-black my-4">
+            <div className="w-[200vw] h-fit my-28 lg:my-40 relative flex flex-row items-center justify-center">
+                <div className="w-[200vw] h-fit relative rotate-12 lg:rotate-6 bg-[#E38B84] border-t-4 border-b-4 border-t-black border-b-black my-4">
                     <Marquee className=" overflow-hidden my-4">
                         <h5 className=" text-black text-3xl SemiBold">Workshops</h5>
                         <div className="w-4 h-4 rounded-full bg-black mx-4"></div>
@@ -221,7 +221,7 @@ function Hero() {
                         <div className="w-4 h-4 rounded-full bg-black mx-4"></div>
                     </Marquee>
                 </div>
-                <div className="w-[200vw] h-fit absolute z-50 -rotate-6 bg-[#E38B84] border-t-4 border-b-4 border-t-black border-b-black my-4">
+                <div className="w-[200vw] h-fit absolute z-50 -rotate-12 lg:-rotate-6 bg-[#E38B84] border-t-4 border-b-4 border-t-black border-b-black my-4">
                     <Marquee className=" overflow-hidden my-4" direction="right">
                     <h5 className=" text-black text-3xl SemiBold">Workshops</h5>
                         <div className="w-4 h-4 rounded-full bg-black mx-4"></div>
