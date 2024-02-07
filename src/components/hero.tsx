@@ -24,7 +24,7 @@ function Hero() {
             <Image src={cloud1} alt="cloud" className=" cloud hidden lg:block absolute -left-24 scale-50 lg:scale-100 lg:-left-10 top-[12%] "></Image>
             <Image src={cloud2} alt="cloud" className=" cloud hidden lg:block absolute -right-10 top-40"></Image>
             <Image src={boatOncloud} alt="cloud" className=" boat hidden lg:block absolute -left-[5%] top-[27%] scale-[.5] "></Image>
-            <Image src={castleOncloud} alt="cloud" className=" castle hidden lg:block absolute -right-[7%] top-[40%] scale-[.4] "></Image>
+            <Image src={castleOncloud} alt="cloud" className=" castle hidden lg:block absolute -right-[13%] top-[40%] scale-[.4] "></Image>
             <Image src={templeOncloud} alt="cloud" className=" boat hidden lg:block absolute -left-[8%] top-[65%] scale-[.5] "></Image>
             <Image src={stampOnCloud} alt="cloud" className=" castle hidden lg:block absolute -right-[7%] top-[70%] scale-[.4] "></Image>
             <h5 className=" text-black text-5xl SemiBold leading-normal text-center relative z-50">
@@ -63,7 +63,7 @@ function Hero() {
 
             <Image src={commune} alt="commune de napoli" className=" scale-50 -mt-20 ml-4"></Image>
 
-            <Image src={logo} alt="big logo" className=" lg:mt-20 w-11/12"></Image>
+            <Image src={logo} alt="big logo" className=" lg:mt-20 relative z-[60] w-11/12"></Image>
 
             <h5 className=" text-black text-5xl SemiBold leading-normal text-center mt-20 mb-6">
                 Bringing new faces to Ethereum
