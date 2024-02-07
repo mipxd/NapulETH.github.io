@@ -15,7 +15,10 @@ function Navbar() {
 
     return (
         <nav className="w-full h-fit fixed bg-[#F7E6C0] z-[99] lg:bg-none lg:relative top-0 flex flex-row items-center justify-between px-4 lg:px-8 pt-6 pb-6 lg:pb-0 lg:pt-10">
+            <Link href={"/"} className=" relative z-50 p-0 w-fit h-fit">
             <h5 className=" text-black SemiBold text-3xl">NapulEth</h5>
+            </Link>
+            
             <div className="w-fit h-fit flex flex-row items-center justify-end lg:gap-10">
                 <div className="w-fit h-fit hidden lg:flex flex-row items-center justify-between gap-10">
                     <Link href={'/'} className=" relative z-50 p-0 w-fit h-fit">
