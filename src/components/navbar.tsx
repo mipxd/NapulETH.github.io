@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import Link from "next/link"
 import { useState } from "react";
 import { RiMenu4Fill } from "react-icons/ri";

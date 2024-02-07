@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import Image from "next/image"
 
 import munaciello1 from "@assets/MUNACIELLO EDU.png"

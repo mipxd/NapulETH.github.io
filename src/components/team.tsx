@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 function Team() {
     return (
         <section className="w-full flex flex-col items-center justify-start pt-24">
