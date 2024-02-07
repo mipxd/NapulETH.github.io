@@ -4,80 +4,148 @@
 
 
 
-html,body{
-    background-color: #F7E6C0 !important;
-    font-family: "Poppins";
-    overflow-x: hidden !important;
+html,
+body {
+  background-color: #F7E6C0 !important;
+  font-family: "Poppins";
+  overflow-x: hidden !important;
 }
 
-body{
-    overflow: hidden;
+body {
+  overflow: hidden;
 }
 
-.Regular{
-    font-weight: 400;
+.Regular {
+  font-weight: 400;
 }
 
-.Medium{
-    font-weight: 500;
+.Medium {
+  font-weight: 500;
 }
 
-.SemiBold{
-    font-weight: 600;
+.SemiBold {
+  font-weight: 600;
 }
 
-.Bold{
-    font-weight: 700;
+.Bold {
+  font-weight: 700;
 }
 
-.buttonShadow{
-box-shadow: -3px 4px 0px #606060;
-box-shadow: -3px 4px 0px color(display-p3 0.376 0.376 0.376);
+.buttonShadow {
+  box-shadow: -3px 4px 0px #606060;
+  box-shadow: -3px 4px 0px color(display-p3 0.376 0.376 0.376);
+
+}
+
+.bm-menu-wrap {
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: #F7E6C0 !important;
+  z-index: 9999 !important;
+  left: 0px !important;
+  top: 0px !important;
+}
+
+
+.bm-menu {
+  height: 100% !important;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.bm-item-list{
+  height: 100% !important;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.bm-burger-button{
+  display: none !important;
+  position: relative !important;
+  z-index: 0 !important;
+  height: 0px !important;
+  width: 0px !important;
+}
+
+.bm-item{
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: col !important;
+  align-items: center !important;
+  justify-content: start !important;
+}
+
+
+#react-burger-menu-btn{
+  width: fit-content !important;
+  height: fit-content !important;
+}
+
+.bm-overlay{
+  width: 100vw !important;
+  left: 0px !important;
+  display: flex !important;
+  flex-direction: row;
 
 }
 
 .cloud {
-    /* Set initial position */
-    transform: translateY(0);
-    /* Apply animation with 10 seconds duration, infinite loop, and ease-in-out timing function */
-    animation: moveUpDown1 20s infinite ease-in-out;
+  /* Set initial position */
+  transform: translateY(0);
+  /* Apply animation with 10 seconds duration, infinite loop, and ease-in-out timing function */
+  animation: moveUpDown1 20s infinite ease-in-out;
+}
+
+.boat {
+  /* Set initial position */
+  transform: translateY(0);
+  scale: 0.75;
+  /* Apply animation with 10 seconds duration, infinite loop, and ease-in-out timing function */
+  animation: moveUpDown2 15s infinite ease-in-out;
+}
+
+.castle {
+  /* Set initial position */
+  transform: translateY(0);
+  scale: 0.75;
+  /* Apply animation with 10 seconds duration, infinite loop, and ease-in-out timing function */
+  animation: moveUpDown2 20s infinite ease-in-out;
+}
+
+/* Define the animation keyframes */
+@keyframes moveUpDown1 {
+
+  0%,
+  100% {
+    /* Start and end position (no movement) */
+    transform: translateY(0px);
   }
 
-  .boat {
-    /* Set initial position */
-    transform: translateY(0);
-    scale: 0.75;
-    /* Apply animation with 10 seconds duration, infinite loop, and ease-in-out timing function */
-    animation: moveUpDown2 15s infinite ease-in-out;
+  50% {
+    /* Midpoint of the animation (move up) */
+    transform: translateY(-80px);
+    /* Adjust the value as needed */
+  }
+}
+
+@keyframes moveUpDown2 {
+
+  0%,
+  100% {
+    /* Start and end position (no movement) */
+    transform: translateY(0px);
   }
 
-  .castle {
-    /* Set initial position */
-    transform: translateY(0);
-    scale: 0.75;
-    /* Apply animation with 10 seconds duration, infinite loop, and ease-in-out timing function */
-    animation: moveUpDown2 20s infinite ease-in-out;
+  50% {
+    /* Midpoint of the animation (move up) */
+    transform: translateY(-40px);
+    /* Adjust the value as needed */
   }
-  
-  /* Define the animation keyframes */
-  @keyframes moveUpDown1 {
-    0%, 100% {
-      /* Start and end position (no movement) */
-      transform: translateY(0px);
-    }
-    50% {
-      /* Midpoint of the animation (move up) */
-      transform: translateY(-80px); /* Adjust the value as needed */
-    }
-  }
-
-  @keyframes moveUpDown2 {
-    0%, 100% {
-      /* Start and end position (no movement) */
-      transform: translateY(0px);
-    }
-    50% {
-      /* Midpoint of the animation (move up) */
-      transform: translateY(-40px); /* Adjust the value as needed */
-    }
-  }
+}
