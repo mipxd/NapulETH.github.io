@@ -1,8 +1,10 @@
 import Link from "next/link";
 import Head from "next/head";
 import Navbar from "@/components/navbar";
-import ComingSoon from "@/components/comingsoon";
-import TicketingPartner from "@/components/ticketingPartner";
+import About from "@/components/about";
+import Team from "@/components/team";
+import Affiliated from "@/components/affiliated";
+import Friends from "@/components/friends";
 import Footer from "@/components/footer";
 
 export default function Tickets() {
@@ -17,8 +19,10 @@ export default function Tickets() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
       <Navbar />
-      <ComingSoon />
-      <TicketingPartner />
+      <About />
+      <Team />
+      <Affiliated />
+      <Friends />
       <Footer />
     </main>
   );
