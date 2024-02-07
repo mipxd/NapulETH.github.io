@@ -27,7 +27,7 @@ function Where() {
                 Where
             </h5>
             <p className=" text-[#606060] Medium text-3xl text-center leading-normal w-8/12 mb-2">
-                Discover Naples' rich history at the Monumental Complex of Santa Maria la Nova. With its iconic church and a blend of Gothic and Baroque styles, this site showcases centuries of cultural heritage through artifacts and frescoes.
+                Discover Naples{"'"} rich history at the Monumental Complex of Santa Maria la Nova. With its iconic church and a blend of Gothic and Baroque styles, this site showcases centuries of cultural heritage through artifacts and frescoes.
             </p>
             <p className=" text-[#606060] Medium text-3xl text-center leading-normal w-7/12">
                 It is here where the infamous Count Dracula is thought to be buried.

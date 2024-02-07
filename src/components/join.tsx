@@ -26,7 +26,7 @@ function JoinSection() {
                 </div>
             </Link>
             <p className="mt-6 Medium text-2xl text-[#606060] w-11/12 lg:w-7/12 text-center leading-normal">
-                Fuel the NapulEth Open Village spirit as a volunteer! Shape Ethereum's future, contribute your skills, and foster inclusivity. Apply now to make a meaningful impact and be a vital part of our dynamic team!
+                Fuel the NapulEth Open Village spirit as a volunteer! Shape Ethereum{"'"}s future, contribute your skills, and foster inclusivity. Apply now to make a meaningful impact and be a vital part of our dynamic team!
             </p>
             <Link href={'https://docs.google.com/forms/d/e/1FAIpQLSe3xQnG0J07EjzZk6JgFJP-udLBY80XlE89X_gnz08Mhxm7_Q/viewform?usp=sf_link'} className=" relative z-50 p-0 w-fit h-fit">
                 <div className="w-fit h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#9ECC51] buttonShadow my-10">
@@ -46,7 +46,7 @@ function JoinSection() {
                 </div>
             </Link>
             <p className="mt-6 Medium text-2xl text-[#606060] w-11/12 lg:w-7/12 text-center leading-normal">
-                Elevate your brand and shape Ethereum's future as a sponsor for NapulEth Open Village! Gain prime visibility, showcase innovation, and be a key contributor. Apply now to secure your sponsorship and make an impact at this dynamic event!
+                Elevate your brand and shape Ethereum{"'"}s future as a sponsor for NapulEth Open Village! Gain prime visibility, showcase innovation, and be a key contributor. Apply now to secure your sponsorship and make an impact at this dynamic event!
             </p>
             <Link href={'https://docs.google.com/forms/d/e/1FAIpQLSduNXY2e1NHhEWNfVyXZ_7oDzNGrl7YIo1UwxDu2VNcDWhvfg/viewform?usp=sf_link'} className=" relative z-50 p-0 w-fit h-fit">
                 <div className="w-fit h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#70C9F2] buttonShadow my-10">
