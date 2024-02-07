@@ -266,7 +266,7 @@ function MediaPartners() {
                             <Link href={'https://instagram.com/crypto_agora?igshid=OGQ5ZDc2ODk2ZA=='} target="_blank" className="w-full h-fit">
                                 <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
 
-                                    <Image className=" invert w-auto h-20 scale-150" alt="degate" src={agora}></Image>
+                                    <Image className="  w-auto h-20 scale-150" alt="degate" src={agora}></Image>
                                 </div>
                             </Link>
 
@@ -305,7 +305,7 @@ function MediaPartners() {
                             <Link href={'https://m.youtube.com/@mzmastercrypto'} target="_blank" className=" w-full h-fit">
                                 <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
 
-                                    <Image className=" invert w-auto h-20" alt="degate" src={mz}></Image>
+                                    <Image className="  w-auto h-20" alt="degate" src={mz}></Image>
                                 </div>
                             </Link>
 
