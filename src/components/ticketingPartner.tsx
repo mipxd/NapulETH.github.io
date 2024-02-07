@@ -1,4 +1,5 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-explicit-any */
+
 import Image from "next/image"
 import Link from "next/link"
 import megoNapulEth from '@assets/megoNapulEth.svg'
