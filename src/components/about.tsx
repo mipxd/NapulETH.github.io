@@ -31,11 +31,11 @@ function About() {
             </p>
 
             <p className=" text-[#606060] Medium text-2xl lg:text-3xl text-center leading-normal mt-8 lg:mt-20 w-11/12 lg:w-7/12">
-            In the Ethereum ecosystem, everyone is constantly talking about onboarding for the masses, but at conferences, it's always the same faces: the marketing officer of that project, the lead developer of another project, the head ambassador of yet another project. All these individuals are obviously already onboarded, and as meaningful and interesting as their experiences may be to share, a conference filled only with them risks turning into an echo chamber where everyone is just echoing each other.
+            In the Ethereum ecosystem, everyone is constantly talking about onboarding for the masses, but at conferences, it{"'"}s always the same faces: the marketing officer of that project, the lead developer of another project, the head ambassador of yet another project. All these individuals are obviously already onboarded, and as meaningful and interesting as their experiences may be to share, a conference filled only with them risks turning into an echo chamber where everyone is just echoing each other.
             </p>
 
             <p className=" text-[#606060] Medium text-2xl lg:text-3xl text-center leading-normal mt-8 lg:mt-20 w-11/12 lg:w-7/12">
-            We believe that this loop can't be broken without offering a real incentive for those not yet familiar with web3 to participate in significant events.
+            We believe that this loop can{"'"}t be broken without offering a real incentive for those not yet familiar with web3 to participate in significant events.
             </p>
 
             <p className=" text-[#606060] Medium text-2xl lg:text-3xl text-center leading-normal mt-8 lg:mt-20 w-11/12 lg:w-7/12">

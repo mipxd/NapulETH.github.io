@@ -19,19 +19,19 @@ function Hero() {
     return (
         <section className="w-full h-fit relative flex flex-col items-center justify-start pt-40">
             
-            <Image src={cloud1} alt="cloud" className=" cloud absolute -left-10 top-[12%] "></Image>
+            <Image src={cloud1} alt="cloud" className=" cloud absolute -left-24 scale-50 lg:scale-100 lg:-left-10 top-[12%] "></Image>
             <Image src={cloud2} alt="cloud" className=" cloud absolute -right-10 top-40"></Image>
             <Image src={boatOncloud} alt="cloud" className=" boat absolute -left-[5%] top-[27%] scale-[.5] "></Image>
             <Image src={castleOncloud} alt="cloud" className=" castle absolute -right-[7%] top-[40%] scale-[.4] "></Image>
             <Image src={templeOncloud} alt="cloud" className=" boat absolute -left-[8%] top-[65%] scale-[.5] "></Image>
             <Image src={stampOnCloud} alt="cloud" className=" castle absolute -right-[7%] top-[70%] scale-[.4] "></Image>
-            <h5 className=" text-black text-5xl SemiBold leading-normal text-center">
+            <h5 className=" text-black text-5xl SemiBold leading-normal text-center relative z-50">
                 The First Web3 Event<br />in Naples
             </h5>
-            <p className=" text-[#606060] Medium text-3xl mt-6">
+            <p className=" text-[#606060] Medium text-3xl mt-6 relative z-50">
                 12th - 14th September, 2024
             </p>
-            <p className=" text-[#606060] Medium text-3xl mt-2">
+            <p className=" text-[#606060] Medium text-3xl mt-2 relative z-50s">
                 Santa Maria la Nova, Naples
             </p>
             <Link href={'/tickets'} className=" relative z-50 p-0 w-fit h-fit">
