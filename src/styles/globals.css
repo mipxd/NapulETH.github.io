@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html,body{
+    background-color: #F7E6C0 !important;
+    font-family: "Poppins";
+    overflow-x: hidden !important;
+}
+
+body{
+    overflow: hidden;
+}
+
+.Regular{
+    font-weight: 400;
+}
+
+.Medium{
+    font-weight: 500;
+}
+
+.SemiBold{
+    font-weight: 600;
+}
+
+.Bold{
+    font-weight: 700;
+}
+
+.buttonShadow{
+box-shadow: -3px 4px 0px #606060;
+box-shadow: -3px 4px 0px color(display-p3 0.376 0.376 0.376);
+
+}
