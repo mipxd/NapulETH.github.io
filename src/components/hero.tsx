@@ -3,6 +3,7 @@ import Image from "next/image"
 import Marquee from "react-fast-marquee";
 
 
+
 import commune from "@assets/commune.png"
 import logo from '@assets/bigLogo.svg'
 
@@ -11,14 +12,19 @@ import cloud2 from '@assets/cloud2.svg'
 import boatOncloud from '@assets/boatonCloud1.svg'
 import castleOncloud from '@assets/castleonCloud.svg'
 import templeOncloud from '@assets/templeOnCloud.svg'
+import stampOnCloud from '@assets/stampOnCloud.svg'
 
 function Hero() {
+    
     return (
         <section className="w-full h-fit relative flex flex-col items-center justify-start pt-40">
-            <Image src={cloud1} alt="cloud" className=" absolute -left-10 top-[12%] "></Image>
-            <Image src={cloud2} alt="cloud" className=" absolute -right-10 top-40"></Image>
-            <Image src={boatOncloud} alt="cloud" className=" absolute -left-[5%] top-[27%] scale-75 "></Image>
-            <Image src={castleOncloud} alt="cloud" className=" absolute -right-[7%] top-[40%] scale-75"></Image>
+            
+            <Image src={cloud1} alt="cloud" className=" cloud absolute -left-10 top-[12%] "></Image>
+            <Image src={cloud2} alt="cloud" className=" cloud absolute -right-10 top-40"></Image>
+            <Image src={boatOncloud} alt="cloud" className=" boat absolute -left-[5%] top-[27%] scale-[.5] "></Image>
+            <Image src={castleOncloud} alt="cloud" className=" castle absolute -right-[7%] top-[40%] scale-[.4] "></Image>
+            <Image src={templeOncloud} alt="cloud" className=" boat absolute -left-[8%] top-[65%] scale-[.5] "></Image>
+            <Image src={stampOnCloud} alt="cloud" className=" castle absolute -right-[7%] top-[70%] scale-[.4] "></Image>
             <h5 className=" text-black text-5xl SemiBold leading-normal text-center">
                 The First Web3 Event<br />in Naples
             </h5>

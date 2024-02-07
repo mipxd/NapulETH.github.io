@@ -35,3 +35,49 @@ box-shadow: -3px 4px 0px #606060;
 box-shadow: -3px 4px 0px color(display-p3 0.376 0.376 0.376);
 
 }
+
+.cloud {
+    /* Set initial position */
+    transform: translateY(0);
+    /* Apply animation with 10 seconds duration, infinite loop, and ease-in-out timing function */
+    animation: moveUpDown1 20s infinite ease-in-out;
+  }
+
+  .boat {
+    /* Set initial position */
+    transform: translateY(0);
+    scale: 0.75;
+    /* Apply animation with 10 seconds duration, infinite loop, and ease-in-out timing function */
+    animation: moveUpDown2 15s infinite ease-in-out;
+  }
+
+  .castle {
+    /* Set initial position */
+    transform: translateY(0);
+    scale: 0.75;
+    /* Apply animation with 10 seconds duration, infinite loop, and ease-in-out timing function */
+    animation: moveUpDown2 20s infinite ease-in-out;
+  }
+  
+  /* Define the animation keyframes */
+  @keyframes moveUpDown1 {
+    0%, 100% {
+      /* Start and end position (no movement) */
+      transform: translateY(0px);
+    }
+    50% {
+      /* Midpoint of the animation (move up) */
+      transform: translateY(-80px); /* Adjust the value as needed */
+    }
+  }
+
+  @keyframes moveUpDown2 {
+    0%, 100% {
+      /* Start and end position (no movement) */
+      transform: translateY(0px);
+    }
+    50% {
+      /* Midpoint of the animation (move up) */
+      transform: translateY(-40px); /* Adjust the value as needed */
+    }
+  }
