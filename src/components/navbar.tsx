@@ -53,7 +53,7 @@ function Navbar() {
                         <div className="py-6 w-full px-4 flex flex-row items-center justify-end">
                             <IoCloseSharp color="#000000" size={35} onClick={() => { setMobileMenuOpen(false) }}></IoCloseSharp>
                         </div>
-                        <div className="w-fit h-fit flex flex-col items-center justify-center gap-8 mt-16">
+                        <div className="w-fit h-fit flex flex-col items-center justify-center gap-8 mt-20">
                             <Link href={'/'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     Home
@@ -74,11 +74,7 @@ function Navbar() {
                                     Join us
                                 </h5>
                             </Link>
-                            <Link href={'/tickets'} className=" block relative z-50 p-0 w-fit h-fit"  onClick={() => { setMobileMenuOpen(false) }}>
-                                <div className="w-fit h-fit flex flex-row items-center justify-center py-4 px-12 bg-[#E38B84] buttonShadow">
-                                    <h5 className=" text-black Medium text-2xl">Apply Now</h5>
-                                </div>
-                            </Link>
+                            
                         </div>
 
                     </div>
