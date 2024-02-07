@@ -36,7 +36,7 @@ function Hero() {
             <p className=" text-[#606060] Medium text-center lg:text-left text-2xl lg:text-3xl mt-2 relative z-50s">
                 Santa Maria la Nova, Naples
             </p>
-            <div className="w-fit h-fit flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-3 lg:mt-10">
+            <div className="w-fit h-fit flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-3 mt-6 lg:mt-10">
                 <Link href={'/tickets'} className=" relative z-50 p-0 w-fit h-fit">
                     <div className="min-w-[75vw] lg:min-w-[15vw] h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#E38B84] buttonShadow ">
                         <svg width="39" height="34" viewBox="0 0 39 34" fill="none" xmlns="http://www.w3.org/2000/svg">
