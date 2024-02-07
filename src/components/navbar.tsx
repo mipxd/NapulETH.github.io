@@ -18,7 +18,12 @@ function Navbar() {
                     </Link>
                     <Link href={'/about'} className=" relative z-50 p-0 w-fit h-fit">
                         <h5 className=" text-black text-2xl Medium">
-                            About us
+                            About
+                        </h5>
+                    </Link>
+                    <Link href={'/join'} className=" relative z-50 p-0 w-fit h-fit">
+                        <h5 className=" text-black text-2xl Medium">
+                            Join us
                         </h5>
                     </Link>
                 </div>
