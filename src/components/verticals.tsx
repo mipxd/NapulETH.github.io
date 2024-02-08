@@ -34,7 +34,7 @@ function Verticals() {
                 <div className="w-1/3 flex flex-col items-center justify-center">
                     <Image alt="munaciello" src={munaciello2} className=""></Image>
                     <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-24 bg-[#7B5453] buttonShadow">
-                        <h5 className=" text-black SemiBold text-4xl">Art / NFT</h5>
+                        <h5 className=" text-black SemiBold text-4xl">Art/NFT</h5>
                     </div>
                 </div>
                 <div className="w-1/3 flex flex-col items-center justify-center">
@@ -55,7 +55,7 @@ function Verticals() {
                 <div className="w-1/3 flex flex-col items-center justify-center">
                     <Image alt="munaciello" src={munaciello5} className=""></Image>
                     <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-24 bg-[#FFE984] buttonShadow">
-                        <h5 className=" text-black SemiBold text-4xl">Art / NFT</h5>
+                        <h5 className=" text-black SemiBold text-4xl">Gaming</h5>
                     </div>
                 </div>
                 <div className="w-1/3 flex flex-col items-center justify-center">
@@ -105,7 +105,7 @@ function Verticals() {
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <Image alt="munaciello" src={munaciello5} className=""></Image>
                         <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-24 bg-[#FFE984] buttonShadow">
-                            <h5 className=" text-black SemiBold text-4xl">Art / NFT</h5>
+                            <h5 className=" text-black SemiBold text-4xl">Gaming</h5>
                         </div>
                     </div>
                 </div>
