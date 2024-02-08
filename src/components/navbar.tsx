@@ -14,7 +14,7 @@ function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false)
 
     return (
-        <nav className="w-full h-fit fixed bg-[#F7E6C0] z-[99] lg:bg-none lg:relative top-0 flex flex-row items-center justify-between px-4 lg:px-8 pt-6 pb-6 lg:pb-0 lg:pt-10">
+        <nav className="w-full h-fit fixed bg-[#6FCAF3] z-[99] lg:bg-none lg:relative top-0 flex flex-row items-center justify-between px-4 lg:px-8 pt-6 pb-6 lg:pb-0 lg:pt-10">
             <Link href={"/"} className=" relative z-50 p-0 w-fit h-fit">
             <h5 className=" text-black SemiBold text-3xl">NapulEth</h5>
             </Link>
@@ -43,7 +43,7 @@ function Navbar() {
                     </Link>
                 </div>
                 <Link href={'/tickets'} className=" hidden lg:block relative z-50 p-0 w-fit h-fit">
-                    <div className="w-fit h-fit flex flex-row items-center justify-center py-4 px-12 bg-[#E38B84] buttonShadow">
+                    <div className="w-fit h-fit flex flex-row items-center justify-center py-4 px-12 bg-[#CA75AB] buttonShadow">
                         <h5 className=" text-black Medium text-2xl">Apply Now</h5>
                     </div>
                 </Link>
