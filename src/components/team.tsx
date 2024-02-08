@@ -22,7 +22,7 @@ function Team() {
             </h5>
             <div className="h-fit hidden lg:flex flex-row items-stretch justify-between w-10/12 mb-12">
                 <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
-                    <div className="w-8/12 aspect-square bg-cover bg-top bg-no-repeat buttonShadow mb-2" style={{
+                    <div className="w-8/12 aspect-square bg-cover bg-top bg-no-repeat border-4 border-[#CA75AB] mb-2" style={{
                         backgroundImage: `url('${t1.src}')`
                     }}></div>
                     <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
@@ -31,7 +31,7 @@ function Team() {
                     </div>
                 </div>
                 <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
-                    <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat buttonShadow mb-2" style={{
+                    <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#CA75AB] mb-2" style={{
                         backgroundImage: `url('${t2.src}')`
                     }}></div>
                     <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
@@ -40,7 +40,7 @@ function Team() {
                     </div>
                 </div>
                 <div className="w-1/3 flex flex-grow flex-col items-center justify-center">
-                    <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat buttonShadow mb-2" style={{
+                    <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#CA75AB] mb-2" style={{
                         backgroundImage: `url('${t3.src}')`
                     }}></div>
                     <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
@@ -52,7 +52,7 @@ function Team() {
             </div>
             <div className="h-fit hidden lg:flex flex-row items-stretch justify-between w-10/12 mb-12">
                 <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
-                    <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat buttonShadow mb-2" style={{
+                    <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#CA75AB] mb-2" style={{
                         backgroundImage: `url('${t4.src}')`
                     }}></div>
                     <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
@@ -61,7 +61,7 @@ function Team() {
                     </div>
                 </div>
                 <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
-                    <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat buttonShadow mb-2" style={{
+                    <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#CA75AB] mb-2" style={{
                         backgroundImage: `url('${t5.src}')`
                     }}></div>
                     <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
@@ -70,7 +70,7 @@ function Team() {
                     </div>
                 </div>
                 <div className="w-1/3 flex flex-grow flex-col items-center justify-center">
-                    <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat buttonShadow mb-2" style={{
+                    <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#CA75AB] mb-2" style={{
                         backgroundImage: `url('${t6.src}')`
                     }}></div>
                     <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
@@ -85,7 +85,7 @@ function Team() {
 
                 </div>
                 <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
-                    <div className="w-8/12 aspect-square bg-cotain bg-center bg-no-repeat buttonShadow mb-2" style={{
+                    <div className="w-8/12 aspect-square bg-cotain bg-center bg-no-repeat border-4 border-[#CA75AB] mb-2" style={{
                         backgroundImage: `url('${t7.src}')`
                     }}></div>
                     <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
@@ -105,7 +105,7 @@ function Team() {
                 >
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-full flex flex-col flex-grow items-center justify-center">
-                        <div className="w-8/12 aspect-square bg-cover bg-top bg-no-repeat buttonShadow mb-2" style={{
+                        <div className="w-8/12 aspect-square bg-cover bg-top bg-no-repeat border-4 border-[#CA75AB] mb-2" style={{
                         backgroundImage: `url('${t1.src}')`
                     }}></div>
                         <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
@@ -116,7 +116,7 @@ function Team() {
                 </div>
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-full flex flex-col flex-grow items-center justify-center">
-                        <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat buttonShadow mb-2" style={{
+                        <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#CA75AB] mb-2" style={{
                         backgroundImage: `url('${t2.src}')`
                     }}></div>
                         <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
@@ -127,7 +127,7 @@ function Team() {
                 </div>
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-full flex flex-col flex-grow items-center justify-center">
-                        <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat buttonShadow mb-2" style={{
+                        <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#CA75AB] mb-2" style={{
                         backgroundImage: `url('${t3.src}')`
                     }}></div>
                         <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
@@ -138,7 +138,7 @@ function Team() {
                 </div>
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-full flex flex-col flex-grow items-center justify-center">
-                        <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat buttonShadow mb-2" style={{
+                        <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#CA75AB] mb-2" style={{
                         backgroundImage: `url('${t4.src}')`
                     }}></div>
                         <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
@@ -149,7 +149,7 @@ function Team() {
                 </div>
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-full flex flex-col flex-grow items-center justify-center">
-                        <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat buttonShadow mb-2" style={{
+                        <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#CA75AB] mb-2" style={{
                         backgroundImage: `url('${t5.src}')`
                     }}></div>
                         <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
@@ -160,7 +160,7 @@ function Team() {
                 </div>
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-full flex flex-col flex-grow items-center justify-center">
-                        <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat buttonShadow mb-2" style={{
+                        <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#CA75AB] mb-2" style={{
                         backgroundImage: `url('${t6.src}')`
                     }}></div>
                         <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
@@ -171,7 +171,7 @@ function Team() {
                 </div>
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-full flex flex-col flex-grow items-center justify-center">
-                        <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat buttonShadow mb-2" style={{
+                        <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#CA75AB] mb-2" style={{
                         backgroundImage: `url('${t7.src}')`
                     }}></div>
                         <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">

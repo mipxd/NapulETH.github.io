@@ -27,19 +27,19 @@ function Verticals() {
             <div className="h-fit hidden lg:flex flex-row items-center justify-between w-10/12 mb-12">
                 <div className="w-1/3 flex flex-col items-center justify-center">
                     <Image alt="munaciello" src={munaciello1} className=""></Image>
-                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-24 bg-[#50A3A4] buttonShadow">
+                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-4 glassy buttonShadow">
                         <h5 className=" text-black SemiBold text-4xl">Education</h5>
                     </div>
                 </div>
                 <div className="w-1/3 flex flex-col items-center justify-center">
                     <Image alt="munaciello" src={munaciello2} className=""></Image>
-                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-24 bg-[#7B5453] buttonShadow">
+                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-4 glassy buttonShadow">
                         <h5 className=" text-black SemiBold text-4xl">Art/NFT</h5>
                     </div>
                 </div>
                 <div className="w-1/3 flex flex-col items-center justify-center">
                     <Image alt="munaciello" src={munaciello3} className=""></Image>
-                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-24 bg-[#FF5A61] buttonShadow">
+                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-4 glassy buttonShadow">
                         <h5 className=" text-black SemiBold text-4xl">Law</h5>
                     </div>
                 </div>
@@ -48,19 +48,19 @@ function Verticals() {
             <div className="h-fit hidden lg:flex flex-row items-center justify-between w-10/12">
                 <div className="w-1/3 flex flex-col items-center justify-center">
                     <Image alt="munaciello" src={munaciello4} className=""></Image>
-                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-24 bg-[#2CC6FF] buttonShadow">
+                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-4 glassy buttonShadow ">
                         <h5 className=" text-black SemiBold text-4xl">Education</h5>
                     </div>
                 </div>
                 <div className="w-1/3 flex flex-col items-center justify-center">
                     <Image alt="munaciello" src={munaciello5} className=""></Image>
-                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-24 bg-[#FFE984] buttonShadow">
+                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-4 glassy buttonShadow">
                         <h5 className=" text-black SemiBold text-4xl">Gaming</h5>
                     </div>
                 </div>
                 <div className="w-1/3 flex flex-col items-center justify-center">
                     <Image alt="munaciello" src={munaciello6} className=""></Image>
-                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-24 bg-[#FFCAD8] buttonShadow">
+                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-4 glassy buttonShadow">
                         <h5 className=" text-black SemiBold text-4xl">Law</h5>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ function Verticals() {
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <Image alt="munaciello" src={munaciello1} className=""></Image>
-                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-24 bg-[#50A3A4] buttonShadow">
+                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-6 mb-4 glassy buttonShadow">
                             <h5 className=" text-black SemiBold text-4xl">Education</h5>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ function Verticals() {
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <Image alt="munaciello" src={munaciello2} className=""></Image>
-                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-24 bg-[#7B5453] buttonShadow">
+                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-6 mb-4 glassy buttonShadow">
                             <h5 className=" text-black SemiBold text-4xl">Art / NFT</h5>
                         </div>
                     </div>
@@ -88,7 +88,7 @@ function Verticals() {
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <Image alt="munaciello" src={munaciello3} className=""></Image>
-                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-24 bg-[#FF5A61] buttonShadow">
+                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-6 mb-4 glassy buttonShadow">
                             <h5 className=" text-black SemiBold text-4xl">Law</h5>
                         </div>
                     </div>
@@ -96,7 +96,7 @@ function Verticals() {
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <Image alt="munaciello" src={munaciello4} className=""></Image>
-                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-24 bg-[#2CC6FF] buttonShadow">
+                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-6 mb-4 glassy buttonShadow">
                             <h5 className=" text-black SemiBold text-4xl">Education</h5>
                         </div>
                     </div>
@@ -104,7 +104,7 @@ function Verticals() {
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <Image alt="munaciello" src={munaciello5} className=""></Image>
-                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-24 bg-[#FFE984] buttonShadow">
+                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-6 mb-4 glassy buttonShadow">
                             <h5 className=" text-black SemiBold text-4xl">Gaming</h5>
                         </div>
                     </div>
@@ -112,7 +112,7 @@ function Verticals() {
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <Image alt="munaciello" src={munaciello6} className=""></Image>
-                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-24 bg-[#FFCAD8] buttonShadow">
+                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-6 mb-4 glassy buttonShadow">
                             <h5 className=" text-black SemiBold text-4xl">Law</h5>
                         </div>
                     </div>

@@ -6,15 +6,13 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 
 
-import p1 from "@assets/p1.jpeg"
-import p2 from "@assets/p2.jpeg"
-import p3 from "@assets/p3.jpeg"
-import p4 from "@assets/p4.jpeg"
-import p5 from "@assets/p5.jpeg"
-import p6 from "@assets/p6.jpeg"
-import p7 from "@assets/p7.jpeg"
-import p8 from "@assets/p8.jpeg"
-import p9 from "@assets/p9.jpeg"
+import p1 from "@assets/slider/p1.jpeg"
+import p2 from "@assets/slider/p2.jpeg"
+import p3 from "@assets/slider/p3.jpeg"
+import p4 from "@assets/slider/p4.jpeg"
+import p5 from "@assets/slider/p5.jpeg"
+import p6 from "@assets/slider/p6.jpeg"
+import p7 from "@assets/slider/p7.jpeg"
 
 function Where() {
 
@@ -22,7 +20,7 @@ function Where() {
     const indices = [0, 1, 2, 3, 4, 5, 6, 7, 8]
 
     return (
-        <section className="w-full flex flex-col items-center justify-start mt-40">
+        <section className="w-full flex flex-col items-center justify-start mt-16 lg:mt-40">
             <h5 className=" text-black text-5xl mb-10 SemiBold leading-normal text-center">
                 Where
             </h5>
@@ -78,18 +76,7 @@ function Where() {
 
 
                     </div>
-                    <div className="w-full aspect-square bg-cover bg-no-repeat bg-center" style={{
-                        backgroundImage: `url('${p8.src}')`
-                    }}>
-
-
-                    </div>
-                    <div className="w-full aspect-square bg-cover bg-no-repeat bg-center" style={{
-                        backgroundImage: `url('${p9.src}')`
-                    }}>
-
-
-                    </div>
+                    
 
 
                 </Carousel>

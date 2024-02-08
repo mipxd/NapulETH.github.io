@@ -21,8 +21,6 @@ export default function Tickets() {
       <Navbar />
       <About />
       <Team />
-      <Affiliated />
-      <Friends />
       <Footer />
     </main>
   );
