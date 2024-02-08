@@ -27,8 +27,11 @@ function Hero() {
             <Image src={castleOncloud} alt="cloud" className=" castle hidden lg:block absolute -right-[22%] top-[35%] scale-[.3] "></Image>
             <Image src={templeOncloud} alt="cloud" className=" boat hidden lg:block absolute -left-[15%] top-[50%] scale-[.2] "></Image>
             <Image src={stampOnCloud} alt="cloud" className=" castle hidden lg:block absolute -right-[10%] top-[55%] scale-[.4] "></Image>
-            <h5 className=" text-[#ca75ab] text-3xl lg:text-4xl SemiBold lg:leading-normal text-center relative z-50">
+            <h5 className="hidden lg:block text-[#ca75ab] text-4xl lg:text-4xl SemiBold lg:leading-normal text-center relative z-50">
                 The Biggest Web 3 Event<br />in Southern Italy
+            </h5>
+            <h5 className="block lg:hidden text-[#ca75ab] text-3xl w-11/12 lg:text-4xl SemiBold leading-normal lg:leading-normal text-center relative z-50 mt-4">
+                The Biggest Web 3 Event in Southern Italy
             </h5>
             <p className=" text-[#2E2E2E] Medium lg:mt-6 text-center lg:text-left text-2xl lg:text-2xl mt-6 relative z-50">
                 12th - 14th September, 2024

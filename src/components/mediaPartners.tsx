@@ -36,6 +36,7 @@ import be from "@assets/BE.webp"
 import defi from "@assets/DeFi-Italia.webp"
 import onchain from '@assets/OnChain-podcast.webp'
 import hrc from '@assets/HRC.webp'
+import spazio from "@assets/spazio.png"
 
 function MediaPartners() {
     return (
@@ -44,7 +45,7 @@ function MediaPartners() {
                 Media Partners
             </h5>
             <div className="hidden lg:block w-full h-fit relative my-4">
-                <Marquee direction="left" className=" overflow-hidden">
+                <Marquee direction="left" className=" overflow-hidden" pauseOnHover>
                     
                     <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white buttonShadow">
@@ -134,6 +135,12 @@ function MediaPartners() {
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white buttonShadow">
 
                             <Image className=" w-auto h-20" alt="degate" src={hrc}></Image>
+                        </div>
+                    </Link>
+                    <Link href={'https://www.spaziocrypto.com/'} target="_blank" className="p-0 w-full h-fit">
+                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white buttonShadow">
+
+                            <Image className=" w-auto h-20 scale-150" alt="degate" src={spazio}></Image>
                         </div>
                     </Link>
 
@@ -344,6 +351,20 @@ function MediaPartners() {
                                 <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
                                 <div className="w-28 h-20 scale-125 bg-contain bg-center bg-no-repeat" style={{
                                         backgroundImage: `url('${hrc.src}')`
+                                    }}></div>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="w-10/12 flex flex-col items-center justify-center">
+                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                            <Link href={'https://www.spaziocrypto.com/'} target="_blank" className="w-full h-full">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+                                <div className="w-28 h-20 scale-150 bg-contain bg-center bg-no-repeat" style={{
+                                        backgroundImage: `url('${spazio.src}')`
                                     }}></div>
                                 </div>
                             </Link>
