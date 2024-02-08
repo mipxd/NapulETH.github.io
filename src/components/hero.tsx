@@ -71,11 +71,9 @@ function Hero() {
 
 
 
-            <p className=" text-black text-2xl Medium mt-16">Powered by</p>
+           
 
-            <Image src={commune} alt="commune de napoli" className=" scale-50 -mt-20 ml-4"></Image>
-
-            <Image src={logo} alt="big logo" className=" lg:-mt-[40%] lg:scale-50 scale-[0.8] -mt-20 relative z-[60] w-11/12"></Image>
+            <Image src={logo} alt="big logo" className=" lg:-mt-[32%] lg:scale-50 scale-[0.8] relative z-[60] w-11/12"></Image>
 
             <h5 className=" text-black text-5xl SemiBold leading-normal text-center  lg:-mt-[30%] mb-6">
                 Bringing new faces to Ethereum
