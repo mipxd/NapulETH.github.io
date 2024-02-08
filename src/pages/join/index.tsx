@@ -21,7 +21,6 @@ export default function Join() {
       <Navbar />
       
       <JoinSection />
-      <Affiliated />
       <Friends />
       <Footer />
     </main>

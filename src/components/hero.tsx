@@ -28,7 +28,7 @@ function Hero() {
             <Image src={templeOncloud} alt="cloud" className=" boat hidden lg:block absolute -left-[15%] top-[50%] scale-[.2] "></Image>
             <Image src={stampOnCloud} alt="cloud" className=" castle hidden lg:block absolute -right-[10%] top-[55%] scale-[.4] "></Image>
             <h5 className=" text-[#ca75ab] text-3xl lg:text-4xl SemiBold lg:leading-normal text-center relative z-50">
-                The First Web 3 Event<br />in Southern Italy
+                The Biggest Web 3 Event<br />in Southern Italy
             </h5>
             <p className=" text-[#2E2E2E] Medium lg:mt-6 text-center lg:text-left text-2xl lg:text-2xl mt-6 relative z-50">
                 12th - 14th September, 2024
