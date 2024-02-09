@@ -54,7 +54,7 @@ function Where() {
             </p>
 
             <div className="mt-8 w-10/12 lg:w-6/12 h-fit flex flex-col items-center justify-center">
-                <Carousel className="w-full h-fit border-4 border-[#CA75AB]" showDots renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
+                <Carousel className="w-full h-fit border-4 border-[#eddb55]" showDots renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
                     <div className="w-full aspect-square bg-cover bg-no-repeat bg-center " style={{
                         backgroundImage: `url('${p1.src}')`
                     }}>
