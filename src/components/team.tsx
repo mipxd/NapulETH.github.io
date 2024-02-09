@@ -69,7 +69,7 @@ function Team() {
                         backgroundImage: `url('${t3.src}')`
                     }}></div>
                     <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
-                        <h5 className=" text-black SemiBold text-2xl text-center mb-2">Raffaele Orifece</h5>
+                        <h5 className=" text-black SemiBold text-2xl text-center mb-2">Raffaele Orefice</h5>
                         <h5 className=" text-[#606060] SemiBold text-center text-3xl">Community Lead</h5>
                     </div>
                 </div>
@@ -99,7 +99,7 @@ function Team() {
                         backgroundImage: `url('${t6.src}')`
                     }}></div>
                     <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
-                        <h5 className=" text-black SemiBold text-2xl text-center mb-2">Lorenzo Cappluni</h5>
+                        <h5 className=" text-black SemiBold text-2xl text-center mb-2">Lorenzo Ceppaluni</h5>
                         <h5 className=" text-[#606060] SemiBold text-center text-3xl">Strategic Partner</h5>
                     </div>
                 </div>
@@ -152,7 +152,7 @@ function Team() {
                         backgroundImage: `url('${t3.src}')`
                     }}></div>
                         <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
-                            <h5 className=" text-black SemiBold text-2xl text-center mb-2">Raffaele Orifece</h5>
+                            <h5 className=" text-black SemiBold text-2xl text-center mb-2">Raffaele Orefice</h5>
                             <h5 className=" text-[#606060] SemiBold text-center text-3xl">Community Lead</h5>
                         </div>
                     </div>
@@ -185,7 +185,7 @@ function Team() {
                         backgroundImage: `url('${t6.src}')`
                     }}></div>
                         <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
-                            <h5 className=" text-black SemiBold text-2xl text-center mb-2">Lorenzo Cappluni</h5>
+                            <h5 className=" text-black SemiBold text-2xl text-center mb-2">Lorenzo Ceppaluni</h5>
                             <h5 className=" text-[#606060] SemiBold text-center text-3xl">Strategic Partner</h5>
                         </div>
                     </div>
