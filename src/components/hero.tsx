@@ -45,7 +45,7 @@ function Hero() {
             </p>
             <div className="w-fit h-fit flex flex-col xl:flex-row items-center justify-center gap-4 lg:gap-3 mt-6 lg:mt-10">
                 <Link href={'/tickets'} className=" relative z-50 p-0 w-fit h-fit">
-                    <div className="min-w-[85vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-[19vw] h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#CA75AB] border-2 border-[#eddb55] ">
+                    <div className="min-w-[85vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-[19vw] h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#CA75AB] border-4 border-[#eddb55] ">
 
 
                         <h5 className=" text-black Medium text-xl">
@@ -54,7 +54,7 @@ function Hero() {
                     </div>
                 </Link>
                 <Link href={'/join'} className=" relative z-50 p-0 w-fit h-fit">
-                    <div className="min-w-[85vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-[19vw] h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#CA75AB] border-2 border-[#eddb55]">
+                    <div className="min-w-[85vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-[19vw] h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#CA75AB] border-4 border-[#eddb55]">
 
 
                         <h5 className=" text-black Medium text-xl">
@@ -70,7 +70,7 @@ function Hero() {
 
                 </Link>
                 <Link href={'/pitch_deck.pdf'} className=" relative z-50 p-0 w-fit h-fit">
-                    <div className="min-w-[85vw] md:min-w-[50vw] -mt-8 xl:min-w-[15vw] xl:w-[19vw] h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#CA75AB] border-2 border-[#eddb55] ">
+                    <div className="min-w-[85vw] md:min-w-[50vw] -mt-8 xl:min-w-[15vw] xl:w-[19vw] h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#CA75AB] border-4 border-[#eddb55] ">
 
 
                         <h5 className=" text-black Medium text-xl">Pitch Deck</h5>
