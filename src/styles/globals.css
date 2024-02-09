@@ -31,6 +31,39 @@ body {
   font-weight: 700;
 }
 
+.react-multi-carousel-dot-list
+{
+  position: relative !important;
+  z-index: 50 !important;
+  margin-top: 7% !important;
+  width: fit-content !important;
+  
+}
+.react-multi-carousel-dot {
+  box-shadow: -3px 4px 0px #606060 !important;
+  box-shadow: -3px 4px 0px color(display-p3 0.376 0.376 0.376) !important;
+  border-radius: 0px !important;
+  height: 5vw !important;
+  width: 7vw !important;
+  background-color: white !important;
+  margin-right: 2% !important;
+  margin-left: 2% !important;
+}
+
+.react-multi-carousel-dot.react-multi-carousel-dot--active{
+  background-color: #E5E7EB !important;
+}
+
+.react-multi-carousel-dot button{
+  color: transparent !important;
+  border-color:  transparent !important;
+}
+
+.react-multi-carousel-dot.react-multi-carousel-dot--active button{
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
 .buttonShadow {
   box-shadow: -3px 4px 0px #606060;
   box-shadow: -3px 4px 0px color(display-p3 0.376 0.376 0.376);
