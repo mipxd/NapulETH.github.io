@@ -177,7 +177,7 @@ function MediaPartners() {
                             <Link href={'https://cryptogirl.it/'} target="_blank" className="p-0 w-full h-fit">
                                 <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white buttonShadow">
 
-                                    <Image className=" w-10 h-20" alt="degate" src={cryptoGirl}></Image>
+                                    <Image className=" w-auto h-20" alt="degate" src={cryptoGirl}></Image>
                                 </div>
                             </Link>
 

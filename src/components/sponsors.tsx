@@ -90,7 +90,7 @@ function Sponsors() {
                             <Link href={'https://www.spaghett-eth.com/'} target="_blank" className="p-0 w-full h-fit">
                                 <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white buttonShadow">
 
-                                    <Image className=" w-10 h-20" alt="degate" src={degate}></Image>
+                                    <Image className=" w-10 scale-[4] h-20" alt="degate" src={degate}></Image>
                                 </div>
                             </Link>
 
