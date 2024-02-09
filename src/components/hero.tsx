@@ -3,6 +3,11 @@
 import Link from "next/link"
 import Image from "next/image"
 import Marquee from "react-fast-marquee";
+import { RibbonContainer, Ribbon } from "react-ribbons";
+import dynamic from 'next/dynamic'
+const DynamicRibbon = dynamic(() => import("@components/dynamicRibbon").then(module => module.default), {ssr: false});
+
+
 
 
 
@@ -42,7 +47,7 @@ function Hero() {
             <div className="w-fit h-fit flex flex-col xl:flex-row items-center justify-center gap-4 lg:gap-3 mt-6 lg:mt-10">
                 <Link href={'/tickets'} className=" relative z-50 p-0 w-fit h-fit">
                     <div className="min-w-[75vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-[19vw] h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#CA75AB] buttonShadow ">
-                        
+
 
                         <h5 className=" text-black Medium text-2xl">Get Tickets</h5>
                     </div>
@@ -56,25 +61,23 @@ function Hero() {
                 </Link>
             </div>
             <div className="w-fit h-fit flex flex-col xl:flex-row items-center justify-center gap-4 lg:gap-3 mt-4 lg:mt-4">
+                
+                <Link href={'/'} className=" relative z-50 p-0 w-fit h-fit xl:mt-1" onClick={(e)=>{e.preventDefault()}}>
+                <DynamicRibbon></DynamicRibbon>
+                    
+                </Link>
                 <Link href={'/pitch_deck.pdf'} className=" relative z-50 p-0 w-fit h-fit">
-                <div className="min-w-[75vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-[19vw] h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#CA75AB] buttonShadow ">
-                        
+                    <div className="min-w-[75vw] md:min-w-[50vw] -mt-8 xl:min-w-[15vw] xl:w-[19vw] h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#CA75AB] buttonShadow ">
+
 
                         <h5 className=" text-black Medium text-2xl">Pitch Deck</h5>
-                    </div>
-                </Link>
-                <Link href={'/join'} className=" relative z-50 p-0 w-fit h-fit">
-                <div className="min-w-[75vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-[19vw] h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#CA75AB] buttonShadow ">
-                        
-
-                        <h5 className=" text-black Medium text-2xl">Book Your Trip</h5>
                     </div>
                 </Link>
             </div>
 
 
 
-           
+
 
             <Image src={logo} alt="big logo" className=" lg:-mt-[32%] lg:scale-50 scale-[0.8] relative z-[60] w-11/12"></Image>
 
@@ -88,69 +91,7 @@ function Hero() {
             <div className="w-[200vw] h-fit my-28 lg:my-40 relative flex flex-row items-center justify-center">
                 <div className="w-[200vw] h-fit relative rotate-12 lg:rotate-6 bg-[#ca75ab] border-t-4 border-b-4 border-t-white border-b-white my-4">
                     <Marquee className=" overflow-hidden my-4">
-                    <h5 className=" text-white text-3xl SemiBold">Workshops</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Dev Competitions</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Courses</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Art Camps</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Italian Startup Competitions</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Talks</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Pizza & Drinks</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
                         <h5 className=" text-white text-3xl SemiBold">Workshops</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Dev Competitions</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Courses</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Art Camps</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Italian Startup Competitions</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Talks</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Pizza & Drinks</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Workshops</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Dev Competitions</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Courses</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Art Camps</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Italian Startup Competitions</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Talks</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Pizza & Drinks</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Workshops</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Dev Competitions</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Courses</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Art Camps</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Italian Startup Competitions</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Talks</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                        <h5 className=" text-white text-3xl SemiBold">Pizza & Drinks</h5>
-                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
-                      
-                        
-                    </Marquee>
-                </div>
-                <div className="w-[200vw] h-fit absolute z-50 -rotate-12 lg:-rotate-6 bg-[#ca75ab] border-t-4 border-b-4 border-t-white border-b-white my-4">
-                    <Marquee className=" overflow-hidden my-4" direction="right">
-                    <h5 className=" text-white text-3xl SemiBold">Workshops</h5>
                         <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
                         <h5 className=" text-white text-3xl SemiBold">Dev Competitions</h5>
                         <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
@@ -207,7 +148,69 @@ function Hero() {
                         <h5 className=" text-white text-3xl SemiBold">Pizza & Drinks</h5>
                         <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
 
-                        
+
+                    </Marquee>
+                </div>
+                <div className="w-[200vw] h-fit absolute z-50 -rotate-12 lg:-rotate-6 bg-[#ca75ab] border-t-4 border-b-4 border-t-white border-b-white my-4">
+                    <Marquee className=" overflow-hidden my-4" direction="right">
+                        <h5 className=" text-white text-3xl SemiBold">Workshops</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Dev Competitions</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Courses</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Art Camps</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Italian Startup Competitions</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Talks</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Pizza & Drinks</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Workshops</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Dev Competitions</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Courses</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Art Camps</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Italian Startup Competitions</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Talks</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Pizza & Drinks</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Workshops</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Dev Competitions</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Courses</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Art Camps</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Italian Startup Competitions</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Talks</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Pizza & Drinks</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Workshops</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Dev Competitions</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Courses</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Art Camps</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Italian Startup Competitions</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Talks</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+                        <h5 className=" text-white text-3xl SemiBold">Pizza & Drinks</h5>
+                        <div className="w-4 h-4 rounded-full bg-white mx-4"></div>
+
+
                     </Marquee>
                 </div>
 
