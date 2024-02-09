@@ -12,6 +12,7 @@ import t5 from '@assets/gianluca.jpeg'
 import t6 from '@assets/lore.jpeg'
 import t7 from '@assets/Illustrator.jpg'
 import { useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 function Team() {
 
@@ -38,12 +39,12 @@ function Team() {
         }
       };
 
-      
+      const { t, i18n } = useTranslation();
 
     return (
         <section className="w-full flex flex-col items-center justify-start pt-24">
             <h5 className=" text-black text-5xl mb-4 lg:mb-10 SemiBold leading-normal text-center">
-                Our Team
+                {t('team')}
             </h5>
             <div className="h-fit hidden lg:flex flex-row items-stretch justify-between w-10/12 mb-12">
                 <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
@@ -52,7 +53,11 @@ function Team() {
                     }}></div>
                     <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
                         <h5 className=" text-black w-full SemiBold text-2xl text-center mb-2">Fabrizio R. Genovese</h5>
-                        <h5 className=" text-[#606060] SemiBold text-center text-3xl">Strategy Lead</h5>
+                        <h5 className=" text-[#606060] SemiBold text-center text-2xl">
+                            {
+                                t('t1')
+                            }
+                        </h5>
                     </div>
                 </div>
                 <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
@@ -61,7 +66,11 @@ function Team() {
                     }}></div>
                     <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
                         <h5 className=" text-black w-full SemiBold text-2xl text-center mb-2">Andrea Paesano</h5>
-                        <h5 className=" text-[#606060] SemiBold text-center text-3xl">Event Lead</h5>
+                        <h5 className=" text-[#606060] SemiBold text-center text-2xl">
+                            {
+                                t('t2')
+                            }
+                        </h5>
                     </div>
                 </div>
                 <div className="w-1/3 flex flex-grow flex-col items-center justify-center">
@@ -70,7 +79,9 @@ function Team() {
                     }}></div>
                     <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
                         <h5 className=" text-black SemiBold text-2xl text-center mb-2">Raffaele Orefice</h5>
-                        <h5 className=" text-[#606060] SemiBold text-center text-3xl">Community Lead</h5>
+                        <h5 className=" text-[#606060] SemiBold text-center text-2xl">
+                            {t('t3')}
+                        </h5>
                     </div>
                 </div>
 
@@ -82,7 +93,7 @@ function Team() {
                     }}></div>
                     <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
                         <h5 className=" text-black w-full SemiBold text-2xl text-center mb-2">Ionut Gaucan</h5>
-                        <h5 className=" text-[#606060] SemiBold text-center text-3xl">Business Dev.</h5>
+                        <h5 className=" text-[#606060] SemiBold text-center text-2xl">Business Dev.</h5>
                     </div>
                 </div>
                 <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
@@ -91,7 +102,9 @@ function Team() {
                     }}></div>
                     <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
                         <h5 className=" text-black w-full SemiBold text-2xl text-center mb-2">Gianluca Di Bella</h5>
-                        <h5 className=" text-[#606060] SemiBold text-center text-3xl">Strategic Partner</h5>
+                        <h5 className=" text-[#606060] SemiBold text-center text-2xl">
+                            {t('t5')}
+                        </h5>
                     </div>
                 </div>
                 <div className="w-1/3 flex flex-grow flex-col items-center justify-center">
@@ -100,7 +113,9 @@ function Team() {
                     }}></div>
                     <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
                         <h5 className=" text-black SemiBold text-2xl text-center mb-2">Lorenzo Ceppaluni</h5>
-                        <h5 className=" text-[#606060] SemiBold text-center text-3xl">Strategic Partner</h5>
+                        <h5 className=" text-[#606060] SemiBold text-center text-2xl">
+                            {t('t6')}
+                        </h5>
                     </div>
                 </div>
 
@@ -123,6 +138,7 @@ function Team() {
                 </div>
 
             </div>
+            <div className='w-full h-fit block lg:hidden'>
             <Carousel className="w-full h-fit block lg:hidden" showDots renderDotsOutside renderButtonGroupOutside swipeable  autoPlay arrows={false} infinite responsive={responsive}>
             <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-full flex flex-col flex-grow items-center justify-center">
@@ -131,7 +147,9 @@ function Team() {
                     }}></div>
                         <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
                             <h5 className=" text-black w-full SemiBold text-2xl text-center mb-2">Fabrizio R. Genovese</h5>
-                            <h5 className=" text-[#606060] SemiBold text-center text-3xl">Strategy Lead</h5>
+                            <h5 className=" text-[#606060] SemiBold text-center text-2xl">
+                                {t('t1')}
+                            </h5>
                         </div>
                     </div>
                 </div>
@@ -142,7 +160,9 @@ function Team() {
                     }}></div>
                         <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
                             <h5 className=" text-black w-full SemiBold text-2xl text-center mb-2">Andrea Paesano</h5>
-                            <h5 className=" text-[#606060] SemiBold text-center text-3xl">Event Lead</h5>
+                            <h5 className=" text-[#606060] SemiBold text-center text-2xl">
+                                {t('t2')}
+                            </h5>
                         </div>
                     </div>
                 </div>
@@ -153,7 +173,9 @@ function Team() {
                     }}></div>
                         <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
                             <h5 className=" text-black SemiBold text-2xl text-center mb-2">Raffaele Orefice</h5>
-                            <h5 className=" text-[#606060] SemiBold text-center text-3xl">Community Lead</h5>
+                            <h5 className=" text-[#606060] SemiBold text-center text-2xl">
+                                {t('t3')}
+                            </h5>
                         </div>
                     </div>
                 </div>
@@ -164,7 +186,7 @@ function Team() {
                     }}></div>
                         <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
                             <h5 className=" text-black w-full SemiBold text-2xl text-center mb-2">Ionut Gaucan</h5>
-                            <h5 className=" text-[#606060] SemiBold text-center text-3xl">Business Dev.</h5>
+                            <h5 className=" text-[#606060] SemiBold text-center text-2xl">Business Dev.</h5>
                         </div>
                     </div>
                 </div>
@@ -175,7 +197,9 @@ function Team() {
                     }}></div>
                         <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
                             <h5 className=" text-black w-full SemiBold text-2xl text-center mb-2">Gianluca Di Bella</h5>
-                            <h5 className=" text-[#606060] SemiBold text-center text-3xl">Strategic Partner</h5>
+                            <h5 className=" text-[#606060] SemiBold text-center text-2xl">
+                                {t('t5')}
+                            </h5>
                         </div>
                     </div>
                 </div>
@@ -186,7 +210,9 @@ function Team() {
                     }}></div>
                         <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white buttonShadow">
                             <h5 className=" text-black SemiBold text-2xl text-center mb-2">Lorenzo Ceppaluni</h5>
-                            <h5 className=" text-[#606060] SemiBold text-center text-3xl">Strategic Partner</h5>
+                            <h5 className=" text-[#606060] SemiBold text-center text-2xl">
+                                {t('t6')}
+                            </h5>
                         </div>
                     </div>
                 </div>
@@ -202,6 +228,8 @@ function Team() {
                     </div>
                 </div>
             </Carousel>
+            </div>
+            
             {
                 /*
                 Carousel className="w-full h-fit block lg:hidden" showIndicators={false} swipeable={true}

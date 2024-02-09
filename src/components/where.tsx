@@ -13,6 +13,7 @@ import p4 from "@assets/slider/p4.jpeg"
 import p5 from "@assets/slider/p5.jpeg"
 import p6 from "@assets/slider/p6.jpeg"
 import p7 from "@assets/slider/p7.jpeg"
+import { useTranslation } from "react-i18next";
 
 function Where() {
 
@@ -38,16 +39,18 @@ function Where() {
         }
       };
 
+      const { t, i18n } = useTranslation();
+
     return (
         <section className="w-full flex flex-col items-center justify-start mt-40">
             <h5 className=" text-black text-5xl mb-10 SemiBold leading-normal text-center">
-                Where
+                {t('where')}
             </h5>
             <p className=" text-[#2E2E2E] Medium text-2xl lg:text-3xl text-center leading-normal w-11/12 lg:w-8/12 mb-2">
-                Discover Naples{"'"} rich history at the Monumental Complex of Santa Maria la Nova. With its iconic church and a blend of Gothic and Baroque styles, this site showcases centuries of cultural heritage through artifacts and frescoes.
+                {t('wherepara1')}
             </p>
             <p className=" text-[#2E2E2E] Medium text-2xl lg:text-3xl text-center leading-normal w-11/12 lg:w-7/12">
-                It is here where the infamous Count Dracula is thought to be buried.
+                {t('wherepara2')}
             </p>
 
             <div className="mt-8 w-10/12 lg:w-6/12 h-fit flex flex-col items-center justify-center">

@@ -36,7 +36,7 @@ body {
   position: relative !important;
   z-index: 50 !important;
   margin-top: 7% !important;
-  width: fit-content !important;
+  width: 100% !important;
   
 }
 .react-multi-carousel-dot {
@@ -161,6 +161,34 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   scale: 0.75;
   /* Apply animation with 10 seconds duration, infinite loop, and ease-in-out timing function */
   animation: moveUpDown2 20s infinite ease-in-out;
+}
+
+.szh-menu {
+  background: #CA75AB !important;
+  margin-top: 6px !important;
+  border: 1px solid yellow !important;
+  border-radius: 10px !important;
+}
+
+.szh-menu__arrow {
+  background: #CA75AB !important;
+  border-top: 1px solid yellow !important;
+  border-left: 1px solid yellow !important;
+}
+
+.szh-menu__item {
+  width: 100% !important;
+  height: fit-content !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 2% 8% !important;
+  margin-bottom: 2%;
+}
+
+.szh-menu__item:hover {
+  background: #343131 !important;
 }
 
 /* Define the animation keyframes */

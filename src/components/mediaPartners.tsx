@@ -37,6 +37,7 @@ import defi from "@assets/DeFi-Italia.webp"
 import onchain from '@assets/OnChain-podcast.webp'
 import hrc from '@assets/HRC.webp'
 import spazio from "@assets/spazio.png"
+import { useTranslation } from "react-i18next";
 
 function MediaPartners() {
 
@@ -60,10 +61,11 @@ function MediaPartners() {
         }
       };
 
+      const { t, i18n } = useTranslation();
     return (
         <section className="w-full flex flex-col items-center justify-start mt-20 lg:mt-32">
             <h5 className=" text-black text-5xl mb-10 SemiBold leading-normal text-center">
-                Media Partners
+                {t('media')}
             </h5>
             <div className="hidden lg:block w-full h-fit relative my-4">
                 <Marquee direction="left" className=" overflow-hidden" pauseOnHover>

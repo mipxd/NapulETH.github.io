@@ -20,6 +20,7 @@ import nexlabs from '@assets/nexlabs.webp'
 import hg from '@assets/hg.png'
 import evLabs from '@assets/ev labs.webp'
 import niftyz from '@/assets/Niftyz.webp'
+import { useTranslation } from "react-i18next";
 
 function Partners() {
 
@@ -43,10 +44,11 @@ function Partners() {
         }
       };
 
+      const { t, i18n } = useTranslation();
     return (
         <section className="w-full flex flex-col items-center justify-start mt-20 lg:mt-32">
             <h5 className=" text-black text-5xl mb-10 SemiBold leading-normal text-center">
-                Partners
+                {t('partners')}
             </h5>
             <div className="hidden lg:block w-full h-fit relative my-4">
                 <Marquee direction="right" className=" overflow-hidden" pauseOnHover>
