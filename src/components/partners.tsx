@@ -15,7 +15,7 @@ import wehub from '@assets/wehub.svg'
 import mego from '@assets/mego.svg'
 import mood from '@assets/mood.svg'
 import gate from '@assets/gate.svg'
-import canal from '@assets/canal.svg'
+import canal from '@assets/LOGO CRYTOCANAL- horizontal (new - black).svg'
 import nexlabs from '@assets/nexlabs.webp'
 import hg from '@assets/hg.png'
 import evLabs from '@assets/ev labs.webp'
@@ -84,7 +84,7 @@ function Partners() {
                     <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white buttonShadow">
 
-                            <Image className=" invert scale-[2.5] w-auto h-20" alt="degate" src={canal}></Image>
+                            <Image className=" w-auto scale-125 h-20" alt="degate" src={canal}></Image>
                         </div>
                     </Link>
                     <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
