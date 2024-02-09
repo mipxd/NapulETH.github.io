@@ -94,7 +94,7 @@ function Navbar() {
                     arrow={true}
                     menuButton={
                         <MenuButton>
-                            <div className=" flex flex-row h-10 bg-center bg-cover bg-no-repeat aspect-square items-center justify-center gap-2 rounded-full border border-[#F7E16B] " style={{
+                            <div className=" flex mx-3 flex-row h-8 lg:h-10 bg-center bg-cover bg-no-repeat aspect-square items-center justify-center gap-2 rounded-full border border-[#F7E16B] " style={{
                                 backgroundImage: `url('${selectedLanguage.image.src}')`
                             }}>
                                 

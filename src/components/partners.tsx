@@ -47,7 +47,7 @@ function Partners() {
       const { t, i18n } = useTranslation();
     return (
         <section className="w-full flex flex-col items-center justify-start mt-20 lg:mt-32">
-            <h5 className=" text-black text-5xl mb-10 SemiBold leading-normal text-center">
+            <h5 className=" text-black text-4xl mb-10 SemiBold leading-normal text-center">
                 {t('partners')}
             </h5>
             <div className="hidden lg:block w-full h-fit relative my-4">

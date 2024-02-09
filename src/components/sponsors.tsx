@@ -37,7 +37,7 @@ function Sponsors() {
 
     return (
         <section className="w-full flex flex-col items-center justify-start mt-20 lg:mt-32">
-            <h5 className=" text-black text-5xl mb-10 SemiBold leading-normal text-center">
+            <h5 className=" text-black text-4xl mb-10 SemiBold leading-normal text-center">
                 {
                     t('sponsors')
                 }

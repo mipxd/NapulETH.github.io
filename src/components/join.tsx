@@ -14,7 +14,7 @@ function JoinSection() {
     const { t, i18n } = useTranslation();
     return (
         <section className="w-full flex flex-col items-center justify-start mt-24 lg:mt-32">
-            <h5 className=" text-black text-5xl mb-10 SemiBold leading-normal text-center">
+            <h5 className=" text-black text-5xl mt-16 lg:mt-0 lg:mb-10 SemiBold leading-normal text-center">
                 {t('joinus')}
             </h5>
             <p className="mt-6 Medium text-2xl text-[#2E2E2E] w-11/12 lg:w-7/12 text-center leading-normal">

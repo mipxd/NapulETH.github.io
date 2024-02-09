@@ -27,7 +27,7 @@ function About() {
             <Image src={castleOncloud} alt="cloud" className="hidden lg:block castle absolute -right-[22%] top-[35%] scale-[.4] "></Image>
             <Image src={templeOncloud} alt="cloud" className="hidden lg:block boat absolute -left-[16%] top-[65%] scale-[.5] "></Image>
             <Image src={stampOnCloud} alt="cloud" className="hidden lg:block castle absolute -right-[15%] top-[90%] scale-[.4] "></Image>
-            <h5 className=" text-black text-5xl SemiBold leading-normal text-center mt-20 mb-3 lg:mb-6">
+            <h5 className=" text-black text-4xl SemiBold leading-normal text-center mt-20 mb-3 lg:mb-6">
             {t('abouttitle')}
             </h5>
             <p className="hidden lg:block text-[#2E2E2E] Medium text-2xl lg:text-3xl text-center leading-normal w-11/12 lg:w-7/12">

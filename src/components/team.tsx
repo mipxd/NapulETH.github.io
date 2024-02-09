@@ -43,7 +43,7 @@ function Team() {
 
     return (
         <section className="w-full flex flex-col items-center justify-start pt-24">
-            <h5 className=" text-black text-5xl mb-4 lg:mb-10 SemiBold leading-normal text-center">
+            <h5 className=" text-black text-4xl mb-4 lg:mb-10 SemiBold leading-normal text-center">
                 {t('team')}
             </h5>
             <div className="h-fit hidden lg:flex flex-row items-stretch justify-between w-10/12 mb-12">

@@ -42,7 +42,7 @@ function Verticals() {
       };
     return (
         <section className="w-full flex flex-col items-center justify-start pt-12">
-            <h5 className=" text-black text-5xl mb-10 SemiBold leading-normal text-center">
+            <h5 className=" text-black text-4xl mb-10 SemiBold leading-normal text-center">
                 {t('verticals')}
             </h5>
             <div className="h-fit hidden lg:flex flex-row items-center justify-between w-10/12 mb-12">

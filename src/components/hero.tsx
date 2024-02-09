@@ -84,7 +84,7 @@ function Hero() {
 
             <Image src={logo} alt="big logo" className=" lg:-mt-[32%] lg:scale-50 scale-[0.8] relative z-[60] w-11/12"></Image>
 
-            <h5 className=" text-black text-5xl SemiBold leading-normal text-center  lg:-mt-[30%] mb-6">
+            <h5 className=" text-black text-4xl SemiBold leading-normal text-center  lg:-mt-[30%] mb-6">
                 {t('bringing')}
             </h5>
             <p className=" text-[#2E2E2E] Medium text-2xl lg:text-3xl text-center leading-normal w-11/12 lg:w-5/12">

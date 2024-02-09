@@ -9,7 +9,7 @@ function TicketingPartner() {
     const { t, i18n } = useTranslation();
     return (
         <section className="w-full flex flex-col items-center justify-start pt-24 lg:pt-40">
-            <h5 className=" text-black text-5xl mb-6 SemiBold leading-normal text-center">
+            <h5 className=" text-black text-4xl mb-6 SemiBold leading-normal text-center">
                 {t('tipartner')}
             </h5>
             <Image src={megoNapulEth} alt="mego and NapulEth" className="scale-75 mb-10"></Image>

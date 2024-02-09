@@ -43,7 +43,7 @@ function Where() {
 
     return (
         <section className="w-full flex flex-col items-center justify-start mt-40">
-            <h5 className=" text-black text-5xl mb-10 SemiBold leading-normal text-center">
+            <h5 className=" text-black text-4xl mb-10 SemiBold leading-normal text-center">
                 {t('where')}
             </h5>
             <p className=" text-[#2E2E2E] Medium text-2xl lg:text-3xl text-center leading-normal w-11/12 lg:w-8/12 mb-2">
