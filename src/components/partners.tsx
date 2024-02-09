@@ -54,61 +54,61 @@ function Partners() {
                 <Marquee direction="right" className=" overflow-hidden" pauseOnHover>
                     
                     <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white buttonShadow">
+                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#CA75AB]">
 
                             <Image className=" w-auto h-20 scale-150" alt="degate" src={spaghett}></Image>
                         </div>
                     </Link>
                     <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white buttonShadow">
+                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#CA75AB]">
 
                             <Image className=" w-auto h-20" alt="degate" src={wehub}></Image>
                         </div>
                     </Link>
                     <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white buttonShadow">
+                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#CA75AB]">
 
                             <Image className=" invert w-auto h-20" alt="degate" src={mego}></Image>
                         </div>
                     </Link>
                     <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white buttonShadow">
+                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#CA75AB]">
 
                             <Image className=" w-auto h-20" alt="degate" src={mood}></Image>
                         </div>
                     </Link>
                     <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white buttonShadow">
+                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#CA75AB]">
 
                             <Image className=" w-auto h-20" alt="degate" src={gate}></Image>
                         </div>
                     </Link>
                     <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white buttonShadow">
+                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#CA75AB]">
 
                             <Image className=" w-auto scale-125 h-20" alt="degate" src={canal}></Image>
                         </div>
                     </Link>
                     <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white buttonShadow">
+                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#CA75AB]">
 
                             <Image className=" w-auto h-20" alt="degate" src={nexlabs}></Image>
                         </div>
                     </Link>
                     <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white buttonShadow">
+                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#CA75AB]">
 
                             <Image className=" w-auto h-20" alt="degate" src={hg}></Image>
                         </div>
                     </Link>
                     <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white buttonShadow">
+                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#CA75AB]">
 
                             <Image className=" invert w-auto h-20" alt="degate" src={evLabs}></Image>
                         </div>
                     </Link>
                     <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white buttonShadow">
+                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#CA75AB]">
 
                             <Image className=" w-auto h-20" alt="degate" src={niftyz}></Image>
                         </div>
@@ -124,7 +124,7 @@ function Partners() {
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <div className="w-full flex-grow flex flex-col items-center justify-center" >
                             <Link href={'https://www.spaghett-eth.com/'} target="_blank" className="p-0 w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white buttonShadow">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#CA75AB]">
                                 <div className="w-28 scale-150 h-20 bg-contain bg-center bg-no-repeat" style={{
                                         backgroundImage: `url('${spaghett.src}')`
                                     }}></div>
@@ -138,7 +138,7 @@ function Partners() {
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <div className="w-full flex-grow flex flex-col items-center justify-center" >
                             <Link href={'https://wehub.it/'} target="_blank" className="w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#CA75AB]">
 
                                     <Image className="w-auto h-20" alt="degate" src={wehub}></Image>
                                 </div>
@@ -151,7 +151,7 @@ function Partners() {
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <div className="w-full flex-grow flex flex-col items-center justify-center" >
                             <Link href={'https://mego.tickets/'} target="_blank" className=" w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#CA75AB]">
 
                                     <Image className=" invert w-auto h-20" alt="degate" src={mego}></Image>
                                 </div>
@@ -164,7 +164,7 @@ function Partners() {
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <div className="w-full flex-grow flex flex-col items-center justify-center" >
                             <Link href={'http://moodglobalservices.com/'} target="_blank" className="w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#CA75AB]">
 
                                     <Image className=" w-auto h-20" alt="degate" src={mood}></Image>
                                 </div>
@@ -177,7 +177,7 @@ function Partners() {
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <div className="w-full flex-grow flex flex-col items-center justify-center" >
                             <Link href={'https://thecryptogateway.it/'} target="_blank" className="w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#CA75AB]">
 
                                     <Image className="w-auto h-20" alt="degate" src={gate}></Image>
                                 </div>
@@ -190,7 +190,7 @@ function Partners() {
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <div className="w-full flex-grow flex flex-col items-center justify-center" >
                             <Link href={'https://www.cryptocanal.org/'} target="_blank" className="w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#CA75AB]">
 
                                     <Image className=" w-auto h-20  " alt="degate" src={canal}></Image>
                                 </div>
@@ -203,7 +203,7 @@ function Partners() {
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <div className="w-full flex-grow flex flex-col items-center justify-center" >
                             <Link href={'https://www.nexlabs.io/'} target="_blank" className=" w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#CA75AB]">
                                     <div className="w-20 aspect-square bg-contain bg-center bg-no-repeat" style={{
                                         backgroundImage: `url('${nexlabs.src}')`
                                     }}></div>
@@ -218,7 +218,7 @@ function Partners() {
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <div className="w-full flex-grow flex flex-col items-center justify-center" >
                             <Link href={'https://hgvis.io/'} target="_blank" className="w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#CA75AB]">
 
                                     <Image className="w-auto h-20" alt="degate" src={hg}></Image>
                                 </div>
@@ -231,7 +231,7 @@ function Partners() {
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <div className="w-full flex-grow flex flex-col items-center justify-center" >
                             <Link href={'https://www.3vlabs.io/'} target="_blank" className=" w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#CA75AB]">
 
                                     <Image className=" invert w-auto h-20" alt="degate" src={evLabs}></Image>
                                 </div>
@@ -244,7 +244,7 @@ function Partners() {
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <div className="w-full flex-grow flex flex-col items-center justify-center" >
                             <Link href={'https://www.niftyz.io/'} target="_blank" className="w-full h-full">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#CA75AB]">
 
                                     <Image className="w-auto h-20" alt="degate" src={niftyz}></Image>
                                 </div>

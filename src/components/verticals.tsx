@@ -48,7 +48,7 @@ function Verticals() {
             <div className="h-fit hidden lg:flex flex-row items-center justify-between w-10/12 mb-12">
                 <div className="w-1/3 flex flex-col items-center justify-center">
                     <Image alt="munaciello" src={munaciello1} className=""></Image>
-                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-4 glassy border-2 border-[#eddb55]">
+                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 outline-2 -mt-4 glassy border-4 border-[#CA75AB]">
                         <h5 className=" text-black SemiBold text-2xl">
                             {t('edu')}
                         </h5>
@@ -56,7 +56,7 @@ function Verticals() {
                 </div>
                 <div className="w-1/3 flex flex-col items-center justify-center">
                     <Image alt="munaciello" src={munaciello2} className=""></Image>
-                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-4 glassy border-2 border-[#eddb55]">
+                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-4 glassy border-4 border-[#CA75AB]">
                         <h5 className=" text-black SemiBold text-2xl">
                             {t('art')}
                         </h5>
@@ -64,7 +64,7 @@ function Verticals() {
                 </div>
                 <div className="w-1/3 flex flex-col items-center justify-center">
                     <Image alt="munaciello" src={munaciello3} className=""></Image>
-                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-4 glassy border-2 border-[#eddb55]">
+                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-4 glassy border-4 border-[#CA75AB]">
                         <h5 className=" text-black SemiBold text-2xl">
                             {t('law')}
                         </h5>
@@ -75,7 +75,7 @@ function Verticals() {
             <div className="h-fit hidden lg:flex flex-row items-center justify-between w-10/12">
                 <div className="w-1/3 flex flex-col items-center justify-center">
                     <Image alt="munaciello" src={munaciello4} className=""></Image>
-                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-4 glassy border-2 border-[#eddb55] ">
+                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-4 glassy border-4 border-[#CA75AB] ">
                         <h5 className=" text-black SemiBold text-2xl">
                             Defi
                         </h5>
@@ -83,13 +83,13 @@ function Verticals() {
                 </div>
                 <div className="w-1/3 flex flex-col items-center justify-center">
                     <Image alt="munaciello" src={munaciello5} className=""></Image>
-                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-4 glassy border-2 border-[#eddb55]">
+                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-16 -mt-4 glassy border-4 border-[#CA75AB]">
                         <h5 className=" text-black SemiBold text-2xl">Gaming</h5>
                     </div>
                 </div>
                 <div className="w-1/3 flex flex-col items-center justify-center">
                     <Image alt="munaciello" src={munaciello6} className=""></Image>
-                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-8 -mt-4 glassy border-2 border-[#eddb55]">
+                    <div className="w-8/12 h-fit flex flex-row items-center justify-center py-6 px-8 -mt-4 glassy border-4 border-[#CA75AB]">
                         <h5 className=" text-black SemiBold whitespace-nowrap text-2xl">
                             {t('public')}
                         </h5>
@@ -102,7 +102,7 @@ function Verticals() {
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <Image alt="munaciello" src={munaciello1} className=""></Image>
-                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-6 mb-4 glassy border-2 border-[#eddb55]">
+                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-6 mb-4 glassy border-4 border-[#CA75AB]">
                             <h5 className=" text-black SemiBold text-3xl">
                                 {t('edu')}
                             </h5>
@@ -112,7 +112,7 @@ function Verticals() {
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <Image alt="munaciello" src={munaciello2} className=""></Image>
-                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-6 mb-4 glassy border-2 border-[#eddb55]">
+                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-6 mb-4 glassy border-4 border-[#CA75AB]">
                             <h5 className=" text-black SemiBold text-3xl">
                                 {t('art')}
                             </h5>
@@ -122,7 +122,7 @@ function Verticals() {
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <Image alt="munaciello" src={munaciello3} className=""></Image>
-                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-6 mb-4 glassy border-2 border-[#eddb55]">
+                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-6 mb-4 glassy border-4 border-[#CA75AB]">
                             <h5 className=" text-black SemiBold text-3xl">
                                 {t('law')}
                             </h5>
@@ -132,7 +132,7 @@ function Verticals() {
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <Image alt="munaciello" src={munaciello4} className=""></Image>
-                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-6 mb-4 glassy border-2 border-[#eddb55]">
+                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-6 mb-4 glassy border-4 border-[#CA75AB]">
                             <h5 className=" text-black SemiBold text-3xl">
                                 Defi
                             </h5>
@@ -142,7 +142,7 @@ function Verticals() {
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <Image alt="munaciello" src={munaciello5} className=""></Image>
-                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-6 mb-4 glassy border-2 border-[#eddb55]">
+                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-6 mb-4 glassy border-4 border-[#CA75AB]">
                             <h5 className=" text-black SemiBold text-3xl">Gaming</h5>
                         </div>
                     </div>
@@ -150,7 +150,7 @@ function Verticals() {
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <Image alt="munaciello" src={munaciello6} className=""></Image>
-                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-6 mb-4 glassy border-2 border-[#eddb55]">
+                        <div className="w-full h-fit flex flex-row items-center justify-center py-6 px-16 -mt-6 mb-4 glassy border-4 border-[#CA75AB]">
                             <h5 className=" text-black SemiBold whitespace-nowrap text-3xl">
                                 {t('public')}
                             </h5>
