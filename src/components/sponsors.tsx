@@ -8,7 +8,7 @@ import 'react-multi-carousel/lib/styles.css';
 
 import commune from "@assets/commune.png"
 import degate from '@assets/degate.svg'
-import square from '@assets/20square.svg'
+import square from '@assets/sq20.svg'
 import wovlabs from '@assets/wovlabs.svg'
 import { useTranslation } from "react-i18next";
 
