@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 
 import p1 from "@assets/slider/p1.jpeg"
@@ -19,6 +19,26 @@ function Where() {
     const [selectedSliderIndex, setSelectedSliderIndex] = useState<number>(0)
     const indices = [0, 1, 2, 3, 4, 5, 6]
 
+    const responsive = {
+        superLargeDesktop: {
+          // the naming can be any, depends on you.
+          breakpoint: { max: 4000, min: 3000 },
+          items: 5
+        },
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 3
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 2
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1
+        }
+      };
+
     return (
         <section className="w-full flex flex-col items-center justify-start mt-16 lg:mt-40">
             <h5 className=" text-black text-5xl mb-10 SemiBold leading-normal text-center">
@@ -31,10 +51,8 @@ function Where() {
                 It is here where the infamous Count Dracula is thought to be buried.
             </p>
 
-            <div className="mt-8 w-10/12 lg:w-6/12 h-fit flex flex-row items-center justify-center">
-                <Carousel className="w-full h-fit buttonShadow" onChange={(index: number)=>{setSelectedSliderIndex(index)}} showIndicators={false} swipeable={true}
-          preventMovementUntilSwipeScrollTolerance={true}
-          swipeScrollTolerance={50} interval={3000} autoPlay infiniteLoop showArrows={false} showStatus={false} showThumbs={false} selectedItem={selectedSliderIndex}>
+            <div className="mt-8 w-10/12 lg:w-6/12 h-fit flex flex-col items-center justify-center">
+                <Carousel className="w-full h-fit buttonShadow" showDots renderDotsOutside renderButtonGroupOutside swipeable  autoPlay arrows={false} infinite responsive={responsive}>
                     <div className="w-full aspect-square bg-cover bg-no-repeat bg-center" style={{
                         backgroundImage: `url('${p1.src}')`
                     }}>
@@ -82,13 +100,7 @@ function Where() {
                 </Carousel>
             </div>
 
-            <div className="w-fit h-fit flex flex-row items-center justify-center gap-2 my-6">
-                {
-                    indices.map((index: number) => (
-                        <div key={index} onClick={()=>{setSelectedSliderIndex(index)}} className={`${index == selectedSliderIndex ? " bg-gray-200 " : " bg-white"} cursor-pointer buttonShadow h-5 aspect-square`}></div>
-                    ))
-                }
-            </div>
+            
 
         </section>
     )

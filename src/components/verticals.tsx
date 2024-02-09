@@ -2,7 +2,8 @@
 
 import Image from "next/image"
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 import munaciello1 from "@assets/MUNACIELLO EDU.png"
 import munaciello2 from "@assets/MUNACIELLO NFT.png"
@@ -19,6 +20,25 @@ function Verticals() {
 
     const [selectedSliderIndex, setSelectedSliderIndex] = useState<number>(0)
     const indices = [0, 1, 2, 3, 4, 5]
+    const responsive = {
+        superLargeDesktop: {
+          // the naming can be any, depends on you.
+          breakpoint: { max: 4000, min: 3000 },
+          items: 5
+        },
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 3
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 2
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1
+        }
+      };
     return (
         <section className="w-full flex flex-col items-center justify-start pt-12">
             <h5 className=" text-black text-5xl mb-10 SemiBold leading-normal text-center">
@@ -66,9 +86,7 @@ function Verticals() {
                 </div>
 
             </div>
-            <Carousel className="w-full h-fit block lg:hidden" onChange={(index: number)=>{setSelectedSliderIndex(index)}} selectedItem={selectedSliderIndex} showIndicators={false} swipeable={true}
-                preventMovementUntilSwipeScrollTolerance={true}
-                swipeScrollTolerance={50} interval={3000} autoPlay infiniteLoop showArrows={false} showStatus={false} showThumbs={false}>
+            <Carousel className="w-full h-fit block lg:hidden" showDots renderDotsOutside renderButtonGroupOutside swipeable  autoPlay arrows={false} infinite responsive={responsive}>
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <Image alt="munaciello" src={munaciello1} className=""></Image>
@@ -119,13 +137,7 @@ function Verticals() {
                 </div>
 
             </Carousel>
-            <div className="w-fit h-fit flex lg:hidden flex-row items-center justify-center gap-2 my-6">
-                {
-                    indices.map((index: number) => (
-                        <div key={index} onClick={()=>{setSelectedSliderIndex(index)}} className={`${index == selectedSliderIndex ? " bg-gray-200 " : " bg-white"} cursor-pointer buttonShadow h-5 aspect-square`}></div>
-                    ))
-                }
-            </div>
+            
 
         </section>
     )

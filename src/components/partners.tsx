@@ -2,8 +2,8 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import Marquee from "react-fast-marquee";
 
 import degate from '@assets/degate.svg'
@@ -22,6 +22,27 @@ import evLabs from '@assets/ev labs.webp'
 import niftyz from '@/assets/Niftyz.webp'
 
 function Partners() {
+
+    const responsive = {
+        superLargeDesktop: {
+          // the naming can be any, depends on you.
+          breakpoint: { max: 4000, min: 3000 },
+          items: 5
+        },
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 3
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 2
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1
+        }
+      };
+
     return (
         <section className="w-full flex flex-col items-center justify-start mt-20 lg:mt-32">
             <h5 className=" text-black text-5xl mb-10 SemiBold leading-normal text-center">
@@ -96,9 +117,7 @@ function Partners() {
                 </Marquee>
             </div>
             
-            <Carousel className="w-full h-fit block lg:hidden" showIndicators={false} swipeable={true}
-                preventMovementUntilSwipeScrollTolerance={true}
-                swipeScrollTolerance={50} interval={3000} autoPlay infiniteLoop showArrows={false} showStatus={false} showThumbs={false}>
+            <Carousel className="w-full h-fit block lg:hidden" showDots={false} renderDotsOutside renderButtonGroupOutside swipeable  autoPlay arrows={false} infinite responsive={responsive}>
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <div className="w-full flex-grow flex flex-col items-center justify-center" >

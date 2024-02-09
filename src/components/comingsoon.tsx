@@ -8,7 +8,7 @@ function ComingSoon() {
         <section className="w-full h-fit relative flex flex-col items-center justify-start pt-24 lg:pt-40">
             <div className="w-full h-fit px-4 lg:px-20 flex flex-col lg:flex-row items-center gap-8 justify-between">
                 <div className="w-full lg:w-1/2 h-fit">
-                    <p className="text-3xl text-center lg:text-left text-black SemiBold mb-4">Tickets</p>
+                    <p className="text-3xl text-center lg:text-left text-black SemiBold mb-4 mt-16 lg:mt-0">Tickets</p>
                     <h5 className="text-7xl lg:text-8xl text-black Bold mb-8 w-full text-center lg:text-left lg:w-4/5">Coming Soon</h5>
                     <div className="flex lg:hidden w-full flex-row items-center justify-center mb-10">
                     <Image alt="boat napulEth " src={ticketsBoat}></Image>

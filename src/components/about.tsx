@@ -19,7 +19,7 @@ import stampOnCloud from '@assets/stampOnCloud.svg'
 function About() {
     
     return (
-        <section className="w-full h-fit relative flex flex-col items-center justify-start pt-6 lg:pt-40">
+        <section className="w-full h-fit relative flex flex-col items-center justify-start pt-16 lg:pt-40">
             
             <Image src={boatOncloud} alt="cloud" className=" hidden lg:block boat absolute -left-[15%] top-[15%] scale-[.2] "></Image>
             <Image src={castleOncloud} alt="cloud" className="hidden lg:block castle absolute -right-[22%] top-[35%] scale-[.4] "></Image>
