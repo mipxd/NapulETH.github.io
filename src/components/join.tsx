@@ -21,7 +21,7 @@ function JoinSection() {
                 {t('join1')}
             </p>
             <Link href={'https://docs.google.com/forms/d/e/1FAIpQLSe1U6zRTRp671KrtyW1U1fBvbrVal_irFUjTy5Oum_K7mVryg/viewform'} target="_blank" className=" relative z-50 p-0 w-fit h-fit">
-                <div className="w-fit h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#eddb55] border-4 border-[#eddb55] my-10">
+                <div className="w-fit h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#FFFFFF] border-4 border-[#eddb55] my-10">
 
 
                     <h5 className=" text-black Medium text-xl lg:text-2xl">
