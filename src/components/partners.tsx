@@ -192,7 +192,7 @@ function Partners() {
                             <Link href={'https://www.cryptocanal.org/'} target="_blank" className="w-full h-fit">
                                 <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white buttonShadow">
 
-                                    <Image className=" invert w-auto h-20 scale-[3] " alt="degate" src={canal}></Image>
+                                    <Image className=" w-auto h-20  " alt="degate" src={canal}></Image>
                                 </div>
                             </Link>
 

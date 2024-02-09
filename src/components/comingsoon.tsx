@@ -13,7 +13,7 @@ function ComingSoon() {
                     <p className="text-3xl text-center lg:text-left text-black SemiBold mb-4 mt-16 lg:mt-0">
                         {t('tickets')}
                     </p>
-                    <h5 className="text-7xl lg:text-8xl text-black Bold mb-8 w-full text-center lg:text-left lg:w-4/5">
+                    <h5 className="text-4xl lg:text-8xl text-black Bold mb-8 w-full text-center lg:text-left lg:w-4/5">
                         {t('coming')}
                     </h5>
                     <div className="flex lg:hidden w-full flex-row items-center justify-center mb-10">
@@ -26,10 +26,10 @@ function ComingSoon() {
                         {t('comingpara2')}
                     </p>
                     <input type="email" name="email" id="email" placeholder={t('email')} className=" bg-white rounded-none buttonShadow w-full lg:w-4/5 mt-12 mb-3 px-2 py-6 text-black text-3xl outline-none Medium" />
-                    <div className="w-full lg:w-4/5 h-fit flex flex-row items-center justify-center gap-2 py-6 px-12 bg-[#CA75AB] buttonShadow">
+                    <div className="w-full lg:w-4/5 h-fit flex flex-row items-center justify-center gap-2 py-6 px-12 bg-[#CA75AB] border-2 border-[#eddb55]">
 
 
-                        <h5 className=" text-black Medium text-2xl">
+                        <h5 className=" text-black Medium whitespace-nowrap text-2xl">
                             {t('send')}
                         </h5>
                     </div>

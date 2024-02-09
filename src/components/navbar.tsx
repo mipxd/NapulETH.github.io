@@ -92,6 +92,7 @@ function Navbar() {
                     align={"end"}
                     direction="bottom"
                     arrow={true}
+                    className=' w-fit'
                     menuButton={
                         <MenuButton>
                             <div className=" flex mx-3 flex-row h-8 lg:h-10 bg-center bg-cover bg-no-repeat aspect-square items-center justify-center gap-2 rounded-full border border-[#F7E16B] " style={{
@@ -109,7 +110,7 @@ function Navbar() {
                             handleLanguageChange("en", EnglishFlag);
                         }}
                     >
-                        <div className="flex h-fit w-full flex-row items-center justify-start">
+                        <div className="flex h-fit w-fit flex-row items-center justify-start">
                             <Image
                                 src={EnglishFlag}
                                 alt="English"
@@ -124,7 +125,7 @@ function Navbar() {
                             handleLanguageChange("it", ItalianFlag);
                         }}
                     >
-                        <div className="flex h-fit w-full flex-row items-center justify-start">
+                        <div className="flex h-fit w-fit flex-row items-center justify-start">
                             <Image
                                 src={ItalianFlag}
                                 alt="English"
@@ -137,7 +138,7 @@ function Navbar() {
 
                 </Menu>
                 <Link href={'/join'} className=" hidden lg:block relative z-50 p-0 w-fit h-fit">
-                    <div className="w-fit h-fit flex flex-row items-center justify-center py-4 px-12 bg-[#CA75AB] buttonShadow">
+                    <div className="w-fit h-fit flex flex-row items-center justify-center py-4 px-12 bg-[#CA75AB] border-2 border-[#eddb55]">
                         <h5 className=" text-black Medium text-xl whitespace-nowrap">
                             {t('joinus')}
                         </h5>
