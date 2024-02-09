@@ -72,17 +72,17 @@ function Navbar() {
             <div className="w-fit h-fit flex flex-row items-center justify-end lg:gap-10">
                 <div className="w-fit h-fit hidden lg:flex flex-row items-center justify-end gap-10">
                     <Link href={'/'} className=" relative z-50 p-0 w-fit h-fit">
-                        <h5 className=" text-black text-xl whitespace-nowrap Medium">
+                        <h5 className=" text-white text-xl whitespace-nowrap Medium">
                             {t('home')}
                         </h5>
                     </Link>
                     <Link href={'/tickets'} className=" relative z-50 p-0 w-fit h-fit">
-                        <h5 className=" text-black text-xl whitespace-nowrap Medium">
+                        <h5 className=" text-white text-xl whitespace-nowrap Medium">
                             {t('tickets')}
                         </h5>
                     </Link>
                     <Link href={'/about'} className=" relative z-50 p-0 w-fit h-fit">
-                        <h5 className=" text-black text-xl whitespace-nowrap Medium">
+                        <h5 className=" text-white text-xl whitespace-nowrap Medium">
                             {t('about')}
                         </h5>
                     </Link>
