@@ -21,7 +21,7 @@ function Navbar() {
             <Link href={"/"} className=" relative z-50 p-0 w-fit h-fit">
                 <div className="w-fit h-fit flex flex-row items-center justify-start gap-2">
                 <Image src={logo} alt="logo" className=" w-[8%] lg:w-[4%] lg:-mt-1"></Image>
-                    <h5 className=" text-black SemiBold text-3xl">NapulEth</h5>
+                    <h5 className=" text-black SemiBold text-3xl">NapulETH</h5>
                 </div>
 
             </Link>

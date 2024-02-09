@@ -50,7 +50,7 @@ function About() {
             </p>
 
             <p className="hidden lg:block text-[#2E2E2E] Medium text-2xl lg:text-3xl text-center leading-normal mt-8 lg:mt-20 w-11/12 lg:w-7/12">
-            In short, the issue we aim to address is to bring actually new faces into the Ethereum ecosystem. We are convinced that this can only be achieved by creating events that are both accessible and high-profile. If you think the same, NapulEth Open Village is waiting for you...
+            In short, the issue we aim to address is to bring actually new faces into the Ethereum ecosystem. We are convinced that this can only be achieved by creating events that are both accessible and high-profile. If you think the same, NapulETH Open Village is waiting for you...
             </p>
 
 

@@ -69,6 +69,7 @@ function Sponsors() {
 
                 </Marquee>
             </div>
+            <div className="w-full h-fit block lg:hidden">
             <Carousel className="w-full h-fit block lg:hidden" showDots={false} renderDotsOutside renderButtonGroupOutside swipeable  autoPlay arrows={false} infinite responsive={responsive}>
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-10/12 flex flex-col items-center justify-center">
@@ -127,6 +128,8 @@ function Sponsors() {
                 
 
             </Carousel>
+            </div>
+            
             
         </section>
     )

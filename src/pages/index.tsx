@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
     <main className="flex min-h-screen flex-col items-start justify-start">
       <Head> 
-				<title>NapulEth - First Web3 Event In Naples</title>
+				<title>NapulETH - First Web3 Event In Naples</title>
 				<meta
 					name="description"
 					content="offering a real incentive for those not yet familiar with web3 to participate in significant events, both accessible and high-profile."

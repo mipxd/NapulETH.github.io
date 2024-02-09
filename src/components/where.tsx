@@ -17,21 +17,20 @@ import p7 from "@assets/slider/p7.jpeg"
 function Where() {
 
     const [selectedSliderIndex, setSelectedSliderIndex] = useState<number>(0)
-    const indices = [0, 1, 2, 3, 4, 5, 6]
-
+    const indices = [0, 1, 2, 3, 4, 5, 6, 7, 8]
     const responsive = {
         superLargeDesktop: {
           // the naming can be any, depends on you.
           breakpoint: { max: 4000, min: 3000 },
-          items: 5
+          items: 1
         },
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
-          items: 3
+          items: 1
         },
         tablet: {
           breakpoint: { max: 1024, min: 464 },
-          items: 2
+          items: 1
         },
         mobile: {
           breakpoint: { max: 464, min: 0 },
@@ -40,7 +39,7 @@ function Where() {
       };
 
     return (
-        <section className="w-full flex flex-col items-center justify-start mt-16 lg:mt-40">
+        <section className="w-full flex flex-col items-center justify-start mt-40">
             <h5 className=" text-black text-5xl mb-10 SemiBold leading-normal text-center">
                 Where
             </h5>
@@ -52,7 +51,7 @@ function Where() {
             </p>
 
             <div className="mt-8 w-10/12 lg:w-6/12 h-fit flex flex-col items-center justify-center">
-                <Carousel className="w-full h-fit buttonShadow" showDots renderDotsOutside renderButtonGroupOutside swipeable  autoPlay arrows={false} infinite responsive={responsive}>
+                <Carousel className="w-full h-fit" showDots renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
                     <div className="w-full aspect-square bg-cover bg-no-repeat bg-center" style={{
                         backgroundImage: `url('${p1.src}')`
                     }}>
@@ -99,8 +98,6 @@ function Where() {
 
                 </Carousel>
             </div>
-
-            
 
         </section>
     )

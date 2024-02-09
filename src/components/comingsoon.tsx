@@ -14,7 +14,7 @@ function ComingSoon() {
                     <Image alt="boat napulEth " src={ticketsBoat}></Image>
                     </div>
                     <p className="text-2xl Medium text-center lg:text-justify text-[#2E2E2E] leading-normal mb-2 w-full lg:w-4/5">
-                        We’re glad to see you interested in participating in NapulEth Open Village 2024.
+                        We’re glad to see you interested in participating in NapulETH Open Village 2024.
                     </p>
                     <p className="text-2xl text-[#2E2E2E] text-center lg:text-justify leading-normal Medium w-full lg:w-4/5">
                         You can leave us your email address so we notify you when tickets are available.

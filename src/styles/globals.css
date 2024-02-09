@@ -43,11 +43,11 @@ body {
   box-shadow: -3px 4px 0px #606060 !important;
   box-shadow: -3px 4px 0px color(display-p3 0.376 0.376 0.376) !important;
   border-radius: 0px !important;
-  height: 5vw !important;
-  width: 7vw !important;
+  height: 1.3em !important;
+  aspect-ratio: 1 !important;
   background-color: white !important;
-  margin-right: 2% !important;
-  margin-left: 2% !important;
+  margin-right: .25em !important;
+  margin-left: .25em !important;
 }
 
 .react-multi-carousel-dot.react-multi-carousel-dot--active{
