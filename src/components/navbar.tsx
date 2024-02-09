@@ -9,6 +9,7 @@ import { IoCloseSharp } from "react-icons/io5";
 import logo from '@assets/Napul_ETH_logo.webp'
 
 import { fallDown as Menu } from 'react-burger-menu'
+import menuIcon from '@assets/menu.svg'
 
 
 function Navbar() {
@@ -49,7 +50,9 @@ function Navbar() {
                         <h5 className=" text-black Medium text-2xl whitespace-nowrap">Join Us</h5>
                     </div>
                 </Link>
-                <CgMenuRight color="#000000" size={45} className="block lg:hidden w-fit h-fit relative z-50" onClick={() => { setMobileMenuOpen(true) }}></CgMenuRight>
+                <div className="block lg:hidden w-10 aspect-square bg-contain bg-center bg-no-repeat relative z-50" onClick={() => { setMobileMenuOpen(true) }} style={{
+                    backgroundImage: `url('${menuIcon.src}')`
+                }}></div>
                 <Menu isOpen={mobileMenuOpen} className="bg-white w-fit h-fit" id="burgerMenu">
                     <div className="w-full h-full flex flex-col items-center justify-center gap-10">
                         <div className="py-6 w-full px-4 flex flex-row items-center justify-end">
