@@ -25,7 +25,7 @@ function ComingSoon() {
                     <p className="text-2xl text-[#2E2E2E] text-center lg:text-justify leading-normal Medium w-full lg:w-4/5">
                         {t('comingpara2')}
                     </p>
-                    <input type="email" name="email" id="email" placeholder={t('email')} className=" bg-white rounded-none buttonShadow w-full lg:w-4/5 mt-12 mb-3 px-2 py-6 text-black text-3xl outline-none Medium" />
+                    <input type="email" name="email" id="email" placeholder={t('email')} className=" bg-white rounded-none border-4 border-[#eddb55] w-full lg:w-4/5 mt-12 mb-3 px-2 py-6 text-black text-3xl outline-none Medium" />
                     <div className="w-full lg:w-4/5 h-fit flex flex-row items-center justify-center gap-2 py-6 px-12 bg-[#CA75AB] border-4 border-[#eddb55]">
 
 
