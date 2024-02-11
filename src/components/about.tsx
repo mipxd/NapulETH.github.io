@@ -40,7 +40,7 @@ function About() {
             <p className=" hidden lg:block text-[#2E2E2E] Medium text-2xl lg:text-3xl text-center leading-normal mt-8 lg:mt-20 w-11/12 lg:w-7/12">
             {t('aboutpara1')}
             </p>
-            <p className=" block lg:hidde text-[#2E2E2E] Medium text-2xl lg:text-3xl text-center leading-normal mt-8 lg:mt-20 w-11/12 lg:w-7/12">
+            <p className=" block lg:hidden text-[#2E2E2E] Medium text-2xl lg:text-3xl text-center leading-normal mt-8 lg:mt-20 w-11/12 lg:w-7/12">
             {t('aboutpara1mobile')}
             </p>
 
