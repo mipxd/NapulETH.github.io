@@ -16,17 +16,19 @@ export default function HomePage() {
 				<title>NapulETH - First Web3 Event In Naples</title>
 				<meta
 					name="description"
-					content="offering a real incentive for those not yet familiar with web3 to participate in significant events, both accessible and high-profile."
+					content="Offering a real incentive for those not yet familiar with web3 to participate in significant events, both accessible and high-profile."
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
       <Navbar />
+      
       <Hero />
       <Verticals />
       <Where />
       <Sponsors />
       <Partners />
       <MediaPartners />
+      
       <Footer />
     </main>
   );

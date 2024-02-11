@@ -9,10 +9,10 @@ export default function Tickets() {
   return (
     <main className="flex min-h-screen flex-col items-start justify-start">
       <Head> 
-				<title>NapulETH - First Web3 Event In Naples</title>
+      <title>NapulETH - First Web3 Event In Naples</title>
 				<meta
 					name="description"
-					content="offering a real incentive for those not yet familiar with web3 to participate in significant events, both accessible and high-profile."
+					content="Offering a real incentive for those not yet familiar with web3 to participate in significant events, both accessible and high-profile."
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>

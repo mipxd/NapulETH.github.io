@@ -152,6 +152,7 @@ backdrop-filter: blur( 4px );
 
 .cloud {
   /* Set initial position */
+  
   transform: translateY(0);
   /* Apply animation with 10 seconds duration, infinite loop, and ease-in-out timing function */
   animation: moveUpDown1 20s infinite ease-in-out;
@@ -160,7 +161,7 @@ backdrop-filter: blur( 4px );
 .boat {
   /* Set initial position */
   transform: translateY(0);
-  scale: 0.75;
+  scale: 0.6;
   /* Apply animation with 10 seconds duration, infinite loop, and ease-in-out timing function */
   animation: moveUpDown2 15s infinite ease-in-out;
 }
@@ -168,12 +169,15 @@ backdrop-filter: blur( 4px );
 .castle {
   /* Set initial position */
   transform: translateY(0);
-  scale: 0.75;
+  scale: 0.6;
   /* Apply animation with 10 seconds duration, infinite loop, and ease-in-out timing function */
   animation: moveUpDown2 20s infinite ease-in-out;
 }
 
-
+.lightSpot{
+  box-shadow: 0px 0px 250px 250px #EDDB55;
+  opacity: 0.6;
+}
 
 .szh-menu {
   background: #CA75AB !important;

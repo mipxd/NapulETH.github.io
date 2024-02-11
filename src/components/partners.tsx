@@ -11,7 +11,7 @@ import square from '@assets/20square.svg'
 import wovlabs from '@assets/wovlabs.svg'
 
 import spaghett from '@assets/spaghetteth.png'
-import wehub from '@assets/wehub.svg'
+import wehub from '@assets/wehub svg.svg'
 import mego from '@assets/mego.svg'
 import mood from '@assets/mood.svg'
 import gate from '@assets/gate.svg'
@@ -20,6 +20,7 @@ import nexlabs from '@assets/nexlabs.webp'
 import hg from '@assets/hg.png'
 import evLabs from '@assets/ev labs.webp'
 import niftyz from '@/assets/Niftyz.webp'
+import nifty from '@assets/nifty.svg'
 import { useTranslation } from "react-i18next";
 
 function Partners() {
@@ -53,64 +54,70 @@ function Partners() {
             <div className="hidden lg:block w-full h-fit relative my-4">
                 <Marquee direction="right" className=" overflow-hidden" pauseOnHover>
                     
-                    <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
+                    <Link href={'https://www.spaghett-eth.com/'} target="_blank" className="p-0 w-full h-fit">
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
                             <Image className=" w-auto h-20 scale-150" alt="degate" src={spaghett}></Image>
                         </div>
                     </Link>
-                    <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
+                    <Link href={'https://wehub.it/'} target="_blank" className="p-0 w-full h-fit">
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
-                            <Image className=" w-auto h-20" alt="degate" src={wehub}></Image>
+                            <Image className=" w-auto scale-[2] h-20" alt="degate" src={wehub}></Image>
                         </div>
                     </Link>
-                    <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
+                    <Link href={'https://mego.tickets/#/'} target="_blank" className="p-0 w-full h-fit">
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
                             <Image className=" invert w-auto h-20" alt="degate" src={mego}></Image>
                         </div>
                     </Link>
-                    <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
+                    <Link href={'http://moodglobalservices.com/'} target="_blank" className="p-0 w-full h-fit">
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
                             <Image className=" w-auto h-20" alt="degate" src={mood}></Image>
                         </div>
                     </Link>
-                    <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
+                    <Link href={'https://thecryptogateway.it/'} target="_blank" className="p-0 w-full h-fit">
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
                             <Image className=" w-auto h-20" alt="degate" src={gate}></Image>
                         </div>
                     </Link>
-                    <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
+                    <Link href={'https://www.cryptocanal.org/'} target="_blank" className="p-0 w-full h-fit">
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
                             <Image className=" w-auto scale-125 h-20" alt="degate" src={canal}></Image>
                         </div>
                     </Link>
-                    <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
+                    <Link href={'https://www.nexlabs.io/'} target="_blank" className="p-0 w-full h-fit">
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
                             <Image className=" w-auto h-20" alt="degate" src={nexlabs}></Image>
                         </div>
                     </Link>
-                    <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
+                    <Link href={'https://hgvis.io/'} target="_blank" className="p-0 w-full h-fit">
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
                             <Image className=" w-auto h-20" alt="degate" src={hg}></Image>
                         </div>
                     </Link>
-                    <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
+                    <Link href={'https://www.3vlabs.io/'} target="_blank" className="p-0 w-full h-fit">
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
                             <Image className=" invert w-auto h-20" alt="degate" src={evLabs}></Image>
                         </div>
                     </Link>
-                    <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
+                    <Link href={'https://www.niftyz.io/'} target="_blank" className="p-0 w-full h-fit">
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
                             <Image className=" w-auto h-20" alt="degate" src={niftyz}></Image>
+                        </div>
+                    </Link>
+                    <Link href={'https://niftynaples.it/'} target="_blank" className="p-0 w-full h-fit">
+                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
+
+                            <Image className=" w-auto h-20 scale-[2] " alt="degate" src={nifty}></Image>
                         </div>
                     </Link>
 
@@ -140,7 +147,7 @@ function Partners() {
                             <Link href={'https://wehub.it/'} target="_blank" className="w-full h-fit">
                                 <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                    <Image className="w-auto h-20" alt="degate" src={wehub}></Image>
+                                    <Image className="w-auto h-20 scale-[2] " alt="degate" src={wehub}></Image>
                                 </div>
                             </Link>
 
@@ -247,6 +254,19 @@ function Partners() {
                                 <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
                                     <Image className="w-auto h-20" alt="degate" src={niftyz}></Image>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="w-10/12 flex flex-col items-center justify-center">
+                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                            <Link href={'https://niftynaples.it/'} target="_blank" className="w-full h-full">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+
+                                    <Image className="w-auto h-20 scale-[2] " alt="degate" src={nifty}></Image>
                                 </div>
                             </Link>
 

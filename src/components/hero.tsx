@@ -22,7 +22,7 @@ function Hero() {
     const { t, i18n } = useTranslation();
 
     return (
-        <section className="w-full h-fit relative flex flex-col items-center justify-start pt-32 lg:pt-40">
+        <section className="w-full relative z-10 h-fit flex flex-col items-center justify-start pt-32 lg:pt-40">
 
             <Image src={cloud1} alt="cloud" className=" cloud hidden lg:block absolute -left-24 top-[12%]"></Image>
             <Image src={cloud2} alt="cloud" className=" cloud hidden lg:block absolute -right-16 top-40"></Image>
@@ -82,9 +82,9 @@ function Hero() {
 
 
 
-            <Image src={logo} alt="big logo" className=" lg:-mt-[32%] lg:scale-50 scale-[0.8] relative z-[60] w-11/12"></Image>
+            <Image src={logo} alt="big logo" className=" lg:-mt-[38%] lg:scale-[.45] scale-[0.8] relative z-[60] w-11/12"></Image>
 
-            <h5 className=" text-black text-4xl SemiBold leading-normal text-center  lg:-mt-[30%] mb-6">
+            <h5 className=" text-black text-4xl SemiBold leading-normal text-center  lg:-mt-[35%] mb-6">
                 {t('bringing')}
             </h5>
             <p className=" text-[#2E2E2E] Medium text-2xl lg:text-3xl text-center leading-normal w-11/12 lg:w-5/12">

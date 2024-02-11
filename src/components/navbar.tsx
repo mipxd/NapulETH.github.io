@@ -60,11 +60,11 @@ function Navbar() {
     
 
     return (
-        <nav className="w-full h-fit fixed bg-[#6FCAF3] z-[99] lg:bg-none lg:relative top-0 flex flex-row items-center justify-between px-4 lg:pl-8 lg:pr-0 landscape:py-2 pt-6 pb-6 lg:pb-0 lg:pt-10 lg:landscape:pt-8">
+        <nav className="w-full h-fit fixed bg-[#6FCAF3] lg:bg-transparent z-[99] lg:bg-none lg:relative top-0 flex flex-row items-center justify-between px-4 lg:pl-8 lg:pr-0 landscape:py-2 pt-6 pb-6 lg:pb-0 lg:pt-10 lg:landscape:pt-8">
             <Link href={"/"} className=" relative z-50 p-0 w-fit h-fit">
                 <div className="w-fit h-fit flex flex-row items-center justify-start gap-2">
                     <Image src={logo} alt="logo" className=" w-[8%] landscape:w-[4%] lg:w-[4%] lg:-mt-1"></Image>
-                    <h5 className=" text-white SemiBold text-3xl">NapulETH</h5>
+                    <h5 className=" text-black SemiBold text-3xl">NapulETH</h5>
                 </div>
 
             </Link>
@@ -72,17 +72,17 @@ function Navbar() {
             <div className="w-fit h-fit flex flex-row items-center justify-end lg:gap-10">
                 <div className="w-fit h-fit hidden lg:flex flex-row items-center justify-end gap-10">
                     <Link href={'/'} className=" relative z-50 p-0 w-fit h-fit">
-                        <h5 className=" text-white text-xl whitespace-nowrap Medium">
+                        <h5 className=" text-black text-xl whitespace-nowrap Medium">
                             {t('home')}
                         </h5>
                     </Link>
                     <Link href={'/tickets'} className=" relative z-50 p-0 w-fit h-fit">
-                        <h5 className=" text-white text-xl whitespace-nowrap Medium">
+                        <h5 className=" text-black text-xl whitespace-nowrap Medium">
                             {t('tickets')}
                         </h5>
                     </Link>
                     <Link href={'/about'} className=" relative z-50 p-0 w-fit h-fit">
-                        <h5 className=" text-white text-xl whitespace-nowrap Medium">
+                        <h5 className=" text-black text-xl whitespace-nowrap Medium">
                             {t('about')}
                         </h5>
                     </Link>

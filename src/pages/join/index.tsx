@@ -11,12 +11,12 @@ export default function Join() {
   return (
     <main className="flex min-h-screen flex-col items-start justify-start">
       <Head>
-        <title>NapulETH - First Web3 Event In Naples</title>
-        <meta
-          name="description"
-          content="offering a real incentive for those not yet familiar with web3 to participate in significant events, both accessible and high-profile."
-        />
-        <link rel="icon" href="/favicon.ico" />
+      <title>NapulETH - First Web3 Event In Naples</title>
+				<meta
+					name="description"
+					content="Offering a real incentive for those not yet familiar with web3 to participate in significant events, both accessible and high-profile."
+				/>
+				<link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
       
