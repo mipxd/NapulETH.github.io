@@ -26,10 +26,10 @@ function Hero() {
 
             <Image src={cloud1} alt="cloud" className=" cloud hidden lg:block absolute -left-24 top-[12%]"></Image>
             <Image src={cloud2} alt="cloud" className=" cloud hidden lg:block absolute -right-16 top-40"></Image>
-            <Image src={boatOncloud} alt="cloud" className=" boat hidden lg:block absolute -left-[10%] top-[27%] scale-[.4] "></Image>
-            <Image src={castleOncloud} alt="cloud" className=" castle hidden lg:block absolute -right-[22%] top-[35%] scale-[.3] "></Image>
-            <Image src={templeOncloud} alt="cloud" className=" boat hidden lg:block absolute -left-[15%] top-[50%] scale-[.2] "></Image>
-            <Image src={stampOnCloud} alt="cloud" className=" castle hidden lg:block absolute -right-[10%] top-[55%] scale-[.4] "></Image>
+            <Image src={boatOncloud} alt="cloud" className=" boat hidden lg:block absolute -left-[8%] top-[27%] scale-[.4] "></Image>
+            <Image src={castleOncloud} alt="cloud" className=" castle hidden lg:block absolute -right-[15%] top-[35%] scale-[.3] "></Image>
+            <Image src={templeOncloud} alt="cloud" className=" boat hidden lg:block absolute -left-[10%] top-[50%] scale-[.2] "></Image>
+            <Image src={stampOnCloud} alt="cloud" className=" castle hidden lg:block absolute -right-[8%] top-[55%] scale-[.4] "></Image>
             <h5 className="hidden lg:block text-[#ca75ab] text-4xl lg:text-4xl SemiBold lg:leading-normal text-center relative z-50">
 
                 {t('hero1_1')}<br />{t('hero1_2')}
@@ -82,9 +82,9 @@ function Hero() {
 
 
 
-            <Image src={logo} alt="big logo" className=" lg:-mt-[38%] lg:scale-[.45] scale-[0.8] relative z-[60] w-11/12"></Image>
+            <Image src={logo} alt="big logo" className=" lg:-mt-[55%] lg:scale-[.25] scale-[0.6] -mt-[10%] relative z-[60] w-11/12"></Image>
 
-            <h5 className=" text-black text-4xl SemiBold leading-normal text-center  lg:-mt-[35%] mb-6">
+            <h5 className=" text-black text-4xl SemiBold leading-normal text-center -mt-[15%]  lg:-mt-[53%] mb-6">
                 {t('bringing')}
             </h5>
             <p className=" text-[#2E2E2E] Medium text-2xl lg:text-3xl text-center leading-normal w-11/12 lg:w-5/12">

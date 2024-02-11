@@ -10,6 +10,7 @@ const config = {
         locales: ["en"],
         defaultLocale: "en",
       },
+      distDir: "build",
 };
 
 export default config;
