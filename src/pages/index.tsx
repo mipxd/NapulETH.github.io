@@ -1,3 +1,4 @@
+// Designed and coded by Med Newton
 import Link from "next/link";
 import Head from "next/head";
 import Navbar from "@/components/navbar";
