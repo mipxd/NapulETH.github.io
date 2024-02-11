@@ -6,8 +6,10 @@ await import("./src/env.js");
 
 /** @type {import("next").NextConfig} */
 const config = {
-    
-      distDir: "build",
+    i18n: {
+        locales: ["en"],
+        defaultLocale: "en",
+      },
       
 };
 

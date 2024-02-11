@@ -8,8 +8,7 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start",
-    "deploy": "yarn build && npx thirdweb@latest upload build"
+    "start": "next start"
   },
   "dependencies": {
     "@fontsource/poppins": "^5.0.8",
