@@ -6,11 +6,11 @@ await import("./src/env.js");
 
 /** @type {import("next").NextConfig} */
 const config = {
-    i18n: {
-        locales: ["en"],
-        defaultLocale: "en",
+      basePath: "/NapulEth/",
+      output: "export",
+      images: {
+        unoptimized: true,
       },
-      
       
 };
 
