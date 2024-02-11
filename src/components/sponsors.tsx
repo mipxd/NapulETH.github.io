@@ -10,6 +10,7 @@ import commune from "@assets/commune.png"
 import degate from '@assets/degate.svg'
 import square from '@assets/sq20.svg'
 import wovlabs from '@assets/wovlabs.svg'
+import nifty from '@assets/nifty.svg'
 import { useTranslation } from "react-i18next";
 
 function Sponsors() {
@@ -68,6 +69,12 @@ function Sponsors() {
                             <Image className=" w-auto h-20" alt="degate" src={wovlabs}></Image>
                         </div>
                     </Link>
+                    <Link href={'https://niftynaples.it/'} target="_blank" className="p-0 w-full h-fit">
+                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
+
+                            <Image className=" scale-[2] w-auto h-20" alt="degate" src={nifty}></Image>
+                        </div>
+                    </Link>
 
 
 
@@ -122,6 +129,19 @@ function Sponsors() {
                                 <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
                                     <Image className=" w-auto h-20" alt="degate" src={wovlabs}></Image>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="w-10/12 flex flex-col items-center justify-center">
+                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                            <Link href={'https://niftynaples.it/'} target="_blank" className=" w-full h-fit">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+
+                                    <Image className=" scale-[2] w-auto h-20" alt="degate" src={nifty}></Image>
                                 </div>
                             </Link>
 
