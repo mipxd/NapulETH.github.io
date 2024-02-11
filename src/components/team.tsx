@@ -10,7 +10,7 @@ import t3 from '@assets/raffa.jpg'
 import t4 from '@assets/ionut.jpeg'
 import t5 from '@assets/gianluca.jpeg'
 import t6 from '@assets/lore.jpeg'
-import t7 from '@assets/Illustrator.jpg'
+import t7 from '@assets/masha.png'
 import { useState } from "react";
 import { useTranslation } from 'react-i18next';
 
@@ -130,7 +130,7 @@ function Team() {
                     }}></div>
                     <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
 
-                        <h5 className=" text-black SemiBold text-center text-3xl">The Illustrator</h5>
+                        <h5 className=" text-black SemiBold text-center text-3xl">Masha</h5>
                     </div>
                 </div>
                 <div className="w-1/3 flex flex-grow flex-col items-center justify-center">
@@ -223,7 +223,7 @@ function Team() {
                     }}></div>
                         <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
 
-                            <h5 className=" text-black SemiBold text-center text-3xl">The Illustrator</h5>
+                            <h5 className=" text-black SemiBold text-center text-3xl">Masha</h5>
                         </div>
                     </div>
                 </div>

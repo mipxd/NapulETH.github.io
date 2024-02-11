@@ -16,7 +16,7 @@ export default function HomePage() {
       <title>NapulETH - The Biggest Web3 Event In Southern Italy</title>
 				<meta
 					name="description"
-					content="Offering a real incentive for those not yet familiar with web3 to participate in significant events, both accessible and high-profile."
+					content="The Biggest Blockchain Event in Southern Italy, an international Web3 showcase, connects global innovators to explore Defi potential and the future of digital economy."
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
