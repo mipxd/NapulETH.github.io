@@ -76,7 +76,7 @@ function Navbar() {
                             {t('home')}
                         </h5>
                     </Link>
-                    <Link href={'/tickets'} className=" relative z-50 p-0 w-fit h-fit">
+                    <Link href={'https://napuleth.mego.tickets/'} className=" relative z-50 p-0 w-fit h-fit">
                         <h5 className=" text-black text-xl whitespace-nowrap Medium">
                             {t('tickets')}
                         </h5>
@@ -158,7 +158,7 @@ function Navbar() {
                                     Home
                                 </h5>
                             </Link>
-                            <Link href={'/tickets'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
+                            <Link href={'https://napuleth.mego.tickets/'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className="text-center text-black text-3xl Medium">
                                     Tickets
                                 </h5>

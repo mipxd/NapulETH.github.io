@@ -22,6 +22,7 @@ import evLabs from '@assets/ev labs.webp'
 import niftyz from '@/assets/Niftyz.webp'
 import nifty from '@assets/nifty.svg'
 import ethmilan from '@assets/ethmilan.svg'
+import bucharest from '@assets/BucharestBlack.svg'
 import { useTranslation } from "react-i18next";
 
 function Partners() {
@@ -54,7 +55,12 @@ function Partners() {
             </h5>
             <div className="hidden lg:block w-full h-fit relative my-4">
                 <Marquee direction="right" className=" overflow-hidden" pauseOnHover>
-                    
+                <Link href={'https://www.ethbucharest.xyz/'} target="_blank" className="p-0 w-full h-fit">
+                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
+
+                            <Image className=" w-auto h-20 scale-[2] " alt="degate" src={bucharest}></Image>
+                        </div>
+                    </Link>
                     <Link href={'https://www.spaghett-eth.com/'} target="_blank" className="p-0 w-full h-fit">
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
@@ -129,6 +135,20 @@ function Partners() {
             </div>
             <div className="w-full h-fit block lg:hidden">
             <Carousel className="w-full h-fit block lg:hidden" showDots={false} renderDotsOutside renderButtonGroupOutside swipeable  autoPlay arrows={false} infinite responsive={responsive}>
+            <div className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="w-10/12 flex flex-col items-center justify-center">
+                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                            <Link href={'https://www.ethbucharest.xyz/'} target="_blank" className="p-0 w-full h-fit">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
+                                <div className="w-28 scale-[2.5] h-20 bg-contain bg-center bg-no-repeat" style={{
+                                        backgroundImage: `url('${bucharest.src}')`
+                                    }}></div>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+                </div>
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <div className="w-full flex-grow flex flex-col items-center justify-center" >
