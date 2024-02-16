@@ -67,5 +67,13 @@
   "joinbtn2": "Partecipa Come Relatore",
   "joinbtn3": "Partecipa Come Relatore",
   "joinbtn4": "Iscriviti Come Partner",
-  "crypto": "In Crypto"
+  "crypto": "In Crypto",
+  "early": "Early Birds",
+  "normal": "Normal Tickets",
+  "late": "Late Stage",
+  "starts": "Inizia a:",
+  "ends": "Finisce dentro:",
+  "earlyPara": "Acquista subito i tuoi biglietti EEarly Bird e approfitta della riduzione del prezzo per i primi iscritti a NapulEth",
+  "normalPara": "Acquista i tuoi biglietti, prenota il tuo viaggio e preparati per il più grande evento Web3 del Sud Italia!",
+  "latePara": "Non è mai troppo tardi! Ottieni il tuo biglietto per l'ultima tappa e prenota il tuo posto al NapulEth Open Village 2024."
 }

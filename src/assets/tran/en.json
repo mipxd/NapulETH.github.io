@@ -67,5 +67,13 @@
   "joinbtn2": "Join As A Speaker",
   "joinbtn3": "Join As A Volunteer",
   "joinbtn4": "Join As A Partner",
-  "crypto": "In Crypto"
+  "crypto": "In Crypto",
+  "early": "Early Birds",
+  "normal": "Normal Tickets",
+  "late": "Late Stage",
+  "starts": "Starts In:",
+  "ends": "Ends In:",
+  "earlyPara": "Get your early birds tickets now and profit from the price reduction for first NapulEth joiners",
+  "normalPara": "Get your tickets, book your trip, and get ready for the biggest Web3 event in southern Italy!",
+  "latePara": "It's never too late! Get your late stage ticket and book your place at NapulEth Open Village 2024."
 }

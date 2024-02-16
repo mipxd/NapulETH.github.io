@@ -8,6 +8,7 @@ import Where from "@/components/where";
 import Sponsors from "@/components/sponsors";
 import Partners from "@/components/partners";
 import MediaPartners from "@/components/mediaPartners";
+import Pricing from "@/components/pricing";
 import Footer from "@/components/footer";
 
 export default function HomePage() {
@@ -29,7 +30,7 @@ export default function HomePage() {
       <Sponsors />
       <Partners />
       <MediaPartners />
-      
+      <Pricing />
       <Footer />
     </main>
   );
