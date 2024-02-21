@@ -6,27 +6,29 @@ import Link from 'next/link';
 import { useTranslation } from "react-i18next";
 import dynamic from 'next/dynamic'
 const DynamicRibbonSecond = dynamic(() => import("@components/dynamicRibbon2").then(module => module.default), { ssr: false });
-
+const DynamicGrayRibbonSecond = dynamic(() => import("@components/grayedribbon2").then(module => module.default), { ssr: false });
 
 function Pricing() {
 
     const { t, i18n } = useTranslation();
 
     return (
-        <section className="w-full flex flex-col lg:flex-row items-center justify-center gap-8 lg:px-20 mt-20 lg:mt-32">
-            <div className="w-11/12 lg:w-[30%] h-fit lg:h-[70vh] flex flex-col items-center justify-start">
+        <section className="w-full flex flex-col lg:flex-row items-center lg:items-stretch justify-center gap-8 lg:px-20 mt-20 lg:mt-32">
+            <div className="w-11/12 lg:w-1/4 flex-grow flex flex-col items-center justify-start">
                 <div className='w-7/12 h-fit py-4 bg-white border-4 border-[#eddb55]  relative z-40'>
-                    <h5 className='Bold text-Black text-2xl w-full text-center'>Early Birds</h5>
+                    <h5 className='Bold text-Black text-xl w-full text-center'>Pre-Booking</h5>
                 </div>
-                <div className='w-full h-fit lg:h-full bg-[#CA75AB] border-4 border-[#eddb55] relative z-10 -mt-9 flex flex-col items-center justify-start pt-16 pb-10 lg:py-16 px-4'>
-                    <h5 className='text-black Bold text-xl mb-2'>
-                        {t('ends')}
+                <div className='w-full h-fit lg:h-full bg-[#CA75AB] border-4 border-[#eddb55] relative z-10 -mt-9 flex flex-col items-center justify-start pt-16 pb-2 lg:pt-16 lg:pb-4 px-4'>
+                    <h5 className='text-black Bold text-xl mb-8'>
+                        {t('tickets')}
                     </h5>
-                    <FlipClockCountdown to={"2024-03-30T00:00:00"} separatorStyle={{ color: "white" }} digitBlockStyle={{ backgroundColor: "white", color: "black", fontFamily: "Poppins", fontWeight: "700" }} showLabels={false} className=' scale-[.6] '></FlipClockCountdown>
-                    <p className='mt-8 text-xl Medium text-black w-10/12 text-center'>
+                    <h5 className='text-black Bold text-4xl'>
+                        {t('soldout')}
+                    </h5>
+                    <p className='mt-8 text-lg Medium text-black w-10/12 text-center'>
                         {t('earlyPara')}
                     </p>
-                    <Link href={'https://napuleth.mego.tickets/'} className=" relative z-50 p-0 w-full flex flex-row items-center justify-center h-fit">
+                    <Link href={'https://napuleth.mego.tickets/'} className=" cursor-default relative z-50 p-0 w-full flex flex-row items-center justify-center h-fit">
                         <div className="min-w-[85vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-10/12 h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#FFFFFF] border-4 border-[#eddb55] mt-8">
 
 
@@ -35,55 +37,107 @@ function Pricing() {
                             </h5>
                         </div>
                     </Link>
-                </div>
-            </div>
-            <div className="w-11/12 lg:w-[35%] h-fit lg:h-[80vh] flex flex-col items-center justify-start">
-                <div className='w-7/12 h-fit py-4 bg-white border-4 border-[#eddb55]  relative z-40'>
-                    <h5 className='Bold text-Black text-2xl w-full text-center'>Normal Tickets</h5>
-                </div>
-                <div className='w-full h-fit lg:h-full bg-[#CA75AB] border-4 border-[#eddb55] relative z-10 -mt-9 flex flex-col items-center justify-start pt-16 pb-2 lg:py-16 px-4'>
-                    <h5 className='text-black Bold text-xl mb-4'>
-                        {t('starts')}
-                    </h5>
-                    <FlipClockCountdown to={"2024-04-01T00:00:00"} separatorStyle={{ color: "white" }} digitBlockStyle={{ backgroundColor: "white", color: "black", fontFamily: "Poppins", fontWeight: "700" }} showLabels={false} className=' scale-[.75] '></FlipClockCountdown>
-                    <p className='mt-8 text-xl Medium text-black w-10/12 text-center'>
-                        {t('normalPara')}
-                    </p>
-                    <Link href={'https://napuleth.mego.tickets/'} className=" relative z-50 p-0 w-full flex flex-row items-center justify-center h-fit">
-                        <div className="min-w-[85vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-10/12 h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#FFFFFF] border-4 border-[#eddb55] mt-8">
-
-
-                            <h5 className=" text-black Medium text-xl">
-                                {t('gettickets')}
-                            </h5>
-                        </div>
-                    </Link>
-                    <Link href={'/'} className=" relative z-50 p-0 w-full flex flex-row items-center justify-center h-fit mt-4 -ml-[20%] lg:-ml-0 " onClick={(e) => { e.preventDefault() }}>
+                    <Link href={'/'} className=" cursor-default relative z-50 p-0 w-full flex flex-row items-center justify-center h-fit mt-4 -ml-[20%] lg:-ml-0 " onClick={(e) => { e.preventDefault() }}>
                         <DynamicRibbonSecond></DynamicRibbonSecond>
 
                     </Link>
                 </div>
             </div>
-            <div className="w-11/12 lg:w-[30%] h-fit lg:h-[70vh] flex flex-col items-center justify-start">
-                <div className='w-7/12 h-fit py-4 bg-white border-4 border-[#eddb55]  relative z-40'>
-                    <h5 className='Bold text-Black text-2xl w-full text-center'>Late Stage</h5>
+            <div className="w-11/12 lg:w-1/4 flex-grow flex flex-col items-center justify-start">
+                <div className='w-7/12 h-fit py-4 bg-white border-4 border-gray-500  relative z-40'>
+                    <h5 className='Bold text-gray-700 text-xl w-full text-center'>Early Birds</h5>
                 </div>
-                <div className='w-full h-fit lg:h-full bg-[#CA75AB] border-4 border-[#eddb55] relative z-10 -mt-9 flex flex-col items-center justify-start pt-16 pb-10 lg:py-16 px-4'>
-                    <h5 className='text-black Bold text-xl mb-2'>
-                        {t('starts')}
+                <div className='w-full h-fit lg:h-full border-4 border-gray-500 relative z-10 -mt-9 flex flex-col items-center justify-start pt-16 pb-2 lg:pt-16 lg:pb-4 px-4' style={{
+                    background: "#c3cbdc",
+                    backgroundImage: "linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%)"
+                }}>
+                    <h5 className='text-black Bold text-xl mb-8'>
+                        {t('coming')}
                     </h5>
-                    <FlipClockCountdown to={"2024-07-01T00:00:00"} separatorStyle={{ color: "white" }} digitBlockStyle={{ backgroundColor: "white", color: "black", fontFamily: "Poppins", fontWeight: "700" }} showLabels={false} className=' scale-[.6] '></FlipClockCountdown>
-                    <p className='mt-8 text-xl Medium text-black w-10/12 text-center'>
-                        {t('latePara')}
+                    <h5 className='text-black Bold text-4xl'>01/04/2024</h5>
+                    <p className='mt-8 text-lg Medium text-black w-10/12 text-center'>
+                        {t('earlyPara')}
                     </p>
-                    <Link href={'https://napuleth.mego.tickets/'} className=" relative z-50 p-0 w-full flex flex-row items-center justify-center h-fit">
-                        <div className="min-w-[85vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-10/12 h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#FFFFFF] border-4 border-[#eddb55] mt-8">
+                    <Link href={'https://napuleth.mego.tickets/'} onClick={(e) => { e.preventDefault() }} className=" cursor-default relative z-50 p-0 w-full flex flex-row items-center justify-center h-fit">
+                        <div className="min-w-[85vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-10/12 h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#FFFFFF] border-4 border-gray-500 mt-8">
 
 
                             <h5 className=" text-black Medium text-xl">
                                 {t('gettickets')}
                             </h5>
                         </div>
+                    </Link>
+                    <Link href={'/'} className=" cursor-default grayscale-[0.9] relative z-50 p-0 w-full flex flex-row items-center justify-center h-fit mt-4 -ml-[20%] lg:-ml-0 " onClick={(e) => { e.preventDefault() }}>
+                        <DynamicRibbonSecond></DynamicRibbonSecond>
+
+                    </Link>
+                </div>
+            </div>
+            <div className="w-11/12 lg:w-1/4 flex-grow flex flex-col items-center justify-start">
+                <div className='w-7/12 h-fit py-4 bg-white border-4 border-gray-500  relative z-40'>
+                    <h5 className='Bold text-gray-700 text-xl w-full text-center'>
+                        {
+                            t('normal')
+                        }
+                    </h5>
+                </div>
+                <div className='w-full h-fit lg:h-full border-4 border-gray-500 relative z-10 -mt-9 flex flex-col items-center justify-start pt-16 pb-2 lg:pt-16 lg:pb-4 px-4' style={{
+                    background: "#c3cbdc",
+                    backgroundImage: "linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%)"
+                }}>
+                    <h5 className='text-black Bold text-xl mb-8'>
+                        {t('coming')}
+                    </h5>
+                    <h5 className='text-black Bold text-4xl'>01/06/2024</h5>
+                    <p className='mt-8 text-lg Medium text-black w-10/12 text-center'>
+                        {t('normalPara')}
+                    </p>
+                    <Link href={'https://napuleth.mego.tickets/'} onClick={(e) => { e.preventDefault() }} className=" cursor-default relative z-50 p-0 w-full flex flex-row items-center justify-center h-fit">
+                        <div className="min-w-[85vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-10/12 h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#FFFFFF] border-4 border-gray-500 mt-8">
+
+
+                            <h5 className=" text-black Medium text-xl">
+                                {t('gettickets')}
+                            </h5>
+                        </div>
+                    </Link>
+                    <Link href={'/'} className=" cursor-default grayscale-[0.9] relative z-50 p-0 w-full flex flex-row items-center justify-center h-fit mt-4 -ml-[20%] lg:-ml-0 " onClick={(e) => { e.preventDefault() }}>
+                        <DynamicRibbonSecond></DynamicRibbonSecond>
+
+                    </Link>
+                </div>
+            </div>
+            <div className="w-11/12 lg:w-1/4 flex-grow flex flex-col items-center justify-start">
+                <div className='w-7/12 h-fit py-4 bg-white border-4 border-gray-500  relative z-40'>
+                    <h5 className='Bold text-gray-700 text-xl w-full text-center'>
+                        {
+                            t('late')
+                        }
+                    </h5>
+                </div>
+                <div className='w-full h-fit lg:h-full border-4 border-gray-500 relative z-10 -mt-9 flex flex-col items-center justify-start pt-16 pb-2 lg:pt-16 lg:pb-4 px-4' style={{
+                    background: "#c3cbdc",
+                    backgroundImage: "linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%)"
+                }}>
+                    <h5 className='text-black Bold text-xl mb-8'>
+                        {t('coming')}
+                    </h5>
+                    <h5 className='text-black Bold text-4xl'>01/08/2024</h5>
+                    <p className='mt-8 text-lg Medium text-black w-10/12 text-center'>
+                        {t('latePara')}
+                    </p>
+                    <Link href={'https://napuleth.mego.tickets/'}  onClick={(e) => { e.preventDefault() }} className=" cursor-default relative z-50 p-0 w-full flex flex-row items-center justify-center h-fit">
+                        <div className="min-w-[85vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-10/12 h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#FFFFFF] border-4 border-gray-500 mt-8">
+
+
+                            <h5 className=" text-black Medium text-xl">
+                                {t('gettickets')}
+                            </h5>
+                        </div>
+                    </Link>
+                    <Link href={'/'} className="  cursor-default grayscale-[0.9] relative z-50 p-0 w-full flex flex-row items-center justify-center h-fit mt-4 -ml-[20%] lg:-ml-0 " onClick={(e) => { e.preventDefault() }}>
+                        <DynamicRibbonSecond></DynamicRibbonSecond>
+
                     </Link>
                 </div>
             </div>
