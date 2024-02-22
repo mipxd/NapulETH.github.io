@@ -23,11 +23,11 @@ function Pricing() {
                 </div>
                 <div className='w-full h-fit lg:h-full bg-red-800 border-4 border-black relative z-10 -mt-9 flex flex-col items-center justify-start pt-4 pb-2 lg:pt-2 lg:pb-4 px-4'>
                     <Image src={soldOut} alt="munaciello sold out" className='w-7/12 aspect-square mt-6 lg:mt-0 brightness-0'></Image>
-                    <p className=' text-lg Medium text-black w-10/12 text-center'>
+                    <p className='hidden lg:block text-lg Medium text-black w-10/12 text-center'>
                         {t('earlyPara')}
                     </p>
                     
-                    <Link href={'https://napuleth.mego.tickets/'} onClick={(e) => { e.preventDefault() }} className=" cursor-default relative z-50 p-0 w-full flex flex-row items-center justify-center h-fit">
+                    <Link href={'https://napuleth.mego.tickets/'} onClick={(e) => { e.preventDefault() }} className="hidden lg:flex cursor-default relative z-50 p-0 w-full flex-row items-center justify-center h-fit">
                         <div className="min-w-[85vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-10/12 h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#FFFFFF] border-4 border-[#eddb55] mt-8">
 
 
@@ -36,7 +36,7 @@ function Pricing() {
                             </h5>
                         </div>
                     </Link>
-                    <Link href={'/'} className=" cursor-default relative z-50 p-0 w-full flex flex-row items-center justify-center h-fit mt-4 -ml-[20%] lg:-ml-0 " onClick={(e) => { e.preventDefault() }}>
+                    <Link href={'/'} className=" hidden lg:flex cursor-default relative z-50 p-0 w-full flex-row items-center justify-center h-fit mt-4 -ml-[20%] lg:-ml-0 " onClick={(e) => { e.preventDefault() }}>
                         <DynamicRibbonSecond></DynamicRibbonSecond>
 
                     </Link>
