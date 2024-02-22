@@ -25,12 +25,13 @@ export default function HomePage() {
       <Navbar />
       
       <Hero />
+      <Pricing />
       <Verticals />
       <Where />
       <Sponsors />
       <Partners />
       <MediaPartners />
-      <Pricing />
+      
       <Footer />
     </main>
   );
