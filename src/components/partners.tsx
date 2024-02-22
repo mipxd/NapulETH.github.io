@@ -13,7 +13,7 @@ import wovlabs from '@assets/wovlabs.svg'
 import spaghett from '@assets/spaghetteth.png'
 import wehub from '@assets/wehub svg.svg'
 import mego from '@assets/mego.svg'
-import mood from '@assets/mood.svg'
+import mood from '@assets/mood.svg' 
 import gate from '@assets/gate.svg'
 import canal from '@assets/LOGO CRYTOCANAL- horizontal (new - black).svg'
 import nexlabs from '@assets/nexlabs.webp'
@@ -79,12 +79,7 @@ function Partners() {
                             <Image className=" invert w-auto h-20" alt="degate" src={mego}></Image>
                         </div>
                     </Link>
-                    <Link href={'http://moodglobalservices.com/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" w-auto h-20" alt="degate" src={mood}></Image>
-                        </div>
-                    </Link>
+                    
                     <Link href={'https://thecryptogateway.it/'} target="_blank" className="p-0 w-full h-fit">
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
@@ -189,19 +184,7 @@ function Partners() {
                         </div>
                     </div>
                 </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'http://moodglobalservices.com/'} target="_blank" className="w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-
-                                    <Image className=" w-auto h-20" alt="degate" src={mood}></Image>
-                                </div>
-                            </Link>
-
-                        </div>
-                    </div>
-                </div>
+                
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <div className="w-full flex-grow flex flex-col items-center justify-center" >
