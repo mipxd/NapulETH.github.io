@@ -17,7 +17,7 @@ function Phases() {
     const { t, i18n } = useTranslation();
     return (
         <section className="w-full flex flex-col items-center justify-start pt-24 lg:pt-40">
-            <h5 className=" text-black text-4xl mb-6 SemiBold leading-normal text-center">
+            <h5 className=" text-black w-8/12 lg:w-fit text-4xl mb-6 SemiBold leading-normal text-center">
                 {t('phasesTitle')}
             </h5>
             <VerticalTimeline lineColor="#eddb55">
