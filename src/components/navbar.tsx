@@ -41,6 +41,8 @@ function Navbar() {
         i18n.changeLanguage(language);
     };
 
+    //https://napuleth.mego.tickets/
+
     useEffect(() => {
         if (
             localStorage.getItem("lang") == "en" ||
@@ -76,7 +78,7 @@ function Navbar() {
                             {t('home')}
                         </h5>
                     </Link>
-                    <Link href={'https://napuleth.mego.tickets/'} className=" relative z-50 p-0 w-fit h-fit">
+                    <Link href={'/tickets'} className=" relative z-50 p-0 w-fit h-fit">
                         <h5 className=" text-black text-xl whitespace-nowrap Medium">
                             {t('tickets')}
                         </h5>

@@ -23,34 +23,21 @@ function Pricing() {
         <section className="w-full flex flex-col lg:flex-row items-center lg:items-stretch justify-center gap-8 lg:px-20 mt-20 lg:mt-32">
             <div className="w-11/12 lg:w-1/2 flex-grow flex flex-col items-center justify-start">
                 <div className='w-7/12 h-fit py-4 bg-white border-4 border-[#eddb55]  relative z-40'>
-                    <h5 className='Bold text-Black text-xl w-full text-center'>Pre-Booking</h5>
+                    <h5 className='Bold text-Black text-xl w-full text-center'>Innovators</h5>
                 </div>
-                <div className='w-full h-fit lg:h-full bg-[#E38B84] border-4 border-black relative z-10 -mt-9 flex flex-col items-center justify-start pt-4 pb-2 lg:pt-2 lg:pb-4 px-4'>
-                    <Image src={soldOut} alt="munaciello sold out" className='w-7/12 aspect-square mt-6 lg:mt-0 brightness-0'></Image>
-                    <p className='hidden lg:block text-lg Medium text-black w-10/12 text-center'>
-                        {t('earlyPara')}
-                    </p>
+                <div className='w-full h-fit lg:h-full bg-[#E38B84] border-4 border-[#eddb55] relative z-10 -mt-9 flex flex-col items-center justify-center pt-4 pb-2 lg:pt-2 lg:pb-4 px-4'>
+                    <Image src={soldOut} alt="munaciello sold out" className='w-7/12 lg:w-11/12 aspect-square mt-6 lg:mt-0 brightness-0'></Image>
                     
-                    <Link href={'https://napuleth.mego.tickets/'} onClick={(e) => { e.preventDefault() }} className="hidden lg:flex cursor-default relative z-50 p-0 w-full flex-row items-center justify-center h-fit">
-                        <div className="min-w-[85vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-10/12 h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#FFFFFF] border-4 border-[#eddb55] mt-8">
-
-
-                            <h5 className=" text-black Medium text-xl">
-                                {t('gettickets')}
-                            </h5>
-                        </div>
-                    </Link>
-                    <Link href={'/'} className=" hidden lg:flex cursor-default relative z-50 p-0 w-full flex-row items-center justify-center h-fit mt-4 -ml-[20%] lg:-ml-0 " onClick={(e) => { e.preventDefault() }}>
-                        <DynamicRibbonSecond></DynamicRibbonSecond>
-
-                    </Link>
+                    
+                    
+                    
                 </div>
             </div>
             <div className="w-11/12 lg:w-1/2 flex-grow flex flex-col items-center justify-start">
-                <div className='w-7/12 h-fit py-4 bg-white border-4 border-gray-500  relative z-40'>
+                <div className='w-7/12 h-fit py-4 bg-white border-4 border-[#eddb55]  relative z-40'>
                     <h5 className='Bold text-gray-700 text-xl w-full text-center'>Early Adopters</h5>
                 </div>
-                <div className='w-full h-fit lg:h-full border-4 border-gray-500 relative z-10 -mt-9 flex flex-col items-center justify-start pt-16 pb-2 lg:pt-16 lg:pb-4 px-4' style={{
+                <div className='w-full h-fit lg:h-full border-4 border-[#eddb55] relative z-10 -mt-9 flex flex-col items-center justify-start pt-16 pb-2 lg:pt-16 lg:pb-4 px-4' style={{
                     background: "#c3cbdc",
                     backgroundImage: "linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%)"
                 }}>
@@ -64,10 +51,10 @@ function Pricing() {
                         {t('earlyPara')}
                     </p>
                     <p className='hidden lg:block text-lg Medium text-black w-10/12 mt-4 text-center'>
-                        With the opening of the early adopters phase, tickets will be avalable for bying with reduced prices for early buyers. After this phase the prices will higher.
+                        {t('earlyPara2')}
                     </p>
                     <p className=' hidden lg:block text-lg Medium text-black w-10/12 mt-4 text-center'>
-                        Get back soon or follow our social media pages to get news about the availability of the tickets.
+                        {t('getBack')}
                     </p>
                     <Link href={'https://napuleth.mego.tickets/'} onClick={(e) => { e.preventDefault() }} className=" cursor-default relative z-50 p-0 w-full flex flex-row items-center justify-center h-fit">
                         <div className="min-w-[85vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-10/12 h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#FFFFFF] border-4 border-gray-500 mt-8">

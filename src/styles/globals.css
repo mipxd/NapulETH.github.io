@@ -31,6 +31,15 @@ body {
   font-weight: 700;
 }
 
+.vertical-timeline-element-content.bounce-in{
+  border: solid 4px #EDDB55 !important;
+  box-shadow: none !important;
+}
+
+#__next > main > section:nth-child(3) > div > div.vertical-timeline-element.vertical-timeline-element--no-children > div{
+  border: none !important;
+}
+
 .react-multi-carousel-dot-list
 {
   position: relative !important;

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Head from "next/head";
 import Navbar from "@/components/navbar";
 import ComingSoon from "@/components/comingsoon";
+import Phases from "@/components/phases";
 import TicketingPartner from "@/components/ticketingPartner";
 import Footer from "@/components/footer";
 
@@ -18,6 +19,7 @@ export default function Tickets() {
 			</Head>
       <Navbar />
       <ComingSoon />
+      <Phases />
       <TicketingPartner />
       <Footer />
     </main>

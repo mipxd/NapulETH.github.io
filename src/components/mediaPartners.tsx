@@ -39,7 +39,6 @@ import onchain from '@assets/OnChain-podcast.webp'
 import hrc from '@assets/HRC.webp'
 import spazio from "@assets/svgSpazio.svg"
 import mc from '@assets/MC.svg'
-import yh from '@assets/mark+word-colorful.svg'
 import podcast1 from '@assets/2140 logo svg.svg'
 import { useTranslation } from "react-i18next";
 
@@ -181,12 +180,7 @@ function MediaPartners() {
                             <Image className=" w-auto h-20 scale-150" alt="degate" src={mc}></Image>
                         </div>
                     </Link>
-                    <Link href={'https://www.youhodler.com/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" w-auto h-20 scale-150" alt="degate" src={yh}></Image>
-                        </div>
-                    </Link>
+                    
                     <Link href={'https://www.youtube.com/channel/UCTOXWK8sTK537Ukv8XIR23w'} target="_blank" className="p-0 w-full h-fit">
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
@@ -446,20 +440,7 @@ function MediaPartners() {
                         </div>
                     </div>
                 </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://www.youhodler.com/'} target="_blank" className="w-full h-full">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-                                <div className="w-28 h-20 scale-[2] bg-contain bg-center bg-no-repeat" style={{
-                                        backgroundImage: `url('${yh.src}')`
-                                    }}></div>
-                                </div>
-                            </Link>
-
-                        </div>
-                    </div>
-                </div>
+                
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <div className="w-full flex-grow flex flex-col items-center justify-center" >

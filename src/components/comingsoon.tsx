@@ -13,8 +13,9 @@ function ComingSoon() {
                     <p className="text-3xl text-center lg:text-left text-black SemiBold mb-4 mt-16 lg:mt-0">
                         {t('tickets')}
                     </p>
-                    <h5 className="text-4xl lg:text-8xl text-black Bold mb-8 w-full text-center lg:text-left lg:w-4/5">
-                        {t('coming')}
+                    <h5 className="text-4xl lg:text-6xl text-black Bold mb-8 w-full text-center lg:text-left lg:w-4/5">
+                        {t('onboard')}
+
                     </h5>
                     <div className="flex lg:hidden w-full flex-row items-center justify-center mb-10">
                     <Image alt="boat napulEth " src={ticketsBoat}></Image>
