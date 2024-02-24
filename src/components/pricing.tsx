@@ -35,11 +35,11 @@ function Pricing() {
             </div>
             <div className="w-11/12 lg:w-1/2 flex-grow flex flex-col items-center justify-start">
                 <div className='w-7/12 h-fit py-4 bg-white border-4 border-[#eddb55]  relative z-40'>
-                    <h5 className='Bold text-gray-700 text-xl w-full text-center'>Early Adopters</h5>
+                    <h5 className='Bold text-black text-xl w-full text-center'>Early Adopters</h5>
                 </div>
                 <div className='w-full h-fit lg:h-full border-4 border-[#eddb55] relative z-10 -mt-9 flex flex-col items-center justify-start pt-16 pb-2 lg:pt-16 lg:pb-4 px-4' style={{
                     background: "#c3cbdc",
-                    backgroundImage: "linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%)"
+                    backgroundImage: "linear-gradient(147deg, #91CE35 0%, #91CE35 74%)"
                 }}>
                     <h5 className='text-black Bold text-xl mb-8'>
                         {t('tickets')}

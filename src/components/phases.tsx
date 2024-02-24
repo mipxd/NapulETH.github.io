@@ -23,11 +23,11 @@ function Phases() {
             <VerticalTimeline lineColor="#eddb55">
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#FF4646', color: '#fff', borderRadius: "0px" }}
+                    contentStyle={{ background: '#E38B84', color: '#fff', borderRadius: "0px" }}
                     contentArrowStyle={{ borderRight: '12px solid #eddb55' }}
                     date={"10 - 16 " + t('feb')}
                     dateClassName=" text-[#FF4646] "
-                    iconStyle={{ background: '#FF4646', color: '#fff', boxShadow: "0 0 0 4px #eddb55, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)" }}
+                    iconStyle={{ background: '#E38B84', color: '#fff', boxShadow: "0 0 0 4px #eddb55, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)" }}
                     icon={<IoCheckmarkDoneSharp color="#FFFFFF" size={30} />}
                 >
                     <h3 className=" text-white text-xl whitespace-nowrap Bold">Innovators {"("+t('soldout')+")"}</h3>
@@ -48,7 +48,7 @@ function Phases() {
                     iconStyle={{ background: '#91CE35', color: '#fff', boxShadow: "0 0 0 4px #eddb55, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)" }}
                     icon={<PiCircleDashed  color="#FFFFFF" size={30} />}
                 >
-                    <h3 className=" text-white text-xl whitespace-nowrap Bold">Early Birds {"("+t('coming')+")"}</h3>
+                    <h3 className=" text-white text-xl whitespace-nowrap Bold">Early Adopters {"("+t('coming')+")"}</h3>
                     <h4 className="text-white text-sm whitespace-nowrap Medium">
                         {t('pahse2')}
                     </h4>
