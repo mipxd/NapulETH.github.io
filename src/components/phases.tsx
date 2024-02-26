@@ -63,7 +63,7 @@ function Phases() {
 
 
                             <h5 className=" text-black Medium text-xl">
-                                {t('gettickets')}
+                                {t('gettickets')} (8€)
                             </h5>
                         </div>
                     </Link>
