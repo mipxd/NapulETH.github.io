@@ -20,14 +20,16 @@ function TicketingPartner() {
                 <p className="w-full h-fit text-[#2E2E2E] text-2xl Medium text-center lg:text-justify leading-normal">
                     {t('tipartnerpara2')}
                 </p>
-                <Link href={"https://mego.tickets/#/"} target="_blank" className="w-fit h-fit"></Link>
-                <div className="w-full lg:w-4/12 h-fit flex flex-row items-center justify-center gap-2 mt-6 py-6 px-20 bg-[#CA75AB] border-4 border-[#eddb55]">
+                <Link href={"https://mego.tickets/#/"} target="_blank" className="w-full h-fit">
+                    <div className="w-full lg:w-4/12 h-fit flex flex-row items-center justify-center gap-2 mt-6 py-6 px-20 bg-[#CA75AB] border-4 border-[#eddb55]">
 
 
-                    <h5 className=" text-black Medium whitespace-nowrap text-2xl">
-                        {t('check')}
-                    </h5>
-                </div>
+                        <h5 className=" text-black Medium whitespace-nowrap text-2xl">
+                            {t('check')}
+                        </h5>
+                    </div>
+                </Link>
+
             </div>
 
         </section>

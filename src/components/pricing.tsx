@@ -45,7 +45,7 @@ function Pricing() {
                         {t('tickets')}
                     </h5>
                     <h5 className='text-black Bold text-4xl'>
-                        {t('coming')}
+                        26/02 - 03/03
                     </h5>
                     <p className='mt-8 text-lg Medium text-black w-10/12 text-center'>
                         {t('earlyPara')}
@@ -56,8 +56,8 @@ function Pricing() {
                     <p className=' hidden lg:block text-lg Medium text-black w-10/12 mt-4 text-center'>
                         {t('getBack')}
                     </p>
-                    <Link href={'https://napuleth.mego.tickets/'} onClick={(e) => { e.preventDefault() }} className=" cursor-default relative z-50 p-0 w-full flex flex-row items-center justify-center h-fit">
-                        <div className="min-w-[85vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-10/12 h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#FFFFFF] border-4 border-gray-500 mt-8">
+                    <Link href={'https://napuleth.mego.tickets/'} target='_blank' className=" relative z-50 p-0 w-full flex flex-row items-center justify-center h-fit">
+                        <div className="min-w-[85vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-10/12 h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#FFFFFF] border-4 border-[#eddb55] mt-8">
 
 
                             <h5 className=" text-black Medium text-xl">

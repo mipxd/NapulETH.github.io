@@ -40,6 +40,7 @@ import hrc from '@assets/HRC.webp'
 import spazio from "@assets/svgSpazio.svg"
 import mc from '@assets/MC.svg'
 import podcast1 from '@assets/2140 logo svg.svg'
+import ch from '@assets/Logo CryptoPub (1).png'
 import { useTranslation } from "react-i18next";
 
 function MediaPartners() {
@@ -187,7 +188,12 @@ function MediaPartners() {
                             <Image className=" w-auto h-20 scale-150" alt="degate" src={podcast1}></Image>
                         </div>
                     </Link>
+                    <Link href={'https://bitcashback.net/'} target="_blank" className="p-0 w-full h-fit">
+                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
+                            <Image className=" w-auto h-20 scale-125" alt="degate" src={ch}></Image>
+                        </div>
+                    </Link>
 
                 </Marquee>
             </div>
@@ -448,6 +454,20 @@ function MediaPartners() {
                                 <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
                                 <div className="w-28 h-20 scale-[1.5] bg-contain bg-center bg-no-repeat" style={{
                                         backgroundImage: `url('${podcast1.src}')`
+                                    }}></div>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="w-10/12 flex flex-col items-center justify-center">
+                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                            <Link href={'https://bitcashback.net/'} target="_blank" className="w-full h-full">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                <div className="w-28 h-20 scale-[1.5] bg-contain bg-center bg-no-repeat" style={{
+                                        backgroundImage: `url('${ch.src}')`
                                     }}></div>
                                 </div>
                             </Link>

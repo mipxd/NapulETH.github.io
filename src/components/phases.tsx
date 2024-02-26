@@ -42,7 +42,7 @@ function Phases() {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#91CE35', color: '#fff', borderRadius: "0px" }}
-                    date={t('opening')} 
+                    date={"26/02 - 03/03"} 
                     dateClassName=" text-white"
                     contentArrowStyle={{ borderRight: '12px solid #eddb55' }}
                     iconStyle={{ background: '#91CE35', color: '#fff', boxShadow: "0 0 0 4px #eddb55, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)" }}
@@ -58,6 +58,15 @@ function Phases() {
                     <p className='text-lg Medium text-white w-10/12'>
                     {t('earlyPara2')}
                     </p>
+                    <Link href={'https://napuleth.mego.tickets/'} target='_blank' className=" relative z-50 p-0 w-full flex flex-row items-center justify-center h-fit">
+                        <div className="min-w-[70vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-10/12 h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#FFFFFF] border-4 border-[#eddb55] mt-8">
+
+
+                            <h5 className=" text-black Medium text-xl">
+                                {t('gettickets')}
+                            </h5>
+                        </div>
+                    </Link>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     iconStyle={{ background: '#D9DEE8', color: '#fff', boxShadow: "0 0 0 4px #eddb55, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)" }}
