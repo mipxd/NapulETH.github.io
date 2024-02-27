@@ -31,7 +31,7 @@ function Phases() {
                     icon={<IoCheckmarkDoneSharp color="#FFFFFF" size={30} />}
                 >
                     <h3 className=" text-white text-xl whitespace-nowrap Bold">Innovators {"("+t('soldout')+")"}</h3>
-                    <h4 className="text-white text-sm whitespace-nowrap Medium">{t('pahse2')}</h4>
+                    <h4 className="text-white text-sm whitespace-nowrap Medium">{t('pahse1')}</h4>
                     <p className='text-lg Medium text-white w-10/12'>
                         {t('innoPara')}.
                     </p>
