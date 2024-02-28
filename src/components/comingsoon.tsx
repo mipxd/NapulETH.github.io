@@ -3,6 +3,7 @@
 import Image from "next/image"
 import ticketsBoat from '@assets/ticketsBoat.svg'
 import { useTranslation } from "react-i18next";
+import Link from "next/link";
 
 function ComingSoon() {
     const { t, i18n } = useTranslation();
@@ -18,7 +19,7 @@ function ComingSoon() {
 
                     </h5>
                     <div className="flex lg:hidden w-full flex-row items-center justify-center mb-10">
-                    <Image alt="boat napulEth " src={ticketsBoat}></Image>
+                        <Image alt="boat napulEth " src={ticketsBoat}></Image>
                     </div>
                     <p className="text-2xl Medium text-center lg:text-justify text-[#2E2E2E] leading-normal mb-2 w-full lg:w-4/5">
                         {t('comingpara1')}
@@ -27,13 +28,16 @@ function ComingSoon() {
                         {t('comingpara2')}
                     </p>
                     <input type="email" name="email" id="email" placeholder={t('email')} className=" bg-white rounded-none border-4 border-[#eddb55] w-full lg:w-4/5 mt-12 mb-3 px-2 py-6 text-black text-3xl outline-none Medium" />
-                    <div className="w-full lg:w-4/5 h-fit flex flex-row items-center justify-center gap-2 py-6 px-12 bg-[#CA75AB] border-4 border-[#eddb55]">
+                    <Link href={"mailto:napuleth@gmail.com"} target="_blank" className="w-full h-fit flex flex-row items-center justify-start">
+                        <div className="w-full lg:w-4/5 h-fit flex flex-row items-center justify-center gap-2 py-6 px-12 bg-[#CA75AB] border-4 border-[#eddb55]">
 
 
-                        <h5 className=" text-black Medium whitespace-nowrap text-2xl">
-                            {t('send')}
-                        </h5>
-                    </div>
+                            <h5 className=" text-black Medium whitespace-nowrap text-2xl">
+                                {t('send')}
+                            </h5>
+                        </div>
+                    </Link>
+
                 </div>
                 <div className="w-1/2 h-fit hidden lg:flex flex-row items-center justify-center">
                     <Image alt="boat napulEth scale-50 " src={ticketsBoat}></Image>

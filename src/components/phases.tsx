@@ -43,7 +43,7 @@ function Phases() {
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#E38B84', color: '#fff', borderRadius: "0px" }}
                     date={"26/02 - 03/03"} 
-                    dateClassName=" text-white"
+                    dateClassName=" text-[#FF4646] "
                     contentArrowStyle={{ borderRight: '12px solid #eddb55' }}
                     iconStyle={{ background: '#E38B84', color: '#fff', boxShadow: "0 0 0 4px #eddb55, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)" }}
                     icon={<IoCheckmarkDoneSharp color="#FFFFFF" size={30} />}
