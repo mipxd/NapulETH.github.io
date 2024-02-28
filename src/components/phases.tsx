@@ -46,7 +46,7 @@ function Phases() {
                     dateClassName=" text-white"
                     contentArrowStyle={{ borderRight: '12px solid #eddb55' }}
                     iconStyle={{ background: '#E38B84', color: '#fff', boxShadow: "0 0 0 4px #eddb55, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)" }}
-                    icon={<PiCircleDashed  color="#FFFFFF" size={30} />}
+                    icon={<IoCheckmarkDoneSharp color="#FFFFFF" size={30} />}
                 >
                     <h3 className=" text-white text-xl whitespace-nowrap Bold">Early Adopters {"("+t('soldout')+")"}</h3>
                     <h4 className="text-white text-sm whitespace-nowrap Medium">
@@ -59,6 +59,35 @@ function Phases() {
                     {t('earlyPara2')}
                     </p>
                     
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ background: '#91CE35', color: '#fff', borderRadius: "0px" }}
+                    date={"01/03 - 07/03"} 
+                    dateClassName=" text-white"
+                    contentArrowStyle={{ borderRight: '12px solid #eddb55' }}
+                    iconStyle={{ background: '#91CE35', color: '#fff', boxShadow: "0 0 0 4px #eddb55, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)" }}
+                    icon={<PiCircleDashed  color="#FFFFFF" size={30} />}
+                >
+                    <h3 className=" text-white text-xl whitespace-nowrap Bold">Early Enthusiasts</h3>
+                    <h4 className="text-white text-sm whitespace-nowrap Medium">
+                        {t('pahse3')}
+                    </h4>
+                    <p className='text-lg Medium text-white w-10/12'>
+                        {t('enthPara1')}.
+                    </p>
+                    <p className='text-lg Medium text-white w-10/12'>
+                    {t('enthPara2')}
+                    </p>
+                    <Link href={'https://napuleth.mego.tickets/'} target="_blank" className=" relative z-50 p-0 w-full flex flex-row items-center justify-center h-fit">
+                            <div className="w-11/12 mt-4 mb-4 lg:mb-0 h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#FFFFFF] border-4 border-[#eddb55]">
+
+
+                                <h5 className=" text-black Medium text-xl">
+                                    {t('gettickets')}
+                                </h5>
+                            </div>
+                        </Link>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     iconStyle={{ background: '#D9DEE8', color: '#fff', boxShadow: "0 0 0 4px #eddb55, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)" }}
