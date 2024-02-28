@@ -83,7 +83,7 @@ function Phases() {
                             <div className="w-11/12 mt-4 mb-4 lg:mb-0 h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#FFFFFF] border-4 border-[#eddb55]">
 
 
-                                <h5 className=" text-black Medium text-xl">
+                                <h5 className=" text-black Medium text-xl whitespace-nowrap">
                                     {t('gettickets')}
                                 </h5>
                             </div>
