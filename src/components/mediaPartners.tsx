@@ -35,7 +35,7 @@ import xb from '@assets/0xB.webp'
 import cem from "@assets/cem.webp"
 import be from "@assets/BE.webp"
 import defi from "@assets/DeFi-Italia.webp"
-import onchain from '@assets/OnChain-podcast.webp'
+import onchain from '@assets/newOnchain.svg'
 import hrc from '@assets/HRC.webp'
 import spazio from "@assets/svgSpazio.svg"
 import mc from '@assets/MC.svg'
@@ -160,7 +160,7 @@ function MediaPartners() {
                     <Link href={'https://www.instagram.com/onchain_podcast?igshid=OGQ5ZDc2ODk2ZA=='} target="_blank" className="p-0 w-full h-fit">
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
-                            <Image className=" w-auto h-20" alt="degate" src={onchain}></Image>
+                            <Image className=" w-auto h-20 invert scale-[0.6] "  alt="degate" src={onchain}></Image>
                         </div>
                     </Link>
                     <Link href={'https://www.youtube.com/@HardRockCrypto'} target="_blank" className="p-0 w-full h-fit">
@@ -395,7 +395,7 @@ function MediaPartners() {
                         <div className="w-full flex-grow flex flex-col items-center justify-center" >
                             <Link href={'https://www.instagram.com/onchain_podcast?igshid=OGQ5ZDc2ODk2ZA=='} target="_blank" className="w-full h-full">
                                 <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-                                <div className="w-28 h-20 scale-125 bg-contain bg-center bg-no-repeat" style={{
+                                <div className="w-28 h-20 bg-contain bg-center bg-no-repeat invert" style={{
                                         backgroundImage: `url('${onchain.src}')`
                                     }}></div>
                                 </div>
