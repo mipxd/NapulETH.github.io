@@ -1,6 +1,7 @@
 import { RibbonContainer, Ribbon } from "react-ribbons";
 import dynamic from 'next/dynamic'
 import { useTranslation } from "react-i18next";
+import Link from "next/link";
 
 function DynamicRibbonSecond() {
 
@@ -22,13 +23,15 @@ function DynamicRibbonSecond() {
                     {t('soon')}
                 </span>
             </Ribbon>
-            <div className="min-w-[85vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-full h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#FFFFFF] border-4 border-[#eddb55] ">
+            <Link href="https://travelswap.xyz/?ref=NAPULETH" className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="min-w-[85vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-[19vw] h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#CA75AB] border-4 border-[#eddb55] ">
 
 
-                <h5 className=" text-black Medium text-xl whitespace-nowrap">
-                    {t('book')}
-                </h5>
-            </div>
+                        <h5 className=" text-black Medium text-xl whitespace-nowrap">
+                            {t('book')}
+                        </h5>
+                    </div>
+                </Link>
             <Ribbon
                 side="right"
                 type="corner"
