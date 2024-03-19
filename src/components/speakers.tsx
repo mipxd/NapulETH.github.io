@@ -19,7 +19,7 @@ import money from "@assets/money.svg"
 import vault from "@assets/CriptovalutaIt marchio registrato.jpg"
 
 import s1 from "@assets/Isola.jpg"
-import s2 from "@assets/PieraDiStefano.jpg"
+import s2 from "@assets/PieraDiStefano.png"
 import s3 from "@assets/VaninaIvanova.png"
 import s4 from "@assets/CosimoPalma.jpg"
 import s5 from "@assets/VincenzoRana.png"
