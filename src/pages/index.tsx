@@ -9,6 +9,7 @@ import Sponsors from "@/components/sponsors";
 import Partners from "@/components/partners";
 import MediaPartners from "@/components/mediaPartners";
 import Pricing from "@/components/pricing";
+import Speakers from "@/components/speakers";
 import Footer from "@/components/footer";
 
 export default function HomePage() {
@@ -28,10 +29,10 @@ export default function HomePage() {
       <Pricing />
       <Verticals />
       <Where />
+      <Speakers />
       <Sponsors />
       <Partners />
       <MediaPartners />
-      
       <Footer />
     </main>
   );
