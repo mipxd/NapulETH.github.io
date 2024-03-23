@@ -17,6 +17,11 @@ import castleOncloud from '@assets/castleonCloud.svg'
 import templeOncloud from '@assets/templeOnCloud.svg'
 import stampOnCloud from '@assets/stampOnCloud.svg'
 
+import pescatroie from '@assets/pescatroie 2.svg'
+import cloudBase from '@assets/cloud base2.svg'
+import totano from '@assets/totano funk 2.svg'
+import nonnetto from '@assets/nonnetto 3.svg'
+
 function Hero() {
 
     const { t, i18n } = useTranslation();
@@ -24,12 +29,14 @@ function Hero() {
     return (
         <section className="w-full relative z-10 h-fit flex flex-col items-center justify-start pt-32 lg:pt-40">
 
-            <Image src={cloud1} alt="cloud" className=" cloud hidden lg:block absolute -left-24 top-[12%]"></Image>
-            <Image src={cloud2} alt="cloud" className=" cloud hidden lg:block absolute -right-16 top-40"></Image>
-            <Image src={boatOncloud} alt="cloud" className=" boat hidden lg:block absolute -left-[8%] top-[27%] scale-[.4] "></Image>
-            <Image src={castleOncloud} alt="cloud" className=" castle hidden lg:block absolute -right-[15%] top-[35%] scale-[.3] "></Image>
-            <Image src={templeOncloud} alt="cloud" className=" boat hidden lg:block absolute -left-[10%] top-[50%] scale-[.2] "></Image>
-            <Image src={stampOnCloud} alt="cloud" className=" castle hidden lg:block absolute -right-[8%] top-[55%] scale-[.4] "></Image>
+            <Image src={cloudBase} alt="cloud" className=" cloud w-96 hidden lg:block absolute -left-20 top-24"></Image>
+            <Image src={cloudBase} alt="cloud" className=" cloud w-96 hidden lg:block absolute -right-20 top-10"></Image>
+            <Image src={pescatroie} alt="cloud" className=" w-80 hidden lg:block absolute -left-8 top-[25%]  "></Image>
+            <Image src={nonnetto} alt="cloud" className=" w-96 hidden lg:block absolute -right-14 top-[28%] "></Image>
+            <Image src={totano} alt="cloud" className=" w-96 hidden lg:block absolute -left-10 top-[42%] scale-110 "></Image>
+            <Image src={pescatroie} alt="cloud" className=" w-80 scale-110 hidden lg:block absolute -right-6 top-[48%] " style={{
+                transform: 'scaleX(-1)'
+            }}></Image>
             <h5 className="hidden lg:block text-[#ca75ab] text-4xl lg:text-4xl SemiBold lg:leading-normal text-center relative z-50">
 
                 {t('hero1_1')}<br />{t('hero1_2')}
