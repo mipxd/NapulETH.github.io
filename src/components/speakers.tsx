@@ -180,7 +180,7 @@ function Speakers() {
                     t('speakersSoon')
                 } ⏳⌛
             </h6>
-            <div className="grid grid-cols-4 auto-rows-auto gap-4 w-full px-8">
+            <div className="grid-cols-4 auto-rows-auto gap-4 w-full px-8 hidden lg:grid">
             {
                     speakers.map((speaker, index) => {
                         return(
