@@ -67,6 +67,14 @@ body {
     transform: scaleY(-1) translateY(-20%) translateX(95%) !important;
   
   }
+
+  .react-multi-carousel-dot-list {
+    width: 80vw !important;
+    max-width: 80vw !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    overflow-x: auto !important;
+  }
 }
 
 
@@ -268,10 +276,20 @@ backdrop-filter: blur( 4px );
   }
 }
 
-.react-multi-carousel-dot-list {
-  width: 80vw !important;
-  max-width: 80vw !important;
-  margin-right: auto !important;
-  margin-left: auto !important;
-  overflow-x: auto !important;
+.marker-icon {
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  top: -30px; /* Adjust as needed */
+  left: -15px; /* Adjust as needed */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: none;
+}
+
+.marker-icon:hover + .tooltip {
+  display: block;
 }

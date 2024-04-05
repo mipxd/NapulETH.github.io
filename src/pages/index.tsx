@@ -11,6 +11,13 @@ import MediaPartners from "@/components/mediaPartners";
 import Pricing from "@/components/pricing";
 import Speakers from "@/components/speakers";
 import Footer from "@/components/footer";
+import Meetups from "@/components/meetups";
+import dynamic from "next/dynamic";
+
+const StamenTonerMap = dynamic(
+  () => import('@components/meetups'), // Replace with your component path
+  { ssr: false } // Disable SSR for this component
+);
 
 export default function HomePage() {
   return (
@@ -26,9 +33,11 @@ export default function HomePage() {
       <Navbar />
       
       <Hero />
+      <StamenTonerMap />
       <Pricing />
       <Verticals />
       <Where />
+      
       <Speakers />
       <Sponsors />
       <Partners />
