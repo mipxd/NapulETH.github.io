@@ -160,7 +160,7 @@ function Meetups() {
                     t('meetupsPara')
                 } 👇
             </h6>
-            <div className=" mx-auto w-11/12 h-[50vh] lg:h-[85vh] border-4 border-[#eddb55]">
+            <div className=" mx-auto w-11/12 lg:w-8/12 h-[50vh] lg:h-[85vh] border-4 border-[#eddb55]">
             <iframe
               width="100%"
               height="100%"
