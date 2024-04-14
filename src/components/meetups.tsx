@@ -148,6 +148,7 @@ function Meetups() {
         }
       ];
 
+      const key= "AIzaSyDHgb9aAKiHEcu67OHEMXEGwvTy8GIr6F8"
     
     return (
         <section className="w-full flex flex-col items-center justify-start pt-12 mb-14">
@@ -160,21 +161,12 @@ function Meetups() {
                 } 👇
             </h6>
             <div className=" mx-auto w-11/12 h-[50vh] lg:h-[85vh] border-4 border-[#eddb55]">
-            <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyDHgb9aAKiHEcu67OHEMXEGwvTy8GIr6F8" }}
-        defaultCenter={defaultCenter}
-          defaultZoom={defaultZoom}
-          
-          options={{
-            styles: mapStyles // Apply custom styles here
-          }}
-      >
-        <Marker
-            lat={40.8444313}
-            lng={14.2582646}
-            text="My Marker"
-          />
-      </GoogleMapReact>
+            <iframe
+              width="100%"
+              height="100%"
+              className=' border-none border-transparent w-full h-full'
+              src={`https://www.google.com/maps/embed/v1/place?key=${key}&q=via+degli+acquari+80133+,Napoli,Italia`}
+            ></iframe>
             </div>
             
             
