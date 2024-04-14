@@ -39,6 +39,18 @@ import s12 from "@assets/DavideZanichelli.png"
 import s13 from "@assets/LorenzoRigatti.jpg"
 import s14 from '@assets/IreneGuarnieri.jpg.jpeg'
 import s15 from '@assets/MarcoCastignoli.jpg'
+import s16 from '@assets/MarkRichardson.jpg'
+import s17 from '@assets/PietroRossetto.jpg.jpeg'
+import s18 from '@assets/StefanoDeAngelis.jpg.jpeg'
+import s19 from '@assets/HemillyRodrigues.jpg.jpeg'
+import s20 from '@assets/Alena.jpg'
+import s21 from '@assets/GabrieleAlagna.jpg'
+import s22 from '@assets/LucaBoiardi.jpg'
+import s23 from '@assets/GianfrancoLeone.jpg.jpeg'
+import s24 from '@assets/BrunoMiranda.jpg'
+import s25 from '@assets/DayanaAleksandrova.jpg'
+import s26 from '@assets/JamesRae.jpg'
+import s27 from '@assets/WilliamNonnis.jpg'
 
 function Speakers() {
     const { t, i18n } = useTranslation();
@@ -133,6 +145,78 @@ function Speakers() {
             img: s15.src,
             name: "Marco Castignoli",
             aff : "Sourcify"
+        },
+        {
+            link : "https://twitter.com/MBRichardson87",
+            img: s16.src,
+            name: "Mark Richardson",
+            aff : "Bancor/Carbon Defi"
+        },
+        {
+            link : "https://www.linkedin.com/in/pietro-rossetto-lawtech/",
+            img: s17.src,
+            name: "Pietro Rossetto",
+            aff : "Independent"
+        },
+        {
+            link : "https://twitter.com/_deanstef",
+            img: s18.src,
+            name: "Stefano De Angelis",
+            aff : "University of Salerno"
+        },
+        {
+            link : "https://linktr.ee/thebitblond",
+            img: s19.src,
+            name: "Hemilly Rodrigues",
+            aff : "R&CO"
+        },
+        {
+            link : "https://twitter.com/alenka_w3",
+            img: s20.src,
+            name: "Alena",
+            aff : "TON Foundation"
+        },
+        {
+            link : "https://www.howtoweb3.xyz/",
+            img: s21.src,
+            name: "Gabriele Alagna",
+            aff : "How To Web 3.0"
+        },
+        {
+            link : "https://thecryptogateway.it/",
+            img: s22.src,
+            name: "Luca Boiardi",
+            aff : "The Crypto Gateway"
+        },
+        {
+            link : "https://b3yond.io/",
+            img: s23.src,
+            name: "Gianfranco Leone",
+            aff : "B3yond.io"
+        },
+        {
+            link : "https://twitter.com/chilibangs",
+            img: s24.src,
+            name: "Bruno Miranda",
+            aff : "ChiliBangs"
+        },
+        {
+            link : "https://twitter.com/dee_centralized",
+            img: s25.src,
+            name: "Dayana Aleksandrova",
+            aff : "Activated Community "
+        },
+        {
+            link : "https://twitter.com/jayrae21212",
+            img: s26.src,
+            name: "James Rae",
+            aff : "AdvocateAgency "
+        },
+        {
+            link : "https://twitter.com/William_Nonnis",
+            img: s27.src,
+            name: "William Nonnis",
+            aff : "Presidenza del Consiglio dei Ministri "
         }
     ]
 
