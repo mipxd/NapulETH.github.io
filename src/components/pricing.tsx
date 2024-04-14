@@ -22,8 +22,8 @@ function Pricing() {
             </h5>
             <section className="w-full flex flex-col lg:flex-row items-center lg:items-stretch justify-center gap-8 lg:px-20 mt-20 lg:mt-32">
                 <div className="w-11/12 lg:w-1/3 flex-grow flex flex-col items-center justify-start">
-                    <div className='w-7/12 h-fit py-4 bg-white border-4 border-[#eddb55]  relative z-40'>
-                        <h5 className='Bold text-Black text-xl w-full text-center'>Innovators</h5>
+                    <div className='w-10/12 h-fit py-4 bg-white border-4 border-[#eddb55]  relative z-40'>
+                        <h5 className='Bold text-Black text-xl w-full text-center whitespace-nowrap px-4'>Innovators</h5>
                     </div>
                     <div className='w-full h-fit lg:h-full bg-[#E38B84] border-4 border-[#eddb55] relative z-10 -mt-9 flex flex-col items-center justify-center pt-4 pb-2 lg:pt-2 lg:pb-4 px-4'>
                         <Image src={soldOut} alt="munaciello sold out" className='w-7/12 lg:w-11/12 aspect-square mt-6 lg:mt-0 brightness-0'></Image>
@@ -34,8 +34,8 @@ function Pricing() {
                     </div>
                 </div>
                 <div className="w-11/12 lg:w-1/3 flex-grow flex flex-col items-center justify-start">
-                    <div className='w-7/12 h-fit py-4 bg-white border-4 border-[#eddb55]  relative z-40'>
-                        <h5 className='Bold text-black text-xl w-full text-center'>Early Adopters</h5>
+                    <div className='w-10/12 h-fit py-4 bg-white border-4 border-[#eddb55]  relative z-40'>
+                        <h5 className='Bold text-black text-xl w-full text-center whitespace-nowrap px-4'>Early Adopters</h5>
                     </div>
                     <div className='w-full h-fit lg:h-full bg-[#E38B84] border-4 border-[#eddb55] relative z-10 -mt-9 flex flex-col items-center justify-center pt-4 pb-2 lg:pt-2 lg:pb-4 px-4'>
                         <Image src={soldOut} alt="munaciello sold out" className='w-7/12 lg:w-11/12 aspect-square mt-6 lg:mt-0 brightness-0'></Image>
@@ -46,8 +46,8 @@ function Pricing() {
                     </div>
                 </div>
                 <div className="w-11/12 lg:w-1/3 flex-grow flex flex-col items-center justify-start">
-                    <div className='w-7/12 h-fit py-4 bg-white border-4 border-[#eddb55]  relative z-40'>
-                        <h5 className='Bold text-black text-xl w-full text-center'>Early Enthusiasts</h5>
+                    <div className='w-10/12 h-fit py-4 bg-white border-4 border-[#eddb55]  relative z-40'>
+                        <h5 className='Bold text-black text-xl w-full text-center whitespace-nowrap px-4'>Early Enthusiasts</h5>
                     </div>
                     <div className='w-full h-fit lg:h-full bg-[#E38B84] border-4 border-[#eddb55] relative z-10 -mt-9 flex flex-col items-center justify-center pt-4 pb-2 lg:pt-2 lg:pb-4 px-4'>
                         <Image src={soldOut} alt="munaciello sold out" className='w-7/12 lg:w-11/12 aspect-square mt-6 lg:mt-0 brightness-0'></Image>
@@ -58,8 +58,8 @@ function Pricing() {
                     </div>
                 </div>
                 <div className="w-11/12 lg:w-1/3 flex-grow flex flex-col items-center justify-start">
-                    <div className='w-7/12 h-fit py-4 bg-white border-4 border-[#eddb55]  relative z-40'>
-                        <h5 className='Bold text-black text-xl w-full text-center'>Early Majority</h5>
+                    <div className='w-10/12 h-fit py-4 bg-white border-4 border-[#eddb55]  relative z-40'>
+                        <h5 className='Bold text-black text-xl w-full text-center whitespace-nowrap px-4'>Early Majority</h5>
                     </div>
                     <div className='w-full h-fit lg:h-full bg-[#91CE35] border-4 border-[#eddb55] relative z-10 -mt-9 flex flex-col items-center justify-center pt-4 pb-4 lg:pt-2 lg:pb-4 px-4'>
                         <h5 className=' text-white Medium text-base w-full mt-10'>
