@@ -29,6 +29,8 @@ import barbera from '@assets/barbera.jpeg'
 import bratislava from '@assets/ETHBratislava black.svg'
 import regione from "@assets/logo regione [Converted].svg"
 import fabbrica from "@assets/logo_fabbrica_vettoriale-1.png"
+import spici from '@assets/logo_spicy_vettoriale-1.png'
+
 import { useTranslation } from "react-i18next";
 
 function Partners() {
@@ -162,6 +164,12 @@ function Partners() {
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
                             <Image className=" scale-[1.2] w-auto h-20" alt="degate" src={fabbrica}></Image>
+                        </div>
+                    </Link>
+                    <Link href={'https://www.spici.eu/'} target="_blank" className="p-0 w-full h-fit">
+                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
+
+                            <Image className=" scale-[1.4] w-auto h-20" alt="degate" src={spici}></Image>
                         </div>
                     </Link>
                     
@@ -392,6 +400,19 @@ function Partners() {
                                 <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
                                     <Image className="w-auto h-20 scale-[1.2] " alt="degate" src={fabbrica}></Image>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="w-10/12 flex flex-col items-center justify-center">
+                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                            <Link href={'https://www.spici.eu/'} target="_blank" className="w-full h-full">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+
+                                    <Image className="w-auto h-20 scale-[1.5] " alt="degate" src={spici}></Image>
                                 </div>
                             </Link>
 
