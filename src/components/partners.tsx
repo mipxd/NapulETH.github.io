@@ -175,7 +175,7 @@ function Partners() {
                     
 
 
-
+ 
                 </Marquee>
             </div>
             <div className="w-full h-fit block lg:hidden">

@@ -22,13 +22,9 @@ import evLabs from '@assets/ev labs.webp'
 import niftyz from '@/assets/Niftyz.webp'
 
 import how from '@assets/how.png'
-import cryptoGirl from '@assets/cryptogirl.webp'
-import decripto from '@assets/decripto.svg'
 import sc from '@assets/sc.webp'
 import cryptorama from '@assets/cryptoroma.webp'
-import coinstudy from '@assets/Coinstudy.webp'
 import agora from '@assets/CryptoAgora.webp'
-import confidential from '@assets/CryptoConfidential.webp'
 import alberto from '@assets/AlbertoGarlaschi.webp'
 import mz from '@assets/mz-master-crypto.webp'
 import xb from '@assets/0xB.webp'
@@ -79,18 +75,8 @@ function MediaPartners() {
                             <Image className="invert scale-[2] w-auto h-20" alt="degate" src={how}></Image>
                         </div>
                     </Link>
-                    <Link href={'https://cryptogirl.it/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" w-auto h-20" alt="degate" src={cryptoGirl}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://decripto.org/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" w-auto scale-[2.5] h-20" alt="degate" src={decripto}></Image>
-                        </div>
-                    </Link>
+                    
+                    
                     <Link href={'https://www.youtube.com/channel/UCj9aWwSuPvHvXH-iSfc3ZUA'} target="_blank" className="p-0 w-full h-fit">
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
@@ -103,24 +89,14 @@ function MediaPartners() {
                             <Image className=" w-auto h-20" alt="degate" src={cryptorama}></Image>
                         </div>
                     </Link>
-                    <Link href={'https://www.instagram.com/coinstudy/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" w-auto h-20 scale-150" alt="degate" src={coinstudy}></Image>
-                        </div>
-                    </Link>
+                    
                     <Link href={'https://instagram.com/crypto_agora?igshid=OGQ5ZDc2ODk2ZA=='} target="_blank" className="p-0 w-full h-fit">
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
                             <Image className=" scale-150 w-auto h-20" alt="degate" src={agora}></Image>
                         </div>
                     </Link>
-                    <Link href={'https://m.youtube.com/channel/UCxJcRPk2BkYT4Tihz9kxi0w'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" w-auto h-20" alt="degate" src={confidential}></Image>
-                        </div>
-                    </Link>
+                    
                     <Link href={'https://instagram.com/albertogarlaschi.crypto?igshid=M2RkZGJiMzhjOQ=='} target="_blank" className="p-0 w-full h-fit">
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
@@ -139,12 +115,7 @@ function MediaPartners() {
                             <Image className=" w-auto h-20" alt="degate" src={xb}></Image>
                         </div>
                     </Link>
-                    <Link href={'https://www.cryptoexpomilan.com/it'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" scale-125 w-auto h-20" alt="degate" src={cem}></Image>
-                        </div>
-                    </Link>
+                    
                     <Link href={'https://m.youtube.com/@BernardoMascellani'} target="_blank" className="p-0 w-full h-fit">
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
@@ -215,33 +186,6 @@ function MediaPartners() {
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://cryptogirl.it/'} target="_blank" className="p-0 w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                                    <Image className=" w-auto h-20" alt="degate" src={cryptoGirl}></Image>
-                                </div>
-                            </Link>
-
-                        </div>
-                    </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://decripto.org/'} target="_blank" className="w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-                                <div className="w-28 h-20 scale-[2.5] bg-contain bg-center bg-no-repeat" style={{
-                                        backgroundImage: `url('${decripto.src}')`
-                                    }}></div>
-                                </div>
-                            </Link>
-
-                        </div>
-                    </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
                             <Link href={'https://www.youtube.com/channel/UCj9aWwSuPvHvXH-iSfc3ZUA'} target="_blank" className=" w-full h-fit">
                                 <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
@@ -266,20 +210,7 @@ function MediaPartners() {
                         </div>
                     </div>
                 </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://www.instagram.com/coinstudy/'} target="_blank" className="w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-                                <div className="w-28 h-20 scale-150 bg-contain bg-center bg-no-repeat" style={{
-                                        backgroundImage: `url('${coinstudy.src}')`
-                                    }}></div>
-                                </div>
-                            </Link>
-
-                        </div>
-                    </div>
-                </div>
+                
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <div className="w-full flex-grow flex flex-col items-center justify-center" >
@@ -294,19 +225,7 @@ function MediaPartners() {
                         </div>
                     </div>
                 </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://m.youtube.com/channel/UCxJcRPk2BkYT4Tihz9kxi0w'} target="_blank" className=" w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-
-                                    <Image className=" w-auto h-20" alt="degate" src={confidential}></Image>
-                                </div>
-                            </Link>
-
-                        </div>
-                    </div>
-                </div>
+                
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <div className="w-full flex-grow flex flex-col items-center justify-center" >
@@ -348,20 +267,7 @@ function MediaPartners() {
                         </div>
                     </div>
                 </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://www.cryptoexpomilan.com/it'} target="_blank" className="w-full h-full">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-                                <div className="w-28 h-20 scale-150 bg-contain bg-center bg-no-repeat" style={{
-                                        backgroundImage: `url('${cem.src}')`
-                                    }}></div>
-                                </div>
-                            </Link>
-
-                        </div>
-                    </div>
-                </div>
+                
                 <div className="w-full h-fit flex flex-row items-center justify-center">
                     <div className="w-10/12 flex flex-col items-center justify-center">
                         <div className="w-full flex-grow flex flex-col items-center justify-center" >
