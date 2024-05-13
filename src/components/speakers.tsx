@@ -51,6 +51,17 @@ import s24 from '@assets/BrunoMiranda.jpg'
 import s25 from '@assets/DayanaAleksandrova.jpg'
 import s26 from '@assets/JamesRae.jpg'
 import s27 from '@assets/WilliamNonnis.jpg'
+import s28 from '@assets/MicheleIaselli.jpg'
+import s29 from '@assets/ChristianSantagata.jpeg'
+import s30 from '@assets/LazarBucan.jpg'
+import s31 from '@assets/OrnellaVallana.jpg'
+import s32 from '@assets/MiroRadenovic.jpg'
+import s33 from '@assets/MatteoTambussi.png'
+import s34 from '@assets/FilippoChiricozzi.png'
+import s35 from '@assets/FrancescoFontana.jpeg'
+import s36 from '@assets/AmericoCacciapuoti.jpeg'
+import s37 from '@assets/ElioBarbera.jpg'
+import s38 from '@assets/AndreeaCia.jpg'
 
 function Speakers() {
     const { t, i18n } = useTranslation();
@@ -217,7 +228,74 @@ function Speakers() {
             img: s27.src,
             name: "William Nonnis",
             aff : "Presidenza del Consiglio dei Ministri "
-        }
+        },
+        {
+            link : "https://twitter.com/infomicheleias1",
+            img: s28.src,
+            name: "Michele Iaselli",
+            aff : "LUISS"
+        },
+        {
+            link : "https://twitter.com/christian_defi",
+            img: s29.src,
+            name: "Christian Santagata",
+            aff : "re.al"
+        },
+        {
+            link : "http://twitter.com/0xeleazar",
+            img: s30.src,
+            name: "Lazar Bucan",
+            aff : "Cookbook.dev "
+        },
+        {
+            link : "http://www.twitter.com/ornellaweb3",
+            img: s31.src,
+            name: "Ornella Vallana",
+            aff : "Bankless Academy "
+        },
+        {
+            link : "https://www.linkedin.com/in/miroradenovic/",
+            img: s32.src,
+            name: "Miro Radenovic",
+            aff : "ucollect.me "
+        },
+        {
+            link : "http://www.twitter.com/ornellaweb3",
+            img: s33.src,
+            name: "Matteo Tambussi",
+            aff : "Stake Capital, SpaghettETH"
+        },
+        {
+            link : "https://www.linkedin.com/in/filippochiricozzi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+            img: s34.src,
+            name: "Filippo Chiricozzi",
+            aff : "Banca Sella"
+        },
+        {
+            link : "https://linkedin.com/in/francesco-fontana",
+            img: s35.src,
+            name: "Francesco Fontana",
+            aff : "Fontana Art Advisory, aegis.art"
+        },
+        {
+            link : "https://twitter.com/italiancollecto",
+            img: s36.src,
+            name: "Americo Cacciapuoti",
+            aff : "WoV Labs"
+        },
+        {
+            link : "http://www.caffebarbera.com",
+            img: s37.src,
+            name: "Elio Barbera",
+            aff : "Caffè Barbera 1870"
+        },
+        {
+            link : "https://twitter.com/iandreeacia",
+            img: s38.src,
+            name: "Andreea Cia",
+            aff : "ETH Bucarest"
+        },
+        
     ]
 
     const speakers = [...Rawspeakers].sort((a, b) => {
