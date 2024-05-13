@@ -61,7 +61,7 @@ import s34 from '@assets/FilippoChiricozzi.png'
 import s35 from '@assets/FrancescoFontana.jpeg'
 import s36 from '@assets/AmericoCacciapuoti.jpeg'
 import s37 from '@assets/ElioBarbera.jpg'
-import s38 from '@assets/AndreeaCia.jpg'
+import s38 from '@assets/AndreeaCia.png'
 
 function Speakers() {
     const { t, i18n } = useTranslation();
