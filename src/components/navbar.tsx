@@ -88,6 +88,11 @@ function Navbar() {
                             {t('about')}
                         </h5>
                     </Link>
+                    <Link href={'/meetups'} className=" relative z-50 p-0 w-fit h-fit">
+                        <h5 className=" text-black text-xl whitespace-nowrap Medium">
+                            {t("meetupsPageTitle")}
+                        </h5>
+                    </Link>
 
                 </div>
                 <Menu
@@ -157,17 +162,22 @@ function Navbar() {
                         <div className="w-fit h-fit flex flex-col items-center justify-center gap-8 mt-20">
                             <Link href={'/'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
-                                    Home
+                                {t('home')}
                                 </h5>
                             </Link>
                             <Link href={'/tickets'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className="text-center text-black text-3xl Medium">
-                                    Tickets
+                                {t('tickets')}
                                 </h5>
                             </Link>
                             <Link href={'/about'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
-                                    About
+                                {t('about')}
+                                </h5>
+                            </Link>
+                            <Link href={'/meetups'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
+                                <h5 className=" text-black text-3xl Medium text-center">
+                                {t('meetupsPageTitle')}
                                 </h5>
                             </Link>
                             <Link href={'/join'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
