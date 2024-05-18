@@ -9,16 +9,15 @@ import Footer from "@/components/footer";
 export default function Tickets() {
   return (
     <main className="flex min-h-screen flex-col items-start justify-start">
-      <Head> 
-      <title>NapulETH - The Biggest Web3 Event In Southern Italy</title>
-				<meta
-					name="description"
-					content="Offering a real incentive for those not yet familiar with web3 to participate in significant events, both accessible and high-profile."
-				/>
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
+      <Head>
+        <title>NapulETH - The Biggest Web3 Event In Southern Italy</title>
+        <meta
+          name="description"
+          content="Offering a real incentive for those not yet familiar with web3 to participate in significant events, both accessible and high-profile."
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Navbar />
-      <ComingSoon />
       <Phases />
       <TicketingPartner />
       <Footer />
