@@ -35,7 +35,7 @@ function Phases() {
                         {t('pahse5')}
                     </h4>
                     <p className='text-lg Medium text-white w-10/12'>
-                        {t("latPara1")}.
+                        {t("latPara1")}
                     </p>
                     <p className='text-lg Medium text-white w-10/12'>
                         {t("latPara2")}
@@ -66,7 +66,7 @@ function Phases() {
                         {t('pahse4')}
                     </h4>
                     <p className='text-lg Medium text-white w-10/12'>
-                        {t("majPara1")}.
+                        {t("majPara1")}
                     </p>
                     <p className='text-lg Medium text-white w-10/12'>
                         {t("majPara2")}
@@ -88,7 +88,7 @@ function Phases() {
                         {t('pahse3')}
                     </h4>
                     <p className='text-lg Medium text-white w-10/12'>
-                        {t("enthPara1")}.
+                        {t("enthPara1")}
                     </p>
                     <p className='text-lg Medium text-white w-10/12'>
                         {t("enthPara2")}
@@ -110,7 +110,7 @@ function Phases() {
                         {t('pahse2')}
                     </h4>
                     <p className='text-lg Medium text-white w-10/12'>
-                        {t('earlyPara')}.
+                        {t('earlyPara')}
                     </p>
                     <p className='text-lg Medium text-white w-10/12'>
                         {t('earlyPara2')}
@@ -130,7 +130,7 @@ function Phases() {
                     <h3 className=" text-white text-xl whitespace-nowrap Bold">Innovators {"(" + t('soldout') + ")"}</h3>
                     <h4 className="text-white text-sm whitespace-nowrap Medium">{t('pahse1')}</h4>
                     <p className='text-lg Medium text-white w-10/12'>
-                        {t('innoPara')}.
+                        {t('innoPara')}
                     </p>
                     <p className='text-lg Medium text-white w-10/12'>
                         {t('sold150')}
