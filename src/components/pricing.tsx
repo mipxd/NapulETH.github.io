@@ -27,6 +27,10 @@ function Pricing() {
                     </div>
                     <div className='w-full h-fit lg:h-full bg-[#E38B84] border-4 border-[#eddb55] relative z-10 -mt-9 flex flex-col items-center justify-center pt-4 pb-2 lg:pt-2 lg:pb-4 px-4'>
                         <Image src={soldOut} alt="munaciello sold out" className='w-7/12 lg:w-11/12 aspect-square mt-6 lg:mt-0 brightness-0'></Image>
+
+
+
+
                     </div>
                 </div>
                 <div className="w-11/12 lg:w-1/3 flex-grow flex flex-col items-center justify-start">
@@ -35,6 +39,10 @@ function Pricing() {
                     </div>
                     <div className='w-full h-fit lg:h-full bg-[#E38B84] border-4 border-[#eddb55] relative z-10 -mt-9 flex flex-col items-center justify-center pt-4 pb-2 lg:pt-2 lg:pb-4 px-4'>
                         <Image src={soldOut} alt="munaciello sold out" className='w-7/12 lg:w-11/12 aspect-square mt-6 lg:mt-0 brightness-0'></Image>
+
+
+
+
                     </div>
                 </div>
                 <div className="w-11/12 lg:w-1/3 flex-grow flex flex-col items-center justify-start">
@@ -45,7 +53,7 @@ function Pricing() {
                         <h5 className=' text-white Medium text-base w-full mt-10'>
                             {t('pahse5')}
                         </h5>
-                        <h5 className=' text-white Bold text-xl w-full mb-4'>11/06 - -/-</h5>
+                        <h5 className=' text-white Bold text-xl w-full mb-4'>11/06 - --/--</h5>
                         <p className=' text-white Medium text-base w-full mb-2'>
                             {t('latPara1')}
                         </p>
@@ -61,6 +69,9 @@ function Pricing() {
                                 </h5>
                             </div>
                         </Link>
+
+
+
                     </div>
                 </div>
 
