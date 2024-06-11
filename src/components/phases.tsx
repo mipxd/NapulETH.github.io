@@ -24,7 +24,7 @@ function Phases() {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#91CE35', color: '#fff', borderRadius: "0px" }}
-                    date={"09/04 - 15/06"}
+                    date={"11/06 - --"}
                     dateClassName=" text-white"
                     contentArrowStyle={{ borderRight: '12px solid #eddb55' }}
                     iconStyle={{ background: '#91CE35', color: '#fff', boxShadow: "0 0 0 4px #eddb55, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)" }}
@@ -35,10 +35,10 @@ function Phases() {
                         {t('pahse4')}
                     </h4>
                     <p className='text-lg Medium text-white w-10/12'>
-                        {t("majPara1")}.
+                        {t("latPara1")}.
                     </p>
                     <p className='text-lg Medium text-white w-10/12'>
-                        {t("majPara2")}
+                        {t("latPara2")}
                     </p>
 
                     <Link href={'https://napuleth.mego.tickets/'} target="_blank" className=" relative z-50 p-0 w-full flex flex-row items-center justify-center h-fit">
@@ -55,7 +55,7 @@ function Phases() {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#E38B84', color: '#fff', borderRadius: "0px" }}
-                    date={"01/03 - 07/03"}
+                    date={"09/04 - 11/06"}
                     dateClassName=" text-[#FF4646] "
                     contentArrowStyle={{ borderRight: '12px solid #eddb55' }}
                     iconStyle={{ background: '#E38B84', color: '#fff', boxShadow: "0 0 0 4px #eddb55, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)" }}
@@ -63,13 +63,13 @@ function Phases() {
                 >
                     <h3 className=" text-white text-xl whitespace-nowrap Bold">Early Majority {"(" + t('soldout') + ")"}</h3>
                     <h4 className="text-white text-sm whitespace-nowrap Medium">
-                        {t('pahse3')}
+                        {t('pahse4')}
                     </h4>
                     <p className='text-lg Medium text-white w-10/12'>
-                        {t("enthPara1")}.
+                        {t("majPara1")}.
                     </p>
                     <p className='text-lg Medium text-white w-10/12'>
-                        {t("enthPara2")}
+                        {t("majPara2")}
                     </p>
 
                 </VerticalTimelineElement>
