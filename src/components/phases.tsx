@@ -32,7 +32,7 @@ function Phases() {
                 >
                     <h3 className=" text-white text-xl whitespace-nowrap Bold">Late Majority</h3>
                     <h4 className="text-white text-sm whitespace-nowrap Medium">
-                        {t('pahse4')}
+                        {t('pahse5')}
                     </h4>
                     <p className='text-lg Medium text-white w-10/12'>
                         {t("latPara1")}.
