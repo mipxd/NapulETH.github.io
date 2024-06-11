@@ -30,7 +30,7 @@ function Phases() {
                     iconStyle={{ background: '#91CE35', color: '#fff', boxShadow: "0 0 0 4px #eddb55, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)" }}
                     icon={<PiCircleDashed color="#FFFFFF" size={30} />}
                 >
-                    <h3 className=" text-white text-xl whitespace-nowrap Bold">Early Majority</h3>
+                    <h3 className=" text-white text-xl whitespace-nowrap Bold">Late Majority</h3>
                     <h4 className="text-white text-sm whitespace-nowrap Medium">
                         {t('pahse4')}
                     </h4>
@@ -50,6 +50,28 @@ function Phases() {
                             </h5>
                         </div>
                     </Link>
+                </VerticalTimelineElement>
+
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ background: '#E38B84', color: '#fff', borderRadius: "0px" }}
+                    date={"01/03 - 07/03"}
+                    dateClassName=" text-[#FF4646] "
+                    contentArrowStyle={{ borderRight: '12px solid #eddb55' }}
+                    iconStyle={{ background: '#E38B84', color: '#fff', boxShadow: "0 0 0 4px #eddb55, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)" }}
+                    icon={<IoCheckmarkDoneSharp color="#FFFFFF" size={30} />}
+                >
+                    <h3 className=" text-white text-xl whitespace-nowrap Bold">Early Majority {"(" + t('soldout') + ")"}</h3>
+                    <h4 className="text-white text-sm whitespace-nowrap Medium">
+                        {t('pahse3')}
+                    </h4>
+                    <p className='text-lg Medium text-white w-10/12'>
+                        {t("enthPara1")}.
+                    </p>
+                    <p className='text-lg Medium text-white w-10/12'>
+                        {t("enthPara2")}
+                    </p>
+
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
