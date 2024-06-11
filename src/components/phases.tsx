@@ -24,7 +24,7 @@ function Phases() {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#91CE35', color: '#fff', borderRadius: "0px" }}
-                    date={"11/06 - --"}
+                    date={"11/06 - -/-"}
                     dateClassName=" text-white"
                     contentArrowStyle={{ borderRight: '12px solid #eddb55' }}
                     iconStyle={{ background: '#91CE35', color: '#fff', boxShadow: "0 0 0 4px #eddb55, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)" }}
