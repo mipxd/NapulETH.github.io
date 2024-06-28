@@ -260,7 +260,7 @@ function Speakers() {
             aff : "ucollect.me "
         },
         {
-            link : "http://www.twitter.com/ornellaweb3",
+            link : "https://www.linkedin.com/in/matteo-alessio-tambussi/",
             img: s33.src,
             name: "Matteo Tambussi",
             aff : "Stake Capital, SpaghettETH"
