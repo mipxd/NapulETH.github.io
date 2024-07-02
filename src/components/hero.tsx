@@ -64,7 +64,7 @@ function Hero() {
                     <div className="min-w-[85vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-[19vw] h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#CA75AB] border-4 border-[#eddb55]">
 
 
-                        <h5 className=" text-black Medium text-xl">
+                        <h5 className=" text-black Medium text-xl whitespace-nowrap">
                         {t('gettickets')}
                         </h5>
                     </div>

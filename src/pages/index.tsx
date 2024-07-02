@@ -9,7 +9,7 @@ import Sponsors from "@/components/sponsors";
 import Partners from "@/components/partners";
 import MediaPartners from "@/components/mediaPartners";
 import Pricing from "@/components/pricing";
-import Speakers from "@/components/speakers";
+import SpeakersSection from "@/components/speakersSection";
 import Footer from "@/components/footer";
 import Meetups from "@/components/meetups";
 import dynamic from "next/dynamic";
@@ -38,7 +38,7 @@ export default function HomePage() {
       <Verticals />
       <Where />
       
-      <Speakers />
+      <SpeakersSection />
       <Sponsors />
       <Partners />
       <MediaPartners />
