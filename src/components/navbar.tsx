@@ -12,6 +12,8 @@ import { fallDown as MobileMenu } from 'react-burger-menu'
 import menuIcon from '@assets/menu.svg'
 import EnglishFlag from "@assets/english.png";
 import ItalianFlag from "@assets/italian.png";
+import { IoChevronDownOutline } from "react-icons/io5";
+
 
 
 import { useTranslation } from "react-i18next";
@@ -59,7 +61,7 @@ function Navbar() {
     }, []);
 
     const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false)
-    
+
 
     return (
         <nav className="w-full h-fit fixed bg-[#6FCAF3] lg:bg-transparent z-[99] lg:bg-none lg:relative top-0 flex flex-row items-center justify-between px-4 lg:pl-8 lg:pr-0 landscape:py-2 pt-6 pb-6 lg:pb-0 lg:pt-10 lg:landscape:pt-8">
@@ -88,6 +90,43 @@ function Navbar() {
                             {t('about')}
                         </h5>
                     </Link>
+                    <Menu
+                        menuButton={
+                            <MenuButton>
+                                <div className="flex flex-row items-center justify-start gap-1 w-fit h-fit">
+                                    <h5 className=" text-black text-xl whitespace-nowrap Medium">
+                                        {t("events")}
+                                    </h5>
+                                    <IoChevronDownOutline size={20} color="#000000" />
+                                </div>
+                            </MenuButton>
+                        }
+                        align={"center"}
+                        direction="bottom"
+                        arrow={true}
+                        className=' w-fit'
+                        transition
+                    >
+                        <MenuItem>
+                            <Link href="/meetups" className="w-fit h-fit flex flex-row items-center justify-start">
+                                <div className="w-fit min-w-[10vw] flex flex-row items-center justify-start px-2 py-1">
+                                    <h5 className=" text-black text-xl whitespace-nowrap Medium">
+                                        {t("meetupsPageTitle")}
+                                    </h5>
+                                </div>
+                            </Link>
+                        </MenuItem>
+                        <div className="my-1 h-[0.5px] w-10/12 bg-black/80 mx-auto "></div>
+                        <MenuItem>
+                            <Link href="/side-events" className="w-fit h-fit flex flex-row items-center justify-start">
+                                <div className="w-fit min-w-[10vw] flex flex-row items-center justify-start px-2 py-1">
+                                    <h5 className=" text-black text-xl whitespace-nowrap Medium">
+                                        {t("sideEvents")}
+                                    </h5>
+                                </div>
+                            </Link>
+                        </MenuItem>
+                    </Menu>
                     <Link href={'/meetups'} className=" relative z-50 p-0 w-fit h-fit">
                         <h5 className=" text-black text-xl whitespace-nowrap Medium">
                             {t("meetupsPageTitle")}
@@ -105,7 +144,7 @@ function Navbar() {
                             <div className=" flex mx-3 flex-row h-8 lg:h-10 bg-center bg-cover bg-no-repeat aspect-square items-center justify-center gap-2 rounded-full border border-[#F7E16B] " style={{
                                 backgroundImage: `url('${selectedLanguage.image.src}')`
                             }}>
-                                
+
                             </div>
                         </MenuButton>
                     }
@@ -162,22 +201,22 @@ function Navbar() {
                         <div className="w-fit h-fit flex flex-col items-center justify-center gap-8 mt-20">
                             <Link href={'/'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
-                                {t('home')}
+                                    {t('home')}
                                 </h5>
                             </Link>
                             <Link href={'/tickets'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className="text-center text-black text-3xl Medium">
-                                {t('tickets')}
+                                    {t('tickets')}
                                 </h5>
                             </Link>
                             <Link href={'/about'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
-                                {t('about')}
+                                    {t('about')}
                                 </h5>
                             </Link>
                             <Link href={'/meetups'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
-                                {t('meetupsPageTitle')}
+                                    {t('meetupsPageTitle')}
                                 </h5>
                             </Link>
                             <Link href={'/join'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>

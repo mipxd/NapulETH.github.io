@@ -17,6 +17,8 @@ import yh from '@assets/mark+word-colorful.svg'
 import socialSquare from '@assets/socialSquare.svg'
 import money from "@assets/money.svg"
 import vault from "@assets/CriptovalutaIt marchio registrato.jpg"
+import sfondo from '@assets/Sfondo scuro-scritta bianca omino bianchi.png'
+
 
 function Sponsors() {
     const { t, i18n } = useTranslation();
@@ -49,7 +51,7 @@ function Sponsors() {
                 }
             </h5>
             <div className="hidden lg:block w-full h-fit relative my-4">
-                <Marquee pauseOnHover>
+                <Marquee>
                     <Link href={'https://www.comune.napoli.it/home'} target="_blank" className="p-0 w-9/12 h-fit">
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
                             
@@ -110,7 +112,12 @@ function Sponsors() {
                             <Image className=" w-auto h-20" alt="degate" src={vault}></Image>
                         </div>
                     </Link>
-                    
+                    <Link href={'https://linktr.ee/themetagate'} target="_blank" className="p-0 w-full h-fit">
+                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
+
+                            <Image className=" w-auto h-20" alt="degate" src={sfondo}></Image>
+                        </div>
+                    </Link>
 
                 </Marquee>
             </div>
@@ -244,6 +251,20 @@ function Sponsors() {
                                 <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
                                 <div className="w-28 h-20 scale-[2.5] bg-contain bg-center bg-no-repeat" style={{
                                         backgroundImage: `url('${vault.src}')`
+                                    }}></div>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-fit flex flex-row items-center justify-center">
+                    <div className="w-10/12 flex flex-col items-center justify-center">
+                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                            <Link href={'https://linktr.ee/themetagate'} target="_blank" className="w-full h-full">
+                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                <div className="w-28 h-20 scale-[2.5] bg-contain bg-center bg-no-repeat" style={{
+                                        backgroundImage: `url('${sfondo.src}')`
                                     }}></div>
                                 </div>
                             </Link>
