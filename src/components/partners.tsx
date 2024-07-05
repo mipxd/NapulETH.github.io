@@ -64,7 +64,7 @@ function Partners() {
                 {t('partners')}
             </h5>
             <div className="hidden lg:block w-full h-fit relative my-4">
-                <Marquee direction="right" className=" overflow-hidden" pauseOnHover>
+                <Marquee direction="right" className=" overflow-hidden">
                 <Link href={'https://www.ethbucharest.xyz/'} target="_blank" className="p-0 w-full h-fit">
                         <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
