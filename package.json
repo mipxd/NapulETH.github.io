@@ -19,6 +19,7 @@
     "@t3-oss/env-nextjs": "^0.7.1",
     "@types/googlemaps": "^3.43.3",
     "@types/react-vertical-timeline-component": "^3.3.6",
+    "backendless": "^7.3.3",
     "google-map-react": "^2.2.1",
     "i18next": "^23.8.2",
     "leaflet": "^1.9.4",

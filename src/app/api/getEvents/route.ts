@@ -19,11 +19,10 @@ export async function GET(request: NextRequest, response: NextResponse) {
                 Authorization: `Bearer secret_KMU51fPKhtzCgyT6ahxX9sPtU03E17uFR9g4tjD2lOX`,
                 "Notion-Version": "2022-06-28",
               },
-        })
-
-        if(response) return NextResponse.json({ data: "hhahas" }, { status: 200 })
-            else return NextResponse.json({ data: "no response" }, { status: 200 })
-        
+        }).then(async (result)=>{
+            const data = await result.json();
+            return NextResponse.json({ data: data }, { status: 200 })
+        })        
 	} catch (error) {
 		console.log(error)
 		return NextResponse.json({ message: 'incorrect axios combine request nftfloor', error }, { status: 404 })
