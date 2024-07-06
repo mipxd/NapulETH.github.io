@@ -198,37 +198,43 @@ function Navbar() {
                         <div className="py-6 w-full px-4 flex flex-row items-center justify-end">
                             <IoCloseSharp color="#000000" size={35} onClick={() => { setMobileMenuOpen(false) }}></IoCloseSharp>
                         </div>
-                        <div className="w-fit h-fit flex flex-col items-center justify-center gap-8 mt-20">
+                        <div className="w-fit h-fit flex flex-col items-center justify-center gap-6 mt-20">
                             <Link href={'/'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     {t('home')}
                                 </h5>
                             </Link>
+                            <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
                             <Link href={'/tickets'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className="text-center text-black text-3xl Medium">
                                     {t('tickets')}
                                 </h5>
                             </Link>
+                            <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
                             <Link href={'/about'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     {t('about')}
                                 </h5>
                             </Link>
+                            <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
                             <Link href={'/meetups'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     {t('meetupsPageTitle')}
                                 </h5>
                             </Link>
+                            <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
                             <Link href={'/side-events'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     {t('sideEvents')}
                                 </h5>
                             </Link>
+                            <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
                             <Link href={'/artists'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     {t("artists")}
                                 </h5>
                             </Link>
+                            <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
                             <Link href={'/join'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl text-center Medium">
                                     Join us
