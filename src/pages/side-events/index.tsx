@@ -12,6 +12,8 @@ import p3 from "@assets/slider/p3.jpeg"
 import p4 from "@assets/slider/p4.jpeg"
 import { useTranslation } from "react-i18next";
 
+import { IoLocationOutline, IoCalendarClearOutline } from "react-icons/io5";
+
 interface Event {
     title: string
     address: string
@@ -86,7 +88,7 @@ function SideEvents() {
                         events.map((event, key) => {
                             return (
                                 <div key={key} className="w-full xl:w-auto h-fit flex flex-col lg:flex-row lg:items-center lg:justify-stretch gap-3">
-                                    <div className=" w-10/12 aspect-square lg:w-5/12 border-4 border-[#eddb55]" style={{
+                                    <div className=" w-10/12 aspect-square lg:w-5/12 shadow-sm rounded-md" style={{
                                         backgroundImage: `url('${event.image_url}')`,
                                         backgroundPosition: "center",
                                         backgroundRepeat: "no-repeat",
@@ -94,16 +96,16 @@ function SideEvents() {
                                     }}>
 
                                     </div>
-                                    <div className="w-11/12 lg:w-fit lg:max-w-7/12 flex flex-col lg:items-start lg:justify-between gap-3 lg:max-w-[30vw]">
+                                    <div className="w-11/12 lg:w-fit lg:max-w-7/12 flex flex-col lg:items-start lg:justify-between gap-1 lg:max-w-[30vw]">
                                         <div className="flex w-fit h-fit flex-col items-start justify-center lg:items-start lg:justify-start">
-                                            <h5 className=" text-black SemiBold text-2xl whitespace-nowrap text-left">
+                                            <h5 className=" text-black SemiBold text-xl lg:mb-1 whitespace-nowrap text-left px-2 py-1 bg-white border-2 border-[#eddb55]">
                                                 {event.title}
                                             </h5>
-                                            <h5 className=" text-[#CA75AB] SemiBold text-md whitespace-nowrap text-left">
-                                                {event.date}
+                                            <h5 className=" text-black Medium text-md whitespace-nowrap text-left flex flex-row items-center justify-start gap-1">
+                                            <IoLocationOutline size={16} color="#000000" /> {event.date}
                                             </h5>
-                                            <h5 className=" text-black text-md whitespace-nowrap text-left lg:mb-8">
-                                                {event.address.slice(0,30)+"..."}
+                                            <h5 className=" text-black Medium text-md whitespace-nowrap text-left lg:mb-6 flex flex-row items-center justify-start gap-1">
+                                            <IoCalendarClearOutline size={16} color="#000000" /> {event.address.slice(0,30)+"..."}
                                             </h5>
                                         </div>
                                         <div className="flex w-3/2 h-fit flex-col items-start justify-center lg:items-start lg:justify-start gap-1">
