@@ -284,7 +284,7 @@ function Sponsors() {
                             <div className="w-full flex-grow flex flex-col items-center justify-center" >
                                 <Link href={'https://linktr.ee/themetagate'} target="_blank" className="w-full h-full">
                                     <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-                                        <div className="w-28 h-20 scale-[2.5] bg-contain bg-center bg-no-repeat" style={{
+                                        <div className="w-28 h-20 scale-[1.2] bg-contain bg-center bg-no-repeat" style={{
                                             backgroundImage: `url('${sfondo.src}')`
                                         }}></div>
                                     </div>
