@@ -78,12 +78,12 @@ function SideEvents() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Navbar />
-            <section className="w-full h-fit relative flex flex-col items-center justify-start pt-16 lg:pt-0">
-                <h5 className=" text-black text-4xl SemiBold lg:px-28 leading-normal w-11/12 text-left mt-20 mb-3 lg:mb-6">
+            <section className="w-full h-fit relative flex flex-col items-center justify-start pt-16 lg:pt-20">
+                <h5 className=" text-black z-50 text-4xl SemiBold text-left mb-3 lg:mb-6 lg:px-28 leading-normal mt-8 lg:mt-0 w-11/12 lg:w-full">
                     {t("sideEvents")}
                 </h5>
                 <p className="block text-[#2E2E2E] Medium text-2xl lg:text-2xl text-left lg:px-28 leading-normal mt-8 lg:mb-4 lg:mt-0 w-11/12 lg:w-full">
-                    {t('meetupsPagePara')}
+                    {t('sideEventsPara')}
                 </p>
                 <h6 className=" lg:w-1/2 w-10/12 text-black p-4 bg-white border-4 border-[#eddb55] text-xl xl:text-2xl Medium leading-normal text-center mt-10 mb-20 lg:my-16">
                     {

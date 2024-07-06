@@ -105,7 +105,10 @@
   "findMore": "Trova Di Più",
   "events": "Eventi",
   "sideEvents": "Eventi Collaterali",
-  "sideEventsSoon": "Altri Eventi Saranno Annunciati Presto",
+  "sideEventsSoon": "Gli eventi collaterali verranno annunciati presto",
+  "sideEventsPara": "Scopri la community di Ethereum attraverso workshop interattivi, panel approfonditi e sessioni di networking. Immergiti negli ultimi progressi e innovazioni mentre entri in contatto con sviluppatori, investitori e appassionati. Non perdere queste esperienze arricchenti che completano l'evento principale!",
   "artists": "Artisti",
-  "artistsSoon": "Altri Artisti Verranno Aggiunti Presto"
+  "artistsTitle": "Vetrina degli artisti a Napuleth",
+  "artistsSoon": "Altri Artisti Verranno Aggiunti Presto",
+  "artistsPara": "Sperimenta la fusione tra arte fisica e digitale a Napuleth. Il nostro evento presenta artisti di talento che presentano opere tradizionali insieme a creazioni NFT innovative. Esplora l'intersezione tra arte e tecnologia e scopri capolavori unici che fondono il meglio di entrambi i mondi."
 }

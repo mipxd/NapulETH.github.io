@@ -91,16 +91,17 @@ export default function Artists() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Navbar />
-            <section className="w-full flex flex-col items-center justify-start mt-20 lg:mt-32">
+            <section className="w-full flex flex-col items-center justify-start pt-16 lg:pt-20">
                 <Image src={cloudBase} alt="cloud" className=" cloud w-96 hidden lg:block absolute -left-20 top-36"></Image>
                 <Image src={cloudBase} alt="cloud" className=" cloud w-96 hidden lg:block absolute -right-20 top-28"></Image>
 
-                <h5 className=" text-black text-4xl mb-10 SemiBold leading-normal text-center z-50">
-                    {
-                        t('artists')
-                    }
+                <h5 className=" text-black z-50 text-4xl SemiBold text-left mb-3 lg:mb-6 lg:px-28 leading-normal mt-8 lg:mt-0 w-11/12 lg:w-full ">
+                    {t('artistsTitle')}
                 </h5>
-                <h6 className=" xl:w-1/2 w-8/12 text-white p-4 z-50 bg-white border-4 border-[#eddb55] text-xl xl:text-2xl SemiBold leading-normal text-center my-3 lg:my-6" style={{
+                <p className="block text-[#2E2E2E] z-50 Medium text-2xl lg:text-2xl text-left lg:px-28 leading-normal mt-8 lg:mb-4 lg:mt-0 w-11/12 lg:w-full">
+                    {t('artistsPara')}
+                </p>
+                <h6 className=" xl:w-1/2 w-10/12 text-white p-4 z-50 bg-white border-4 border-[#eddb55] text-xl xl:text-2xl SemiBold leading-normal text-center my-8 lg:my-6" style={{
                     backgroundImage: 'url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/original-acrylic-painting-background-dlerick.jpg")',
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
@@ -110,9 +111,19 @@ export default function Artists() {
                         t('artistsSoon')
                     } ⏳⌛
                 </h6>
-                <div className="grid-cols-2 auto-rows-auto w-11/12 hidden lg:grid z-50">
+                <div className="grid-cols-4 auto-rows-auto w-10/12 flex flex-col items-center justify-start lg:grid z-50">
                     {
-                        artists.map((artist, index) => {
+                        [...artists].sort((a, b) => {
+                            const nameA = a.name.toUpperCase(); // ignore upper and lowercase
+                            const nameB = b.name.toUpperCase(); // ignore upper and lowercase
+                            if (nameA < nameB) {
+                                return -1;
+                            }
+                            if (nameA > nameB) {
+                                return 1;
+                            }
+                            return 0; // names must be equal
+                        }).map((artist, index) => {
                             return (
                                 <div className="flex flex-col items-center justify-center w-11/12 mx-auto mb-4">
                                     <Link href={artist.link} target="_blank" className="w-full aspect-square">
@@ -120,7 +131,7 @@ export default function Artists() {
                                             backgroundImage: `url('${artist.image}')`
                                         }}></div>
                                     </Link>
-                                    <div className="w-full flex-grow flex flex-row items-start justify-between py-2 px-4 bg-white border-4 border-[#eddb55]" style={{
+                                    <div className="w-full flex-grow flex flex-row items-center justify-between py-2 px-4 bg-white border-4 border-[#eddb55]" style={{
                                         backgroundImage: 'url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/original-acrylic-painting-background-dlerick.jpg")',
                                         backgroundPosition: "center",
                                         backgroundRepeat: "no-repeat",
@@ -128,10 +139,10 @@ export default function Artists() {
 
                                     }}>
                                         <div className="h-fit w-10/12 flex flex-col items-start justify-between">
-                                            <h5 className=" text-black SemiBold text-lg whitespace-nowrap text-left mb-2">
+                                            <h5 className=" text-black drop-shadow-md shadow-black SemiBold text-lg whitespace-nowrap text-left mb-2">
                                                 {artist.name}
                                             </h5>
-                                            <h5 className=" text-[#FFFFFF] SemiBold text-md">
+                                            <h5 className=" text-[#FFFFFF] SemiBold text-md whitespace-nowrap">
                                                 {artist.description}
                                             </h5>
                                         </div>
@@ -151,7 +162,7 @@ export default function Artists() {
 
 
 
-                <div className='w-full h-fit block lg:hidden'>
+                <div className='w-full h-fit hidden lg:hidden'>
                     <Carousel className="w-full h-fit block lg:hidden" showDots renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
                         {
                             artists.map((artist, index) => {
