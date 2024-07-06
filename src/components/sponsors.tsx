@@ -25,23 +25,23 @@ function Sponsors() {
 
     const responsive = {
         superLargeDesktop: {
-          // the naming can be any, depends on you.
-          breakpoint: { max: 4000, min: 3000 },
-          items: 5
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5
         },
         desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 3
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3
         },
         tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 2
+            breakpoint: { max: 1024, min: 464 },
+            items: 2
         },
         mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 1
+            breakpoint: { max: 464, min: 0 },
+            items: 1
         }
-      };
+    };
 
     return (
         <section className="w-full flex flex-col items-center justify-start mt-20 lg:mt-32">
@@ -50,235 +50,256 @@ function Sponsors() {
                     t('sponsors')
                 }
             </h5>
-            <div className="hidden lg:block w-full h-fit relative my-4">
-                <Marquee>
-                    <Link href={'https://www.comune.napoli.it/home'} target="_blank" className="p-0 w-9/12 h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-                            
-                            <Image className=" w-auto h-20 scale-125" alt="degate" src={commune}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
+            <div className="hidden lg:grid lg:grid-cols-5 gap-4 col-span-8 lg:auto-rows-auto lg:w-10/12 items-center justify-center w-full h-fit relative my-4">
+                <Link href="https://www.comune.napoli.it/home" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${commune.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 100%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="http://degate.com/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${degate.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 100%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://20squares.xyz/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${square.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 100%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://wovlabs.com/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${wovlabs.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 100%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://niftynaples.it/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${nifty.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 100%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="http://moodglobalservices.com/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${mood.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 100%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.youhodler.com/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${yh.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 100%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://bitcashback.net/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${socialSquare.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 100%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.moneyviz.it/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${money.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 100%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.criptovaluta.it/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${vault.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 60%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://linktr.ee/themetagate" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${sfondo.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 60%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
 
-                            <Image className=" w-auto h-20" alt="degate" src={degate}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://20squares.xyz/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
-                            <Image className=" w-auto h-20" alt="degate" src={square}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://wovlabs.com/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" w-auto h-20" alt="degate" src={wovlabs}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://niftynaples.it/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" scale-[2] w-auto h-20" alt="degate" src={nifty}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'http://moodglobalservices.com/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" w-auto h-20" alt="degate" src={mood}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://www.youhodler.com/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" w-auto h-20 scale-150" alt="degate" src={yh}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://bitcashback.net/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" w-auto h-20 scale-125" alt="degate" src={socialSquare}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://www.moneyviz.it/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" w-auto h-20 scale-125" alt="degate" src={money}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://www.criptovaluta.it/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" w-auto h-20" alt="degate" src={vault}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://linktr.ee/themetagate'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" w-auto h-20" alt="degate" src={sfondo}></Image>
-                        </div>
-                    </Link>
-
-                </Marquee>
             </div>
             <div className="w-full h-fit block lg:hidden">
-            <Carousel className="w-full h-fit block lg:hidden" showDots={false} renderDotsOutside renderButtonGroupOutside swipeable  autoPlay arrows={false} infinite responsive={responsive}>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://www.comune.napoli.it/home'} target="_blank" className="p-0 w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-                                <div className="w-28 h-20 scale-150 bg-contain bg-center bg-no-repeat" style={{
-                                        backgroundImage: `url('${commune.src}')`
-                                    }}></div>
-                                </div>
-                            </Link>
+                <Carousel className="w-full h-fit block lg:hidden" showDots={false} renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.comune.napoli.it/home'} target="_blank" className="p-0 w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-150 bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${commune.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
-                                    <Image className=" w-10 scale-[4] h-20" alt="degate" src={degate}></Image>
-                                </div>
-                            </Link>
+                                        <Image className=" w-10 scale-[4] h-20" alt="degate" src={degate}></Image>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://20squares.xyz/'} target="_blank" className="w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://20squares.xyz/'} target="_blank" className="w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                    <Image className="w-auto h-20" alt="degate" src={square}></Image>
-                                </div>
-                            </Link>
+                                        <Image className="w-auto h-20" alt="degate" src={square}></Image>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://wovlabs.com/'} target="_blank" className=" w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://wovlabs.com/'} target="_blank" className=" w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                    <Image className=" w-auto h-20" alt="degate" src={wovlabs}></Image>
-                                </div>
-                            </Link>
+                                        <Image className=" w-auto h-20" alt="degate" src={wovlabs}></Image>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://niftynaples.it/'} target="_blank" className=" w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://niftynaples.it/'} target="_blank" className=" w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                    <Image className=" scale-[2] w-auto h-20" alt="degate" src={nifty}></Image>
-                                </div>
-                            </Link>
+                                        <Image className=" scale-[2] w-auto h-20" alt="degate" src={nifty}></Image>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'http://moodglobalservices.com/'} target="_blank" className="w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'http://moodglobalservices.com/'} target="_blank" className="w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                    <Image className=" w-auto h-20" alt="degate" src={mood}></Image>
-                                </div>
-                            </Link>
+                                        <Image className=" w-auto h-20" alt="degate" src={mood}></Image>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://www.youhodler.com/'} target="_blank" className="w-full h-full">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-                                <div className="w-28 h-20 scale-[2] bg-contain bg-center bg-no-repeat" style={{
-                                        backgroundImage: `url('${yh.src}')`
-                                    }}></div>
-                                </div>
-                            </Link>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.youhodler.com/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-[2] bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${yh.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://bitcashback.net/'} target="_blank" className="w-full h-full">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-                                <div className="w-28 h-20 scale-[1.5] bg-contain bg-center bg-no-repeat" style={{
-                                        backgroundImage: `url('${socialSquare.src}')`
-                                    }}></div>
-                                </div>
-                            </Link>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://bitcashback.net/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-[1.5] bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${socialSquare.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://www.moneyviz.it/'} target="_blank" className="w-full h-full">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-                                <div className="w-28 h-20 scale-[1.5] bg-contain bg-center bg-no-repeat" style={{
-                                        backgroundImage: `url('${money.src}')`
-                                    }}></div>
-                                </div>
-                            </Link>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.moneyviz.it/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-[1.5] bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${money.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://www.criptovaluta.it/'} target="_blank" className="w-full h-full">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-                                <div className="w-28 h-20 scale-[2.5] bg-contain bg-center bg-no-repeat" style={{
-                                        backgroundImage: `url('${vault.src}')`
-                                    }}></div>
-                                </div>
-                            </Link>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.criptovaluta.it/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-[2.5] bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${vault.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://linktr.ee/themetagate'} target="_blank" className="w-full h-full">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-                                <div className="w-28 h-20 scale-[2.5] bg-contain bg-center bg-no-repeat" style={{
-                                        backgroundImage: `url('${sfondo.src}')`
-                                    }}></div>
-                                </div>
-                            </Link>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://linktr.ee/themetagate'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-[2.5] bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${sfondo.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                
 
-            </Carousel>
+
+
+                </Carousel>
             </div>
-            
-            
+
+
         </section>
     )
 }
