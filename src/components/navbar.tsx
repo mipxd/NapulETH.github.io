@@ -127,9 +127,9 @@ function Navbar() {
                             </Link>
                         </MenuItem>
                     </Menu>
-                    <Link href={'/meetups'} className=" relative z-50 p-0 w-fit h-fit">
+                    <Link href={'/artists'} className=" relative z-50 p-0 w-fit h-fit">
                         <h5 className=" text-black text-xl whitespace-nowrap Medium">
-                            Artists
+                            {t("artists")}
                         </h5>
                     </Link>
 
@@ -217,6 +217,16 @@ function Navbar() {
                             <Link href={'/meetups'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     {t('meetupsPageTitle')}
+                                </h5>
+                            </Link>
+                            <Link href={'/side-events'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
+                                <h5 className=" text-black text-3xl Medium text-center">
+                                    {t('sideEvents')}
+                                </h5>
+                            </Link>
+                            <Link href={'/artists'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
+                                <h5 className=" text-black text-3xl Medium text-center">
+                                    {t("artists")}
                                 </h5>
                             </Link>
                             <Link href={'/join'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>

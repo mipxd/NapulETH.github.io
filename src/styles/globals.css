@@ -182,6 +182,10 @@ backdrop-filter: blur( 4px );
 
 }
 
+#burgerMenu{
+  z-index: 9999 !important;
+}
+
 .cloud {
   /* Set initial position */
   

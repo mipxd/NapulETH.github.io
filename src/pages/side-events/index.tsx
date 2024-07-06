@@ -12,7 +12,9 @@ import p3 from "@assets/slider/p3.jpeg"
 import p4 from "@assets/slider/p4.jpeg"
 import { useTranslation } from "react-i18next";
 
-import { IoLocationOutline, IoCalendarClearOutline } from "react-icons/io5";
+import { IoLocationOutline, IoCalendarClear } from "react-icons/io5";
+import { TbLocationFilled } from "react-icons/tb";
+
 
 interface Event {
     title: string
@@ -77,51 +79,66 @@ function SideEvents() {
             </Head>
             <Navbar />
             <section className="w-full h-fit relative flex flex-col items-center justify-start pt-16 lg:pt-0">
-                <h5 className=" text-black text-4xl SemiBold w-full lg:px-28 leading-normal text-left mt-20 mb-3 lg:mb-6">
+                <h5 className=" text-black text-4xl SemiBold lg:px-28 leading-normal w-11/12 text-left mt-20 mb-3 lg:mb-6">
                     {t("sideEvents")}
                 </h5>
                 <p className="block text-[#2E2E2E] Medium text-2xl lg:text-2xl text-left lg:px-28 leading-normal mt-8 lg:mb-4 lg:mt-0 w-11/12 lg:w-full">
                     {t('meetupsPagePara')}
                 </p>
-                <div className="w-11/12 h-fit flex flex-col items-center justify-start lg:grid lg:grid-cols-2 lg:auto-rows-auto gap-4 px-10 lg:my-10">
+                <h6 className=" lg:w-1/2 w-10/12 text-black p-4 bg-white border-4 border-[#eddb55] text-xl xl:text-2xl Medium leading-normal text-center mt-10 mb-20 lg:my-16">
                     {
-                        events.map((event, key) => {
-                            return (
-                                <div key={key} className="w-full xl:w-auto h-fit flex flex-col lg:flex-row lg:items-center lg:justify-stretch gap-3">
-                                    <div className=" w-10/12 aspect-square lg:w-5/12 shadow-sm rounded-md" style={{
-                                        backgroundImage: `url('${event.image_url}')`,
-                                        backgroundPosition: "center",
-                                        backgroundRepeat: "no-repeat",
-                                        backgroundSize: "cover"
-                                    }}>
+                        t('sideEventsSoon')
+                    } ⏳⌛
+                </h6>
+                {
+                    events.length > 0 ? (
+                        <div className="w-11/12 h-fit flex flex-col items-center justify-center lg:grid lg:grid-cols-2 lg:auto-rows-auto gap-4 px-10 lg:my-10 blur">
 
-                                    </div>
-                                    <div className="w-11/12 lg:w-fit lg:max-w-7/12 flex flex-col lg:items-start lg:justify-between gap-1 lg:max-w-[30vw]">
-                                        <div className="flex w-fit h-fit flex-col items-start justify-center lg:items-start lg:justify-start">
-                                            <h5 className=" text-black SemiBold text-xl lg:mb-1 whitespace-nowrap text-left px-2 py-1 bg-white border-2 border-[#eddb55]">
-                                                {event.title}
-                                            </h5>
-                                            <h5 className=" text-black Medium text-md whitespace-nowrap text-left flex flex-row items-center justify-start gap-1">
-                                            <IoLocationOutline size={16} color="#000000" /> {event.date}
-                                            </h5>
-                                            <h5 className=" text-black Medium text-md whitespace-nowrap text-left lg:mb-6 flex flex-row items-center justify-start gap-1">
-                                            <IoCalendarClearOutline size={16} color="#000000" /> {event.address.slice(0,30)+"..."}
-                                            </h5>
+                            {
+                                events.map((event, key) => {
+                                    return (
+                                        <div key={key} className="w-full xl:w-auto h-fit flex flex-col justify-center items-center lg:flex-row lg:items-center lg:justify-stretch gap-3">
+                                            <div className=" w-full aspect-square lg:w-5/12 shadow-sm rounded-md" style={{
+                                                backgroundImage: `url('${event.image_url}')`,
+                                                backgroundPosition: "center",
+                                                backgroundRepeat: "no-repeat",
+                                                backgroundSize: "cover"
+                                            }}>
+
+                                            </div>
+                                            <div className="w-full lg:w-fit lg:max-w-7/12 flex flex-col lg:items-start lg:justify-between gap-1 lg:max-w-[30vw]">
+                                                <div className="flex w-full lg:w-fit h-fit flex-col items-start justify-center lg:items-start lg:justify-start">
+                                                    <h5 className=" text-black SemiBold text-xl mb-4 lg:mb-2 text-center w-full lg:w-fit lg:text-left">
+                                                        {event.title}
+                                                    </h5>
+                                                    <h5 className=" text-black w-full Medium text-md lg:text-sm whitespace-nowrap text-left flex flex-row items-center justify-start gap-1">
+                                                        <TbLocationFilled size={16} color="#eddb55" /> {event.date}
+                                                    </h5>
+                                                    <h5 className=" text-black Medium text-md lg:text-sm text-left lg:mb-6 flex flex-row items-center justify-start gap-1">
+                                                        <IoCalendarClear size={16} color="#eddb55" /> {event.address.slice(0, 30) + "..."}
+                                                    </h5>
+                                                </div>
+                                                <div className="flex w-full lg:w-3/2 h-fit flex-col items-start justify-center lg:items-start lg:justify-start gap-1">
+
+                                                    <h5 className="  text-gray-800 text-md lg:text-sm text-left h-fit w-full lg:w-9/12 mb-5 lg:mb-2 mt-2 lg:mt-0 ">
+                                                        {event.description.slice(0, 100) + "..."}
+                                                    </h5>
+                                                </div>
+
+                                            </div>
                                         </div>
-                                        <div className="flex w-3/2 h-fit flex-col items-start justify-center lg:items-start lg:justify-start gap-1">
-                                            
-                                            <h5 className="  text-gray-800 text-sm text-left h-fit w-9/12 mb-2 ">
-                                                {event.description.slice(0,100)+"..."}
-                                            </h5>
-                                        </div>
+                                    )
+                                })
+                            }
 
-                                    </div>
-                                </div>
-                            )
-                        })
-                    }
+                        </div>
+                    ) : (
+                        <div className="flex flex-row items-center justify-center relative px-10 lg:my-10 w-11/12">
+                            <div></div>
+                        </div>
+                    )
+                }
 
-                </div>
 
 
             </section>
