@@ -129,7 +129,7 @@ function Navbar() {
                     </Menu>
                     <Link href={'/meetups'} className=" relative z-50 p-0 w-fit h-fit">
                         <h5 className=" text-black text-xl whitespace-nowrap Medium">
-                            Artits
+                            Artists
                         </h5>
                     </Link>
 
