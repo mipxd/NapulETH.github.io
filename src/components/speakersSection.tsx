@@ -449,11 +449,12 @@ function Speakers() {
     };
 
     return (
-        <section className="w-full flex flex-col items-center justify-start mt-20 lg:mt-32">
+        <section className="w-full flex flex-col items-center justify-start mt-20 lg:mt-20">
             <h5 className=" text-black text-4xl mb-10 SemiBold leading-normal text-center">
                 {
                     t('speakers')
                 }
+                <span className="text-xl Medium text-[#252525]">&nbsp;(A-Z)</span>
             </h5>
             <h6 className=" xl:w-1/2 w-8/12 text-black p-4 bg-white border-4 border-[#eddb55] text-xl xl:text-2xl Medium leading-normal text-center my-6">
                 {
@@ -506,7 +507,7 @@ function Speakers() {
             <div className='w-full h-fit block lg:hidden'>
                 <Carousel className="w-full h-fit block lg:hidden" showDots renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
                     {
-                        speakers.map((speaker, index) => {
+                        speakers.slice(0,10).map((speaker, index) => {
                             return (
                                 <Link href={speaker.link} key={index} target="_blank" className="w-full h-fit">
                                     <div className="w-full h-fit flex flex-row items-center justify-center">
@@ -531,6 +532,13 @@ function Speakers() {
 
                 </Carousel>
             </div>
+            <Link href="/speakers" className="w-8/12 h-fit flex flex-row items-center justify-center">
+                <div className="w-full mt-4 flex lg:hidden flex-row items-center justify-center text-black p-4 bg-white border-4 border-[#eddb55]">
+                    <h5 className=" text-black SemiBold text-lg whitespace-nowrap text-center">
+                        {t("findMore")}
+                    </h5>
+                </div>
+            </Link>
 
 
         </section>

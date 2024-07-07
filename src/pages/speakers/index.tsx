@@ -445,11 +445,12 @@ export default function Speakers() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <section className="w-full flex flex-col items-center justify-start mt-20 lg:mt-32">
+      <section className="w-full flex flex-col items-center justify-start mt-20 lg:mt-20">
             <h5 className=" text-black text-4xl mb-10 SemiBold leading-normal text-center">
                 {
                     t('speakers')
                 }
+                <span className="text-xl Medium text-[#252525]">&nbsp;(A-Z)</span>
             </h5>
             <h6 className=" xl:w-1/2 w-8/12 text-black p-4 bg-white border-4 border-[#eddb55] text-xl xl:text-2xl Medium leading-normal text-center my-6">
                 {
