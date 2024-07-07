@@ -85,11 +85,54 @@ function Navbar() {
                             {t('tickets')}
                         </h5>
                     </Link>
-                    <Link href={'/about'} className=" relative z-50 p-0 w-fit h-fit">
-                        <h5 className=" text-black text-xl whitespace-nowrap Medium">
-                            {t('about')}
-                        </h5>
-                    </Link>
+                    <Menu
+                        menuButton={
+                            <MenuButton>
+                                <div className="flex flex-row items-center justify-start gap-1 w-fit h-fit">
+                                    <h5 className=" text-black text-xl whitespace-nowrap Medium">
+                                        {t("about")}
+                                    </h5>
+                                    <IoChevronDownOutline size={20} color="#000000" />
+                                </div>
+                            </MenuButton>
+                        }
+                        align={"center"}
+                        direction="bottom"
+                        arrow={true}
+                        className=' w-fit'
+                        transition
+                    >
+                        <MenuItem>
+                            <Link href="/about" className="w-fit h-fit flex flex-row items-center justify-start">
+                                <div className="w-fit min-w-[10vw] flex flex-row items-center justify-start px-2 py-1">
+                                    <h5 className=" text-black text-xl whitespace-nowrap Medium">
+                                        {t("team")}
+                                    </h5>
+                                </div>
+                            </Link>
+                        </MenuItem>
+                        <div className="my-1 h-[0.5px] w-10/12 bg-black/80 mx-auto "></div>
+                        <MenuItem>
+                            <Link href="/speakers" className="w-fit h-fit flex flex-row items-center justify-start">
+                                <div className="w-fit min-w-[10vw] flex flex-row items-center justify-start px-2 py-1">
+                                    <h5 className=" text-black text-xl whitespace-nowrap Medium">
+                                        {t("speakers")}
+                                    </h5>
+                                </div>
+                            </Link>
+                        </MenuItem>
+                        <div className="my-1 h-[0.5px] w-10/12 bg-black/80 mx-auto "></div>
+                        <MenuItem>
+                            <Link href="/artists" className="w-fit h-fit flex flex-row items-center justify-start">
+                                <div className="w-fit min-w-[10vw] flex flex-row items-center justify-start px-2 py-1">
+                                    <h5 className=" text-black text-xl whitespace-nowrap Medium">
+                                        {t("artists")}
+                                    </h5>
+                                </div>
+                            </Link>
+                        </MenuItem>
+                    </Menu>
+                    
                     <Menu
                         menuButton={
                             <MenuButton>
@@ -127,11 +170,7 @@ function Navbar() {
                             </Link>
                         </MenuItem>
                     </Menu>
-                    <Link href={'/artists'} className=" relative z-50 p-0 w-fit h-fit">
-                        <h5 className=" text-black text-xl whitespace-nowrap Medium">
-                            {t("artists")}
-                        </h5>
-                    </Link>
+                    
 
                 </div>
                 <Menu
@@ -214,6 +253,12 @@ function Navbar() {
                             <Link href={'/about'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     {t('about')}
+                                </h5>
+                            </Link>
+                            <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
+                            <Link href={'/speakers'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
+                                <h5 className=" text-black text-3xl Medium text-center">
+                                    {t('speakers')}
                                 </h5>
                             </Link>
                             <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
