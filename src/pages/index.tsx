@@ -31,17 +31,15 @@ export default function HomePage() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
       <Navbar />
-      
       <Hero />
-      <StamenTonerMap />
       <Pricing />
       <Verticals />
       <Where />
-      
       <SpeakersSection />
       <Sponsors />
       <Partners />
       <MediaPartners />
+      <StamenTonerMap />
       <Footer />
     </main>
   );

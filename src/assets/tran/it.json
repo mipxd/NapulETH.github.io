@@ -104,11 +104,13 @@
   "meetupsPagePara": "I NapulETH Meetup sono incontri vivaci, che si tengono mensilmente, in cui una comunità di appassionati di blockchain e professionisti esperti convergono per favorire lo scambio di conoscenze. I nostri eventi fungono da piattaforma per gli esperti del settore per condividere le loro intuizioni, sviluppi all'avanguardia ed esperienze del mondo reale all'interno dell'ecosistema Ethereum.",
   "findMore": "Trova Di Più",
   "events": "Eventi",
+  "sideEventsRaw": "Eventi Collaterali",
   "sideEvents": "Esplora Gli Eventi Collaterali",
   "sideEventsSoon": "Gli eventi collaterali verranno annunciati presto",
   "sideEventsPara": "Scopri la community di Ethereum attraverso workshop interattivi, panel approfonditi e sessioni di networking. Immergiti negli ultimi progressi e innovazioni mentre entri in contatto con sviluppatori, investitori e appassionati. Non perdere queste esperienze arricchenti che completano l'evento principale!",
   "artists": "Artisti",
-  "artistsTitle": "Vetrina degli artisti a Napuleth",
+  "artistsTitle": "NapulETH - Onde d’arte",
   "artistsSoon": "Altri Artisti Verranno Aggiunti Presto",
-  "artistsPara": "Sperimenta la fusione tra arte fisica e digitale a Napuleth. Il nostro evento presenta artisti di talento che presentano opere tradizionali insieme a creazioni NFT innovative. Esplora l'intersezione tra arte e tecnologia e scopri capolavori unici che fondono il meglio di entrambi i mondi."
+  "artistsPara": "Sperimenta la fusione tra arte fisica e digitale a Napuleth. Il nostro evento presenta artisti di talento che presentano opere tradizionali insieme a creazioni NFT innovative. Esplora l'intersezione tra arte e tecnologia e scopri capolavori unici che fondono il meglio di entrambi i mondi.",
+  "curators": "Curatori d'Arte"
 }

@@ -16,8 +16,10 @@ import { useTranslation } from "react-i18next";
 import yh from '@assets/mark+word-colorful.svg'
 import socialSquare from '@assets/socialSquare.svg'
 import money from "@assets/money.svg"
-import vault from "@assets/CriptovalutaIt marchio registrato.jpg"
+import vault from "@assets/ICON-CRIPTOVALUTA.png"
 import sfondo from '@assets/Sfondo scuro-scritta bianca omino bianchi.png'
+import barbera from '@assets/barbera.jpeg'
+import esp from '@assets/esp-logo.96fc01cc.svg'
 
 
 function Sponsors() {
@@ -51,11 +53,11 @@ function Sponsors() {
                 }
             </h5>
             <div className="hidden lg:grid lg:grid-cols-5 gap-4 col-span-8 lg:auto-rows-auto lg:w-10/12 items-center justify-center w-full h-fit relative my-4">
-                <Link href="https://www.comune.napoli.it/home" target="_blank" className="p-0 w-full h-fit flex">
+                <Link href="https://www.youhodler.com/" target="_blank" className="p-0 w-full h-fit flex">
                     <div className="w-full h-28" style={{
-                        backgroundImage: `url('${commune.src}')`,
+                        backgroundImage: `url('${yh.src}')`,
                         backgroundPosition: "center",
-                        backgroundSize: "65% 100%",
+                        backgroundSize: "85% 110%",
                         backgroundRepeat: "no-repeat"
                     }}></div>
                 </Link>
@@ -64,6 +66,14 @@ function Sponsors() {
                         backgroundImage: `url('${degate.src}')`,
                         backgroundPosition: "center",
                         backgroundSize: "65% 100%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://esp.ethereum.foundation/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${esp.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 90%",
                         backgroundRepeat: "no-repeat"
                     }}></div>
                 </Link>
@@ -87,7 +97,7 @@ function Sponsors() {
                     <div className="w-full h-28" style={{
                         backgroundImage: `url('${nifty.src}')`,
                         backgroundPosition: "center",
-                        backgroundSize: "65% 100%",
+                        backgroundSize: "85% 140%",
                         backgroundRepeat: "no-repeat"
                     }}></div>
                 </Link>
@@ -99,19 +109,12 @@ function Sponsors() {
                         backgroundRepeat: "no-repeat"
                     }}></div>
                 </Link>
-                <Link href="https://www.youhodler.com/" target="_blank" className="p-0 w-full h-fit flex">
-                    <div className="w-full h-28" style={{
-                        backgroundImage: `url('${yh.src}')`,
-                        backgroundPosition: "center",
-                        backgroundSize: "65% 100%",
-                        backgroundRepeat: "no-repeat"
-                    }}></div>
-                </Link>
+
                 <Link href="https://bitcashback.net/" target="_blank" className="p-0 w-full h-fit flex">
                     <div className="w-full h-28" style={{
                         backgroundImage: `url('${socialSquare.src}')`,
                         backgroundPosition: "center",
-                        backgroundSize: "65% 100%",
+                        backgroundSize: "40% 80%",
                         backgroundRepeat: "no-repeat"
                     }}></div>
                 </Link>
@@ -127,30 +130,31 @@ function Sponsors() {
                     <div className="w-full h-28" style={{
                         backgroundImage: `url('${vault.src}')`,
                         backgroundPosition: "center",
-                        backgroundSize: "65% 60%",
+                        backgroundSize: "35% 60%",
                         backgroundRepeat: "no-repeat"
                     }}></div>
                 </Link>
-                <Link href="https://linktr.ee/themetagate" target="_blank" className="p-0 w-full h-fit flex">
+                <Link href="https://www.caffebarbera.com/en/?utm_source=google&utm_medium=cpc&utm_campaign=brand_dubai&gad_source=1&gclid=EAIaIQobChMIhJHBvJujhQMV8UZBAh15BQ6QEAAYASAAEgLkgfD_BwE" target="_blank" className="p-0 w-full h-fit flex">
                     <div className="w-full h-28" style={{
-                        backgroundImage: `url('${sfondo.src}')`,
+                        backgroundImage: `url('${barbera.src}')`,
                         backgroundPosition: "center",
-                        backgroundSize: "65% 60%",
+                        backgroundSize: "65% 80%",
                         backgroundRepeat: "no-repeat"
                     }}></div>
                 </Link>
+
 
 
             </div>
             <div className="w-full h-fit block lg:hidden">
                 <Carousel className="w-full h-fit block lg:hidden" showDots={false} renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
-                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                <div className="w-full h-fit flex flex-row items-center justify-center">
                         <div className="w-10/12 flex flex-col items-center justify-center">
                             <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                <Link href={'https://www.comune.napoli.it/home'} target="_blank" className="p-0 w-full h-fit">
-                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-                                        <div className="w-28 h-20 scale-150 bg-contain bg-center bg-no-repeat" style={{
-                                            backgroundImage: `url('${commune.src}')`
+                                <Link href={'https://www.youhodler.com/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-[2] bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${yh.src}')`
                                         }}></div>
                                     </div>
                                 </Link>
@@ -165,6 +169,20 @@ function Sponsors() {
                                     <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
 
                                         <Image className=" w-10 scale-[4] h-20" alt="degate" src={degate}></Image>
+                                    </div>
+                                </Link>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://esp.ethereum.foundation/'} target="_blank" className="p-0 w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-150 bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${esp.src}')`
+                                        }}></div>
                                     </div>
                                 </Link>
 
@@ -282,17 +300,17 @@ function Sponsors() {
                     <div className="w-full h-fit flex flex-row items-center justify-center">
                         <div className="w-10/12 flex flex-col items-center justify-center">
                             <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                <Link href={'https://linktr.ee/themetagate'} target="_blank" className="w-full h-full">
+                                <Link href={'https://www.caffebarbera.com/en/?utm_source=google&utm_medium=cpc&utm_campaign=brand_dubai&gad_source=1&gclid=EAIaIQobChMIhJHBvJujhQMV8UZBAh15BQ6QEAAYASAAEgLkgfD_BwE'} target="_blank" className="w-full h-full">
                                     <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-                                        <div className="w-28 h-20 scale-[1.2] bg-contain bg-center bg-no-repeat" style={{
-                                            backgroundImage: `url('${sfondo.src}')`
-                                        }}></div>
+
+                                        <Image className="w-auto h-20 scale-[2] rounded-full" alt="degate" src={barbera}></Image>
                                     </div>
                                 </Link>
 
                             </div>
                         </div>
                     </div>
+
 
 
 

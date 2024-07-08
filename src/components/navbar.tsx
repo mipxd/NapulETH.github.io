@@ -164,7 +164,7 @@ function Navbar() {
                             <Link href="/side-events" className="w-fit h-fit flex flex-row items-center justify-start">
                                 <div className="w-fit min-w-[10vw] flex flex-row items-center justify-start px-2 py-1">
                                     <h5 className=" text-black text-xl whitespace-nowrap Medium">
-                                        {t("sideEvents")}
+                                        {t("sideEventsRaw")}
                                     </h5>
                                 </div>
                             </Link>
@@ -270,7 +270,7 @@ function Navbar() {
                             <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
                             <Link href={'/side-events'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
-                                    {t('sideEvents')}
+                                    {t("sideEventsRaw")}
                                 </h5>
                             </Link>
                             <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>

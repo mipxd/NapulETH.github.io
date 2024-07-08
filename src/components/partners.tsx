@@ -13,7 +13,7 @@ import wovlabs from '@assets/wovlabs.svg'
 import spaghett from '@assets/spaghetteth.png'
 import wehub from '@assets/wehub svg.svg'
 import mego from '@assets/mego.svg'
-import mood from '@assets/mood.svg' 
+import mood from '@assets/mood.svg'
 import gate from '@assets/gate.svg'
 import canal from '@assets/LOGO CRYTOCANAL- horizontal (new - black).svg'
 import nexlabs from '@assets/nexlabs.webp'
@@ -32,6 +32,8 @@ import fabbrica from "@assets/logo_fabbrica_vettoriale-1.png"
 import spici from '@assets/logo_spicy_vettoriale-1.png'
 import sakebito from '@assets/SAKEbito_logomark_topdown_white.svg'
 import CH from '@assets/CH _ blck letter.svg'
+import sfondo from '@assets/Sfondo scuro-scritta bianca omino bianchi.png'
+import commune from "@assets/commune.png"
 
 import { useTranslation } from "react-i18next";
 
@@ -39,431 +41,486 @@ function Partners() {
 
     const responsive = {
         superLargeDesktop: {
-          // the naming can be any, depends on you.
-          breakpoint: { max: 4000, min: 3000 },
-          items: 5
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5
         },
         desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 3
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3
         },
         tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 2
+            breakpoint: { max: 1024, min: 464 },
+            items: 2
         },
         mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 1
+            breakpoint: { max: 464, min: 0 },
+            items: 1
         }
-      };
+    };
 
-      const { t, i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
     return (
         <section className="w-full flex flex-col items-center justify-start mt-20 lg:mt-32">
             <h5 className=" text-black text-4xl mb-10 SemiBold leading-normal text-center">
                 {t('partners')}
             </h5>
-            <div className="hidden lg:block w-full h-fit relative my-4">
-                <Marquee direction="right" className=" overflow-hidden">
-                <Link href={'https://www.ethbucharest.xyz/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" w-auto h-20 scale-[2] " alt="degate" src={bucharest}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://www.spaghett-eth.com/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" w-auto h-20 scale-150" alt="degate" src={spaghett}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://wehub.it/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" w-auto scale-[2] h-20" alt="degate" src={wehub}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://mego.tickets/#/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" invert w-auto h-20" alt="degate" src={mego}></Image>
-                        </div>
-                    </Link>
-                    
-                    <Link href={'https://thecryptogateway.it/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" w-auto h-20" alt="degate" src={gate}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://www.cryptocanal.org/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" w-auto scale-125 h-20" alt="degate" src={canal}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://www.nexlabs.io/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" w-auto h-20" alt="degate" src={nexlabs}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://hgvis.io/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" w-auto h-20" alt="degate" src={hg}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://www.3vlabs.io/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" invert w-auto h-20" alt="degate" src={evLabs}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://www.niftyz.io/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" w-auto h-20" alt="degate" src={niftyz}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://www.ethmilan.xyz/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" scale-[2] w-auto h-20" alt="degate" src={ethmilan}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://app.banklessacademy.com/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" scale-125 w-auto h-20" alt="degate" src={bankless}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://t.me/Chilicommunity'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" scale-125 w-auto h-20 rounded-full" alt="degate" src={chilliBanks}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://www.caffebarbera.com/en/?utm_source=google&utm_medium=cpc&utm_campaign=brand_dubai&gad_source=1&gclid=EAIaIQobChMIhJHBvJujhQMV8UZBAh15BQ6QEAAYASAAEgLkgfD_BwE'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" scale-[2] w-auto h-20 rounded-full" alt="degate" src={barbera}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://www.ethbratislava.com/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" scale-[1.2] w-auto h-20" alt="degate" src={bratislava}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://www.regione.campania.it/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" scale-[1.3] w-auto h-20" alt="degate" src={regione}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://www.fabbricaitalianainnovazione.it/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" scale-[1.2] w-auto h-20" alt="degate" src={fabbrica}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://www.spici.eu/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" scale-[1.4] w-auto h-20" alt="degate" src={spici}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://www.sakebito.xyz/'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" scale-[1.4] w-auto h-20 invert" alt="degate" src={sakebito}></Image>
-                        </div>
-                    </Link>
-                    <Link href={'https://twitter.com/icphub_IT'} target="_blank" className="p-0 w-full h-fit">
-                        <div className="w-full lg:w-[20vw] mx-4 lg:mx-8 h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                            <Image className=" scale-75 w-auto h-20" alt="degate" src={CH}></Image>
-                        </div>
-                    </Link>
-                    
-
-
- 
-                </Marquee>
+            <div className="hidden lg:grid lg:grid-cols-5 gap-4 col-span-8 lg:auto-rows-auto lg:w-10/12 items-center justify-center w-full h-fit relative my-4">
+                <Link href="https://www.ethbucharest.xyz/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${bucharest.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "90% 120%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.spaghett-eth.com/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${spaghett.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "40% 75%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://wehub.it/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${wehub.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "85% 130%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://mego.tickets/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${mego.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 80%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://thecryptogateway.it/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${gate.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 80%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.cryptocanal.org/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${canal.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "70% 100%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.nexlabs.io/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${nexlabs.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "33% 65%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://hgvis.io/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${hg.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "50% 55%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.3vlabs.io/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${evLabs.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 80%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.niftyz.io/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${niftyz.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 80%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.ethmilan.xyz/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${ethmilan.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "90% 130%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://app.banklessacademy.com/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${bankless.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 80%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://t.me/Chilicommunity" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${chilliBanks.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "80% 80%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.ethbratislava.com/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${bratislava.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 80%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.regione.campania.it/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${regione.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "75% 80%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.fabbricaitalianainnovazione.it/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${fabbrica.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 80%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.spici.eu/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${spici.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 80%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.sakebito.xyz/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28 invert" style={{
+                        backgroundImage: `url('${sakebito.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 80%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://twitter.com/icphub_IT" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${CH.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 80%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://linktr.ee/themetagate" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${sfondo.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 60%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.comune.napoli.it/home" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${commune.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "45% 90%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
             </div>
             <div className="w-full h-fit block lg:hidden">
-            <Carousel className="w-full h-fit block lg:hidden" showDots={false} renderDotsOutside renderButtonGroupOutside swipeable  autoPlay arrows={false} infinite responsive={responsive}>
-            <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://www.ethbucharest.xyz/'} target="_blank" className="p-0 w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-                                <div className="w-28 scale-[2.5] h-20 bg-contain bg-center bg-no-repeat" style={{
-                                        backgroundImage: `url('${bucharest.src}')`
-                                    }}></div>
-                                </div>
-                            </Link>
+                <Carousel className="w-full h-fit block lg:hidden" showDots={false} renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.ethbucharest.xyz/'} target="_blank" className="p-0 w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 scale-[2.5] h-20 bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${bucharest.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://www.spaghett-eth.com/'} target="_blank" className="p-0 w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-                                <div className="w-28 scale-150 h-20 bg-contain bg-center bg-no-repeat" style={{
-                                        backgroundImage: `url('${spaghett.src}')`
-                                    }}></div>
-                                </div>
-                            </Link>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.spaghett-eth.com/'} target="_blank" className="p-0 w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 scale-150 h-20 bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${spaghett.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://wehub.it/'} target="_blank" className="w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://wehub.it/'} target="_blank" className="w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                    <Image className="w-auto h-20 scale-[2] " alt="degate" src={wehub}></Image>
-                                </div>
-                            </Link>
+                                        <Image className="w-auto h-20 scale-[2] " alt="degate" src={wehub}></Image>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://mego.tickets/'} target="_blank" className=" w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://mego.tickets/'} target="_blank" className=" w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                    <Image className=" invert w-auto h-20" alt="degate" src={mego}></Image>
-                                </div>
-                            </Link>
+                                        <Image className=" invert w-auto h-20" alt="degate" src={mego}></Image>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://thecryptogateway.it/'} target="_blank" className="w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                    <Image className="w-auto h-20" alt="degate" src={gate}></Image>
-                                </div>
-                            </Link>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://thecryptogateway.it/'} target="_blank" className="w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
+                                        <Image className="w-auto h-20" alt="degate" src={gate}></Image>
+                                    </div>
+                                </Link>
+
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://www.cryptocanal.org/'} target="_blank" className="w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.cryptocanal.org/'} target="_blank" className="w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                    <Image className=" w-auto h-20  " alt="degate" src={canal}></Image>
-                                </div>
-                            </Link>
+                                        <Image className=" w-auto h-20  " alt="degate" src={canal}></Image>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://www.nexlabs.io/'} target="_blank" className=" w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-                                    <div className="w-20 aspect-square bg-contain bg-center bg-no-repeat" style={{
-                                        backgroundImage: `url('${nexlabs.src}')`
-                                    }}></div>
-                                    
-                                </div>
-                            </Link>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.nexlabs.io/'} target="_blank" className=" w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                        <div className="w-20 aspect-square bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${nexlabs.src}')`
+                                        }}></div>
 
+                                    </div>
+                                </Link>
+
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://hgvis.io/'} target="_blank" className="w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://hgvis.io/'} target="_blank" className="w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                    <Image className="w-auto h-20" alt="degate" src={hg}></Image>
-                                </div>
-                            </Link>
+                                        <Image className="w-auto h-20" alt="degate" src={hg}></Image>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://www.3vlabs.io/'} target="_blank" className=" w-full h-fit">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.3vlabs.io/'} target="_blank" className=" w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                    <Image className=" invert w-auto h-20" alt="degate" src={evLabs}></Image>
-                                </div>
-                            </Link>
+                                        <Image className=" invert w-auto h-20" alt="degate" src={evLabs}></Image>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://www.niftyz.io/'} target="_blank" className="w-full h-full">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.niftyz.io/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                    <Image className="w-auto h-20" alt="degate" src={niftyz}></Image>
-                                </div>
-                            </Link>
+                                        <Image className="w-auto h-20" alt="degate" src={niftyz}></Image>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://www.ethmilan.xyz/'} target="_blank" className="w-full h-full">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.ethmilan.xyz/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                    <Image className="w-auto h-20 scale-[2] " alt="degate" src={ethmilan}></Image>
-                                </div>
-                            </Link>
+                                        <Image className="w-auto h-20 scale-[2] " alt="degate" src={ethmilan}></Image>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://app.banklessacademy.com/'} target="_blank" className="w-full h-full">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://app.banklessacademy.com/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                    <Image className="w-auto h-20 scale-125 " alt="degate" src={bankless}></Image>
-                                </div>
-                            </Link>
+                                        <Image className="w-auto h-20 scale-125 " alt="degate" src={bankless}></Image>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://t.me/Chilicommunity'} target="_blank" className="w-full h-full">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://t.me/Chilicommunity'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                    <Image className="w-auto h-20 scale-125 rounded-full" alt="degate" src={chilliBanks}></Image>
-                                </div>
-                            </Link>
+                                        <Image className="w-auto h-20 scale-125 rounded-full" alt="degate" src={chilliBanks}></Image>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://www.caffebarbera.com/en/?utm_source=google&utm_medium=cpc&utm_campaign=brand_dubai&gad_source=1&gclid=EAIaIQobChMIhJHBvJujhQMV8UZBAh15BQ6QEAAYASAAEgLkgfD_BwE'} target="_blank" className="w-full h-full">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                    
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.ethbratislava.com/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                    <Image className="w-auto h-20 scale-[2] rounded-full" alt="degate" src={barbera}></Image>
-                                </div>
-                            </Link>
+                                        <Image className="w-auto h-20 scale-[1.2] " alt="degate" src={bratislava}></Image>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://www.ethbratislava.com/'} target="_blank" className="w-full h-full">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.regione.campania.it/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                    <Image className="w-auto h-20 scale-[1.2] " alt="degate" src={bratislava}></Image>
-                                </div>
-                            </Link>
+                                        <Image className="w-auto h-20 scale-[1.5] " alt="degate" src={regione}></Image>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://www.regione.campania.it/'} target="_blank" className="w-full h-full">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.fabbricaitalianainnovazione.it/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                    <Image className="w-auto h-20 scale-[1.5] " alt="degate" src={regione}></Image>
-                                </div>
-                            </Link>
+                                        <Image className="w-auto h-20 scale-[1.2] " alt="degate" src={fabbrica}></Image>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://www.fabbricaitalianainnovazione.it/'} target="_blank" className="w-full h-full">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.spici.eu/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                    <Image className="w-auto h-20 scale-[1.2] " alt="degate" src={fabbrica}></Image>
-                                </div>
-                            </Link>
+                                        <Image className="w-auto h-20 scale-[1.5] " alt="degate" src={spici}></Image>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://www.spici.eu/'} target="_blank" className="w-full h-full">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.sakebito.xyz/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                    <Image className="w-auto h-20 scale-[1.5] " alt="degate" src={spici}></Image>
-                                </div>
-                            </Link>
+                                        <Image className="w-auto h-20 scale-[1.5] invert" alt="degate" src={sakebito}></Image>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://www.sakebito.xyz/'} target="_blank" className="w-full h-full">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://twitter.com/icphub_IT'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                    <Image className="w-auto h-20 scale-[1.5] invert" alt="degate" src={sakebito}></Image>
-                                </div>
-                            </Link>
+                                        <Image className="w-auto h-20 scale-75 invert" alt="degate" src={CH}></Image>
+                                    </div>
+                                </Link>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-center">
-                    <div className="w-10/12 flex flex-col items-center justify-center">
-                        <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                            <Link href={'https://twitter.com/icphub_IT'} target="_blank" className="w-full h-full">
-                                <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://linktr.ee/themetagate'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-[1.2] bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${sfondo.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
 
-                                    <Image className="w-auto h-20 scale-75 invert" alt="degate" src={CH}></Image>
-                                </div>
-                            </Link>
-
+                            </div>
                         </div>
                     </div>
-                </div>
-                
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.comune.napoli.it/home'} target="_blank" className="p-0 w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-150 bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${commune.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
 
-            </Carousel>
+                            </div>
+                        </div>
+                    </div>
+                </Carousel>
             </div>
-            
+
         </section>
     )
 }

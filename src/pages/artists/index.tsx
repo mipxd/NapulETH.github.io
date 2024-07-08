@@ -95,14 +95,14 @@ export default function Artists() {
                 <Image src={cloudBase} alt="cloud" className=" cloud w-96 hidden lg:block absolute -left-20 top-36"></Image>
                 <Image src={cloudBase} alt="cloud" className=" cloud w-96 hidden lg:block absolute -right-20 top-28"></Image>
 
-                <h5 className=" text-black z-50 text-4xl SemiBold text-left mb-3 lg:mb-6 lg:px-28 leading-normal mt-8 lg:mt-0 w-11/12 lg:w-full ">
+                <h5 className=" text-black z-50 text-4xl SemiBold text-center mb-3 lg:mb-6 lg:px-28 leading-normal mt-8 lg:mt-0 w-11/12 lg:w-full ">
                     {t('artistsTitle')}
                 </h5>
-                <p className="block text-[#2E2E2E] z-50 Medium text-2xl lg:text-2xl text-left lg:px-28 leading-normal mt-8 lg:mb-4 lg:mt-0 w-11/12 lg:w-full">
+                <p className="block text-[#2E2E2E] z-50 Medium text-2xl lg:text-2xl text-center lg:px-28 leading-normal mt-8 lg:mb-4 lg:mt-0 w-11/12 lg:w-full">
                     {t('artistsPara')}
                 </p>
                 <h6 className=" xl:w-1/2 w-10/12 text-white p-4 z-50 bg-white border-4 border-[#eddb55] text-xl xl:text-2xl SemiBold leading-normal text-center my-8 lg:my-6" style={{
-                    backgroundImage: 'url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/original-acrylic-painting-background-dlerick.jpg")',
+                    backgroundImage: 'linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/original-acrylic-painting-background-dlerick.jpg")',
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -132,14 +132,14 @@ export default function Artists() {
                                         }}></div>
                                     </Link>
                                     <div className="w-full flex-grow flex flex-row items-center justify-between py-2 px-4 bg-white border-4 border-[#eddb55]" style={{
-                                        backgroundImage: 'url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/original-acrylic-painting-background-dlerick.jpg")',
+                                        backgroundImage: 'linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/original-acrylic-painting-background-dlerick.jpg")',
                                         backgroundPosition: "center",
                                         backgroundRepeat: "no-repeat",
                                         backgroundSize: "cover",
 
                                     }}>
                                         <div className="h-fit w-10/12 flex flex-col items-start justify-between">
-                                            <h5 className=" text-black drop-shadow-md shadow-black SemiBold text-lg whitespace-nowrap text-left mb-2">
+                                            <h5 className=" text-white drop-shadow-md shadow-black SemiBold text-lg whitespace-nowrap text-left mb-2">
                                                 {artist.name}
                                             </h5>
                                             <h5 className=" text-[#FFFFFF] SemiBold text-md whitespace-nowrap">
@@ -190,7 +190,13 @@ export default function Artists() {
 
                     </Carousel>
                 </div>
-
+                <h6 className=" xl:w-1/2 w-10/12 text-black p-4 z-50 bg-white border-4 border-[#eddb55] text-xl xl:text-2xl SemiBold leading-normal text-center my-8 lg:my-6">
+                    {
+                        t("curators")
+                    }
+                    <span className="block text-md mt-1 Medium">&#9679;&nbsp;BARBARA MALACARNE</span>
+                    <span className="block text-md Medium">&#9679;&nbsp;LUIGI GALLO</span>
+                </h6>
 
             </section>
             <Footer />
