@@ -194,7 +194,7 @@ export default function Artists() {
                     {
                         t("curators")
                     }
-                    <span className="block text-md mt-1 Medium">&#9679;&nbsp;BARBARA MALACARNE</span>
+                    <span className="block text-md mt-1 Medium">&#9679;&nbsp;BARBARA MELCARNE</span>
                     <span className="block text-md Medium">&#9679;&nbsp;LUIGI GALLO</span>
                 </h6>
 
