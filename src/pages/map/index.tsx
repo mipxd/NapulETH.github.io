@@ -28,9 +28,6 @@ export default function Map() {
             </Head>
             <Navbar />
             <section className="w-full flex flex-col items-center justify-start pt-16 lg:pt-20">
-                <Image src={cloudBase} alt="cloud" className=" cloud w-96 hidden lg:block absolute -left-20 top-36"></Image>
-                <Image src={cloudBase} alt="cloud" className=" cloud w-96 hidden lg:block absolute -right-20 top-28"></Image>
-
                 <h5 className=" text-black z-50 text-4xl SemiBold text-center mb-3 lg:mb-6 lg:px-28 leading-normal mt-8 lg:mt-0 w-11/12 lg:w-full ">
                     {t('map')}
                 </h5>
@@ -38,7 +35,7 @@ export default function Map() {
                     {t('mapPara')}
                 </p>
                 <div className="w-11/12 lg:w-10/12 h-fit">
-                <iframe src="" ></iframe>
+                <iframe src="https://magenta-zitella-49.tiiny.site" width="100%" allowFullScreen className="border-0 h-[80vh] lg:h-[155vh] mt-8 "></iframe>
                 </div>
             </section>
             <Footer />

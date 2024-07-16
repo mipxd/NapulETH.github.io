@@ -14,6 +14,7 @@ import p5 from "@assets/slider/p5.jpeg"
 import p6 from "@assets/slider/p6.jpeg"
 import p7 from "@assets/slider/p7.jpeg"
 import { useTranslation } from "react-i18next";
+import Link from "next/link";
 
 function Where() {
 
@@ -21,25 +22,25 @@ function Where() {
     const indices = [0, 1, 2, 3, 4, 5, 6, 7, 8]
     const responsive = {
         superLargeDesktop: {
-          // the naming can be any, depends on you.
-          breakpoint: { max: 4000, min: 3000 },
-          items: 1
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 1
         },
         desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 1
+            breakpoint: { max: 3000, min: 1024 },
+            items: 1
         },
         tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 1
+            breakpoint: { max: 1024, min: 464 },
+            items: 1
         },
         mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 1
+            breakpoint: { max: 464, min: 0 },
+            items: 1
         }
-      };
+    };
 
-      const { t, i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     return (
         <section className="w-full flex flex-col items-center justify-start mt-40">
@@ -52,6 +53,7 @@ function Where() {
             <p className=" text-[#2E2E2E] Medium text-2xl lg:text-3xl text-center leading-normal w-11/12 lg:w-7/12">
                 {t('wherepara2')}
             </p>
+            
 
             <div className="mt-8 w-10/12 lg:w-6/12 h-fit flex flex-col items-center justify-center">
                 <Carousel className="w-full h-fit border-4 border-[#eddb55]" showDots renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
@@ -96,7 +98,7 @@ function Where() {
 
 
                     </div>
-                    
+
 
 
                 </Carousel>
