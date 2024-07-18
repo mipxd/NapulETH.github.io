@@ -13,6 +13,7 @@ import t6 from '@assets/lore.jpeg'
 import t7 from '@assets/masha.png'
 import t8 from '@assets/med.jpg'
 import t9 from '@assets/Foto Q.jpeg'
+import t10 from '@assets/Maria Maddalena.png'
 import { useState } from "react";
 import { useTranslation } from 'react-i18next';
 
@@ -146,11 +147,27 @@ function Team() {
 
                         <h5 className=" text-black SemiBold text-2xl text-center mb-2">Paola Ciaramella</h5>
                         <h5 className=" text-[#EDDB55] SemiBold text-center text-2xl">
-                            {t('t5')}
+                            Business Dev.
                         </h5>
                     </div>
                 </div>
                 <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
+                    <div className="w-8/12 aspect-square bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
+                        backgroundImage: `url('${t10.src}')`,
+                        backgroundSize: "100%",
+                        backgroundPosition: "70% 20%"
+                    }}></div>
+                    <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
+
+                        <h5 className=" text-black SemiBold text-2xl text-center mb-2">Maria Maddalena</h5>
+                        <h5 className=" text-[#EDDB55] SemiBold text-center text-2xl">
+                            Business Dev.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div className="h-fit hidden lg:flex flex-row items-stretch justify-between w-10/12 mb-12">
+            <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
                     <div className="w-8/12 aspect-square bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
                         backgroundImage: `url('${t8.src}')`,
                         backgroundSize: "160%",
@@ -164,6 +181,13 @@ function Team() {
                         </h5>
                     </div>
                 </div>
+                <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
+                    
+                </div>
+                <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
+                    
+                </div>
+                
 
 
 
@@ -269,7 +293,21 @@ function Team() {
 
                                 <h5 className=" text-black SemiBold text-2xl text-center mb-2">Paola Ciaramella</h5>
                                 <h5 className=" text-[#EDDB55] SemiBold text-center text-2xl">
-                                    {t('t5')}
+                                    Business Dev.
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-full flex flex-col flex-grow items-center justify-center">
+                            <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
+                                backgroundImage: `url('${t10.src}')`,
+                            }}></div>
+                            <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
+
+                                <h5 className=" text-black SemiBold text-2xl text-center mb-2">Maria Maddalena</h5>
+                                <h5 className=" text-[#EDDB55] SemiBold text-center text-2xl">
+                                    Business Dev.
                                 </h5>
                             </div>
                         </div>

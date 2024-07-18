@@ -22,6 +22,7 @@ interface Event {
     description: string
     image_url: string
     date: string
+    link: string
 }
 
 function SideEvents() {
@@ -52,7 +53,8 @@ function SideEvents() {
                             address: item.address,
                             description: item.description,
                             date: d.toLocaleDateString('en-US', { day: '2-digit', month: '2-digit', year: 'numeric' }),
-                            image_url: item.image
+                            image_url: item.image,
+                            link: item.link
                         }
                         setEvents((prevState) => [...prevState, event]);
                         console.log(event)
@@ -85,31 +87,32 @@ function SideEvents() {
                 <p className="block text-[#2E2E2E] Medium text-2xl lg:text-2xl text-center lg:px-28 leading-normal mt-8 lg:mb-4 lg:mt-0 w-11/12 lg:w-full">
                     {t('sideEventsPara')}
                 </p>
-                <h6 className=" lg:w-1/2 w-10/12 text-black p-4 bg-white border-4 border-[#eddb55] text-xl xl:text-2xl Medium leading-normal text-center mt-10 mb-20 lg:my-16">
+                <h6 className="hidden lg:w-1/2 w-10/12 text-black p-4 bg-white border-4 border-[#eddb55] text-xl xl:text-2xl Medium leading-normal text-center mt-10 mb-20 lg:my-16">
                     {
                         t('sideEventsSoon')
                     } ⏳⌛
                 </h6>
                 {
                     events.length > 0 ? (
-                        <div className="w-11/12 h-fit flex flex-col items-center justify-center lg:grid lg:grid-cols-2 lg:auto-rows-auto gap-4 px-10 lg:my-10 blur">
+                        <div className="w-11/12 h-fit flex flex-col items-center justify-center lg:grid lg:grid-cols-2 lg:auto-rows-auto gap-4 px-10 lg:my-10">
 
                             {
                                 events.map((event, key) => {
                                     return (
-                                        <div key={key} className="w-full xl:w-auto h-fit flex flex-col justify-center items-center lg:flex-row lg:items-center lg:justify-stretch gap-3">
-                                            <div className=" w-full aspect-square lg:w-5/12 shadow-sm rounded-md" style={{
+                                        <Link href={event.link && event.link != "none" ? event.link : "no-link"} target="_blank" className="w-full h-fit" onClick={(e)=>{if(!event.link || event.link == "none") e.preventDefault()}}>
+                                            <div key={key} className="w-full xl:w-auto h-fit flex flex-col justify-center items-center lg:flex-row lg:items-center lg:justify-stretch gap-3">
+                                            <div className=" w-full aspect-square lg:w-[12vw] lg:h-[12vw] shadow-sm rounded-md border" style={{
                                                 backgroundImage: `url('${event.image_url}')`,
                                                 backgroundPosition: "center",
                                                 backgroundRepeat: "no-repeat",
-                                                backgroundSize: "cover"
+                                                backgroundSize: "100% 100%"
                                             }}>
 
                                             </div>
                                             <div className="w-full lg:w-fit lg:max-w-7/12 flex flex-col lg:items-start lg:justify-between gap-1 lg:max-w-[30vw]">
                                                 <div className="flex w-full lg:w-fit h-fit flex-col items-start justify-center lg:items-start lg:justify-start">
                                                     <h5 className=" text-black SemiBold text-xl mb-4 lg:mb-2 text-center w-full lg:w-fit lg:text-left">
-                                                        {event.title}
+                                                        {event.title.slice(0, 20)+"..."}
                                                     </h5>
                                                     <h5 className=" text-black w-full Medium text-md lg:text-sm whitespace-nowrap text-left flex flex-row items-center justify-start gap-1">
                                                         <TbLocationFilled size={16} color="#eddb55" /> {event.date}
@@ -121,12 +124,13 @@ function SideEvents() {
                                                 <div className="flex w-full lg:w-3/2 h-fit flex-col items-start justify-center lg:items-start lg:justify-start gap-1">
 
                                                     <h5 className="  text-gray-800 text-md lg:text-sm text-left h-fit w-full lg:w-9/12 mb-5 lg:mb-2 mt-2 lg:mt-0 ">
-                                                        {event.description.slice(0, 100) + "..."}
+                                                        {event.description.slice(0, 80) + "..."}
                                                     </h5>
                                                 </div>
 
                                             </div>
                                         </div>
+                                        </Link>
                                     )
                                 })
                             }
