@@ -10,7 +10,7 @@ import degate from '@assets/degate.svg'
 import square from '@assets/20square.svg'
 import wovlabs from '@assets/wovlabs.svg'
 
-import spaghett from '@assets/spaghetteth.png'
+import spaghett from '@assets/SpaghettETH.svg'
 import wehub from '@assets/wehub svg.svg'
 import mego from '@assets/mego.svg'
 import mood from '@assets/mood.svg'
