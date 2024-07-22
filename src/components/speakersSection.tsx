@@ -79,6 +79,7 @@ import s51 from '@assets/AlessandroBrigato.png'
 import s52 from '@assets/LimoneEth.png'
 import s53 from '@assets/FedericoCosta.png'
 import s54 from '@assets/Bock.jpg.jpeg'
+import s55 from '@assets/QJ.jpg.jpeg'
 
 
 
@@ -413,6 +414,12 @@ function Speakers() {
             name: "Bock",
             aff: "Fidesium"
         },
+        {
+            link: "https://x.com/QJ_ECF",
+            img: s55.src,
+            name: "QJ",
+            aff: "ETH Community Fund"
+        },
 
     ]
 
@@ -494,20 +501,20 @@ function Speakers() {
                 }
             </div>
             <div className="w-full h-fit flex flex-row items-center justify-center">
-            <Link href="/speakers" className="w-3/12 h-fit flex flex-row items-center justify-center">
-                <div className="w-full mt-4 hidden lg:flex flex-row items-center justify-center text-black p-4 bg-white border-4 border-[#eddb55]">
-                    <h5 className=" text-black SemiBold text-lg whitespace-nowrap text-center">
-                        {t("findMore")}
-                    </h5>
-                </div>
-            </Link>
+                <Link href="/speakers" className="w-3/12 h-fit flex flex-row items-center justify-center">
+                    <div className="w-full mt-4 hidden lg:flex flex-row items-center justify-center text-black p-4 bg-white border-4 border-[#eddb55]">
+                        <h5 className=" text-black SemiBold text-lg whitespace-nowrap text-center">
+                            {t("findMore")}
+                        </h5>
+                    </div>
+                </Link>
             </div>
 
 
             <div className='w-full h-fit block lg:hidden'>
                 <Carousel className="w-full h-fit block lg:hidden" showDots renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
                     {
-                        speakers.slice(0,10).map((speaker, index) => {
+                        speakers.slice(0, 10).map((speaker, index) => {
                             return (
                                 <Link href={speaker.link} key={index} target="_blank" className="w-full h-fit">
                                     <div className="w-full h-fit flex flex-row items-center justify-center">
