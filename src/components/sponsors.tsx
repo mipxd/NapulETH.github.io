@@ -28,7 +28,7 @@ import { BsGlobe } from "react-icons/bs";
 function Sponsors() {
     const { t, i18n } = useTranslation();
 
-    const [type, setType] = useState("normal");
+    const [type, setType] = useState("main");
 
     const responsive = {
         superLargeDesktop: {
@@ -52,13 +52,20 @@ function Sponsors() {
 
     return (
         <section className="w-full flex flex-col items-center justify-start mt-20 lg:mt-32">
+            <h5 className=" text-black text-4xl mb-10 SemiBold leading-normal text-center">
+                {t('sponsors')}
+            </h5>
             <div className="w-full h-fit flex flex-col lg:flex-row items-center justify-center gap-4 mb-8">
-                <div className={`w-10/12 lg:w-[27vw] h-fit px-8 py-2 cursor-pointer ${type == "normal" ? "bg-[#CA75AB] text-white" : "bg-white text-black"} border-4 border-[#eddb55]`} onClick={() => { setType("normal") }}>
+                <div className={`w-10/12 lg:w-[27vw] h-fit px-8 py-2 cursor-pointer ${type == "main" ? "bg-[#CA75AB] text-white" : "bg-white text-black"} border-4 border-[#eddb55]`} onClick={() => { setType("main") }}>
                     <h5 className="text-2xl lg:text-3xl SemiBold leading-normal text-center">
-                        Sponsors
+                        Main Sponsors
                     </h5>
                 </div>
-
+                <div className={`w-10/12 lg:w-[27vw] h-fit px-8 py-2 cursor-pointer ${type == "side" ? "bg-[#CA75AB] text-white" : "bg-white text-black"} border-4 border-[#eddb55]`} onClick={() => { setType("side") }}>
+                    <h5 className="text-2xl lg:text-3xl SemiBold leading-normal text-center">
+                        Side Sponsors
+                    </h5>
+                </div>
                 <div className={`w-10/12 lg:w-[27vw] h-fit px-8 py-2 cursor-pointer ${type == "diamond" ? "bg-[#CA75AB] text-white" : "bg-white text-black"} border-4 border-[#eddb55]`} onClick={() => { setType("diamond") }}>
                     <h5 className="text-2xl lg:text-3xl SemiBold leading-normal text-center">
                         Diamond Sponsors
@@ -67,7 +74,7 @@ function Sponsors() {
             </div>
 
             {
-                type == "normal" ? (
+                type == "main" ? (
                     <div className="hidden lg:grid lg:grid-cols-5 gap-4 col-span-8 lg:auto-rows-auto lg:w-10/12 items-center justify-center w-full h-fit relative my-4">
                         <Link href="https://www.youhodler.com/" target="_blank" className="p-0 w-full h-fit flex">
                             <div className="w-full h-28" style={{
@@ -85,19 +92,30 @@ function Sponsors() {
                                 backgroundRepeat: "no-repeat"
                             }}></div>
                         </Link>
-                        <Link href="https://esp.ethereum.foundation/" target="_blank" className="p-0 w-full h-fit flex">
-                            <div className="w-full h-28" style={{
-                                backgroundImage: `url('${esp.src}')`,
-                                backgroundPosition: "center",
-                                backgroundSize: "65% 90%",
-                                backgroundRepeat: "no-repeat"
-                            }}></div>
-                        </Link>
                         <Link href="https://20squares.xyz/" target="_blank" className="p-0 w-full h-fit flex">
                             <div className="w-full h-28" style={{
                                 backgroundImage: `url('${square.src}')`,
                                 backgroundPosition: "center",
                                 backgroundSize: "65% 100%",
+                                backgroundRepeat: "no-repeat"
+                            }}></div>
+                        </Link>
+                        <Link href="http://moodglobalservices.com/" target="_blank" className="p-0 w-full h-fit flex">
+                            <div className="w-full h-28" style={{
+                                backgroundImage: `url('${mood.src}')`,
+                                backgroundPosition: "center",
+                                backgroundSize: "65% 100%",
+                                backgroundRepeat: "no-repeat"
+                            }}></div>
+                        </Link>
+                    </div>
+                ) : type == "side" ? (
+                    <div className="hidden lg:grid lg:grid-cols-5 gap-4 col-span-8 lg:auto-rows-auto lg:w-10/12 items-center justify-center w-full h-fit relative my-4">
+                        <Link href="https://esp.ethereum.foundation/" target="_blank" className="p-0 w-full h-fit flex">
+                            <div className="w-full h-28" style={{
+                                backgroundImage: `url('${esp.src}')`,
+                                backgroundPosition: "center",
+                                backgroundSize: "65% 90%",
                                 backgroundRepeat: "no-repeat"
                             }}></div>
                         </Link>
@@ -117,15 +135,6 @@ function Sponsors() {
                                 backgroundRepeat: "no-repeat"
                             }}></div>
                         </Link>
-                        <Link href="http://moodglobalservices.com/" target="_blank" className="p-0 w-full h-fit flex">
-                            <div className="w-full h-28" style={{
-                                backgroundImage: `url('${mood.src}')`,
-                                backgroundPosition: "center",
-                                backgroundSize: "65% 100%",
-                                backgroundRepeat: "no-repeat"
-                            }}></div>
-                        </Link>
-
                         <Link href="https://bitcashback.net/" target="_blank" className="p-0 w-full h-fit flex">
                             <div className="w-full h-28" style={{
                                 backgroundImage: `url('${socialSquare.src}')`,
@@ -187,7 +196,7 @@ function Sponsors() {
                 )
             }
             {
-                type == "normal" ? (
+                type == "main" ? (
                     <div className="w-full h-fit block lg:hidden">
                         <Carousel className="w-full h-fit block lg:hidden" showDots={false} renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
                             <div className="w-full h-fit flex flex-row items-center justify-center">
@@ -220,11 +229,10 @@ function Sponsors() {
                             <div className="w-full h-fit flex flex-row items-center justify-center">
                                 <div className="w-10/12 flex flex-col items-center justify-center">
                                     <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                        <Link href={'https://esp.ethereum.foundation/'} target="_blank" className="p-0 w-full h-fit">
-                                            <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-                                                <div className="w-28 h-20 scale-150 bg-contain bg-center bg-no-repeat" style={{
-                                                    backgroundImage: `url('${esp.src}')`
-                                                }}></div>
+                                        <Link href={'https://20squares.xyz/'} target="_blank" className="w-full h-fit">
+                                            <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+
+                                                <Image className="w-auto h-20" alt="degate" src={square}></Image>
                                             </div>
                                         </Link>
 
@@ -234,10 +242,30 @@ function Sponsors() {
                             <div className="w-full h-fit flex flex-row items-center justify-center">
                                 <div className="w-10/12 flex flex-col items-center justify-center">
                                     <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                        <Link href={'https://20squares.xyz/'} target="_blank" className="w-full h-fit">
+                                        <Link href={'http://moodglobalservices.com/'} target="_blank" className="w-full h-fit">
                                             <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                                <Image className="w-auto h-20" alt="degate" src={square}></Image>
+                                                <Image className=" w-auto h-20" alt="degate" src={mood}></Image>
+                                            </div>
+                                        </Link>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </Carousel>
+                    </div>
+                ) : type == "side" ? (
+                    <div className="w-full h-fit block lg:hidden">
+                        <Carousel className="w-full h-fit block lg:hidden" showDots={false} renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
+                            
+                            <div className="w-full h-fit flex flex-row items-center justify-center">
+                                <div className="w-10/12 flex flex-col items-center justify-center">
+                                    <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                        <Link href={'https://esp.ethereum.foundation/'} target="_blank" className="p-0 w-full h-fit">
+                                            <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
+                                                <div className="w-28 h-20 scale-150 bg-contain bg-center bg-no-repeat" style={{
+                                                    backgroundImage: `url('${esp.src}')`
+                                                }}></div>
                                             </div>
                                         </Link>
 
@@ -264,19 +292,6 @@ function Sponsors() {
                                             <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
                                                 <Image className=" scale-[2] w-auto h-20" alt="degate" src={nifty}></Image>
-                                            </div>
-                                        </Link>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="w-full h-fit flex flex-row items-center justify-center">
-                                <div className="w-10/12 flex flex-col items-center justify-center">
-                                    <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                        <Link href={'http://moodglobalservices.com/'} target="_blank" className="w-full h-fit">
-                                            <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-
-                                                <Image className=" w-auto h-20" alt="degate" src={mood}></Image>
                                             </div>
                                         </Link>
 
