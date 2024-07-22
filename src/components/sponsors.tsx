@@ -21,6 +21,7 @@ import sfondo from '@assets/Sfondo scuro-scritta bianca omino bianchi.png'
 import barbera from '@assets/barbera.jpeg'
 import esp from '@assets/esp-logo.96fc01cc.svg'
 import QJ from '@assets/QJ.jpg.jpeg'
+import lilic from '@assets/lilic.jpeg'
 import { useState } from "react";
 import { BsGlobe } from "react-icons/bs";
 
@@ -56,6 +57,11 @@ function Sponsors() {
                 {t('sponsors')}
             </h5>
             <div className="w-full h-fit flex flex-col lg:flex-row items-center justify-center gap-4 mb-8">
+            <div className={`w-10/12 lg:w-[27vw] h-fit px-8 py-2 cursor-pointer ${type == "diamond" ? "bg-[#CA75AB] text-white" : "bg-white text-black"} border-4 border-[#eddb55]`} onClick={() => { setType("diamond") }}>
+                    <h5 className="text-2xl lg:text-3xl SemiBold leading-normal text-center">
+                        Diamond Sponsors
+                    </h5>
+                </div>
                 <div className={`w-10/12 lg:w-[27vw] h-fit px-8 py-2 cursor-pointer ${type == "main" ? "bg-[#CA75AB] text-white" : "bg-white text-black"} border-4 border-[#eddb55]`} onClick={() => { setType("main") }}>
                     <h5 className="text-2xl lg:text-3xl SemiBold leading-normal text-center">
                         Main Sponsors
@@ -66,11 +72,7 @@ function Sponsors() {
                         Side Sponsors
                     </h5>
                 </div>
-                <div className={`w-10/12 lg:w-[27vw] h-fit px-8 py-2 cursor-pointer ${type == "diamond" ? "bg-[#CA75AB] text-white" : "bg-white text-black"} border-4 border-[#eddb55]`} onClick={() => { setType("diamond") }}>
-                    <h5 className="text-2xl lg:text-3xl SemiBold leading-normal text-center">
-                        Diamond Sponsors
-                    </h5>
-                </div>
+                
             </div>
 
             {
@@ -171,22 +173,22 @@ function Sponsors() {
                 ) : (
                     <div className="flex-row items-start justify-center w-11/12 hidden lg:flex">
                         <div className="flex flex-col items-center justify-center w-1/5 mx-auto mb-4">
-                            <Link href={"https://x.com/QJ_ECF"} target="_blank" className="w-full aspect-square">
+                            <Link href={"https://www.johnlilic.info/"} target="_blank" className="w-full aspect-square">
                                 <div className="w-full aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
-                                    backgroundImage: `url('${QJ.src}')`
+                                    backgroundImage: `url('${lilic.src}')`
                                 }}></div>
                             </Link>
                             <div className="w-full flex-grow flex flex-row items-center justify-between py-2 px-4 bg-white border-4 border-[#eddb55]">
                                 <div className="h-fit w-10/12 flex flex-col items-start justify-between">
                                     <h5 className=" text-black SemiBold text-md whitespace-nowrap text-left mb-2">
-                                        QJ
+                                        John Lilic
                                     </h5>
                                     <h5 className=" text-[#EDDB55] Medium text-md">
-                                        ETH Community Fund
+                                        Seed Investor
                                     </h5>
                                 </div>
                                 <div className="h-full w-2/12 flex flex-col items-end justify-center gap-3">
-                                    <Link href={"https://x.com/QJ_ECF"} target="_blank"><BsGlobe color="#252525" size={26}></BsGlobe></Link>
+                                    <Link href={"https://www.johnlilic.info/"} target="_blank"><BsGlobe color="#252525" size={26}></BsGlobe></Link>
 
                                 </div>
 
@@ -376,18 +378,18 @@ function Sponsors() {
                 ) : (
                     <div className='w-full h-fit block lg:hidden'>
                         <Carousel className="w-full h-fit block lg:hidden" showDots renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
-                            <Link href={"https://x.com/QJ_ECF"} target="_blank" className="w-full h-fit">
+                            <Link href={"https://www.johnlilic.info/"} target="_blank" className="w-full h-fit">
                                 <div className="w-full h-fit flex flex-row items-center justify-center">
                                     <div className="w-full flex flex-col flex-grow items-center justify-center">
                                         <div className="w-8/12 aspect-square bg-cover bg-top bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
-                                            backgroundImage: `url('${QJ.src}')`
+                                            backgroundImage: `url('${lilic.src}')`
                                         }}></div>
                                         <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
                                             <h5 className=" text-black w-full SemiBold text-2xl text-center mb-2">
-                                                QJ
+                                                John Lilic
                                             </h5>
                                             <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
-                                                ETH Community Fund
+                                                Seed Investor
                                             </h5>
                                         </div>
                                     </div>
