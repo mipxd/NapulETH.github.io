@@ -7,6 +7,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 import mood from '@assets/mood.svg'
+import moodMobile from '@assets/moodMobile.svg'
 import commune from "@assets/commune.png"
 import degate from '@assets/degate.svg'
 import square from '@assets/sq20.svg'
@@ -247,7 +248,7 @@ function Sponsors() {
                                         <Link href={'http://moodglobalservices.com/'} target="_blank" className="w-full h-fit">
                                             <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                                <Image className=" w-auto h-20" alt="degate" src={mood}></Image>
+                                                <Image className=" w-auto h-20" alt="degate" src={moodMobile}></Image>
                                             </div>
                                         </Link>
 
