@@ -62,6 +62,22 @@ import s51 from '@assets/AlessandroBrigato.png'
 import s52 from '@assets/LimoneEth.png'
 import s53 from '@assets/FedericoCosta.png'
 import s54 from '@assets/Bock.jpg.jpeg'
+import s55 from '@assets/FabrizioMaiocco.jpg'
+import s56 from '@assets/DanielePinna.jpg'
+import s57 from '@assets/FrancescoVincenti.png'
+import s58 from '@assets/Marsili.png'
+import s59 from '@assets/AntonioRamicello.jpg'
+import s60 from '@assets/DamianRusinek.jpg'
+import s61 from '@assets/ValentinaMarzioni.png'
+import s62 from '@assets/QJ.jpeg'
+import s63 from '@assets/PhilippPieper.jpg'
+import s64 from '@assets/LorenzoAmoroso.jpg'
+import s65 from '@assets/Viktor.jpg'
+import s66 from '@assets/DavideMilani.jpg'
+import s67 from '@assets/DavidCarvalho.jpg'
+
+
+
 import { BsGlobe, BsLinkedin } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
 import Marquee from "react-fast-marquee";
@@ -136,7 +152,7 @@ export default function Speakers() {
         {
             link: "https://twitter.com/exxyzee",
             img: s11.src,
-            name: "ExWhyZee",
+            name: "Sundaram Jha",
             aff: "Eden Protocol"
         },
         {
@@ -150,12 +166,6 @@ export default function Speakers() {
             img: s13.src,
             name: "Lorenzo Rigatti",
             aff: "BlockInvest"
-        },
-        {
-            link: "https://www.howtoweb3.xyz/",
-            img: s14.src,
-            name: "Irene Guarnieri",
-            aff: "How To Web 3.0"
         },
         {
             link: "https://twitter.com/castignolimarco",
@@ -192,12 +202,6 @@ export default function Speakers() {
             img: s20.src,
             name: "Alena",
             aff: "TON Foundation"
-        },
-        {
-            link: "https://www.howtoweb3.xyz/",
-            img: s21.src,
-            name: "Gabriele Alagna",
-            aff: "How To Web 3.0"
         },
         {
             link: "https://thecryptogateway.it/",
@@ -397,6 +401,85 @@ export default function Speakers() {
             img: s54.src,
             name: "Bock",
             aff: "Fidesium"
+        },
+        //Here u start
+        {
+            link: "https://www.linkedin.com/in/fabrizio-maiocco-8b09571b/",
+            img: s55.src,
+            name: "Fabrizio Maiocco",
+            aff: "GCM Verse"
+        },
+        {
+            link: "https://x.com/pestopoppa",
+            img: s56.src,
+            name: "Daniele Pinna",
+            aff: "GnosisVC"
+        },
+        {
+            link: "https://x.com/fravincenti1",
+            img: s57.src,
+            name: "Francesco Vincenti",
+            aff: "Digitalia"
+        },
+        {
+            link: "https://x.com/andreamars_",
+            img: s58.src,
+            name: "Andrea Marsili",
+            aff: "EthMilan"
+        },
+        {
+            link: "https://x.com/Antonio_Chaser",
+            img: s59.src,
+            name: "Antonio Ramicello",
+            aff: "Crown Chaser"
+        },
+        {
+            link: "https://x.com/drdr_zz",
+            img: s60.src,
+            name: "Damian Rusinek",
+            aff: "Composable Security"
+        },
+        {
+            link: "https://x.com/ladyinfinance",
+            img: s61.src,
+            name: "Valentina Marzioni",
+            aff: "Delfyx"
+        },
+        {
+            link: "https://x.com/QJ_ECF",
+            img: s62.src,
+            name: "QJ",
+            aff: "ETH Community Fund "
+        },
+        {
+            link: "https://twitter.com/PhilippPieper",
+            img: s63.src,
+            name: "Philipp Pieper",
+            aff: "Swarm"
+        },
+        {
+            link: "https://www.linkedin.com/in/lorenzo-amoroso-aa15261b6/",
+            img: s64.src,
+            name: "Lorenzo Amoroso",
+            aff: "Hercle"
+        },
+        {
+            link: "https://x.com/s0meone_u_know",
+            img: s65.src,
+            name: "Viktor",
+            aff: "TON"
+        },
+        {
+            link: "https://www.chainlabo.com/",
+            img: s66.src,
+            name: "Davide Milani",
+            aff: "ChainLabo"
+        },
+        {
+            link: "https://www.linkedin.com/in/david-joao-vieira-carvalho-4479b8103/",
+            img: s67.src,
+            name: "David Carvalho",
+            aff: "Naoris Protocol"
         },
 
     ]

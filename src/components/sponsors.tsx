@@ -22,7 +22,7 @@ import sfondo from '@assets/Sfondo scuro-scritta bianca omino bianchi.png'
 import barbera from '@assets/barbera.jpeg'
 import esp from '@assets/esp-logo.96fc01cc.svg'
 import QJ from '@assets/QJ.jpg.jpeg'
-import lilic from '@assets/lilic.jpeg'
+import lilic from '@assets/johnLilic.jpg'
 import { useState } from "react";
 import { BsGlobe } from "react-icons/bs";
 
