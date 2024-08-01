@@ -23,6 +23,7 @@ import barbera from '@assets/barbera.jpeg'
 import esp from '@assets/esp-logo.96fc01cc.svg'
 import QJ from '@assets/QJ.jpg.jpeg'
 import lilic from '@assets/johnLilic.jpg'
+import bybit from '@assets/Bybit_Logotype_Web3_Light_Vert.svg'
 import { useState } from "react";
 import { BsGlobe } from "react-icons/bs";
 
@@ -85,34 +86,42 @@ function Sponsors() {
             <h5 className=" text-black text-4xl mt-14 SemiBold leading-normal text-center">
                 Main Sponsors
             </h5>
-            <div className="hidden lg:flex lg:flex-row gap-4 lg:w-10/12 items-center justify-center w-full h-fit relative my-4">
-                <Link href="https://www.youhodler.com/" target="_blank" className="p-0 w-4/12 h-fit flex">
-                    <div className="w-full h-20" style={{
+            <div className="hidden lg:grid lg:grid-cols-5 gap-4 col-span-8 lg:auto-rows-auto lg:w-10/12 items-center justify-center w-full h-fit relative my-4">
+                <Link href="https://www.youhodler.com/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
                         backgroundImage: `url('${yh.src}')`,
                         backgroundPosition: "center",
                         backgroundSize: "85% 110%",
                         backgroundRepeat: "no-repeat"
                     }}></div>
                 </Link>
-                <Link href="http://degate.com/" target="_blank" className="p-0 w-4/12 h-fit flex">
-                    <div className="w-full h-20" style={{
+                <Link href="http://degate.com/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
                         backgroundImage: `url('${degate.src}')`,
                         backgroundPosition: "center",
                         backgroundSize: "65% 100%",
                         backgroundRepeat: "no-repeat"
                     }}></div>
                 </Link>
-                <Link href="https://20squares.xyz/" target="_blank" className="p-0 w-4/12 h-fit flex">
-                    <div className="w-full h-20" style={{
+                <Link href="https://20squares.xyz/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
                         backgroundImage: `url('${square.src}')`,
                         backgroundPosition: "center",
                         backgroundSize: "65% 100%",
                         backgroundRepeat: "no-repeat"
                     }}></div>
                 </Link>
-                <Link href="http://moodglobalservices.com/" target="_blank" className="p-0 w-4/12 h-fit flex">
-                    <div className="w-full h-20" style={{
+                <Link href="http://moodglobalservices.com/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
                         backgroundImage: `url('${mood.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 100%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.bybit.com/en/web3/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${bybit.src}')`,
                         backgroundPosition: "center",
                         backgroundSize: "65% 100%",
                         backgroundRepeat: "no-repeat"
