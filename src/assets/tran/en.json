@@ -116,5 +116,11 @@
   "map": "Map",
   "mapPara": "Where To Find Us",
   "agenda": "Agenda",
-  "agendaSoon": "Our agenda will be available soon"
+  "agendaSoon": "Our agenda will be available soon",
+  "pitchBattle" : "Pitch Battle",
+  "pitchBattleTitle" : "Startup Pitch Battle",
+  "participants" : "Participants",
+  "jury" : "Jury Of The Compition",
+  "pitchPara" : "The NapulETH Startup Pitch Battle is a thrilling competition designed to identify and empower the next generation of groundbreaking startups. Budding entrepreneurs from a wide range of industries will have the chance to showcase their innovative ideas to a panel of esteemed judges and a captivated audience of investors, mentors, and potential collaborators. This dynamic event promises to be a launchpad for success, propelling the most promising ventures into the spotlight and fueling their journey towards impactful growth."
+  
 }

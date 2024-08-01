@@ -17,7 +17,7 @@ import t10 from '@assets/Maria Maddalena.png'
 import { useState } from "react";
 import { useTranslation } from 'react-i18next';
 
-function Team() {
+function PitchJury() {
 
     const [selectedSliderIndex, setSelectedSliderIndex] = useState<number>(0)
     const indices = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -47,7 +47,7 @@ function Team() {
     return (
         <section className="w-full flex flex-col items-center justify-start pt-24">
             <h5 className=" text-black text-4xl mb-4 lg:mb-10 SemiBold leading-normal text-center">
-                {t('team')}
+                {t('jury')}
             </h5>
             <div className="h-fit hidden lg:flex flex-row items-stretch justify-between w-10/12 mb-12">
                 <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
@@ -124,74 +124,7 @@ function Team() {
 
 
             </div>
-            <div className="h-fit hidden lg:flex flex-row items-stretch justify-between w-10/12 mb-12">
-                <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
-                    <div className="w-8/12 aspect-square bg-cotain bg-center bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
-                        backgroundImage: `url('${t7.src}')`
-                    }}></div>
-                    <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
-
-                        <h5 className=" text-black SemiBold text-2xl text-center mb-2">Masha</h5>
-                        <h5 className=" text-[#EDDB55] SemiBold text-center text-2xl">
-                            The Illustrator
-                        </h5>
-                    </div>
-                </div>
-                <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
-                    <div className="w-8/12 aspect-square bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
-                        backgroundImage: `url('${t9.src}')`,
-                        backgroundSize: "100%",
-                        backgroundPosition: "70% 20%"
-                    }}></div>
-                    <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
-
-                        <h5 className=" text-black SemiBold text-2xl text-center mb-2">Paola Ciaramella</h5>
-                        <h5 className=" text-[#EDDB55] SemiBold text-center text-2xl">
-                            Business Dev.
-                        </h5>
-                    </div>
-                </div>
-                <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
-                    <div className="w-8/12 aspect-square bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
-                        backgroundImage: `url('${t10.src}')`,
-                        backgroundSize: "100%",
-                        backgroundPosition: "70% 20%"
-                    }}></div>
-                    <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
-
-                        <h5 className=" text-black SemiBold text-2xl text-center mb-2">Maria Maddalena</h5>
-                        <h5 className=" text-[#EDDB55] SemiBold text-center text-2xl">
-                            Business Dev.
-                        </h5>
-                    </div>
-                </div>
-            </div>
-            <div className="h-fit hidden lg:flex flex-row items-stretch justify-between w-10/12 mb-12">
-            <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
-                    <div className="w-8/12 aspect-square bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
-                        backgroundImage: `url('${t8.src}')`,
-                        backgroundSize: "160%",
-                        backgroundPosition: "70% 20%"
-                    }}></div>
-                    <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
-
-                        <h5 className=" text-black SemiBold text-2xl text-center mb-2">Med Ben Moussa</h5>
-                        <h5 className=" text-[#EDDB55] SemiBold text-center text-2xl">
-                            Web Dev.
-                        </h5>
-                    </div>
-                </div>
-                <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
-                    
-                </div>
-                <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
-                    
-                </div>
-                
-
-
-
-            </div>
+            
             <div className='w-full h-fit block lg:hidden'>
                 <Carousel className="w-full h-fit block lg:hidden" showDots renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
                     <div className="w-full h-fit flex flex-row items-center justify-center">
@@ -425,4 +358,4 @@ function Team() {
     )
 }
 
-export default Team
+export default PitchJury
