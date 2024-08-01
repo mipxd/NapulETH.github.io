@@ -66,7 +66,7 @@ function PitchPartners() {
             <h5 className=" text-black text-4xl mb-10 SemiBold leading-normal text-center">
                 {t('partners')}
             </h5>
-            <div className="hidden lg:grid lg:grid-cols-5 gap-4 col-span-8 lg:auto-rows-auto lg:w-10/12 items-center justify-center w-full h-fit relative my-4">
+            <div className="hidden lg:grid blur lg:grid-cols-5 gap-4 col-span-8 lg:auto-rows-auto lg:w-10/12 items-center justify-center w-full h-fit relative my-4">
                 <Link href="https://www.ethbucharest.xyz/" target="_blank" className="p-0 w-full h-fit flex">
                     <div className="w-full h-28" style={{
                         backgroundImage: `url('${bucharest.src}')`,
@@ -115,7 +115,7 @@ function PitchPartners() {
                             <div className="w-full flex-grow flex flex-col items-center justify-center" >
                                 <Link href={'https://www.ethbucharest.xyz/'} target="_blank" className="p-0 w-full h-fit">
                                     <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-                                        <div className="w-28 scale-[2.5] h-20 bg-contain bg-center bg-no-repeat" style={{
+                                        <div className="w-28  blur scale-[2.5] h-20 bg-contain bg-center bg-no-repeat" style={{
                                             backgroundImage: `url('${bucharest.src}')`
                                         }}></div>
                                     </div>
@@ -129,7 +129,7 @@ function PitchPartners() {
                             <div className="w-full flex-grow flex flex-col items-center justify-center" >
                                 <Link href={'https://www.spaghett-eth.com/'} target="_blank" className="p-0 w-full h-fit">
                                     <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-                                        <div className="w-28 scale-150 h-20 bg-contain bg-center bg-no-repeat" style={{
+                                        <div className="w-28 blur scale-150 h-20 bg-contain bg-center bg-no-repeat" style={{
                                             backgroundImage: `url('${spaghett.src}')`
                                         }}></div>
                                     </div>
@@ -142,7 +142,7 @@ function PitchPartners() {
                         <div className="w-10/12 flex flex-col items-center justify-center">
                             <div className="w-full flex-grow flex flex-col items-center justify-center" >
                                 <Link href={'https://wehub.it/'} target="_blank" className="w-full h-fit">
-                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                    <div className="w-full h-full  blur flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
                                         <Image className="w-auto h-20 scale-[2] " alt="degate" src={wehub}></Image>
                                     </div>
@@ -155,7 +155,7 @@ function PitchPartners() {
                         <div className="w-10/12 flex flex-col items-center justify-center">
                             <div className="w-full flex-grow flex flex-col items-center justify-center" >
                                 <Link href={'https://mego.tickets/'} target="_blank" className=" w-full h-fit">
-                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                    <div className="w-full h-full blur flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
                                         <Image className=" invert w-auto h-20" alt="degate" src={mego}></Image>
                                     </div>
@@ -168,7 +168,7 @@ function PitchPartners() {
                         <div className="w-10/12 flex flex-col items-center justify-center">
                             <div className="w-full flex-grow flex flex-col items-center justify-center" >
                                 <Link href={'https://thecryptogateway.it/'} target="_blank" className="w-full h-fit">
-                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                    <div className="w-full h-full flex blur flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
                                         <Image className="w-auto h-20" alt="degate" src={gate}></Image>
                                     </div>

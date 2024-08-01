@@ -169,6 +169,16 @@ function Navbar() {
                                 </div>
                             </Link>
                         </MenuItem>
+                        <div className="my-1 h-[0.5px] w-10/12 bg-black/80 mx-auto "></div>
+                        <MenuItem>
+                            <Link href="/side-events" className="w-fit h-fit flex flex-row items-center justify-start">
+                                <div className="w-fit min-w-[10vw] flex flex-row items-center justify-start px-2 py-1">
+                                    <h5 className=" text-black text-xl whitespace-nowrap Medium">
+                                        {t('pitchBattle')}
+                                    </h5>
+                                </div>
+                            </Link>
+                        </MenuItem>
                     </Menu>
                     
 
@@ -237,7 +247,7 @@ function Navbar() {
                         <div className="py-6 w-full px-4 flex flex-row items-center justify-end">
                             <IoCloseSharp color="#000000" size={35} onClick={() => { setMobileMenuOpen(false) }}></IoCloseSharp>
                         </div>
-                        <div className="w-fit h-fit flex flex-col items-center justify-center gap-6 mt-20">
+                        <div className="w-fit h-fit flex flex-col items-center justify-center gap-6 mt-4">
                             <Link href={'/'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     {t('home')}
@@ -271,6 +281,12 @@ function Navbar() {
                             <Link href={'/side-events'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     {t("sideEventsRaw")}
+                                </h5>
+                            </Link>
+                            <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
+                            <Link href={'/side-events'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
+                                <h5 className=" text-black text-3xl Medium text-center">
+                                    {t('pitchBattle')}
                                 </h5>
                             </Link>
                             <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
