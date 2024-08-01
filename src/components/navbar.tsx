@@ -171,7 +171,7 @@ function Navbar() {
                         </MenuItem>
                         <div className="my-1 h-[0.5px] w-10/12 bg-black/80 mx-auto "></div>
                         <MenuItem>
-                            <Link href="/side-events" className="w-fit h-fit flex flex-row items-center justify-start">
+                            <Link href="/pitch_battle" className="w-fit h-fit flex flex-row items-center justify-start">
                                 <div className="w-fit min-w-[10vw] flex flex-row items-center justify-start px-2 py-1">
                                     <h5 className=" text-black text-xl whitespace-nowrap Medium">
                                         {t('pitchBattle')}
@@ -284,7 +284,7 @@ function Navbar() {
                                 </h5>
                             </Link>
                             <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
-                            <Link href={'/side-events'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
+                            <Link href={'/pitch_battle'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     {t('pitchBattle')}
                                 </h5>
