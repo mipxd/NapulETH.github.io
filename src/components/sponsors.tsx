@@ -55,65 +55,75 @@ function Sponsors() {
     return (
         <section className="w-full flex flex-col items-center justify-start mt-20 lg:mt-32">
             <h5 className=" text-black text-4xl mb-10 SemiBold leading-normal text-center">
-                {t('sponsors')}
+                Diamond Sponsors
             </h5>
-            <div className="w-full h-fit flex flex-col lg:flex-row items-center justify-center gap-4 mb-8">
-            <div className={`w-10/12 lg:w-[27vw] h-fit px-8 py-2 cursor-pointer ${type == "diamond" ? "bg-[#CA75AB] text-white" : "bg-white text-black"} border-4 border-[#eddb55]`} onClick={() => { setType("diamond") }}>
-                    <h5 className="text-2xl lg:text-3xl SemiBold leading-normal text-center">
-                        Diamond Sponsors
-                    </h5>
+            <div className="flex-row items-start justify-center w-11/12 hidden lg:flex">
+                <div className="flex flex-col items-center justify-center w-1/5 mx-auto mb-4">
+                    <Link href={"https://www.johnlilic.info/"} target="_blank" className="w-full aspect-square">
+                        <div className="w-full aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
+                            backgroundImage: `url('${lilic.src}')`
+                        }}></div>
+                    </Link>
+                    <div className="w-full flex-grow flex flex-row items-center justify-between py-2 px-4 bg-white border-4 border-[#eddb55]">
+                        <div className="h-fit w-10/12 flex flex-col items-start justify-between">
+                            <h5 className=" text-black SemiBold text-md whitespace-nowrap text-left mb-2">
+                                John Lilic
+                            </h5>
+                            <h5 className=" text-[#EDDB55] Medium text-md">
+                                Seed Investor
+                            </h5>
+                        </div>
+                        <div className="h-full w-2/12 flex flex-col items-end justify-center gap-3">
+                            <Link href={"https://www.johnlilic.info/"} target="_blank"><BsGlobe color="#252525" size={26}></BsGlobe></Link>
+
+                        </div>
+
+                    </div>
                 </div>
-                <div className={`w-10/12 lg:w-[27vw] h-fit px-8 py-2 cursor-pointer ${type == "main" ? "bg-[#CA75AB] text-white" : "bg-white text-black"} border-4 border-[#eddb55]`} onClick={() => { setType("main") }}>
-                    <h5 className="text-2xl lg:text-3xl SemiBold leading-normal text-center">
-                        Main Sponsors
-                    </h5>
-                </div>
-                <div className={`w-10/12 lg:w-[27vw] h-fit px-8 py-2 cursor-pointer ${type == "side" ? "bg-[#CA75AB] text-white" : "bg-white text-black"} border-4 border-[#eddb55]`} onClick={() => { setType("side") }}>
-                    <h5 className="text-2xl lg:text-3xl SemiBold leading-normal text-center">
-                        Side Sponsors
-                    </h5>
-                </div>
-                
             </div>
 
-            {
-                type == "main" ? (
-                    <div className="hidden lg:grid lg:grid-cols-5 gap-4 col-span-8 lg:auto-rows-auto lg:w-10/12 items-center justify-center w-full h-fit relative my-4">
-                        <Link href="https://www.youhodler.com/" target="_blank" className="p-0 w-full h-fit flex">
-                            <div className="w-full h-28" style={{
-                                backgroundImage: `url('${yh.src}')`,
-                                backgroundPosition: "center",
-                                backgroundSize: "85% 110%",
-                                backgroundRepeat: "no-repeat"
-                            }}></div>
-                        </Link>
-                        <Link href="http://degate.com/" target="_blank" className="p-0 w-full h-fit flex">
-                            <div className="w-full h-28" style={{
-                                backgroundImage: `url('${degate.src}')`,
-                                backgroundPosition: "center",
-                                backgroundSize: "65% 100%",
-                                backgroundRepeat: "no-repeat"
-                            }}></div>
-                        </Link>
-                        <Link href="https://20squares.xyz/" target="_blank" className="p-0 w-full h-fit flex">
-                            <div className="w-full h-28" style={{
-                                backgroundImage: `url('${square.src}')`,
-                                backgroundPosition: "center",
-                                backgroundSize: "65% 100%",
-                                backgroundRepeat: "no-repeat"
-                            }}></div>
-                        </Link>
-                        <Link href="http://moodglobalservices.com/" target="_blank" className="p-0 w-full h-fit flex">
-                            <div className="w-full h-28" style={{
-                                backgroundImage: `url('${mood.src}')`,
-                                backgroundPosition: "center",
-                                backgroundSize: "65% 100%",
-                                backgroundRepeat: "no-repeat"
-                            }}></div>
-                        </Link>
-                    </div>
-                ) : type == "side" ? (
-                    <div className="hidden lg:grid lg:grid-cols-5 gap-4 col-span-8 lg:auto-rows-auto lg:w-10/12 items-center justify-center w-full h-fit relative my-4">
+            <h5 className=" text-black text-4xl mt-14 SemiBold leading-normal text-center">
+                Main Sponsors
+            </h5>
+            <div className="hidden lg:flex lg:flex-row gap-4 lg:w-10/12 items-center justify-center w-full h-fit relative my-4">
+                <Link href="https://www.youhodler.com/" target="_blank" className="p-0 w-4/12 h-fit flex">
+                    <div className="w-full h-20" style={{
+                        backgroundImage: `url('${yh.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "85% 110%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="http://degate.com/" target="_blank" className="p-0 w-4/12 h-fit flex">
+                    <div className="w-full h-20" style={{
+                        backgroundImage: `url('${degate.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 100%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://20squares.xyz/" target="_blank" className="p-0 w-4/12 h-fit flex">
+                    <div className="w-full h-20" style={{
+                        backgroundImage: `url('${square.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 100%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="http://moodglobalservices.com/" target="_blank" className="p-0 w-4/12 h-fit flex">
+                    <div className="w-full h-20" style={{
+                        backgroundImage: `url('${mood.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 100%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+            </div>
+
+            <h5 className=" text-black text-4xl mt-14 SemiBold leading-normal text-center">
+                Side Sponsors
+            </h5>
+            <div className="hidden lg:grid lg:grid-cols-5 gap-4 col-span-8 lg:auto-rows-auto lg:w-10/12 items-center justify-center w-full h-fit relative my-4">
                         <Link href="https://esp.ethereum.foundation/" target="_blank" className="p-0 w-full h-fit flex">
                             <div className="w-full h-28" style={{
                                 backgroundImage: `url('${esp.src}')`,
@@ -171,33 +181,7 @@ function Sponsors() {
                             }}></div>
                         </Link>
                     </div>
-                ) : (
-                    <div className="flex-row items-start justify-center w-11/12 hidden lg:flex">
-                        <div className="flex flex-col items-center justify-center w-1/5 mx-auto mb-4">
-                            <Link href={"https://www.johnlilic.info/"} target="_blank" className="w-full aspect-square">
-                                <div className="w-full aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
-                                    backgroundImage: `url('${lilic.src}')`
-                                }}></div>
-                            </Link>
-                            <div className="w-full flex-grow flex flex-row items-center justify-between py-2 px-4 bg-white border-4 border-[#eddb55]">
-                                <div className="h-fit w-10/12 flex flex-col items-start justify-between">
-                                    <h5 className=" text-black SemiBold text-md whitespace-nowrap text-left mb-2">
-                                        John Lilic
-                                    </h5>
-                                    <h5 className=" text-[#EDDB55] Medium text-md">
-                                        Seed Investor
-                                    </h5>
-                                </div>
-                                <div className="h-full w-2/12 flex flex-col items-end justify-center gap-3">
-                                    <Link href={"https://www.johnlilic.info/"} target="_blank"><BsGlobe color="#252525" size={26}></BsGlobe></Link>
 
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                )
-            }
             {
                 type == "main" ? (
                     <div className="w-full h-fit block lg:hidden">
@@ -260,7 +244,7 @@ function Sponsors() {
                 ) : type == "side" ? (
                     <div className="w-full h-fit block lg:hidden">
                         <Carousel className="w-full h-fit block lg:hidden" showDots={false} renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
-                            
+
                             <div className="w-full h-fit flex flex-row items-center justify-center">
                                 <div className="w-10/12 flex flex-col items-center justify-center">
                                     <div className="w-full flex-grow flex flex-col items-center justify-center" >
