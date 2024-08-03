@@ -17,6 +17,8 @@ import { TbLocationFilled } from "react-icons/tb";
 
 import bulb from '@assets/bulb.svg'
 import watch from '@assets/watch.svg'
+import italy from '@assets/italy.svg'
+import steve from '@assets/steve.svg'
 
 import PitchPartners from "@/components/pitchPartners";
 import PitchParticipants from "@/components/participants";
@@ -37,21 +39,19 @@ function SideEvents() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Navbar />
-            <section className="w-full h-fit relative flex flex-col items-center justify-start pt-16 lg:pt-20">
-                <h5 className=" text-black z-50 text-xl SemiBold text-center mb-3 lg:mb-6 lg:px-28 leading-normal mt-8 lg:mt-0 w-11/12 lg:w-full">
-                    ⚡NapulETH⚡
-                </h5>
+            <section className="w-full h-fit relative flex flex-col items-center justify-start pt-16 lg:pt-28">
+                
                 <h5 className=" text-black z-50 text-4xl SemiBold text-center mb-6 lg:mb-6 lg:px-28 leading-normal mt-0 lg:mt-0 w-11/12 lg:w-full">
                     {t("pitchBattleTitle")}
                 </h5>
                 <div className="w-full h-fit relative flex flex-row items-center justify-center">
-                    <Image src={watch} alt="stop watch napuleth startup pitch battle" className="hidden lg:block absolute z-10 -left-7 -top-1/2 w-[15vw] rotate-12"></Image>
+                    <Image src={steve} alt="stop watch napuleth startup pitch battle" className="hidden lg:block absolute z-10 -left-7 -top-1/2 w-[15vw] "></Image>
                     <div className="w-11/12 lg:w-10/12 relative z-50 h-fit flex flex-row items-center justify-center p-2 lg:p-6 bg-white border-4 border-[#eddb55]">
                         <p className="block text-[#2E2E2E] Medium text-xl lg:text-2xl text-center leading-loose w-full lg:w-full">
                             {t("pitchPara")}
                         </p>
                     </div>
-                    <Image src={bulb} alt="stop watch napuleth startup pitch battle" className="hidden lg:block absolute z-10 -right-5 -top-1/3 w-[13vw] -rotate-3"></Image>
+                    <Image src={italy} alt="stop watch napuleth startup pitch battle" className="hidden lg:block absolute z-10 -right-5 -top-1/2 w-[20vw] -rotate-3"></Image>
                 </div>
                 <PitchParticipants />
                 <PitchJury />
