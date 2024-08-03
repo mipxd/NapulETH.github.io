@@ -82,8 +82,29 @@ function Sponsors() {
                     </div>
                 </div>
             </div>
+            <div className='w-full h-fit block lg:hidden'>
+                <Carousel className="w-full h-fit block lg:hidden" showDots renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
+                    <Link href={"https://www.johnlilic.info/"} target="_blank" className="w-full h-fit">
+                        <div className="w-full h-fit flex flex-row items-center justify-center">
+                            <div className="w-full flex flex-col flex-grow items-center justify-center">
+                                <div className="w-8/12 aspect-square bg-cover bg-top bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
+                                    backgroundImage: `url('${lilic.src}')`
+                                }}></div>
+                                <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
+                                    <h5 className=" text-black w-full SemiBold text-2xl text-center mb-2">
+                                        John Lilic
+                                    </h5>
+                                    <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
+                                        Seed Investor
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </Link>
+                </Carousel>
+            </div>
 
-            <h5 className=" text-black text-4xl mt-14 SemiBold leading-normal text-center">
+            <h5 className=" text-black text-4xl mt-14 mb-10 lg:mb-0 SemiBold leading-normal text-center">
                 Main Sponsors
             </h5>
             <div className="hidden lg:grid lg:grid-cols-5 gap-4 col-span-8 lg:auto-rows-auto lg:w-10/12 items-center justify-center w-full h-fit relative my-4">
@@ -128,271 +149,245 @@ function Sponsors() {
                     }}></div>
                 </Link>
             </div>
+            <div className="w-full h-fit block lg:hidden">
+                <Carousel className="w-full h-fit block lg:hidden" showDots={false} renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.youhodler.com/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-[2] bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${yh.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
 
-            <h5 className=" text-black text-4xl mt-14 SemiBold leading-normal text-center">
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
+
+                                        <Image className=" w-10 scale-[4] h-20" alt="degate" src={degate}></Image>
+                                    </div>
+                                </Link>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://20squares.xyz/'} target="_blank" className="w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+
+                                        <Image className="w-auto h-20" alt="degate" src={square}></Image>
+                                    </div>
+                                </Link>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'http://moodglobalservices.com/'} target="_blank" className="w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+
+                                        <Image className=" w-auto h-20" alt="degate" src={moodMobile}></Image>
+                                    </div>
+                                </Link>
+
+                            </div>
+                        </div>
+                    </div>
+                </Carousel>
+            </div>
+
+            <h5 className=" text-black text-4xl mt-14 mb-10 lg:mb-0 SemiBold leading-normal text-center">
                 Side Sponsors
             </h5>
             <div className="hidden lg:grid lg:grid-cols-5 gap-4 col-span-8 lg:auto-rows-auto lg:w-10/12 items-center justify-center w-full h-fit relative my-4">
-                        <Link href="https://esp.ethereum.foundation/" target="_blank" className="p-0 w-full h-fit flex">
-                            <div className="w-full h-28" style={{
-                                backgroundImage: `url('${esp.src}')`,
-                                backgroundPosition: "center",
-                                backgroundSize: "65% 90%",
-                                backgroundRepeat: "no-repeat"
-                            }}></div>
-                        </Link>
-                        <Link href="https://wovlabs.com/" target="_blank" className="p-0 w-full h-fit flex">
-                            <div className="w-full h-28" style={{
-                                backgroundImage: `url('${wovlabs.src}')`,
-                                backgroundPosition: "center",
-                                backgroundSize: "65% 100%",
-                                backgroundRepeat: "no-repeat"
-                            }}></div>
-                        </Link>
-                        <Link href="https://niftynaples.it/" target="_blank" className="p-0 w-full h-fit flex">
-                            <div className="w-full h-28" style={{
-                                backgroundImage: `url('${nifty.src}')`,
-                                backgroundPosition: "center",
-                                backgroundSize: "85% 140%",
-                                backgroundRepeat: "no-repeat"
-                            }}></div>
-                        </Link>
-                        <Link href="https://bitcashback.net/" target="_blank" className="p-0 w-full h-fit flex">
-                            <div className="w-full h-28" style={{
-                                backgroundImage: `url('${socialSquare.src}')`,
-                                backgroundPosition: "center",
-                                backgroundSize: "40% 80%",
-                                backgroundRepeat: "no-repeat"
-                            }}></div>
-                        </Link>
-                        <Link href="https://www.moneyviz.it/" target="_blank" className="p-0 w-full h-fit flex">
-                            <div className="w-full h-28" style={{
-                                backgroundImage: `url('${money.src}')`,
-                                backgroundPosition: "center",
-                                backgroundSize: "65% 100%",
-                                backgroundRepeat: "no-repeat"
-                            }}></div>
-                        </Link>
-                        <Link href="https://www.criptovaluta.it/" target="_blank" className="p-0 w-full h-fit flex">
-                            <div className="w-full h-28" style={{
-                                backgroundImage: `url('${vault.src}')`,
-                                backgroundPosition: "center",
-                                backgroundSize: "35% 60%",
-                                backgroundRepeat: "no-repeat"
-                            }}></div>
-                        </Link>
-                        <Link href="https://www.caffebarbera.com/en/?utm_source=google&utm_medium=cpc&utm_campaign=brand_dubai&gad_source=1&gclid=EAIaIQobChMIhJHBvJujhQMV8UZBAh15BQ6QEAAYASAAEgLkgfD_BwE" target="_blank" className="p-0 w-full h-fit flex">
-                            <div className="w-full h-28" style={{
-                                backgroundImage: `url('${barbera.src}')`,
-                                backgroundPosition: "center",
-                                backgroundSize: "65% 80%",
-                                backgroundRepeat: "no-repeat"
-                            }}></div>
-                        </Link>
-                    </div>
+                <Link href="https://esp.ethereum.foundation/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${esp.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 90%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://wovlabs.com/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${wovlabs.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 100%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://niftynaples.it/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${nifty.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "85% 140%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://bitcashback.net/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${socialSquare.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "40% 80%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.moneyviz.it/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${money.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 100%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.criptovaluta.it/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${vault.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "35% 60%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.caffebarbera.com/en/?utm_source=google&utm_medium=cpc&utm_campaign=brand_dubai&gad_source=1&gclid=EAIaIQobChMIhJHBvJujhQMV8UZBAh15BQ6QEAAYASAAEgLkgfD_BwE" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${barbera.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "65% 80%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+            </div>
+            <div className="w-full h-fit block lg:hidden">
+                <Carousel className="w-full h-fit block lg:hidden" showDots={false} renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
 
-            {
-                type == "main" ? (
-                    <div className="w-full h-fit block lg:hidden">
-                        <Carousel className="w-full h-fit block lg:hidden" showDots={false} renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
-                            <div className="w-full h-fit flex flex-row items-center justify-center">
-                                <div className="w-10/12 flex flex-col items-center justify-center">
-                                    <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                        <Link href={'https://www.youhodler.com/'} target="_blank" className="w-full h-full">
-                                            <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-                                                <div className="w-28 h-20 scale-[2] bg-contain bg-center bg-no-repeat" style={{
-                                                    backgroundImage: `url('${yh.src}')`
-                                                }}></div>
-                                            </div>
-                                        </Link>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="w-full h-fit flex flex-row items-center justify-center">
-                                <div className="w-10/12 flex flex-col items-center justify-center">
-                                    <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                        <Link href={'http://degate.com/'} target="_blank" className="p-0 w-full h-fit">
-                                            <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-
-                                                <Image className=" w-10 scale-[4] h-20" alt="degate" src={degate}></Image>
-                                            </div>
-                                        </Link>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="w-full h-fit flex flex-row items-center justify-center">
-                                <div className="w-10/12 flex flex-col items-center justify-center">
-                                    <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                        <Link href={'https://20squares.xyz/'} target="_blank" className="w-full h-fit">
-                                            <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-
-                                                <Image className="w-auto h-20" alt="degate" src={square}></Image>
-                                            </div>
-                                        </Link>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="w-full h-fit flex flex-row items-center justify-center">
-                                <div className="w-10/12 flex flex-col items-center justify-center">
-                                    <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                        <Link href={'http://moodglobalservices.com/'} target="_blank" className="w-full h-fit">
-                                            <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-
-                                                <Image className=" w-auto h-20" alt="degate" src={moodMobile}></Image>
-                                            </div>
-                                        </Link>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </Carousel>
-                    </div>
-                ) : type == "side" ? (
-                    <div className="w-full h-fit block lg:hidden">
-                        <Carousel className="w-full h-fit block lg:hidden" showDots={false} renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
-
-                            <div className="w-full h-fit flex flex-row items-center justify-center">
-                                <div className="w-10/12 flex flex-col items-center justify-center">
-                                    <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                        <Link href={'https://esp.ethereum.foundation/'} target="_blank" className="p-0 w-full h-fit">
-                                            <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-                                                <div className="w-28 h-20 scale-150 bg-contain bg-center bg-no-repeat" style={{
-                                                    backgroundImage: `url('${esp.src}')`
-                                                }}></div>
-                                            </div>
-                                        </Link>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="w-full h-fit flex flex-row items-center justify-center">
-                                <div className="w-10/12 flex flex-col items-center justify-center">
-                                    <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                        <Link href={'https://wovlabs.com/'} target="_blank" className=" w-full h-fit">
-                                            <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-
-                                                <Image className=" w-auto h-20" alt="degate" src={wovlabs}></Image>
-                                            </div>
-                                        </Link>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="w-full h-fit flex flex-row items-center justify-center">
-                                <div className="w-10/12 flex flex-col items-center justify-center">
-                                    <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                        <Link href={'https://niftynaples.it/'} target="_blank" className=" w-full h-fit">
-                                            <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-
-                                                <Image className=" scale-[2] w-auto h-20" alt="degate" src={nifty}></Image>
-                                            </div>
-                                        </Link>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="w-full h-fit flex flex-row items-center justify-center">
-                                <div className="w-10/12 flex flex-col items-center justify-center">
-                                    <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                        <Link href={'https://www.youhodler.com/'} target="_blank" className="w-full h-full">
-                                            <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-                                                <div className="w-28 h-20 scale-[2] bg-contain bg-center bg-no-repeat" style={{
-                                                    backgroundImage: `url('${yh.src}')`
-                                                }}></div>
-                                            </div>
-                                        </Link>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="w-full h-fit flex flex-row items-center justify-center">
-                                <div className="w-10/12 flex flex-col items-center justify-center">
-                                    <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                        <Link href={'https://bitcashback.net/'} target="_blank" className="w-full h-full">
-                                            <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-                                                <div className="w-28 h-20 scale-[1.5] bg-contain bg-center bg-no-repeat" style={{
-                                                    backgroundImage: `url('${socialSquare.src}')`
-                                                }}></div>
-                                            </div>
-                                        </Link>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="w-full h-fit flex flex-row items-center justify-center">
-                                <div className="w-10/12 flex flex-col items-center justify-center">
-                                    <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                        <Link href={'https://www.moneyviz.it/'} target="_blank" className="w-full h-full">
-                                            <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-                                                <div className="w-28 h-20 scale-[1.5] bg-contain bg-center bg-no-repeat" style={{
-                                                    backgroundImage: `url('${money.src}')`
-                                                }}></div>
-                                            </div>
-                                        </Link>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="w-full h-fit flex flex-row items-center justify-center">
-                                <div className="w-10/12 flex flex-col items-center justify-center">
-                                    <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                        <Link href={'https://www.criptovaluta.it/'} target="_blank" className="w-full h-full">
-                                            <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-                                                <div className="w-28 h-20 scale-[2.5] bg-contain bg-center bg-no-repeat" style={{
-                                                    backgroundImage: `url('${vault.src}')`
-                                                }}></div>
-                                            </div>
-                                        </Link>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="w-full h-fit flex flex-row items-center justify-center">
-                                <div className="w-10/12 flex flex-col items-center justify-center">
-                                    <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                        <Link href={'https://www.caffebarbera.com/en/?utm_source=google&utm_medium=cpc&utm_campaign=brand_dubai&gad_source=1&gclid=EAIaIQobChMIhJHBvJujhQMV8UZBAh15BQ6QEAAYASAAEgLkgfD_BwE'} target="_blank" className="w-full h-full">
-                                            <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-
-                                                <Image className="w-auto h-20 scale-[2] rounded-full" alt="degate" src={barbera}></Image>
-                                            </div>
-                                        </Link>
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-                        </Carousel>
-                    </div>
-                ) : (
-                    <div className='w-full h-fit block lg:hidden'>
-                        <Carousel className="w-full h-fit block lg:hidden" showDots renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
-                            <Link href={"https://www.johnlilic.info/"} target="_blank" className="w-full h-fit">
-                                <div className="w-full h-fit flex flex-row items-center justify-center">
-                                    <div className="w-full flex flex-col flex-grow items-center justify-center">
-                                        <div className="w-8/12 aspect-square bg-cover bg-top bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
-                                            backgroundImage: `url('${lilic.src}')`
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://esp.ethereum.foundation/'} target="_blank" className="p-0 w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-150 bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${esp.src}')`
                                         }}></div>
-                                        <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
-                                            <h5 className=" text-black w-full SemiBold text-2xl text-center mb-2">
-                                                John Lilic
-                                            </h5>
-                                            <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
-                                                Seed Investor
-                                            </h5>
-                                        </div>
                                     </div>
-                                </div>
-                            </Link>
-                        </Carousel>
+                                </Link>
+
+                            </div>
+                        </div>
                     </div>
-                )
-            }
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://wovlabs.com/'} target="_blank" className=" w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+
+                                        <Image className=" w-auto h-20" alt="degate" src={wovlabs}></Image>
+                                    </div>
+                                </Link>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://niftynaples.it/'} target="_blank" className=" w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+
+                                        <Image className=" scale-[2] w-auto h-20" alt="degate" src={nifty}></Image>
+                                    </div>
+                                </Link>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.youhodler.com/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-[2] bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${yh.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://bitcashback.net/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-[1.5] bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${socialSquare.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.moneyviz.it/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-[1.5] bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${money.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.criptovaluta.it/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-[2.5] bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${vault.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.caffebarbera.com/en/?utm_source=google&utm_medium=cpc&utm_campaign=brand_dubai&gad_source=1&gclid=EAIaIQobChMIhJHBvJujhQMV8UZBAh15BQ6QEAAYASAAEgLkgfD_BwE'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+
+                                        <Image className="w-auto h-20 scale-[2] rounded-full" alt="degate" src={barbera}></Image>
+                                    </div>
+                                </Link>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </Carousel>
+            </div>
+
+            
 
 
 
