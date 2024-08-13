@@ -18,7 +18,7 @@ const ChatbotComponent = () => {
                 },
                 theme: {
                     button: {
-                        backgroundColor: "#6fcaf3",
+                        backgroundColor: "#ca75ab",
                         right: 16,
                         bottom: 16,
                         size: "medium",
@@ -43,7 +43,7 @@ const ChatbotComponent = () => {
                             avatarSrc: "https://dodaj.rs/images/bot-avatarb657967b86d39775.png",
                         },
                         userMessage: {
-                            backgroundColor: "#6fcaf3",
+                            backgroundColor: "#ca75ab",
                             textColor: "#ffffff",
                             size: "small",
                             showAvatar: false,
@@ -53,7 +53,7 @@ const ChatbotComponent = () => {
                             placeholder: "Ask me anything",
                             backgroundColor: "#ffffff",
                             textColor: "#303235",
-                            sendButtonColor: "#6fcaf3",
+                            sendButtonColor: "#ca75ab",
                         }
                     }
                 }
