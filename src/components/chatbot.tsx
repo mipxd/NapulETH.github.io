@@ -30,7 +30,7 @@ const ChatbotComponent = () => {
                         title: "NapulETH AI",
                         titleAvatarSrc: "https://dodaj.rs/images/bot-avatarb657967b86d39775.png",
                         titleColor: "#ffffff", // This line sets the title color to white
-                        welcomeMessage: "Hello! I'm NapulETH AI, your web3 AI assistant. here to help you navigate the exciting world of NapulETH Open Village. How can I make your experience amazing today?",
+                        welcomeMessage: "Hello! I'm NapulETH AI your web3 AI assistant, here to help you navigate the exciting world of NapulETH Open Village. How can I make your experience amazing today?",
                         backgroundColor: "#ffffff",
                         // height: 900,
                         // width: 400,
