@@ -37,14 +37,7 @@ export default function Artists() {
     })
 
     const events = [
-        {
-            id: 5,
-            title: 'Luca Boiardi (Marketing)(IT)',
-            subtitle: "Luca Boiardi (Marketing)(IT)",
-            speaker: "Luca Boiardi (Marketing)(IT)",
-            start: new Date(2024, 8, 15, 14, 10, 0),
-            end: new Date(2024, 8, 15, 14, 20, 0),
-        },
+
         {
             id: 6,
             title: 'Francesco Vincenti (Community)',
@@ -93,6 +86,13 @@ export default function Artists() {
         { title: 'Limone', start: "2024-09-12T10:40:00", end: "2024-09-12T11:00:00" },
         { title: 'John Lilic', start: "2024-09-12T11:00:00", end: "2024-09-12T11:20:00" },
         { title: 'QJ + Francesco Vincenti', start: "2024-09-12T11:20:00", end: "2024-09-12T12:00:00" },
+        { title: 'Luca Boicardi', start: "2024-09-12T14:00:00", end: "2024-09-12T14:20:00" },
+        { title: 'Bruno Miranda', start: "2024-09-12T14:20:00", end: "2024-09-12T14:40:00" },
+        { title: 'Francesco Vincenti', start: "2024-09-12T14:40:00", end: "2024-09-12T15:00:00" },
+        { title: 'EthCommunity', start: "2024-09-12T15:00:00", end: "2024-09-12T16:00:00" },
+        { title: 'Ornella Vallana', start: "2024-09-12T16:00:00", end: "2024-09-12T16:20:00" },
+        { title: 'Paolo Schiattarella', start: "2024-09-12T16:20:00", end: "2024-09-12T16:40:00" },
+        { title: 'Suning Yao', start: "2024-09-12T16:40:00", end: "2024-09-12T17:00:00" },
     ]
 
     function renderEventContent(eventInfo: { timeText: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | PromiseLikeOfReactNode | Iterable<ReactNode> | null | undefined; event: { title: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | PromiseLikeOfReactNode | Iterable<ReactNode> | null | undefined; }; }) {
