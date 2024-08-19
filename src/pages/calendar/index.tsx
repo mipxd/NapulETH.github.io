@@ -140,11 +140,11 @@ export default function Artists() {
                                 duration: {days: 3},
                                 dayCount: 3,
                                 visibleRange: {
-                                    start: '2024-09-12',
+                                    start: '2024-09-12T09:00:00',
                                     end: '2024-09-14'
                                 },
                                 validRange: {
-                                    start: '2024-09-12',
+                                    start: '2024-09-12T09:00:00',
                                     end: '2024-09-16'
                                 },
                                 
