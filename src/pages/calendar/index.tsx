@@ -37,15 +37,6 @@ export default function Artists() {
     })
 
     const events = [
-
-        {
-            id: 4,
-            title: 'QJ + Francesco Vincenti (Zuzalu)(Modera Fab)',
-            subtitle: "QJ + Francesco Vincenti (Zuzalu)(Modera Fab)",
-            speaker: "QJ + Francesco Vincenti (Zuzalu)(Modera Fab)",
-            start: new Date(2024, 8, 15, 11, 20, 0),
-            end: new Date(2024, 8, 15, 12, 0, 0),
-        },
         {
             id: 5,
             title: 'Luca Boiardi (Marketing)(IT)',
@@ -101,7 +92,7 @@ export default function Artists() {
         { title: 'Tambussi', start: "2024-09-12T10:00:00", end: "2024-09-12T10:40:00" },
         { title: 'Limone', start: "2024-09-12T10:40:00", end: "2024-09-12T11:00:00" },
         { title: 'John Lilic', start: "2024-09-12T11:00:00", end: "2024-09-12T11:20:00" },
-        { title: 'QJ + Francesco Vincenti', start: "2024-09-14T11:00:00", end: "2024-09-14T11:20:00" },
+        { title: 'QJ + Francesco Vincenti', start: "2024-09-12T11:20:00", end: "2024-09-12T12:00:00" },
     ]
 
     function renderEventContent(eventInfo: { timeText: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | PromiseLikeOfReactNode | Iterable<ReactNode> | null | undefined; event: { title: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | PromiseLikeOfReactNode | Iterable<ReactNode> | null | undefined; }; }) {
@@ -139,19 +130,24 @@ export default function Artists() {
                     initialView='timeGridFourDay'
                     events={eventsList}
                     weekends={true}
-                    startParam="2024-09-12"
                     eventContent={renderEventContent}
                     views={
                         {
                             timeGridFourDay: {
                                 type: 'timeGrid',
-                                duration: { days: 3 },
-                                validRange: {
+                                weekends: true,
+                                dayHeaders: true,
+                                duration: {days: 3},
+                                dayCount: 3,
+                                visibleRange: {
                                     start: '2024-09-12',
                                     end: '2024-09-14'
                                 },
-                                weekends: true,
-                                dayHeaders: true
+                                validRange: {
+                                    start: '2024-09-12',
+                                    end: '2024-09-16'
+                                },
+                                
                             },
 
                         }
