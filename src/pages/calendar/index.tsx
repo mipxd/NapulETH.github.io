@@ -37,38 +37,7 @@ export default function Artists() {
     })
 
     const events = [
-        {
-            id: 0,
-            title: 'Opening',
-            subtitle: "HAHA",
-            speaker: "NONE",
-            start: new Date(2024, 8, 15, 9, 40, 0),
-            end: new Date(2024, 8, 15, 10, 0, 0),
-        },
-        {
-            id: 1,
-            title: 'Tambussi',
-            subtitle: "HAHA",
-            speaker: "NONE",
-            start: new Date(2024, 8, 15, 10, 20, 0),
-            end: new Date(2024, 8, 15, 10, 40, 0),
-        },
-        {
-            id: 2,
-            title: 'Limone',
-            subtitle: "HAHA",
-            speaker: "NONE",
-            start: new Date(2024, 8, 15, 10, 40, 0),
-            end: new Date(2024, 8, 15, 11, 0, 0),
-        },
-        {
-            id: 3,
-            title: 'Unlocking the Code: Breaking Barriers with Tech Education for Women in Afghanistan',
-            subtitle: "Breaking Barriers with Tech Education for Women in Afghanistan",
-            speaker: "John Lilic",
-            start: new Date(2024, 8, 15, 11, 0, 0),
-            end: new Date(2024, 8, 15, 11, 20, 0),
-        },
+
         {
             id: 4,
             title: 'QJ + Francesco Vincenti (Zuzalu)(Modera Fab)',
@@ -132,6 +101,7 @@ export default function Artists() {
         { title: 'Tambussi', start: "2024-09-12T10:00:00", end: "2024-09-12T10:40:00" },
         { title: 'Limone', start: "2024-09-12T10:40:00", end: "2024-09-12T11:00:00" },
         { title: 'John Lilic', start: "2024-09-12T11:00:00", end: "2024-09-12T11:20:00" },
+        { title: 'QJ + Francesco Vincenti', start: "2024-09-14T11:00:00", end: "2024-09-14T11:20:00" },
     ]
 
     function renderEventContent(eventInfo: { timeText: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | PromiseLikeOfReactNode | Iterable<ReactNode> | null | undefined; event: { title: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | PromiseLikeOfReactNode | Iterable<ReactNode> | null | undefined; }; }) {
@@ -166,24 +136,26 @@ export default function Artists() {
             <section className="w-11/12 mx-auto h-[800px] flex flex-col items-center justify-start mt-20 rounded-[0.6rem] bg-white">
                 <FullCalendar
                     plugins={[dayGridPlugin, timeGridPlugin]}
-                    initialView='timeGrid'
-                    weekends={true}
+                    initialView='timeGridFourDay'
                     events={eventsList}
-                    startParam=""
+                    weekends={true}
+                    startParam="2024-09-12"
                     eventContent={renderEventContent}
-                    duration={ {days: 3} }
-                    visibleRange={{
-                        start: '2024-09-12',
-                        end: '2024-09-14'
-                    }}
                     views={
-                    {
-                        timeGridFourDay: {
-                            type: 'timeGrid',
-                            duration: { days: 3 }
+                        {
+                            timeGridFourDay: {
+                                type: 'timeGrid',
+                                duration: { days: 3 },
+                                validRange: {
+                                    start: '2024-09-12',
+                                    end: '2024-09-14'
+                                },
+                                weekends: true,
+                                dayHeaders: true
+                            },
+
                         }
                     }
-                }
 
                 />
             </section>
