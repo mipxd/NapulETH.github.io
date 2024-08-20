@@ -5,6 +5,8 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { MdOutlinePlace } from "react-icons/md";
+import { IoFilterOutline } from "react-icons/io5";
+
 
 import s1 from "@assets/Isola.jpg"
 import s2 from "@assets/PieraDiStefano.png"
@@ -1353,7 +1355,13 @@ const Agenda = () => {
     return (
         <section className="w-10/12 mx-auto flex flex-col items-center justify-start mt-20 gap-2">
             <div className="w-10/12 h-fit flex flex-col items-center justify-start pl-3">
-                <input type="text" className="w-full mx-auto bg-white border border-white p-4 rounded-md mb-2" placeholder="Search..." />
+
+                <div className="w-full h-fit flex flex-row items-center justify-stretch">
+                    <input type="text" className="w-[94%] mx-auto bg-white border border-white p-4 rounded-md mb-2" placeholder="Search..." />
+                    <button className=" rounded-md flex flex-row items-center justify-center flex-grow w-[6%]">
+                        <IoFilterOutline size={26} color="#FFFFFF" />
+                    </button>
+                </div>
                 <div className="w-full h-fit flex flex-row items-center justify-start gap-4 mb-4 ">
                     <Link href="" onClick={(e) => { e.preventDefault(); setDay(1) }}>
                         <p className={`text-black text-xl Medium p-2 ${day == 1 ? 'bg-white shadow-md rounded-md' : ''}`}>Day 1</p>
