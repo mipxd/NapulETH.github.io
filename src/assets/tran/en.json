@@ -121,6 +121,7 @@
   "pitchBattleTitle" : "Startup Pitch Battle",
   "participants" : "Participants",
   "jury" : "Jury Of The Compition",
-  "pitchPara" : "The NapulETH Startup Pitch Battle is a thrilling competition designed to identify and empower the next generation of groundbreaking startups. Budding entrepreneurs from a wide range of industries will have the chance to showcase their innovative ideas to a panel of esteemed judges and a captivated audience of investors, mentors, and potential collaborators."
-  
+  "pitchPara" : "The NapulETH Startup Pitch Battle is a thrilling competition designed to identify and empower the next generation of groundbreaking startups. Budding entrepreneurs from a wide range of industries will have the chance to showcase their innovative ideas to a panel of esteemed judges and a captivated audience of investors, mentors, and potential collaborators.",
+  "agendaTitle": "Welcome to the Napuleth Agenda Page!",
+  "agendaPara": "On this page, you'll find everything you need to know about the event's agenda. You can filter sessions by speakers, stages, and days, allowing you to explore the full range of talks, panels, and workshops. Dive into the Napuleth experience and plan your journey through our event with ease."
 }

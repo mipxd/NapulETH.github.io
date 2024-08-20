@@ -114,10 +114,10 @@ export default function Artists() {
             <Navbar />
             <section className="w-full flex flex-col items-center justify-start pt-16 lg:pt-20">
                 <h5 className=" text-black z-50 text-4xl SemiBold text-center mb-3 lg:mb-6 lg:px-28 leading-normal mt-8 lg:mt-0 w-11/12 lg:w-full ">
-                    {t('artistsTitle')}
+                    {t('agendaTitle')}
                 </h5>
                 <p className="block text-[#2E2E2E] z-50 Medium text-2xl lg:text-2xl text-center lg:px-28 leading-normal mt-8 lg:mb-4 lg:mt-0 w-11/12 lg:w-full">
-                    {t('artistsPara')}
+                    {t('agendaPara')}
                 </p>
 
             </section>

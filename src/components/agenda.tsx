@@ -1352,18 +1352,21 @@ const Agenda = () => {
 
     return (
         <section className="w-10/12 mx-auto flex flex-col items-center justify-start mt-20 gap-2">
-            <input type="text" className="w-10/12 mx-auto bg-white border border-white p-4 rounded-md mb-2" placeholder="Search..." />
-            <div className="w-10/12 h-fit flex flex-row items-center justify-start gap-4 mb-4 ">
-                <Link href="" onClick={(e) => { e.preventDefault(); setDay(1) }}>
-                    <p className={`text-black text-xl Medium p-2 ${day == 1 ? 'bg-white shadow-md rounded-md' : ''}`}>Day 1</p>
-                </Link>
-                <Link href="" onClick={(e) => { e.preventDefault(); setDay(2) }}>
-                    <p className={`text-black text-xl Medium p-2 ${day == 2 ? 'bg-white shadow-md rounded-md' : ''} `}>Day 2</p>
-                </Link>
-                <Link href="" onClick={(e) => { e.preventDefault(); setDay(3) }}>
-                    <p className={`text-black text-xl Medium p-2 ${day == 3 ? 'bg-white shadow-md rounded-md' : ''}`}>Day 3</p>
-                </Link>
+            <div className="w-10/12 h-fit flex flex-col items-center justify-start pl-3">
+                <input type="text" className="w-full mx-auto bg-white border border-white p-4 rounded-md mb-2" placeholder="Search..." />
+                <div className="w-full h-fit flex flex-row items-center justify-start gap-4 mb-4 ">
+                    <Link href="" onClick={(e) => { e.preventDefault(); setDay(1) }}>
+                        <p className={`text-black text-xl Medium p-2 ${day == 1 ? 'bg-white shadow-md rounded-md' : ''}`}>Day 1</p>
+                    </Link>
+                    <Link href="" onClick={(e) => { e.preventDefault(); setDay(2) }}>
+                        <p className={`text-black text-xl Medium p-2 ${day == 2 ? 'bg-white shadow-md rounded-md' : ''} `}>Day 2</p>
+                    </Link>
+                    <Link href="" onClick={(e) => { e.preventDefault(); setDay(3) }}>
+                        <p className={`text-black text-xl Medium p-2 ${day == 3 ? 'bg-white shadow-md rounded-md' : ''}`}>Day 3</p>
+                    </Link>
+                </div>
             </div>
+
             {
                 filteredEvents.filter(event => event.day === day).map((event, key) => {
                     let speakersString = '';
