@@ -6,10 +6,81 @@ import { useTranslation } from "react-i18next";
 
 import { MdOutlinePlace } from "react-icons/md";
 
+import s1 from "@assets/Isola.jpg"
+import s2 from "@assets/PieraDiStefano.png"
+import s3 from "@assets/VaninaIvanova.png"
+import s4 from "@assets/CosimoPalma.jpeg"
+import s5 from "@assets/VincenzoRana.png"
+import s6 from "@assets/SaraNoggler.jpg.jpeg"
+import s7 from "@assets/AlessandraBrandi.jpg"
+import s8 from "@assets/AndreaPaulillo.jpg"
+import s9 from '@assets/JenAlbert.png'
+import s10 from '@assets/MarcoTullioGiordano.jpeg'
+import s11 from "@assets/ExWhyZee.jpg"
+import s12 from "@assets/DavideZanichelli.png"
+import s13 from "@assets/LorenzoRigatti.jpg"
+import s14 from '@assets/IreneGuarnieri.jpg.jpeg'
+import s15 from '@assets/MarcoCastignoli.jpg'
+import s16 from '@assets/MarkRichardson.jpg'
+import s17 from '@assets/PietroRossetto.jpg.jpeg'
+import s18 from '@assets/StefanoDeAngelis.jpg.jpeg'
+import s19 from '@assets/HemillyRodrigues.jpg.jpeg'
+import s20 from '@assets/Alena.jpg'
+import s21 from '@assets/GabrieleAlagna.jpg'
+import s22 from '@assets/LucaBoiardi.jpg'
+import s23 from '@assets/GianfrancoLeone.jpg.jpeg'
+import s24 from '@assets/BrunoMiranda.jpg'
+import s25 from '@assets/DayanaAleksandrova.jpg'
+import s26 from '@assets/JamesRae.jpg'
+import s27 from '@assets/WilliamNonnis.jpg'
+import s28 from '@assets/MicheleIaselli.jpg'
+import s29 from '@assets/ChristianSantagata.jpeg'
+import s30 from '@assets/LazarBucan.jpg'
+import s31 from '@assets/OrnellaVallana.jpg'
+import s32 from '@assets/MiroRadenovic.jpg'
+import s33 from '@assets/MatteoTambussi.png'
+import s34 from '@assets/FilippoChiricozzi.png'
+import s35 from '@assets/FrancescoFontana.jpeg'
+import s36 from '@assets/AmericoCacciapuoti.jpeg'
+import s37 from '@assets/ElioBarbera.jpg'
+import s38 from '@assets/AndreeaCia.png'
+
+import s39 from '@assets/FrancescoBritti.png'
+import s40 from '@assets/DavideGhezzi.png'
+import s41 from '@assets/FrancescoBianchi.png'
+import s42 from '@assets/MarekKowalski.png'
+import s43 from '@assets/MariaMagenes.jpg.jpeg'
+import s44 from '@assets/FriscoDAnconia.jpg.jpeg'
+import s45 from '@assets/VladyslavDudchenko.png'
+import s46 from '@assets/QiZhou.png'
+import s47 from '@assets/BenedettoBiondi.png'
+import s48 from '@assets/SilvioVentre.jpg.jpeg'
+import s49 from '@assets/LuigiSenese.png'
+import s50 from '@assets/JulieBettens.jpg'
+import s51 from '@assets/AlessandroBrigato.png'
+import s52 from '@assets/LimoneEth.png'
+import s53 from '@assets/FedericoCosta.png'
+import s54 from '@assets/Bock.jpg.jpeg'
+import s55 from '@assets/FabrizioMaiocco.jpg'
+import s56 from '@assets/DanielePinna.jpg'
+import s57 from '@assets/FrancescoVincenti.png'
+import s58 from '@assets/Marsili.png'
+import s59 from '@assets/AntonioRamicello.jpg'
+import s60 from '@assets/DamianRusinek.jpg'
+import s61 from '@assets/ValentinaMarzioni.png'
+import s62 from '@assets/QJ.jpeg'
+import s63 from '@assets/PhilippPieper.jpg'
+import s64 from '@assets/LorenzoAmoroso.jpg'
+import s65 from '@assets/Viktor.jpg'
+import s66 from '@assets/DavideMilani.jpg'
+import s67 from '@assets/DavidCarvalho.jpg'
+import lilic from '@assets/johnLilic.jpg'
 
 const Agenda = () => {
 
     const { t, i18n } = useTranslation();
+
+    const [day, setDay] = useState(1)
 
     const events = [
         // Starting with Day 1, Stage 1 (Main)
@@ -31,7 +102,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Matteo Tambussi",
-                    image: "https://napul.eth.limo/_next/static/media/MatteoTambussi.9cfc7b8d.png"
+                    image: s33.src
                 }
             ],
             day: 1,
@@ -46,7 +117,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Limone.eth",
-                    image: "https://napul.eth.limo/_next/static/media/LimoneEth.e756ba57.png"
+                    image: s52.src
                 }
             ],
             day: 1,
@@ -61,7 +132,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "John Lilic",
-                    image: "https://napul.eth.limo/_next/static/media/johnLilic.97681c26.jpg"
+                    image: lilic.src
                 }
             ],
             day: 1,
@@ -76,11 +147,11 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "QJ",
-                    image: "https://napul.eth.limo/_next/static/media/QJ.a6268e3c.jpeg"
+                    image: s62.src
                 },
                 {
                     name: "Francesco Vincenti",
-                    image: "https://napul.eth.limo/_next/static/media/FrancescoVincenti.121b9c7e.png"
+                    image: s57.src
                 }
             ],
             day: 1,
@@ -95,7 +166,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Luca Boiardi",
-                    image: ""
+                    image: s22.src
                 }
             ],
             day: 1,
@@ -110,7 +181,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Bruno Miranda",
-                    image: ""
+                    image: s24.src
                 }
             ],
             day: 1,
@@ -125,15 +196,15 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Matteo Tambussi",
-                    image: ""
+                    image: s33.src
                 },
                 {
                     name: "Andreea Cia",
-                    image: ""
+                    image: s38.src
                 },
                 {
                     name: "Andrea Marsili",
-                    image: ""
+                    image: s58.src
                 },
             ],
             day: 1,
@@ -1281,8 +1352,20 @@ const Agenda = () => {
 
     return (
         <section className="w-10/12 mx-auto flex flex-col items-center justify-start mt-20 gap-2">
+            <input type="text" className="w-10/12 mx-auto bg-white border border-white p-4 rounded-md mb-2" placeholder="Search..." />
+            <div className="w-10/12 h-fit flex flex-row items-center justify-start gap-4 mb-4 ">
+                <Link href="" onClick={(e) => { e.preventDefault(); setDay(1) }}>
+                    <p className={`text-black text-xl Medium p-2 ${day == 1 ? 'bg-white shadow-md rounded-md' : ''}`}>Day 1</p>
+                </Link>
+                <Link href="" onClick={(e) => { e.preventDefault(); setDay(2) }}>
+                    <p className={`text-black text-xl Medium p-2 ${day == 2 ? 'bg-white shadow-md rounded-md' : ''} `}>Day 2</p>
+                </Link>
+                <Link href="" onClick={(e) => { e.preventDefault(); setDay(3) }}>
+                    <p className={`text-black text-xl Medium p-2 ${day == 3 ? 'bg-white shadow-md rounded-md' : ''}`}>Day 3</p>
+                </Link>
+            </div>
             {
-                filteredEvents.map((event, key) => {
+                filteredEvents.filter(event => event.day === day).map((event, key) => {
                     let speakersString = '';
                     if (event.speakers.length > 1) {
                         speakersString = event.speakers.map(speaker => speaker.name).join(', ');
@@ -1294,7 +1377,7 @@ const Agenda = () => {
                     return (
                         <div key={key} className="w-11/12 h-fit flex flex-row items-start justify-start gap-2">
                             <p className="text-lg text-black text-center Medium p-1 rounded min-w-[5%] bg-[#eddb55]">{event.start}</p>
-                            <div className="w-[90%] bg-slate-300 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
+                            <div className="w-[90%] bg-slate-200 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
                                 <p className="text-sm text-black Medium mb-3">{event.start + " - " + event.end}</p>
                                 {
                                     event.title != "" ? (
