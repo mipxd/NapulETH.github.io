@@ -95,6 +95,7 @@ const Agenda = () => {
             day: 1,
             start: "09:40",
             end: "10:20",
+            isWorkshop: false,
         },
         {
             id: 1,
@@ -110,6 +111,7 @@ const Agenda = () => {
             day: 1,
             start: "10:20",
             end: "10:40",
+            isWorkshop: false,
         },
         {
             id: 2,
@@ -125,6 +127,7 @@ const Agenda = () => {
             day: 1,
             start: "10:40",
             end: "11:00",
+            isWorkshop: false,
         },
         {
             id: 3,
@@ -140,6 +143,7 @@ const Agenda = () => {
             day: 1,
             start: "11:00",
             end: "11:20",
+            isWorkshop: false,
         },
         {
             id: 4,
@@ -159,6 +163,7 @@ const Agenda = () => {
             day: 1,
             start: "11:00",
             end: "11:20",
+            isWorkshop: false,
         },
         {
             id: 5,
@@ -174,6 +179,7 @@ const Agenda = () => {
             day: 1,
             start: "14:00",
             end: "14:20",
+            isWorkshop: false,
         },
         {
             id: 6,
@@ -189,6 +195,7 @@ const Agenda = () => {
             day: 1,
             start: "14:20",
             end: "14:40",
+            isWorkshop: false,
         },
         {
             id: 7,
@@ -212,6 +219,7 @@ const Agenda = () => {
             day: 1,
             start: "15:00",
             end: "16:00",
+            isWorkshop: false,
         },
         {
             id: 8,
@@ -227,6 +235,7 @@ const Agenda = () => {
             day: 1,
             start: "16:00",
             end: "16:20",
+            isWorkshop: false,
         },
         {
             id: 9,
@@ -242,6 +251,7 @@ const Agenda = () => {
             day: 1,
             start: "16:20",
             end: "16:40",
+            isWorkshop: false,
         },
         {
             id: 9,
@@ -257,6 +267,7 @@ const Agenda = () => {
             day: 1,
             start: "16:40",
             end: "17:00",
+            isWorkshop: false,
         },
 
         // Day 1, Stage 2
@@ -274,6 +285,7 @@ const Agenda = () => {
             day: 1,
             start: "10:20",
             end: "10:40",
+            isWorkshop: false,
         },
         {
             id: 11,
@@ -296,6 +308,7 @@ const Agenda = () => {
             ],
             day: 1,
             start: "10:40",
+            isWorkshop: false,
             end: "11:20",
         },
         {
@@ -311,6 +324,7 @@ const Agenda = () => {
             ],
             day: 1,
             start: "11:20",
+            isWorkshop: false,
             end: "11:40",
         },
         {
@@ -326,6 +340,7 @@ const Agenda = () => {
             ],
             day: 1,
             start: "11:40",
+            isWorkshop: false,
             end: "12:00",
         },
         {
@@ -342,6 +357,7 @@ const Agenda = () => {
             day: 1,
             start: "14:00",
             end: "14:20",
+            isWorkshop: false,
         },
         {
             id: 15,
@@ -355,6 +371,7 @@ const Agenda = () => {
                 }
             ],
             day: 1,
+            isWorkshop: false,
             start: "14:20",
             end: "14:40",
         },
@@ -372,6 +389,7 @@ const Agenda = () => {
             day: 1,
             start: "14:40",
             end: "15:00",
+            isWorkshop: false,
         },
         {
             id: 17,
@@ -387,6 +405,7 @@ const Agenda = () => {
             day: 1,
             start: "15:00",
             end: "15:20",
+            isWorkshop: false,
         },
         {
             id: 18,
@@ -402,6 +421,7 @@ const Agenda = () => {
             day: 1,
             start: "15:20",
             end: "15:40",
+            isWorkshop: false,
         },
         {
             id: 19,
@@ -417,6 +437,7 @@ const Agenda = () => {
             day: 1,
             start: "15:40",
             end: "16:00",
+            isWorkshop: false,
         },
         {
             id: 20,
@@ -432,6 +453,7 @@ const Agenda = () => {
             day: 1,
             start: "16:00",
             end: "16:20",
+            isWorkshop: false,
         },
         {
             id: 21,
@@ -447,6 +469,7 @@ const Agenda = () => {
             day: 1,
             start: "16:20",
             end: "16:40",
+            isWorkshop: false,
         },
         {
             id: 22,
@@ -462,6 +485,7 @@ const Agenda = () => {
             day: 1,
             start: "16:40",
             end: "17:00",
+            isWorkshop: false,
         },
 
         // Day 1, Stage 3
@@ -469,6 +493,7 @@ const Agenda = () => {
             id: 23,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "stage 3",
             speakers: [
                 {
@@ -493,6 +518,7 @@ const Agenda = () => {
             title: '',
             subtitle: "",
             stage: "stage 3",
+            isWorkshop: false,
             speakers: [
                 {
                     name: "Gianfranco Leone",
@@ -516,6 +542,7 @@ const Agenda = () => {
             ],
             day: 1,
             start: "10:40",
+            isWorkshop: false,
             end: "12:00",
         },
         {
@@ -523,6 +550,7 @@ const Agenda = () => {
             title: '',
             subtitle: "",
             stage: "stage 3",
+            isWorkshop: false,
             speakers: [
                 {
                     name: "Andrea Paulillo",
@@ -538,6 +566,8 @@ const Agenda = () => {
             title: '',
             subtitle: "",
             stage: "stage 3",
+            isWorkshop: true,
+            badge: "workshop",
             speakers: [
                 {
                     name: "Mood Global Services",
@@ -562,6 +592,7 @@ const Agenda = () => {
             day: 1,
             start: "16:00",
             end: "16:40",
+            isWorkshop: false,
         },
 
         // Day 2, Stage 1 (Main)
@@ -569,6 +600,7 @@ const Agenda = () => {
             id: 29,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "main",
             speakers: [
                 {
@@ -584,6 +616,7 @@ const Agenda = () => {
             id: 30,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "main",
             speakers: [
                 {
@@ -603,6 +636,7 @@ const Agenda = () => {
             id: 31,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "main",
             speakers: [
                 {
@@ -619,6 +653,7 @@ const Agenda = () => {
             title: '',
             subtitle: "",
             stage: "main",
+            isWorkshop: false,
             speakers: [
                 {
                     name: "Francesco Britti",
@@ -633,6 +668,7 @@ const Agenda = () => {
             id: 33,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "main",
             speakers: [
                 {
@@ -656,6 +692,7 @@ const Agenda = () => {
             id: 34,
             title: 'Why we Need Trustless Finance',
             subtitle: "",
+            isWorkshop: false,
             stage: "main",
             speakers: [
                 {
@@ -669,6 +706,7 @@ const Agenda = () => {
         },
         {
             id: 35,
+            isWorkshop: false,
             title: '',
             subtitle: "",
             stage: "main",
@@ -686,6 +724,7 @@ const Agenda = () => {
             id: 36,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "main",
             speakers: [
                 {
@@ -701,6 +740,7 @@ const Agenda = () => {
             id: 37,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "main",
             speakers: [
                 {
@@ -714,6 +754,7 @@ const Agenda = () => {
         },
         {
             id: 38,
+            isWorkshop: false,
             title: '',
             subtitle: "",
             stage: "main",
@@ -738,6 +779,7 @@ const Agenda = () => {
             id: 39,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "stage 2",
             speakers: [
                 {
@@ -753,6 +795,7 @@ const Agenda = () => {
             id: 40,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "stage 2",
             speakers: [
                 {
@@ -769,6 +812,7 @@ const Agenda = () => {
             title: '',
             subtitle: "",
             stage: "stage 2",
+            isWorkshop: false,
             speakers: [
                 {
                     name: "Silvio Ventre",
@@ -793,6 +837,7 @@ const Agenda = () => {
         },
         {
             id: 42,
+            isWorkshop: false,
             title: '',
             subtitle: "",
             stage: "stage 2",
@@ -811,6 +856,7 @@ const Agenda = () => {
             title: '',
             subtitle: "",
             stage: "stage 2",
+            isWorkshop: false,
             speakers: [
                 {
                     name: "Christian Santagata",
@@ -825,6 +871,7 @@ const Agenda = () => {
             id: 44,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "stage 2",
             speakers: [
                 {
@@ -840,6 +887,7 @@ const Agenda = () => {
             id: 45,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "stage 2",
             speakers: [
                 {
@@ -856,6 +904,7 @@ const Agenda = () => {
             title: '',
             subtitle: "",
             stage: "stage 2",
+            isWorkshop: false,
             speakers: [
                 {
                     name: "Davide Ghezzi",
@@ -869,6 +918,7 @@ const Agenda = () => {
         {
             id: 47,
             title: '',
+            isWorkshop: false,
             subtitle: "",
             stage: "stage 2",
             speakers: [
@@ -885,6 +935,7 @@ const Agenda = () => {
             id: 48,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "stage 2",
             speakers: [
                 {
@@ -900,6 +951,7 @@ const Agenda = () => {
             id: 49,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "stage 2",
             speakers: [
                 {
@@ -923,6 +975,7 @@ const Agenda = () => {
             title: '',
             subtitle: "",
             stage: "stage 3",
+            isWorkshop: false,
             speakers: [
                 {
                     name: "Sundaram Jha",
@@ -938,6 +991,8 @@ const Agenda = () => {
             title: '',
             subtitle: "",
             stage: "stage 3",
+            isWorkshop: true,
+            badge: "workshop",
             speakers: [
                 {
                     name: "Lazar Bucan",
@@ -952,6 +1007,7 @@ const Agenda = () => {
             id: 52,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "stage 3",
             speakers: [
                 {
@@ -968,6 +1024,8 @@ const Agenda = () => {
             title: '',
             subtitle: "",
             stage: "stage 3",
+            isWorkshop: true,
+            badge: "workshop",
             speakers: [
                 {
                     name: "HEVM Workshop",
@@ -982,6 +1040,7 @@ const Agenda = () => {
             id: 54,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "stage 3",
             speakers: [
                 {
@@ -1000,6 +1059,7 @@ const Agenda = () => {
             id: 55,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "main",
             speakers: [
                 {
@@ -1016,6 +1076,7 @@ const Agenda = () => {
             title: '',
             subtitle: "",
             stage: "main",
+            isWorkshop: false,
             speakers: [
                 {
                     name: "Fabrizio Genovese",
@@ -1030,6 +1091,7 @@ const Agenda = () => {
             id: 57,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "main",
             speakers: [
                 {
@@ -1052,6 +1114,7 @@ const Agenda = () => {
         {
             id: 58,
             title: '',
+            isWorkshop: false,
             subtitle: "",
             stage: "main",
             speakers: [
@@ -1069,6 +1132,7 @@ const Agenda = () => {
             title: '',
             subtitle: "",
             stage: "main",
+            isWorkshop: false,
             speakers: [
                 {
                     name: "Ian Smith",
@@ -1084,6 +1148,7 @@ const Agenda = () => {
             title: '',
             subtitle: "",
             stage: "main",
+            isWorkshop: false,
             speakers: [
                 {
                     name: "Pino",
@@ -1099,6 +1164,7 @@ const Agenda = () => {
             title: '',
             subtitle: "",
             stage: "main",
+            isWorkshop: false,
             speakers: [
                 {
                     name: "Sara Noggler",
@@ -1112,6 +1178,7 @@ const Agenda = () => {
         {
             id: 62,
             title: '',
+            isWorkshop: false,
             subtitle: "",
             stage: "main",
             speakers: [
@@ -1135,6 +1202,7 @@ const Agenda = () => {
         {
             id: 63,
             title: '',
+            isWorkshop: false,
             subtitle: "",
             stage: "main",
             speakers: [
@@ -1151,6 +1219,7 @@ const Agenda = () => {
             id: 64,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "main",
             speakers: [
                 {
@@ -1166,6 +1235,7 @@ const Agenda = () => {
             id: 65,
             title: 'CLOSING + VINCITORE STARTUP',
             subtitle: "",
+            isWorkshop: false,
             stage: "main",
             speakers: [],
             day: 3,
@@ -1179,6 +1249,7 @@ const Agenda = () => {
             id: 66,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "stage 2",
             speakers: [
                 {
@@ -1194,6 +1265,7 @@ const Agenda = () => {
             id: 67,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "stage 2",
             speakers: [
                 {
@@ -1209,6 +1281,7 @@ const Agenda = () => {
             id: 68,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "stage 2",
             speakers: [
                 {
@@ -1225,6 +1298,7 @@ const Agenda = () => {
             title: '',
             subtitle: "",
             stage: "stage 2",
+            isWorkshop: false,
             speakers: [
                 {
                     name: "Francesco Fontana",
@@ -1239,6 +1313,7 @@ const Agenda = () => {
             id: 70,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "stage 2",
             speakers: [
                 {
@@ -1254,6 +1329,7 @@ const Agenda = () => {
             id: 71,
             title: '',
             subtitle: "",
+            isWorkshop: false,
             stage: "stage 2",
             speakers: [
                 {
@@ -1268,6 +1344,7 @@ const Agenda = () => {
         {
             id: 72,
             title: '',
+            isWorkshop: false,
             subtitle: "",
             stage: "stage 2",
             speakers: [
@@ -1283,6 +1360,7 @@ const Agenda = () => {
         {
             id: 73,
             title: '',
+            isWorkshop: false,
             subtitle: "",
             stage: "stage 2",
             speakers: [
@@ -1308,6 +1386,7 @@ const Agenda = () => {
             title: '',
             subtitle: "",
             stage: "stage 2",
+            isWorkshop: false,
             speakers: [
                 {
                     name: "Gavin Thomas",
@@ -1321,6 +1400,7 @@ const Agenda = () => {
         {
             id: 75,
             title: '',
+            isWorkshop: false,
             subtitle: "",
             stage: "stage 2",
             speakers: [
@@ -1336,6 +1416,7 @@ const Agenda = () => {
         {
             id: 76,
             title: '',
+            isWorkshop: false,
             subtitle: "",
             stage: "stage 2",
             speakers: [
@@ -1383,13 +1464,15 @@ const Agenda = () => {
                     } else if (event.speakers.length === 1) {
                         speakersString = event.speakers[0].name;
                     }
-
                     let place = event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"
                     return (
                         <div key={key} className="w-11/12 h-fit flex flex-row items-start justify-start gap-2">
                             <p className="text-lg text-black text-center Medium p-1 rounded min-w-[5%] bg-[#eddb55]">{event.start}</p>
                             <div className="w-[90%] bg-slate-200 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
-                                <p className="text-sm text-black Medium mb-3">{event.start + " - " + event.end}</p>
+                                <p className="text-sm text-black Medium mb-3">
+                                    {event.start + " - " + event.end}
+                                    
+                                </p>
                                 {
                                     event.title != "" ? (
                                         <p className="text-2xl text-black Medium mb-2">{event.title}</p>

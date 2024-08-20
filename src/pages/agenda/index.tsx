@@ -23,18 +23,16 @@ export default function Agenda() {
             <section className="w-full flex flex-col items-center justify-start mt-20 lg:mt-20">
                 <h5 className=" text-black text-4xl mb-10 SemiBold leading-normal text-center">
                     {
-                        t('agenda')
+                        t('agendaTitle')
                     }
                 </h5>
                 <h6 className=" xl:w-1/2 w-8/12 text-black p-4 bg-white border-4 border-[#eddb55] text-xl xl:text-2xl Medium leading-normal text-center my-6">
                     {
-                        t('agendaSoon')
+                        t('agendaPara')
                     } ⏳⌛
                 </h6>
-
-
-
             </section>
+            <Agenda />
             <Footer />
         </main>
     );
