@@ -1435,24 +1435,223 @@ const Agenda = () => {
 
     return (
         <section className="w-10/12 mx-auto flex flex-col items-center justify-start mt-20 gap-2">
-            <div className="w-10/12 h-fit flex flex-col items-center justify-start pl-3">
+            <div className="w-10/12 h-fit flex flex-col items-center justify-start">
 
                 <div className="w-full h-fit flex flex-row items-center justify-stretch">
-                    <input type="text" className="w-[94%] mx-auto bg-white border border-white p-4 rounded-md mb-2" placeholder="Search..." />
-                    <button className=" rounded-md flex flex-row items-center justify-center flex-grow w-[6%]">
-                        <IoFilterOutline size={26} color="#FFFFFF" />
+                    <input type="text" className="w-full mx-auto bg-white border border-white p-4 rounded-md mb-4" placeholder="Search..." />
+                    
+                </div>
+                <div className="w-full h-fit flex flex-row items-center justify-between gap-4 mb-4 ">
+                    <div className="w-[95%] flex flex-row items-center justify-start">
+                        <Link href="" onClick={(e) => { e.preventDefault(); setDay(1) }}>
+                            <p className={`text-black text-xl Medium p-2 ${day == 1 ? 'bg-white shadow-md rounded-md' : ''}`}>Day 1</p>
+                        </Link>
+                        <Link href="" onClick={(e) => { e.preventDefault(); setDay(2) }}>
+                            <p className={`text-black text-xl Medium p-2 ${day == 2 ? 'bg-white shadow-md rounded-md' : ''} `}>Day 2</p>
+                        </Link>
+                        <Link href="" onClick={(e) => { e.preventDefault(); setDay(3) }}>
+                            <p className={`text-black text-xl Medium p-2 ${day == 3 ? 'bg-white shadow-md rounded-md' : ''}`}>Day 3</p>
+                        </Link>
+                    </div>
+                    <button className=" bg-white rounded-md py-2 flex flex-row items-center justify-center flex-grow w-[5%] ">
+                        <IoFilterOutline size={26} color="#252525" />
                     </button>
                 </div>
-                <div className="w-full h-fit flex flex-row items-center justify-start gap-4 mb-4 ">
-                    <Link href="" onClick={(e) => { e.preventDefault(); setDay(1) }}>
-                        <p className={`text-black text-xl Medium p-2 ${day == 1 ? 'bg-white shadow-md rounded-md' : ''}`}>Day 1</p>
-                    </Link>
-                    <Link href="" onClick={(e) => { e.preventDefault(); setDay(2) }}>
-                        <p className={`text-black text-xl Medium p-2 ${day == 2 ? 'bg-white shadow-md rounded-md' : ''} `}>Day 2</p>
-                    </Link>
-                    <Link href="" onClick={(e) => { e.preventDefault(); setDay(3) }}>
-                        <p className={`text-black text-xl Medium p-2 ${day == 3 ? 'bg-white shadow-md rounded-md' : ''}`}>Day 3</p>
-                    </Link>
+            </div>
+            <div className="w-10/12 h-fit flex flex-row items-start justify-center gap-2">
+                <div className="flex w-1/3 py-2 flex-row items-center justify-center bg-white border-4 border-[#eddb55] text-black text-xl Medium">Main Stage</div>
+                <div className="flex w-1/3 py-2 flex-row items-center justify-center bg-white border-4 border-[#eddb55] text-black text-xl Medium">Stage 2</div>
+                <div className="flex w-1/3 py-2 flex-row items-center justify-center bg-white border-4 border-[#eddb55] text-black text-xl Medium">Stage 3</div>
+            </div>
+            <div className="w-10/12 h-fit flex flex-row items-start justify-center gap-2">
+                <div className="w-1/3 h-fit flex flex-col items-center justify-start gap-1">
+                    {
+                        filteredEvents.filter(event => event.day === day && event.stage == "main").map((event, key) => {
+                            let speakersString = '';
+                            if (event.speakers.length > 1) {
+                                speakersString = event.speakers.map(speaker => speaker.name).join(', ');
+                            } else if (event.speakers.length === 1) {
+                                speakersString = event.speakers[0].name;
+                            }
+                            let place = event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"
+                            return (
+                                <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
+                                    <div className="w-full bg-slate-200 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
+                                        <p className="text-sm text-black Medium mb-3">
+                                            {event.start + " - " + event.end}
+
+                                        </p>
+                                        {
+                                            event.title != "" ? (
+                                                <p className="text-2xl text-black Medium mb-2">{event.title}</p>
+                                            ) : (
+                                                <p className="text-xl text-gray-400 Medium italic mb-2">Title to be announced later...</p>
+                                            )
+                                        }
+                                        <div className="w-full h-fit flex flex-row items-center justify-start gap-1 mb-12">
+                                            <MdOutlinePlace size={20} color="#252525" />
+                                            <p className="text-xs text-black Medium">
+                                                {place}
+                                            </p>
+                                        </div>
+                                        {
+                                            event.speakers.length != 0 ? (
+                                                <p className="text-md text-gray-700 mb-2">
+                                                    Speakers: {
+                                                        speakersString
+                                                    }
+                                                </p>
+                                            ) :
+                                                ("")
+                                        }
+
+                                        {
+                                            event.speakers.length != 0 ? (
+                                                <div className="flex flex-row items-center justify-start w-full h-fit">
+                                                    {
+                                                        event.speakers.map((speaker, speakerKey) => {
+                                                            return (
+                                                                <div key={speakerKey} className={`w-10 aspect-square rounded-full bg-white bg-center bg-cover bg-no-repeat shadow-lg `} style={{
+                                                                    marginLeft: `${speakerKey / 2 * 15 * -1}px`,
+                                                                    backgroundImage: speaker.image != "" ? `url('${speaker.image}')` : "url('https://media.istockphoto.com/id/1332100919/vector/man-icon-black-icon-person-symbol.jpg?s=612x612&w=0&k=20&c=AVVJkvxQQCuBhawHrUhDRTCeNQ3Jgt0K1tXjJsFy1eg=')"
+                                                                }}></div>
+                                                            )
+                                                        })
+                                                    }
+                                                </div>
+                                            ) : ("")
+                                        }
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+                <div className="w-1/3 h-fit flex flex-col items-center justify-start gap-1">
+                    {
+                        filteredEvents.filter(event => event.day === day && event.stage == "stage 2").map((event, key) => {
+                            let speakersString = '';
+                            if (event.speakers.length > 1) {
+                                speakersString = event.speakers.map(speaker => speaker.name).join(', ');
+                            } else if (event.speakers.length === 1) {
+                                speakersString = event.speakers[0].name;
+                            }
+                            let place = event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"
+                            return (
+                                <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
+                                    <div className="w-full bg-slate-200 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
+                                        <p className="text-sm text-black Medium mb-3">
+                                            {event.start + " - " + event.end}
+
+                                        </p>
+                                        {
+                                            event.title != "" ? (
+                                                <p className="text-2xl text-black Medium mb-2">{event.title}</p>
+                                            ) : (
+                                                <p className="text-xl text-gray-400 Medium italic mb-2">Title to be announced later...</p>
+                                            )
+                                        }
+                                        <div className="w-full h-fit flex flex-row items-center justify-start gap-1 mb-12">
+                                            <MdOutlinePlace size={20} color="#252525" />
+                                            <p className="text-xs text-black Medium">
+                                                {place}
+                                            </p>
+                                        </div>
+                                        {
+                                            event.speakers.length != 0 ? (
+                                                <p className="text-md text-gray-700 mb-2">
+                                                    Speakers: {
+                                                        speakersString
+                                                    }
+                                                </p>
+                                            ) :
+                                                ("")
+                                        }
+
+                                        {
+                                            event.speakers.length != 0 ? (
+                                                <div className="flex flex-row items-center justify-start w-full h-fit">
+                                                    {
+                                                        event.speakers.map((speaker, speakerKey) => {
+                                                            return (
+                                                                <div key={speakerKey} className={`w-10 aspect-square rounded-full bg-white bg-center bg-cover bg-no-repeat shadow-lg `} style={{
+                                                                    marginLeft: `${speakerKey / 2 * 15 * -1}px`,
+                                                                    backgroundImage: speaker.image != "" ? `url('${speaker.image}')` : "url('https://media.istockphoto.com/id/1332100919/vector/man-icon-black-icon-person-symbol.jpg?s=612x612&w=0&k=20&c=AVVJkvxQQCuBhawHrUhDRTCeNQ3Jgt0K1tXjJsFy1eg=')"
+                                                                }}></div>
+                                                            )
+                                                        })
+                                                    }
+                                                </div>
+                                            ) : ("")
+                                        }
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+                <div className="w-1/3 h-fit flex flex-col items-center justify-start gap-1">
+                    {
+                        filteredEvents.filter(event => event.day === day && event.stage == "stage 3").map((event, key) => {
+                            let speakersString = '';
+                            if (event.speakers.length > 1) {
+                                speakersString = event.speakers.map(speaker => speaker.name).join(', ');
+                            } else if (event.speakers.length === 1) {
+                                speakersString = event.speakers[0].name;
+                            }
+                            let place = event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"
+                            return (
+                                <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
+                                    <div className="w-full bg-slate-200 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
+                                        <p className="text-sm text-black Medium mb-3">
+                                            {event.start + " - " + event.end}
+
+                                        </p>
+                                        {
+                                            event.title != "" ? (
+                                                <p className="text-2xl text-black Medium mb-2">{event.title}</p>
+                                            ) : (
+                                                <p className="text-xl text-gray-400 Medium italic mb-2">Title to be announced later...</p>
+                                            )
+                                        }
+                                        <div className="w-full h-fit flex flex-row items-center justify-start gap-1 mb-12">
+                                            <MdOutlinePlace size={20} color="#252525" />
+                                            <p className="text-xs text-black Medium">
+                                                {place}
+                                            </p>
+                                        </div>
+                                        {
+                                            event.speakers.length != 0 ? (
+                                                <p className="text-md text-gray-700 mb-2">
+                                                    Speakers: {
+                                                        speakersString
+                                                    }
+                                                </p>
+                                            ) :
+                                                ("")
+                                        }
+
+                                        {
+                                            event.speakers.length != 0 ? (
+                                                <div className="flex flex-row items-center justify-start w-full h-fit">
+                                                    {
+                                                        event.speakers.map((speaker, speakerKey) => {
+                                                            return (
+                                                                <div key={speakerKey} className={`w-10 aspect-square rounded-full bg-white bg-center bg-cover bg-no-repeat shadow-lg `} style={{
+                                                                    marginLeft: `${speakerKey / 2 * 15 * -1}px`,
+                                                                    backgroundImage: speaker.image != "" ? `url('${speaker.image}')` : "url('https://media.istockphoto.com/id/1332100919/vector/man-icon-black-icon-person-symbol.jpg?s=612x612&w=0&k=20&c=AVVJkvxQQCuBhawHrUhDRTCeNQ3Jgt0K1tXjJsFy1eg=')"
+                                                                }}></div>
+                                                            )
+                                                        })
+                                                    }
+                                                </div>
+                                            ) : ("")
+                                        }
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </div>
 
@@ -1471,7 +1670,7 @@ const Agenda = () => {
                             <div className="w-[90%] bg-slate-200 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
                                 <p className="text-sm text-black Medium mb-3">
                                     {event.start + " - " + event.end}
-                                    
+
                                 </p>
                                 {
                                     event.title != "" ? (
