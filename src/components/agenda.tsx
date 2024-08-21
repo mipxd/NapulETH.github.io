@@ -1559,13 +1559,6 @@ const Agenda = () => {
                 <div className="w-1/3 h-fit flex flex-col items-center justify-start gap-1">
                     {
                         filteredEvents.filter(event => event.day === day && event.stage == "main").map((event, key) => {
-                            let speakersString = '';
-                            if (event.speakers.length > 1) {
-                                speakersString = event.speakers.map(speaker => speaker.name).join(', ');
-                            } else if (event.speakers.length === 1) {
-                                speakersString = event.speakers[0].name;
-                            }
-                            let place = event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"
                             return (
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
                                     <div className="w-full bg-slate-100 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
@@ -1589,14 +1582,14 @@ const Agenda = () => {
                                         <div className="w-full h-fit flex flex-row items-center justify-start gap-1 mb-12">
                                             <MdOutlinePlace size={20} color="#252525" />
                                             <p className="text-xs text-black Medium">
-                                                {place}
+                                                {event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"}
                                             </p>
                                         </div>
                                         {
                                             event.speakers.length != 0 ? (
                                                 <p className="text-md text-gray-700 mb-2">
                                                     Speakers: {
-                                                        speakersString
+                                                        event.speakers.map(speaker => speaker.name).join(', ')
                                                     }
                                                 </p>
                                             ) :
@@ -1628,13 +1621,6 @@ const Agenda = () => {
                 <div className="w-1/3 h-fit flex flex-col items-center justify-start gap-1">
                     {
                         filteredEvents.filter(event => event.day === day && event.stage == "stage 2").map((event, key) => {
-                            let speakersString = '';
-                            if (event.speakers.length > 1) {
-                                speakersString = event.speakers.map(speaker => speaker.name).join(', ');
-                            } else if (event.speakers.length === 1) {
-                                speakersString = event.speakers[0].name;
-                            }
-                            let place = event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"
                             return (
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
                                     <div className="w-full bg-slate-100 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
@@ -1658,14 +1644,14 @@ const Agenda = () => {
                                         <div className="w-full h-fit flex flex-row items-center justify-start gap-1 mb-12">
                                             <MdOutlinePlace size={20} color="#252525" />
                                             <p className="text-xs text-black Medium">
-                                                {place}
+                                                {event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"}
                                             </p>
                                         </div>
                                         {
                                             event.speakers.length != 0 ? (
                                                 <p className="text-md text-gray-700 mb-2">
                                                     Speakers: {
-                                                        speakersString
+                                                        event.speakers.map(speaker => speaker.name).join(', ')
                                                     }
                                                 </p>
                                             ) :
@@ -1697,13 +1683,7 @@ const Agenda = () => {
                 <div className="w-1/3 h-fit flex flex-col items-center justify-start gap-1">
                     {
                         filteredEvents.filter(event => event.day === day && event.stage == "stage 3").map((event, key) => {
-                            let speakersString = '';
-                            if (event.speakers.length > 1) {
-                                speakersString = event.speakers.map(speaker => speaker.name).join(', ');
-                            } else if (event.speakers.length === 1) {
-                                speakersString = event.speakers[0].name;
-                            }
-                            let place = event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"
+                            
                             return (
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
                                     <div className="w-full bg-slate-100 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
@@ -1727,7 +1707,7 @@ const Agenda = () => {
                                         <div className="w-full h-fit flex flex-row items-center justify-start gap-1 mb-12">
                                             <MdOutlinePlace size={20} color="#252525" />
                                             <p className="text-xs text-black Medium">
-                                                {place}
+                                                {event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"}
                                             </p>
                                         </div>
 
@@ -1735,7 +1715,7 @@ const Agenda = () => {
                                             event.speakers.length != 0 ? (
                                                 <p className="text-md text-gray-700 mb-2">
                                                     Speakers: {
-                                                        speakersString
+                                                        event.speakers.map(speaker => speaker.name).join(', ')
                                                     }
                                                 </p>
                                             ) :
