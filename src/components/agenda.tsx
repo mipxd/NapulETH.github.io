@@ -259,7 +259,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Ornella Vallana",
-                    image: ""
+                    image: s31.src
                 }
             ],
             day: 1,
@@ -315,7 +315,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "William Nonnis",
-                    image: ""
+                    image: s27.src
                 }
             ],
             day: 1,
@@ -333,11 +333,11 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Vincenzo Rana",
-                    image: ""
+                    image: s5.src
                 },
                 {
                     name: "Piera Di Stefano",
-                    image: ""
+                    image: s2.src
                 },
                 {
                     name: "MTG",
@@ -359,7 +359,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Cosimo Palma",
-                    image: ""
+                    image: s4.src
                 }
             ],
             day: 1,
@@ -377,7 +377,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Michele Iaselli",
-                    image: ""
+                    image: s28.src
                 }
             ],
             day: 1,
@@ -395,7 +395,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Marek Kowalski",
-                    image: ""
+                    image: s42.src
                 }
             ],
             day: 1,
@@ -413,7 +413,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Marco Castignoli",
-                    image: ""
+                    image: s15.src
                 }
             ],
             day: 1,
@@ -431,7 +431,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Stefano De Angelis",
-                    image: ""
+                    image: s18.src
                 }
             ],
             day: 1,
@@ -449,7 +449,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Qi Zhou",
-                    image: ""
+                    image: s46.src
                 }
             ],
             day: 1,
@@ -467,7 +467,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Vanina Ivanova",
-                    image: ""
+                    image: s3.src
                 }
             ],
             day: 1,
@@ -503,7 +503,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Damian Rusinek",
-                    image: ""
+                    image: s60.src
                 }
             ],
             day: 1,
@@ -521,7 +521,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Mark Richardson",
-                    image: ""
+                    image: s16.src
                 }
             ],
             day: 1,
@@ -539,7 +539,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Bock",
-                    image: ""
+                    image: s54.src
                 }
             ],
             day: 1,
@@ -560,15 +560,15 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "James Rae",
-                    image: ""
+                    image: s26.src
                 },
                 {
                     name: "Viktor",
-                    image: ""
+                    image: s65.src
                 },
                 {
                     name: "Hemilly Rodrigues",
-                    image: ""
+                    image: s19.src
                 }
             ],
             day: 1,
@@ -586,7 +586,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Gianfranco Leone",
-                    image: ""
+                    image: s23.src
                 }
             ],
             day: 1,
@@ -603,7 +603,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Dayana Aleksandrova",
-                    image: ""
+                    image: s25.src
                 }
             ],
             day: 1,
@@ -622,7 +622,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Andrea Paulillo",
-                    image: ""
+                    image: s8.src
                 }
             ],
             day: 1,
@@ -640,11 +640,11 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Gianluca Di Bella",
-                    image: ""
+                    image: "https://napul.eth.limo/_next/static/media/gianluca.ad2208c0.jpeg"
                 },
                 {
                     name: "Lorenzo Ceppaluni",
-                    image: ""
+                    image: "https://napul.eth.limo/_next/static/media/lore.28ce2651.jpeg"
                 }
             ],
             day: 1,
@@ -661,7 +661,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Davide Milani",
-                    image: ""
+                    image: s66.src
                 }
             ],
             day: 1,
@@ -704,7 +704,7 @@ const Agenda = () => {
                 },
                 {
                     name: "Viktor",
-                    image: ""
+                    image: s65.src
                 }
             ],
             day: 2,
@@ -740,7 +740,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Francesco Britti",
-                    image: ""
+                    image: s39.src
                 }
             ],
             day: 2,
@@ -758,7 +758,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Francesco Bianchi",
-                    image: ""
+                    image: s41.src
                 },
                 {
                     name: "Rosario Napolano",
@@ -783,7 +783,7 @@ const Agenda = () => {
             stage: "main",
             speakers: [
                 {
-                    name: "Cryptocuty ",
+                    name: "Cryptocuty",
                     image: ""
                 }
             ],
@@ -838,7 +838,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Valentina Marzioni ",
-                    image: ""
+                    image: s61.src
                 }
             ],
             day: 2,
@@ -881,7 +881,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Elio Barbera",
-                    image: ""
+                    image: s37.src
                 }
             ],
             day: 2,
@@ -899,7 +899,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Lorenzo Rigatti",
-                    image: ""
+                    image: s13.src
                 }
             ],
             day: 2,
@@ -917,11 +917,11 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Silvio Ventre",
-                    image: ""
+                    image: s48.src
                 },
                 {
                     name: "Lorenzo Amoroso ",
-                    image: ""
+                    image: s64.src
                 },
                 {
                     name: "Philipp Pieperi",
@@ -929,7 +929,7 @@ const Agenda = () => {
                 },
                 {
                     name: "Lorenzo Rigatti",
-                    image: ""
+                    image: s13.src
                 }
             ],
             day: 2,
@@ -947,7 +947,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Pietro Rossetto",
-                    image: ""
+                    image: s17.src
                 }
             ],
             day: 2,
@@ -965,7 +965,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Christian Santagata",
-                    image: ""
+                    image: s29.src
                 }
             ],
             day: 2,
@@ -983,7 +983,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Filippo Chiricozzi",
-                    image: ""
+                    image: s34.src
                 }
             ],
             day: 2,
@@ -1019,7 +1019,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Davide Ghezzi",
-                    image: ""
+                    image: s40.src
                 }
             ],
             day: 2,
@@ -1055,7 +1055,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Piera Di Stefano",
-                    image: ""
+                    image: s2.src
                 }
             ],
             day: 2,
@@ -1073,7 +1073,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Davide Zanichelli",
-                    image: ""
+                    image: s12.src
                 },
                 {
                     name: "MTG",
@@ -1098,7 +1098,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Sundaram Jha",
-                    image: ""
+                    image: s11.src
                 }
             ],
             day: 2,
@@ -1117,7 +1117,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Lazar Bucan",
-                    image: ""
+                    image: s30.src
                 }
             ],
             day: 2,
@@ -1187,7 +1187,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "David Carvalho",
-                    image: ""
+                    image: s67.src
                 }
             ],
             day: 3,
@@ -1205,7 +1205,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Fabrizio Genovese",
-                    image: ""
+                    image: "https://napul.eth.limo/_next/static/media/FabrizioGenovese.bdcae4db.jpg"
                 }
             ],
             day: 3,
@@ -1223,15 +1223,15 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Stefano",
-                    image: ""
+                    image: s18.src
                 },
                 {
-                    name: "Ian",
+                    name: "Ian Smith",
                     image: ""
                 },
                 {
                     name: "David Carvalho",
-                    image: ""
+                    image: s67.src
                 }
             ],
             day: 3,
@@ -1303,7 +1303,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Sara Noggler",
-                    image: ""
+                    image: s6.src
                 }
             ],
             day: 3,
@@ -1321,15 +1321,15 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Alessandro Brigato",
-                    image: ""
+                    image: s51.src
                 },
                 {
                     name: "Anotnio Ramicello",
-                    image: ""
+                    image: s59.src
                 },
                 {
                     name: "Alessandra Brandi",
-                    image: ""
+                    image: s7.src
                 }
             ],
             day: 3,
@@ -1347,7 +1347,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Alessandra Brandi",
-                    image: ""
+                    image: s7.src
                 }
             ],
             day: 3,
@@ -1399,7 +1399,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Isola",
-                    image: ""
+                    image: s1.src
                 }
             ],
             day: 3,
@@ -1417,7 +1417,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Miro Radenovic",
-                    image: ""
+                    image: s32.src
                 }
             ],
             day: 3,
@@ -1435,7 +1435,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Fabrizio Maiocco",
-                    image: ""
+                    image: s55.src
                 }
             ],
             day: 3,
@@ -1453,7 +1453,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Francesco Fontana",
-                    image: ""
+                    image: s35.src
                 }
             ],
             day: 3,
@@ -1471,7 +1471,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Americo Cacciapuoti",
-                    image: ""
+                    image: s36.src
                 }
             ],
             day: 3,
@@ -1489,7 +1489,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Luigi Senese",
-                    image: ""
+                    image: s49.src
                 }
             ],
             day: 3,
@@ -1507,7 +1507,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Julie Bettens",
-                    image: ""
+                    image: s50.src
                 }
             ],
             day: 3,
@@ -1525,11 +1525,11 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Vladyslav Dudchenko",
-                    image: ""
+                    image: s45.src
                 },
                 {
-                    name: " Daniele Pinn + Daniele Palombi",
-                    image: ""
+                    name: " Daniele Pinna",
+                    image: s56.src
                 },
                 {
                     name: "Daniele Palombi",
@@ -1569,7 +1569,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Raffaele Orefice",
-                    image: ""
+                    image: "https://napul.eth.limo/_next/static/media/raffa.c537576a.jpg"
                 }
             ],
             day: 3,
@@ -1587,7 +1587,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Federico Costa",
-                    image: ""
+                    image: s53.src
                 }
             ],
             day: 3,
