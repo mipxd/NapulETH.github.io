@@ -1630,7 +1630,7 @@ const Agenda = () => {
         });
     }
 
-    function changeSearchString(s: string){
+    function changeSearchString(s: string) {
         setSearchString(s);
     }
 
@@ -1671,15 +1671,15 @@ const Agenda = () => {
     }, [typeFilter, languageFilter, searchString]);
 
     return (
-        <section className="w-10/12 mx-auto flex flex-col items-center justify-start mt-20 gap-2">
-            <div className="w-10/12 h-fit flex flex-col items-center justify-start">
+        <section className="w-full lg:w-10/12 mx-auto flex flex-col items-center justify-start mt-20 gap-2">
+            <div className="w-11/12 lg:w-10/12 h-fit flex flex-col items-center justify-start">
 
                 <div className="w-full h-fit flex flex-row items-center justify-stretch">
                     <input
                         type="text"
                         className="w-full mx-auto bg-white border border-white p-4 rounded-md mb-4"
                         placeholder="Search..."
-                        onChange={(e)=>{changeSearchString(e.target.value.toLowerCase())}}
+                        onChange={(e) => { changeSearchString(e.target.value.toLowerCase()) }}
                     />
 
                 </div>
@@ -1695,7 +1695,7 @@ const Agenda = () => {
                             <p className={`text-black text-xl Medium p-2 ${day == 3 ? 'bg-white shadow-md rounded-md' : ''}`}>Day 3</p>
                         </Link>
                     </div>
-                    <button className=" bg-white rounded-md py-2 flex flex-row items-center justify-center flex-grow w-[5%]" onClick={toggleFilters}>
+                    <button className=" bg-white rounded-md py-2 px-3 lg:px-0 flex flex-row items-center justify-center flex-grow w-fit lg:w-[5%]" onClick={toggleFilters}>
                         <IoFilterOutline size={26} color="#252525" />
                     </button>
                 </div>
@@ -1722,13 +1722,14 @@ const Agenda = () => {
                     </div>
                 ) : ("")
             }
-            <div className="w-10/12 h-fit flex flex-row items-start justify-center gap-2">
+            <div className="w-10/12 h-fit hidden lg:flex flex-row items-start justify-center gap-2">
                 <div className="flex w-1/3 py-2 flex-row items-center justify-center bg-white border-4 border-[#eddb55] text-black text-xl Medium">Main Stage</div>
                 <div className="flex w-1/3 py-2 flex-row items-center justify-center bg-white border-4 border-[#eddb55] text-black text-xl Medium">Stage 2</div>
                 <div className="flex w-1/3 py-2 flex-row items-center justify-center bg-white border-4 border-[#eddb55] text-black text-xl Medium">Stage 3</div>
             </div>
-            <div className="w-10/12 h-fit flex flex-row items-start justify-center gap-2">
-                <div className="w-1/3 h-fit flex flex-col items-center justify-start gap-1">
+            <div className="w-11/12 lg:w-10/12 h-fit flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-center gap-2">
+                <div className="flex lg:hidden w-full py-2 flex-row items-center justify-center bg-white border-4 border-[#eddb55] text-black text-xl Medium">Main Stage</div>
+                <div className="w-full lg:w-1/3 h-fit flex flex-col items-center justify-start gap-1">
                     {
                         filteredEvents.filter(event => event.day === day && event.stage == "main").map((event, key) => {
                             return (
@@ -1797,7 +1798,9 @@ const Agenda = () => {
                         })
                     }
                 </div>
-                <div className="w-1/3 h-fit flex flex-col items-center justify-start gap-1">
+
+                <div className="flex lg:hidden w-full py-2 flex-row items-center justify-center bg-white border-4 border-[#eddb55] text-black text-xl Medium">Stage 2</div>
+                <div className="w-full lg:w-1/3 h-fit flex flex-col items-center justify-start gap-1">
                     {
                         filteredEvents.filter(event => event.day === day && event.stage == "stage 2").map((event, key) => {
                             return (
@@ -1866,7 +1869,9 @@ const Agenda = () => {
                         })
                     }
                 </div>
-                <div className="w-1/3 h-fit flex flex-col items-center justify-start gap-1">
+
+                <div className="flex lg:hidden w-full py-2 flex-row items-center justify-center bg-white border-4 border-[#eddb55] text-black text-xl Medium">Stage 3</div>
+                <div className="w-full lg:w-1/3 h-fit flex flex-col items-center justify-start gap-1">
                     {
                         filteredEvents.filter(event => event.day === day && event.stage == "stage 3").map((event, key) => {
 
