@@ -96,10 +96,11 @@ const Agenda = () => {
             start: "09:40",
             end: "10:20",
             isWorkshop: false,
+            type: "talk"
         },
         {
             id: 1,
-            title: '',
+            title: 'Decentralized Media: Stack Convergence for a Product',
             subtitle: "",
             stage: "main",
             speakers: [
@@ -112,10 +113,11 @@ const Agenda = () => {
             start: "10:20",
             end: "10:40",
             isWorkshop: false,
+            type: "talk"
         },
         {
             id: 2,
-            title: '',
+            title: 'Social Media Protocols: Why Decentralization Matters in Social Networks',
             subtitle: "",
             stage: "main",
             speakers: [
@@ -128,6 +130,7 @@ const Agenda = () => {
             start: "10:40",
             end: "11:00",
             isWorkshop: false,
+            type: "talk"
         },
         {
             id: 3,
@@ -144,10 +147,11 @@ const Agenda = () => {
             start: "11:00",
             end: "11:20",
             isWorkshop: false,
+            type: "talk"
         },
         {
             id: 4,
-            title: '',
+            title: 'The Network State',
             subtitle: "",
             stage: "main",
             speakers: [
@@ -164,6 +168,7 @@ const Agenda = () => {
             start: "11:00",
             end: "11:20",
             isWorkshop: false,
+            type: "panel"
         },
         {
             id: 5,
@@ -180,10 +185,11 @@ const Agenda = () => {
             start: "14:00",
             end: "14:20",
             isWorkshop: false,
+            type: "talk"
         },
         {
             id: 6,
-            title: '',
+            title: 'The Power of Web3 and how you Need to Drive your Community',
             subtitle: "",
             stage: "main",
             speakers: [
@@ -196,11 +202,29 @@ const Agenda = () => {
             start: "14:20",
             end: "14:40",
             isWorkshop: false,
+            type: "talk"
+        },
+        {
+            id: 6,
+            title: 'Digitalia: Starting the Network State in Italy',
+            subtitle: "",
+            stage: "main",
+            speakers: [
+                {
+                    name: "Francesco Vincenti",
+                    image: s57.src
+                }
+            ],
+            day: 1,
+            start: "14:40",
+            end: "15:00",
+            isWorkshop: false,
+            type: "talk"
         },
         {
             id: 7,
-            title: 'EthCommunity',
-            subtitle: "Tambussi, Cia, Limone, Marsili, Paesano (Community)(Modera Raffaele)",
+            title: 'Eth Community Panel',
+            subtitle: "",
             stage: "main",
             speakers: [
                 {
@@ -220,10 +244,11 @@ const Agenda = () => {
             start: "15:00",
             end: "16:00",
             isWorkshop: false,
+            type: "panel"
         },
         {
             id: 8,
-            title: '',
+            title: 'Education & Public Goods in the Ethereum Ecosystem',
             subtitle: "",
             stage: "main",
             speakers: [
@@ -236,10 +261,11 @@ const Agenda = () => {
             start: "16:00",
             end: "16:20",
             isWorkshop: false,
+            type: "talk"
         },
         {
             id: 9,
-            title: '',
+            title: 'Napoli Blockchain introduction',
             subtitle: "",
             stage: "main",
             speakers: [
@@ -252,10 +278,11 @@ const Agenda = () => {
             start: "16:20",
             end: "16:40",
             isWorkshop: false,
+            type: "talk"
         },
         {
             id: 9,
-            title: '',
+            title: 'Protocol Asset and Sovereign Token',
             subtitle: "",
             stage: "main",
             speakers: [
@@ -268,12 +295,13 @@ const Agenda = () => {
             start: "16:40",
             end: "17:00",
             isWorkshop: false,
+            type: "talk"
         },
 
         // Day 1, Stage 2
         {
             id: 10,
-            title: '',
+            title: 'Blockchain e Cybersecurity nella Pubblica Amminsitrazione',
             subtitle: "",
             stage: "stage 2",
             speakers: [
@@ -286,10 +314,11 @@ const Agenda = () => {
             start: "10:20",
             end: "10:40",
             isWorkshop: false,
+            type: "talk"
         },
         {
             id: 11,
-            title: '',
+            title: 'Mamma, ho Perso la Chiave Privata',
             subtitle: "",
             stage: "stage 2",
             speakers: [
@@ -310,10 +339,11 @@ const Agenda = () => {
             start: "10:40",
             isWorkshop: false,
             end: "11:20",
+            type: "panel"
         },
         {
             id: 12,
-            title: '',
+            title: 'Smart Contract and Blockchain in the European Legal Space',
             subtitle: "",
             stage: "stage 2",
             speakers: [
@@ -326,10 +356,11 @@ const Agenda = () => {
             start: "11:20",
             isWorkshop: false,
             end: "11:40",
+            type: "talk"
         },
         {
             id: 13,
-            title: '',
+            title: 'Privacy e blockchain: connubio difficile ma possibile',
             subtitle: "",
             stage: "stage 2",
             speakers: [
@@ -342,10 +373,11 @@ const Agenda = () => {
             start: "11:40",
             isWorkshop: false,
             end: "12:00",
+            type: "talk"
         },
         {
             id: 14,
-            title: '',
+            title: 'What to do when tx Reverts and the Revert Reason is Swallowed',
             subtitle: "",
             stage: "stage 2",
             speakers: [
@@ -358,10 +390,11 @@ const Agenda = () => {
             start: "14:00",
             end: "14:20",
             isWorkshop: false,
+            type: "talk"
         },
         {
             id: 15,
-            title: '',
+            title: 'Introducing the Verifier Alliance',
             subtitle: "",
             stage: "stage 2",
             speakers: [
@@ -374,10 +407,11 @@ const Agenda = () => {
             isWorkshop: false,
             start: "14:20",
             end: "14:40",
+            type: "talk"
         },
         {
             id: 16,
-            title: '',
+            title: 'Havoc Network: how to spot consensus bugs in large-scale decentralised infrastructures',
             subtitle: "",
             stage: "stage 2",
             speakers: [
@@ -390,10 +424,11 @@ const Agenda = () => {
             start: "14:40",
             end: "15:00",
             isWorkshop: false,
+            type: "talk"
         },
         {
             id: 17,
-            title: '',
+            title: 'Building a Modular Storage Layer for Ethereum on EIP-4844',
             subtitle: "",
             stage: "stage 2",
             speakers: [
@@ -406,10 +441,11 @@ const Agenda = () => {
             start: "15:00",
             end: "15:20",
             isWorkshop: false,
+            type: "talk"
         },
         {
             id: 18,
-            title: '',
+            title: 'Trust-Driven Web3 Marketing: Security Audits as a Marketing Tactic',
             subtitle: "",
             stage: "stage 2",
             speakers: [
@@ -422,10 +458,11 @@ const Agenda = () => {
             start: "15:20",
             end: "15:40",
             isWorkshop: false,
+            type: "talk"
         },
         {
             id: 19,
-            title: '',
+            title: 'Facts and Figures about Web3 Security: Where Do We Stand?',
             subtitle: "",
             stage: "stage 2",
             speakers: [
@@ -438,10 +475,11 @@ const Agenda = () => {
             start: "15:40",
             end: "16:00",
             isWorkshop: false,
+            type: "talk"
         },
         {
             id: 20,
-            title: '',
+            title: 'Secrets of Uniswap V4: A Deep Dive into Hooks Security',
             subtitle: "",
             stage: "stage 2",
             speakers: [
@@ -454,10 +492,11 @@ const Agenda = () => {
             start: "16:00",
             end: "16:20",
             isWorkshop: false,
+            type: "talk"
         },
         {
             id: 21,
-            title: '',
+            title: 'DeFi Exchange Protocols 101: Precision and Accuracy in Fixed-Point Arithmetic ',
             subtitle: "",
             stage: "stage 2",
             speakers: [
@@ -470,10 +509,11 @@ const Agenda = () => {
             start: "16:20",
             end: "16:40",
             isWorkshop: false,
+            type: "talk"
         },
         {
             id: 22,
-            title: '',
+            title: 'Algorithmic Risk Pricing: Keeping yourself safe in the ecosystem ',
             subtitle: "",
             stage: "stage 2",
             speakers: [
@@ -486,12 +526,13 @@ const Agenda = () => {
             start: "16:40",
             end: "17:00",
             isWorkshop: false,
+            type: "talk"
         },
 
         // Day 1, Stage 3
         {
             id: 23,
-            title: '',
+            title: 'Web3 Marketing: Strategies for B2B and B2C in the Decentralized Era',
             subtitle: "",
             isWorkshop: false,
             stage: "stage 3",
@@ -512,10 +553,11 @@ const Agenda = () => {
             day: 1,
             start: "10:40",
             end: "11:20",
+            type: "panel"
         },
         {
             id: 24,
-            title: '',
+            title: 'Web3 for Education and Recruiting',
             subtitle: "",
             stage: "stage 3",
             isWorkshop: false,
@@ -528,10 +570,11 @@ const Agenda = () => {
             day: 1,
             start: "10:20",
             end: "11:40",
+            type: "talk"
         },
         {
             id: 25,
-            title: '',
+            title: 'Web3 Marketing: How Projects can Leverage the Hourglass ',
             subtitle: "",
             stage: "stage 3",
             speakers: [
@@ -544,6 +587,7 @@ const Agenda = () => {
             start: "10:40",
             isWorkshop: false,
             end: "12:00",
+            type: "talk"
         },
         {
             id: 26,
@@ -560,27 +604,32 @@ const Agenda = () => {
             day: 1,
             start: "14:20",
             end: "15:00",
+            type: "workshop"
         },
         {
             id: 27,
-            title: '',
+            title: 'ERC-7007: Verifiable AI-Generated Content Token',
             subtitle: "",
             stage: "stage 3",
             isWorkshop: true,
-            badge: "workshop",
             speakers: [
                 {
-                    name: "Mood Global Services",
+                    name: "Gianluca Di Bella",
+                    image: ""
+                },
+                {
+                    name: "Lorenzo Ceppaluni",
                     image: ""
                 }
             ],
             day: 1,
             start: "15:00",
             end: "16:00",
+            type: "workshop"
         },
         {
             id: 28,
-            title: '',
+            title: 'Solo Staking is Dead? Crypto Passive Incomes.',
             subtitle: "",
             stage: "stage 3",
             speakers: [
@@ -593,6 +642,7 @@ const Agenda = () => {
             start: "16:00",
             end: "16:40",
             isWorkshop: false,
+            type: "talk"
         },
 
         // Day 2, Stage 1 (Main)
@@ -611,6 +661,7 @@ const Agenda = () => {
             day: 2,
             start: "10:20",
             end: "10:40",
+            type: "talk"
         },
         {
             id: 30,
@@ -631,6 +682,7 @@ const Agenda = () => {
             day: 2,
             start: "10:40",
             end: "11:20",
+            type: "panel"
         },
         {
             id: 31,
@@ -647,10 +699,11 @@ const Agenda = () => {
             day: 2,
             start: "11:40",
             end: "12:00",
+            type: "talk"
         },
         {
             id: 32,
-            title: '',
+            title: ' La semplicità, dalla Finanza Tradizionale a Youhodler',
             subtitle: "",
             stage: "main",
             isWorkshop: false,
@@ -663,10 +716,11 @@ const Agenda = () => {
             day: 2,
             start: "14:00",
             end: "15:40",
+            type: "talk"
         },
         {
             id: 33,
-            title: '',
+            title: 'Bridging TradFi and DeFi: Challenges, Gaps, and the Path Forward',
             subtitle: "",
             isWorkshop: false,
             stage: "main",
@@ -687,6 +741,7 @@ const Agenda = () => {
             day: 2,
             start: "14:40",
             end: "15:20",
+            type: "panel"
         },
         {
             id: 34,
@@ -703,11 +758,12 @@ const Agenda = () => {
             day: 2,
             start: "15:20",
             end: "15:40",
+            type: "talk"
         },
         {
             id: 35,
             isWorkshop: false,
-            title: '',
+            title: 'Risks in DeFi',
             subtitle: "",
             stage: "main",
             speakers: [
@@ -719,10 +775,11 @@ const Agenda = () => {
             day: 2,
             start: "15:40",
             end: "16:00",
+            type: "talk"
         },
         {
             id: 36,
-            title: '',
+            title: 'Crosschain DeFi to Compete with CeFi',
             subtitle: "",
             isWorkshop: false,
             stage: "main",
@@ -735,10 +792,11 @@ const Agenda = () => {
             day: 2,
             start: "16:00",
             end: "16:20",
+            type: "talk"
         },
         {
             id: 37,
-            title: '',
+            title: 'How Geopolitics and Macroeconomics Influence Token Volatility',
             subtitle: "",
             isWorkshop: false,
             stage: "main",
@@ -751,11 +809,12 @@ const Agenda = () => {
             day: 2,
             start: "16:20",
             end: "16:40",
+            type: "talk"
         },
         {
             id: 38,
             isWorkshop: false,
-            title: '',
+            title: 'Innovation and the Financial Future',
             subtitle: "",
             stage: "main",
             speakers: [
@@ -771,13 +830,14 @@ const Agenda = () => {
             day: 2,
             start: "16:40",
             end: "17:00",
+            type: "talk"
         },
 
         // Day 2, Stage 2
 
         {
             id: 39,
-            title: '',
+            title: 'How to Use Blockchain Tech for a Supply Chain System',
             subtitle: "",
             isWorkshop: false,
             stage: "stage 2",
@@ -790,10 +850,11 @@ const Agenda = () => {
             day: 2,
             start: "10:00",
             end: "10:20",
+            type: "talk"
         },
         {
             id: 40,
-            title: '',
+            title: 'On-chain Finance: One Block at a Time',
             subtitle: "",
             isWorkshop: false,
             stage: "stage 2",
@@ -806,6 +867,7 @@ const Agenda = () => {
             day: 2,
             start: "10:20",
             end: "10:40",
+            type: "talk"
         },
         {
             id: 41,
@@ -834,11 +896,12 @@ const Agenda = () => {
             day: 2,
             start: "10:40",
             end: "11:20",
+            type: "panel"
         },
         {
             id: 42,
             isWorkshop: false,
-            title: '',
+            title: ' Tokenization Unfolding: the Merge of TradFi and DeFi',
             subtitle: "",
             stage: "stage 2",
             speakers: [
@@ -850,10 +913,11 @@ const Agenda = () => {
             day: 2,
             start: "11:20",
             end: "11:40",
+            type: "talk"
         },
         {
             id: 43,
-            title: '',
+            title: 'Bringing Real World Assets to DeFi',
             subtitle: "",
             stage: "stage 2",
             isWorkshop: false,
@@ -866,10 +930,11 @@ const Agenda = () => {
             day: 2,
             start: "11:40",
             end: "12:00",
+            type: "talk"
         },
         {
             id: 44,
-            title: '',
+            title: "Evoluzione dell'Identità Digitale: eiDAS2 e l'Ascesa della Self Sovereign Identity",
             subtitle: "",
             isWorkshop: false,
             stage: "stage 2",
@@ -882,10 +947,11 @@ const Agenda = () => {
             day: 2,
             start: "14:00",
             end: "14:20",
+            type: "talk"
         },
         {
             id: 45,
-            title: '',
+            title: 'Considerazioni su MICAr',
             subtitle: "",
             isWorkshop: false,
             stage: "stage 2",
@@ -898,10 +964,11 @@ const Agenda = () => {
             day: 2,
             start: "14:20",
             end: "14:40",
+            type: "talk"
         },
         {
             id: 46,
-            title: '',
+            title: 'Blockchain, Web3 e Criptovalute: Stato di Adozione e Sviluppi Futuri',
             subtitle: "",
             stage: "stage 2",
             isWorkshop: false,
@@ -914,6 +981,7 @@ const Agenda = () => {
             day: 2,
             start: "14:40",
             end: "15:00",
+            type: "talk"
         },
         {
             id: 47,
@@ -930,10 +998,11 @@ const Agenda = () => {
             day: 2,
             start: "15:00",
             end: "15:40",
+            type: "talk"
         },
         {
             id: 48,
-            title: '',
+            title: 'Quando lo Scam Danneggia la Tua Reputazione',
             subtitle: "",
             isWorkshop: false,
             stage: "stage 2",
@@ -946,6 +1015,7 @@ const Agenda = () => {
             day: 2,
             start: "15:40",
             end: "16:00",
+            type: "talk"
         },
         {
             id: 49,
@@ -966,13 +1036,14 @@ const Agenda = () => {
             day: 2,
             start: "16:00",
             end: "16:40",
+            type: "panel"
         },
 
         // Day 2, Stage 3
 
         {
             id: 50,
-            title: '',
+            title: 'Empowering Devs: A Practical Guide to User-Centric UI/UX Design in Web3',
             subtitle: "",
             stage: "stage 3",
             isWorkshop: false,
@@ -985,10 +1056,11 @@ const Agenda = () => {
             day: 2,
             start: "10:00",
             end: "11:00",
+            type: "talk"
         },
         {
             id: 51,
-            title: '',
+            title: 'Find and Research any Smart Contract & Blockchain Protocol with Cookbook.dev',
             subtitle: "",
             stage: "stage 3",
             isWorkshop: true,
@@ -1002,10 +1074,11 @@ const Agenda = () => {
             day: 2,
             start: "11:00",
             end: "12:00",
+            type: "workshop"
         },
         {
             id: 52,
-            title: '',
+            title: 'Essential Maths for Zero Knowledge Proofs',
             subtitle: "",
             isWorkshop: false,
             stage: "stage 3",
@@ -1018,27 +1091,23 @@ const Agenda = () => {
             day: 2,
             start: "14:00",
             end: "15:00",
+            type: "talk"
         },
         {
             id: 53,
-            title: '',
+            title: 'HEVM Workshop',
             subtitle: "",
             stage: "stage 3",
             isWorkshop: true,
-            badge: "workshop",
-            speakers: [
-                {
-                    name: "HEVM Workshop",
-                    image: ""
-                }
-            ],
+            speakers: [],
             day: 2,
             start: "15:00",
             end: "16:00",
+            type: "workshop"
         },
         {
             id: 54,
-            title: '',
+            title: 'Monetize and Protect Data: A Web3 Developer Toolkit',
             subtitle: "",
             isWorkshop: false,
             stage: "stage 3",
@@ -1051,13 +1120,14 @@ const Agenda = () => {
             day: 2,
             start: "16:00",
             end: "17:00",
+            type: "talk"
         },
 
         // Day 3 , Stage 1 (Main)
 
         {
             id: 55,
-            title: '',
+            title: 'Post-Quantum World: Are We Ready?',
             subtitle: "",
             isWorkshop: false,
             stage: "main",
@@ -1070,10 +1140,11 @@ const Agenda = () => {
             day: 3,
             start: "10:00",
             end: "10:20",
+            type: "talk"
         },
         {
             id: 56,
-            title: '',
+            title: 'The Future is Quantum',
             subtitle: "",
             stage: "main",
             isWorkshop: false,
@@ -1086,10 +1157,11 @@ const Agenda = () => {
             day: 3,
             start: "10:20",
             end: "10:40",
+            type: "talk"
         },
         {
             id: 57,
-            title: '',
+            title: 'Quantum Doom Vs, Quantum Optimism',
             subtitle: "",
             isWorkshop: false,
             stage: "main",
@@ -1110,10 +1182,11 @@ const Agenda = () => {
             day: 3,
             start: "10:40",
             end: "11:20",
+            type: "panel"
         },
         {
             id: 58,
-            title: '',
+            title: 'Device-Independent Quantum Cryptography',
             isWorkshop: false,
             subtitle: "",
             stage: "main",
@@ -1126,10 +1199,11 @@ const Agenda = () => {
             day: 3,
             start: "11:20",
             end: "11:40",
+            type: "talk"
         },
         {
             id: 59,
-            title: '',
+            title: 'Quantum Computing vs Web3 Cryptography: Risks, Challenges and Opportunities',
             subtitle: "",
             stage: "main",
             isWorkshop: false,
@@ -1142,10 +1216,11 @@ const Agenda = () => {
             day: 3,
             start: "11:40",
             end: "12:00",
+            type: "talk"
         },
         {
             id: 60,
-            title: '',
+            title: 'NFT on Bitcoin',
             subtitle: "",
             stage: "main",
             isWorkshop: false,
@@ -1158,10 +1233,11 @@ const Agenda = () => {
             day: 3,
             start: "14:00",
             end: "14:20",
+            type: "talk"
         },
         {
             id: 61,
-            title: '',
+            title: 'Branding in the Blockchain Era: Navigating NFTs and Web3 for Business Innovation',
             subtitle: "",
             stage: "main",
             isWorkshop: false,
@@ -1174,10 +1250,11 @@ const Agenda = () => {
             day: 3,
             start: "14:20",
             end: "14:40",
+            type: "talk"
         },
         {
             id: 62,
-            title: '',
+            title: 'NFTs for a Better World: Tokenization, Gaming, and Charity in the Future of Blockchain',
             isWorkshop: false,
             subtitle: "",
             stage: "main",
@@ -1198,10 +1275,11 @@ const Agenda = () => {
             day: 3,
             start: "14:40",
             end: "15:20",
+            type: "panel"
         },
         {
             id: 63,
-            title: '',
+            title: 'Web3 #tarantellafriendly',
             isWorkshop: false,
             subtitle: "",
             stage: "main",
@@ -1214,22 +1292,24 @@ const Agenda = () => {
             day: 3,
             start: "15:20",
             end: "15:40",
+            type: "talk"
         },
         {
             id: 64,
-            title: '',
+            title: 'Gaming: The New Frontier of Engagement and the Next Social Media Revolution',
             subtitle: "",
             isWorkshop: false,
             stage: "main",
             speakers: [
                 {
-                    name: "Morteza Khezri",
+                    name: "Morteza Shahini",
                     image: ""
                 }
             ],
             day: 3,
             start: "15:40",
             end: "16:00",
+            type: "talk"
         },
         {
             id: 65,
@@ -1241,13 +1321,14 @@ const Agenda = () => {
             day: 3,
             start: "16:20",
             end: "17:00",
+            type: "talk"
         },
 
         // Day 3 , Stage 2
 
         {
             id: 66,
-            title: '',
+            title: 'Investigating the Prospects of Web3, NFTs, and the Metaverse',
             subtitle: "",
             isWorkshop: false,
             stage: "stage 2",
@@ -1260,10 +1341,11 @@ const Agenda = () => {
             day: 3,
             start: "10:00",
             end: "10:20",
+            type: "talk"
         },
         {
             id: 67,
-            title: '',
+            title: 'NFT and Utilities: Building Memberships and Loyalty Programs',
             subtitle: "",
             isWorkshop: false,
             stage: "stage 2",
@@ -1276,10 +1358,11 @@ const Agenda = () => {
             day: 3,
             start: "10:20",
             end: "10:40",
+            type: "talk"
         },
         {
             id: 68,
-            title: '',
+            title: 'Le Fasi del Web dal 1990 al 2030',
             subtitle: "",
             isWorkshop: false,
             stage: "stage 2",
@@ -1292,10 +1375,11 @@ const Agenda = () => {
             day: 3,
             start: "10:40",
             end: "11:20",
+            type: "talk"
         },
         {
             id: 69,
-            title: '',
+            title: 'A New Patronage Class in the Digital Art World',
             subtitle: "",
             stage: "stage 2",
             isWorkshop: false,
@@ -1308,10 +1392,11 @@ const Agenda = () => {
             day: 3,
             start: "11:20",
             end: "11:40",
+            type: "talk"
         },
         {
             id: 70,
-            title: '',
+            title: 'How Web3 is Reshaping Fashion and Luxury',
             subtitle: "",
             isWorkshop: false,
             stage: "stage 2",
@@ -1324,10 +1409,11 @@ const Agenda = () => {
             day: 3,
             start: "11:40",
             end: "12:00",
+            type: "talk"
         },
         {
             id: 71,
-            title: '',
+            title: 'AI Singularity: AI x Crypto Convergence',
             subtitle: "",
             isWorkshop: false,
             stage: "stage 2",
@@ -1340,10 +1426,11 @@ const Agenda = () => {
             day: 3,
             start: "14:00",
             end: "14:20",
+            type: "talk"
         },
         {
             id: 72,
-            title: '',
+            title: 'Optimizing Commit-and-Reveal for Smart Contracts',
             isWorkshop: false,
             subtitle: "",
             stage: "stage 2",
@@ -1356,10 +1443,11 @@ const Agenda = () => {
             day: 3,
             start: "14:20",
             end: "14:40",
+            type: "talk"
         },
         {
             id: 73,
-            title: '',
+            title: 'The Future of Privacy: Exploring ZK, Quantum, and Beyond',
             isWorkshop: false,
             subtitle: "",
             stage: "stage 2",
@@ -1380,10 +1468,11 @@ const Agenda = () => {
             day: 3,
             start: "14:40",
             end: "15:20",
+            type: "panel"
         },
         {
             id: 74,
-            title: '',
+            title: "It's Time for TEEs",
             subtitle: "",
             stage: "stage 2",
             isWorkshop: false,
@@ -1396,10 +1485,11 @@ const Agenda = () => {
             day: 3,
             start: "15:20",
             end: "15:40",
+            type: "talk"
         },
         {
             id: 75,
-            title: '',
+            title: 'Zero-Knowledge Proofs Demystified: A Beginner’s Guide',
             isWorkshop: false,
             subtitle: "",
             stage: "stage 2",
@@ -1412,10 +1502,11 @@ const Agenda = () => {
             day: 3,
             start: "15:40",
             end: "16:00",
+            type: "talk"
         },
         {
             id: 76,
-            title: '',
+            title: 'Digital Identity of Businesses and Employees: Key Technology in Fighting AI Phishing and Control of Digital Assets',
             isWorkshop: false,
             subtitle: "",
             stage: "stage 2",
@@ -1428,6 +1519,7 @@ const Agenda = () => {
             day: 3,
             start: "16:00",
             end: "16:20",
+            type: "talk"
         },
     ]
 
@@ -1439,10 +1531,10 @@ const Agenda = () => {
 
                 <div className="w-full h-fit flex flex-row items-center justify-stretch">
                     <input type="text" className="w-full mx-auto bg-white border border-white p-4 rounded-md mb-4" placeholder="Search..." />
-                    
+
                 </div>
                 <div className="w-full h-fit flex flex-row items-center justify-between gap-4 mb-4 ">
-                    <div className="w-[95%] flex flex-row items-center justify-start">
+                    <div className="w-[95%] flex flex-row items-center justify-start gap-4">
                         <Link href="" onClick={(e) => { e.preventDefault(); setDay(1) }}>
                             <p className={`text-black text-xl Medium p-2 ${day == 1 ? 'bg-white shadow-md rounded-md' : ''}`}>Day 1</p>
                         </Link>
@@ -1476,14 +1568,20 @@ const Agenda = () => {
                             let place = event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"
                             return (
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
-                                    <div className="w-full bg-slate-200 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
-                                        <p className="text-sm text-black Medium mb-3">
-                                            {event.start + " - " + event.end}
-
-                                        </p>
+                                    <div className="w-full bg-slate-100 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
+                                        <div className="w-full h-fit flex flex-row items-center justify-start gap-2">
+                                            <p className="text-sm text-black Medium mb-3">
+                                                {event.start + " - " + event.end}
+                                            </p>
+                                            <p className="text-sm px-2 py-1 rounded shadow text-white Medium mb-3" style={{
+                                                backgroundColor: event.type == "talk" ? "#FFAC1C" : event.type == "panel" ? "#1d427f" : "#7f1d44"
+                                            }}>
+                                                {event.type.toUpperCase()}
+                                            </p>
+                                        </div>
                                         {
                                             event.title != "" ? (
-                                                <p className="text-2xl text-black Medium mb-2">{event.title}</p>
+                                                <p className="text-xl text-black Medium mb-2">{event.title}</p>
                                             ) : (
                                                 <p className="text-xl text-gray-400 Medium italic mb-2">Title to be announced later...</p>
                                             )
@@ -1539,14 +1637,20 @@ const Agenda = () => {
                             let place = event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"
                             return (
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
-                                    <div className="w-full bg-slate-200 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
-                                        <p className="text-sm text-black Medium mb-3">
-                                            {event.start + " - " + event.end}
-
-                                        </p>
+                                    <div className="w-full bg-slate-100 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
+                                        <div className="w-full h-fit flex flex-row items-center justify-start gap-2">
+                                            <p className="text-sm text-black Medium mb-3">
+                                                {event.start + " - " + event.end}
+                                            </p>
+                                            <p className="text-sm px-2 py-1 rounded shadow text-white Medium mb-3" style={{
+                                                backgroundColor: event.type == "talk" ? "#FFAC1C" : event.type == "panel" ? "#1d427f" : "#7f1d44"
+                                            }}>
+                                                {event.type.toUpperCase()}
+                                            </p>
+                                        </div>
                                         {
                                             event.title != "" ? (
-                                                <p className="text-2xl text-black Medium mb-2">{event.title}</p>
+                                                <p className="text-xl text-black Medium mb-2">{event.title}</p>
                                             ) : (
                                                 <p className="text-xl text-gray-400 Medium italic mb-2">Title to be announced later...</p>
                                             )
@@ -1602,14 +1706,20 @@ const Agenda = () => {
                             let place = event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"
                             return (
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
-                                    <div className="w-full bg-slate-200 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
-                                        <p className="text-sm text-black Medium mb-3">
-                                            {event.start + " - " + event.end}
-
-                                        </p>
+                                    <div className="w-full bg-slate-100 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
+                                        <div className="w-full h-fit flex flex-row items-center justify-start gap-2">
+                                            <p className="text-sm text-black Medium mb-3">
+                                                {event.start + " - " + event.end}
+                                            </p>
+                                            <p className="text-sm px-2 py-1 rounded shadow text-white Medium mb-3" style={{
+                                                backgroundColor: event.type == "talk" ? "#FFAC1C" : event.type == "panel" ? "#1d427f" : "#7f1d44"
+                                            }}>
+                                                {event.type.toUpperCase()}
+                                            </p>
+                                        </div>
                                         {
                                             event.title != "" ? (
-                                                <p className="text-2xl text-black Medium mb-2">{event.title}</p>
+                                                <p className="text-xl text-black Medium mb-2">{event.title}</p>
                                             ) : (
                                                 <p className="text-xl text-gray-400 Medium italic mb-2">Title to be announced later...</p>
                                             )
@@ -1620,6 +1730,7 @@ const Agenda = () => {
                                                 {place}
                                             </p>
                                         </div>
+
                                         {
                                             event.speakers.length != 0 ? (
                                                 <p className="text-md text-gray-700 mb-2">
@@ -1654,69 +1765,6 @@ const Agenda = () => {
                     }
                 </div>
             </div>
-
-            {
-                filteredEvents.filter(event => event.day === day).map((event, key) => {
-                    let speakersString = '';
-                    if (event.speakers.length > 1) {
-                        speakersString = event.speakers.map(speaker => speaker.name).join(', ');
-                    } else if (event.speakers.length === 1) {
-                        speakersString = event.speakers[0].name;
-                    }
-                    let place = event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"
-                    return (
-                        <div key={key} className="w-11/12 h-fit flex flex-row items-start justify-start gap-2">
-                            <p className="text-lg text-black text-center Medium p-1 rounded min-w-[5%] bg-[#eddb55]">{event.start}</p>
-                            <div className="w-[90%] bg-slate-200 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
-                                <p className="text-sm text-black Medium mb-3">
-                                    {event.start + " - " + event.end}
-
-                                </p>
-                                {
-                                    event.title != "" ? (
-                                        <p className="text-2xl text-black Medium mb-2">{event.title}</p>
-                                    ) : (
-                                        <p className="text-xl text-gray-400 Medium italic mb-2">Title to be announced later...</p>
-                                    )
-                                }
-                                <div className="w-full h-fit flex flex-row items-center justify-start gap-1 mb-12">
-                                    <MdOutlinePlace size={20} color="#252525" />
-                                    <p className="text-xs text-black Medium">
-                                        {place}
-                                    </p>
-                                </div>
-                                {
-                                    event.speakers.length != 0 ? (
-                                        <p className="text-md text-gray-700 mb-2">
-                                            Speakers: {
-                                                speakersString
-                                            }
-                                        </p>
-                                    ) :
-                                        ("")
-                                }
-
-                                {
-                                    event.speakers.length != 0 ? (
-                                        <div className="flex flex-row items-center justify-start w-full h-fit">
-                                            {
-                                                event.speakers.map((speaker, speakerKey) => {
-                                                    return (
-                                                        <div key={speakerKey} className={`w-10 aspect-square rounded-full bg-white bg-center bg-cover bg-no-repeat shadow-lg `} style={{
-                                                            marginLeft: `${speakerKey / 2 * 15 * -1}px`,
-                                                            backgroundImage: speaker.image != "" ? `url('${speaker.image}')` : "url('https://media.istockphoto.com/id/1332100919/vector/man-icon-black-icon-person-symbol.jpg?s=612x612&w=0&k=20&c=AVVJkvxQQCuBhawHrUhDRTCeNQ3Jgt0K1tXjJsFy1eg=')"
-                                                        }}></div>
-                                                    )
-                                                })
-                                            }
-                                        </div>
-                                    ) : ("")
-                                }
-                            </div>
-                        </div>
-                    )
-                })
-            }
         </section>
     )
 }
