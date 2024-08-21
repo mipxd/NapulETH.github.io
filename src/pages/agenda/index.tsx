@@ -32,7 +32,7 @@ export default function Agenda() {
                     } ⏳⌛
                 </h6>
             </section>
-            <Agenda />
+            
             <Footer />
         </main>
     );
