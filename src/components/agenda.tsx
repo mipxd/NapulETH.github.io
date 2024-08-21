@@ -1570,8 +1570,7 @@ const Agenda = () => {
             <div className="w-10/12 h-fit flex flex-row items-start justify-center gap-2">
                 <div className="w-1/3 h-fit flex flex-col items-center justify-start gap-1">
                     {
-                        filteredEvents.filter(event => event.day === day).filter(event => event.stage == "main").map((event, key) => {
-                            console.log("column 1: "+event.id)
+                        filteredEvents.filter(event => event.day === day && event.stage == "main").map((event, key) => {
                             return (
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
                                     <div className="w-full bg-slate-100 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
@@ -1633,8 +1632,7 @@ const Agenda = () => {
                 </div>
                 <div className="w-1/3 h-fit flex flex-col items-center justify-start gap-1">
                     {
-                        filteredEvents.filter(event => event.day === day).filter(event => event.stage == "main").map((event, key) => {
-                            console.log("column 2 : "+event.id)
+                        filteredEvents.filter(event => event.day === day && event.stage == "stage 2").map((event, key) => {
                             return (
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
                                     <div className="w-full bg-slate-100 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
@@ -1696,8 +1694,8 @@ const Agenda = () => {
                 </div>
                 <div className="w-1/3 h-fit flex flex-col items-center justify-start gap-1">
                     {
-                        filteredEvents.filter(event => event.day === day).filter(event => event.stage == "main").map((event, key) => {
-                            console.log("column 3 :" + event.id)
+                        filteredEvents.filter(event => event.day === day && event.stage == "stage 3").map((event, key) => {
+
                             return (
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
                                     <div className="w-full bg-slate-100 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
