@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { MdOutlinePlace } from "react-icons/md";
@@ -92,7 +92,8 @@ const Agenda = () => {
             start: "09:40",
             end: "10:20",
             isWorkshop: false,
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 1,
@@ -109,7 +110,8 @@ const Agenda = () => {
             start: "10:20",
             end: "10:40",
             isWorkshop: false,
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 2,
@@ -126,7 +128,8 @@ const Agenda = () => {
             start: "10:40",
             end: "11:00",
             isWorkshop: false,
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 3,
@@ -143,7 +146,8 @@ const Agenda = () => {
             start: "11:00",
             end: "11:20",
             isWorkshop: false,
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 4,
@@ -164,7 +168,8 @@ const Agenda = () => {
             start: "11:00",
             end: "11:20",
             isWorkshop: false,
-            type: "panel"
+            type: "panel",
+            lang: "en"
         },
         {
             id: 5,
@@ -181,7 +186,8 @@ const Agenda = () => {
             start: "14:00",
             end: "14:20",
             isWorkshop: false,
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 6,
@@ -198,7 +204,8 @@ const Agenda = () => {
             start: "14:20",
             end: "14:40",
             isWorkshop: false,
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 86,
@@ -215,7 +222,8 @@ const Agenda = () => {
             start: "14:40",
             end: "15:00",
             isWorkshop: false,
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 7,
@@ -240,7 +248,8 @@ const Agenda = () => {
             start: "15:00",
             end: "16:00",
             isWorkshop: false,
-            type: "panel"
+            type: "panel",
+            lang: "en"
         },
         {
             id: 8,
@@ -257,7 +266,8 @@ const Agenda = () => {
             start: "16:00",
             end: "16:20",
             isWorkshop: false,
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 9,
@@ -274,7 +284,8 @@ const Agenda = () => {
             start: "16:20",
             end: "16:40",
             isWorkshop: false,
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 9,
@@ -291,7 +302,8 @@ const Agenda = () => {
             start: "16:40",
             end: "17:00",
             isWorkshop: false,
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
 
         // Day 1, Stage 2
@@ -310,7 +322,8 @@ const Agenda = () => {
             start: "10:20",
             end: "10:40",
             isWorkshop: false,
-            type: "talk"
+            type: "talk",
+            lang: "it"
         },
         {
             id: 11,
@@ -335,7 +348,8 @@ const Agenda = () => {
             start: "10:40",
             isWorkshop: false,
             end: "11:20",
-            type: "panel"
+            type: "panel",
+            lang: "it"
         },
         {
             id: 12,
@@ -352,7 +366,8 @@ const Agenda = () => {
             start: "11:20",
             isWorkshop: false,
             end: "11:40",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 13,
@@ -369,7 +384,8 @@ const Agenda = () => {
             start: "11:40",
             isWorkshop: false,
             end: "12:00",
-            type: "talk"
+            type: "talk",
+            lang: "it"
         },
         {
             id: 14,
@@ -386,7 +402,8 @@ const Agenda = () => {
             start: "14:00",
             end: "14:20",
             isWorkshop: false,
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 15,
@@ -403,7 +420,8 @@ const Agenda = () => {
             isWorkshop: false,
             start: "14:20",
             end: "14:40",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 16,
@@ -420,7 +438,8 @@ const Agenda = () => {
             start: "14:40",
             end: "15:00",
             isWorkshop: false,
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 17,
@@ -437,7 +456,8 @@ const Agenda = () => {
             start: "15:00",
             end: "15:20",
             isWorkshop: false,
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 18,
@@ -454,7 +474,8 @@ const Agenda = () => {
             start: "15:20",
             end: "15:40",
             isWorkshop: false,
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 19,
@@ -471,7 +492,8 @@ const Agenda = () => {
             start: "15:40",
             end: "16:00",
             isWorkshop: false,
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 20,
@@ -488,7 +510,8 @@ const Agenda = () => {
             start: "16:00",
             end: "16:20",
             isWorkshop: false,
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 21,
@@ -505,7 +528,8 @@ const Agenda = () => {
             start: "16:20",
             end: "16:40",
             isWorkshop: false,
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 22,
@@ -522,7 +546,8 @@ const Agenda = () => {
             start: "16:40",
             end: "17:00",
             isWorkshop: false,
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
 
         // Day 1, Stage 3
@@ -549,7 +574,8 @@ const Agenda = () => {
             day: 1,
             start: "10:40",
             end: "11:20",
-            type: "panel"
+            type: "panel",
+            lang: "en"
         },
         {
             id: 24,
@@ -566,7 +592,8 @@ const Agenda = () => {
             day: 1,
             start: "10:20",
             end: "11:40",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 25,
@@ -583,7 +610,8 @@ const Agenda = () => {
             start: "10:40",
             isWorkshop: false,
             end: "12:00",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 26,
@@ -600,7 +628,8 @@ const Agenda = () => {
             day: 1,
             start: "14:20",
             end: "15:00",
-            type: "workshop"
+            type: "workshop",
+            lang: "en"
         },
         {
             id: 27,
@@ -621,7 +650,8 @@ const Agenda = () => {
             day: 1,
             start: "15:00",
             end: "16:00",
-            type: "workshop"
+            type: "workshop",
+            lang: "en"
         },
         {
             id: 28,
@@ -638,7 +668,8 @@ const Agenda = () => {
             start: "16:00",
             end: "16:40",
             isWorkshop: false,
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
 
         // Day 2, Stage 1 (Main)
@@ -657,7 +688,8 @@ const Agenda = () => {
             day: 2,
             start: "10:20",
             end: "10:40",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 30,
@@ -678,7 +710,8 @@ const Agenda = () => {
             day: 2,
             start: "10:40",
             end: "11:20",
-            type: "panel"
+            type: "panel",
+            lang: "en"
         },
         {
             id: 31,
@@ -695,7 +728,8 @@ const Agenda = () => {
             day: 2,
             start: "11:40",
             end: "12:00",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 32,
@@ -712,7 +746,8 @@ const Agenda = () => {
             day: 2,
             start: "14:00",
             end: "15:40",
-            type: "talk"
+            type: "talk",
+            lang: "it"
         },
         {
             id: 33,
@@ -737,7 +772,8 @@ const Agenda = () => {
             day: 2,
             start: "14:40",
             end: "15:20",
-            type: "panel"
+            type: "panel",
+            lang: "en"
         },
         {
             id: 34,
@@ -754,7 +790,8 @@ const Agenda = () => {
             day: 2,
             start: "15:20",
             end: "15:40",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 35,
@@ -771,7 +808,8 @@ const Agenda = () => {
             day: 2,
             start: "15:40",
             end: "16:00",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 36,
@@ -788,7 +826,8 @@ const Agenda = () => {
             day: 2,
             start: "16:00",
             end: "16:20",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 37,
@@ -805,7 +844,8 @@ const Agenda = () => {
             day: 2,
             start: "16:20",
             end: "16:40",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 38,
@@ -826,7 +866,8 @@ const Agenda = () => {
             day: 2,
             start: "16:40",
             end: "17:00",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
 
         // Day 2, Stage 2
@@ -846,7 +887,8 @@ const Agenda = () => {
             day: 2,
             start: "10:00",
             end: "10:20",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 40,
@@ -863,7 +905,8 @@ const Agenda = () => {
             day: 2,
             start: "10:20",
             end: "10:40",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 41,
@@ -892,7 +935,8 @@ const Agenda = () => {
             day: 2,
             start: "10:40",
             end: "11:20",
-            type: "panel"
+            type: "panel",
+            lang: "en"
         },
         {
             id: 42,
@@ -909,7 +953,8 @@ const Agenda = () => {
             day: 2,
             start: "11:20",
             end: "11:40",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 43,
@@ -926,7 +971,8 @@ const Agenda = () => {
             day: 2,
             start: "11:40",
             end: "12:00",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 44,
@@ -943,7 +989,8 @@ const Agenda = () => {
             day: 2,
             start: "14:00",
             end: "14:20",
-            type: "talk"
+            type: "talk",
+            lang: "it"
         },
         {
             id: 45,
@@ -960,7 +1007,8 @@ const Agenda = () => {
             day: 2,
             start: "14:20",
             end: "14:40",
-            type: "talk"
+            type: "talk",
+            lang: "it"
         },
         {
             id: 46,
@@ -977,7 +1025,8 @@ const Agenda = () => {
             day: 2,
             start: "14:40",
             end: "15:00",
-            type: "talk"
+            type: "talk",
+            lang: "it"
         },
         {
             id: 47,
@@ -994,7 +1043,8 @@ const Agenda = () => {
             day: 2,
             start: "15:00",
             end: "15:40",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 48,
@@ -1011,7 +1061,8 @@ const Agenda = () => {
             day: 2,
             start: "15:40",
             end: "16:00",
-            type: "talk"
+            type: "talk",
+            lang: "it"
         },
         {
             id: 49,
@@ -1032,7 +1083,8 @@ const Agenda = () => {
             day: 2,
             start: "16:00",
             end: "16:40",
-            type: "panel"
+            type: "panel",
+            lang: "en"
         },
 
         // Day 2, Stage 3
@@ -1052,7 +1104,8 @@ const Agenda = () => {
             day: 2,
             start: "10:00",
             end: "11:00",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 51,
@@ -1070,7 +1123,8 @@ const Agenda = () => {
             day: 2,
             start: "11:00",
             end: "12:00",
-            type: "workshop"
+            type: "workshop",
+            lang: "en"
         },
         {
             id: 52,
@@ -1087,7 +1141,8 @@ const Agenda = () => {
             day: 2,
             start: "14:00",
             end: "15:00",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 53,
@@ -1099,7 +1154,8 @@ const Agenda = () => {
             day: 2,
             start: "15:00",
             end: "16:00",
-            type: "workshop"
+            type: "workshop",
+            lang: "en"
         },
         {
             id: 54,
@@ -1116,7 +1172,8 @@ const Agenda = () => {
             day: 2,
             start: "16:00",
             end: "17:00",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
 
         // Day 3 , Stage 1 (Main)
@@ -1136,7 +1193,8 @@ const Agenda = () => {
             day: 3,
             start: "10:00",
             end: "10:20",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 56,
@@ -1153,7 +1211,8 @@ const Agenda = () => {
             day: 3,
             start: "10:20",
             end: "10:40",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 57,
@@ -1178,7 +1237,8 @@ const Agenda = () => {
             day: 3,
             start: "10:40",
             end: "11:20",
-            type: "panel"
+            type: "panel",
+            lang: "en"
         },
         {
             id: 58,
@@ -1195,7 +1255,8 @@ const Agenda = () => {
             day: 3,
             start: "11:20",
             end: "11:40",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 59,
@@ -1212,7 +1273,8 @@ const Agenda = () => {
             day: 3,
             start: "11:40",
             end: "12:00",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 60,
@@ -1229,7 +1291,8 @@ const Agenda = () => {
             day: 3,
             start: "14:00",
             end: "14:20",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 61,
@@ -1246,7 +1309,8 @@ const Agenda = () => {
             day: 3,
             start: "14:20",
             end: "14:40",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 62,
@@ -1271,7 +1335,8 @@ const Agenda = () => {
             day: 3,
             start: "14:40",
             end: "15:20",
-            type: "panel"
+            type: "panel",
+            lang: "en"
         },
         {
             id: 63,
@@ -1288,7 +1353,8 @@ const Agenda = () => {
             day: 3,
             start: "15:20",
             end: "15:40",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 64,
@@ -1305,7 +1371,8 @@ const Agenda = () => {
             day: 3,
             start: "15:40",
             end: "16:00",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 65,
@@ -1317,7 +1384,8 @@ const Agenda = () => {
             day: 3,
             start: "16:20",
             end: "17:00",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
 
         // Day 3 , Stage 2
@@ -1337,7 +1405,8 @@ const Agenda = () => {
             day: 3,
             start: "10:00",
             end: "10:20",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 67,
@@ -1354,7 +1423,8 @@ const Agenda = () => {
             day: 3,
             start: "10:20",
             end: "10:40",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 68,
@@ -1371,7 +1441,8 @@ const Agenda = () => {
             day: 3,
             start: "10:40",
             end: "11:20",
-            type: "talk"
+            type: "talk",
+            lang: "it"
         },
         {
             id: 69,
@@ -1388,7 +1459,8 @@ const Agenda = () => {
             day: 3,
             start: "11:20",
             end: "11:40",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 70,
@@ -1405,7 +1477,8 @@ const Agenda = () => {
             day: 3,
             start: "11:40",
             end: "12:00",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 71,
@@ -1422,7 +1495,8 @@ const Agenda = () => {
             day: 3,
             start: "14:00",
             end: "14:20",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 72,
@@ -1439,7 +1513,8 @@ const Agenda = () => {
             day: 3,
             start: "14:20",
             end: "14:40",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 73,
@@ -1464,7 +1539,8 @@ const Agenda = () => {
             day: 3,
             start: "14:40",
             end: "15:20",
-            type: "panel"
+            type: "panel",
+            lang: "en"
         },
         {
             id: 74,
@@ -1481,7 +1557,8 @@ const Agenda = () => {
             day: 3,
             start: "15:20",
             end: "15:40",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 75,
@@ -1498,7 +1575,8 @@ const Agenda = () => {
             day: 3,
             start: "15:40",
             end: "16:00",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
         {
             id: 76,
@@ -1515,7 +1593,8 @@ const Agenda = () => {
             day: 3,
             start: "16:00",
             end: "16:20",
-            type: "talk"
+            type: "talk",
+            lang: "en"
         },
     ]
 
@@ -1523,14 +1602,50 @@ const Agenda = () => {
 
     const [day, setDay] = useState(1)
 
+    const [filtersOpened, setFiltersOpened] = useState(false);
+
+    const [typeFilter, setTypeFilter] = useState(['talk', 'panel', 'workshop']);
+    const [languageFilter, setLanguageFilter] = useState(['it', 'en']);
+
     const [filteredEvents, setFilteredEvents] = useState(events);
 
-    const [filtersOpened, setFiltersOpened] = useState(false);
+    function toggleType(property: string) {
+        setTypeFilter((prevTypeFilter) => {
+            if (prevTypeFilter.includes(property)) {
+                return prevTypeFilter.filter((type) => type !== property);
+            } else {
+                return [...prevTypeFilter, property];
+            }
+        });
+    }
+
+    function toggleLang(language: string) {
+        setLanguageFilter((prevLanguageFilter) => {
+            if (prevLanguageFilter.includes(language)) {
+                return prevLanguageFilter.filter((lang) => lang !== language);
+            } else {
+                return [...prevLanguageFilter, language];
+            }
+        });
+    }
+
+    function filterEvents() {
+        return events.filter((event) => typeFilter.includes(event.type) && languageFilter.includes(event.lang));
+    }
+
 
     function toggleFilters() {
         if (filtersOpened) setFiltersOpened(false)
         else setFiltersOpened(true)
     }
+
+    useEffect(() => {
+        console.log(typeFilter);
+        console.log(filteredEvents);
+        console.log(languageFilter)
+        const newFilteredEvents = filterEvents();
+        setFilteredEvents(newFilteredEvents);
+    }, [typeFilter, languageFilter]);
 
     return (
         <section className="w-10/12 mx-auto flex flex-col items-center justify-start mt-20 gap-2">
@@ -1559,7 +1674,20 @@ const Agenda = () => {
             </div>
             {
                 filtersOpened ? (
-                    <div className="w-10/12 h-44 bg-white rounded-md p-2 mb-2"></div>
+                    <div className="w-10/12 h-fit bg-white rounded-md p-4 mb-2 flex flex-col items-start justify-start">
+                        <p className="text-xl text-black Medium mb-3">Filters:</p>
+                        <p className="text-lg text-black Medium mb-2">Type:</p>
+                        <div className="w-full h-fit flex flex-row items-center justify-start gap-2 mb-3">
+                            <button className={`py-1 px-3 rounded-full border border-black ${typeFilter.includes('talk') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleType('talk'); }}>Talks</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${typeFilter.includes('panel') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleType('panel'); }}>Panels</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${typeFilter.includes('workshop') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleType('workshop'); }}>Workshops</button>
+                        </div>
+                        <p className="text-lg text-black Medium mb-2">Language:</p>
+                        <div className="w-full hèfit flex flex-row items-center justify-start gap-2">
+                            <button className={`py-1 px-3 rounded-full border border-black ${languageFilter.includes('it') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleLang('it'); }}>Italian</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${languageFilter.includes('en') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleLang('en'); }}>English</button>
+                        </div>
+                    </div>
                 ) : ("")
             }
             <div className="w-10/12 h-fit flex flex-row items-start justify-center gap-2">
@@ -1574,15 +1702,22 @@ const Agenda = () => {
                             return (
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
                                     <div className="w-full bg-slate-100 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
-                                        <div className="w-full h-fit flex flex-row items-center justify-start gap-2">
-                                            <p className="text-sm text-black Medium mb-3">
+                                        <div className="w-full h-fit flex flex-row items-center justify-start gap-2 mb-3">
+                                            <p className="text-sm text-black Medium ">
                                                 {event.start + " - " + event.end}
                                             </p>
-                                            <p className="text-sm px-2 py-1 rounded shadow text-white Medium mb-3" style={{
+                                            <p className="text-sm px-2 py-1 rounded shadow text-white Medium" style={{
                                                 backgroundColor: event.type == "talk" ? "#FFAC1C" : event.type == "panel" ? "#1d427f" : "#7f1d44"
                                             }}>
                                                 {event.type.toUpperCase()}
                                             </p>
+                                            {
+                                                event.lang == "it" ? (
+                                                    <div className="h-[1.6rem] w-[2.4rem] rounded bg-red-400 bg-center bg-cover" style={{
+                                                        backgroundImage: "url('https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/320px-Flag_of_Italy.svg.png')"
+                                                    }}></div>
+                                                ) : ("")
+                                            }
                                         </div>
                                         {
                                             event.title != "" ? (
@@ -1636,15 +1771,22 @@ const Agenda = () => {
                             return (
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
                                     <div className="w-full bg-slate-100 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
-                                        <div className="w-full h-fit flex flex-row items-center justify-start gap-2">
-                                            <p className="text-sm text-black Medium mb-3">
+                                        <div className="w-full h-fit flex flex-row items-center justify-start gap-2 mb-3">
+                                            <p className="text-sm text-black Medium">
                                                 {event.start + " - " + event.end}
                                             </p>
-                                            <p className="text-sm px-2 py-1 rounded shadow text-white Medium mb-3" style={{
+                                            <p className="text-sm px-2 py-1 rounded shadow text-white Medium" style={{
                                                 backgroundColor: event.type == "talk" ? "#FFAC1C" : event.type == "panel" ? "#1d427f" : "#7f1d44"
                                             }}>
                                                 {event.type.toUpperCase()}
                                             </p>
+                                            {
+                                                event.lang == "it" ? (
+                                                    <div className="h-[1.6rem] w-[2.4rem] rounded bg-red-400 bg-center bg-cover" style={{
+                                                        backgroundImage: "url('https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/320px-Flag_of_Italy.svg.png')"
+                                                    }}></div>
+                                                ) : ("")
+                                            }
                                         </div>
                                         {
                                             event.title != "" ? (
@@ -1699,15 +1841,22 @@ const Agenda = () => {
                             return (
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
                                     <div className="w-full bg-slate-100 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
-                                        <div className="w-full h-fit flex flex-row items-center justify-start gap-2">
-                                            <p className="text-sm text-black Medium mb-3">
+                                        <div className="w-full h-fit flex flex-row items-center justify-start gap-2 mb-3">
+                                            <p className="text-sm text-black Medium">
                                                 {event.start + " - " + event.end}
                                             </p>
-                                            <p className="text-sm px-2 py-1 rounded shadow text-white Medium mb-3" style={{
+                                            <p className="text-sm px-2 py-1 rounded shadow text-white Medium" style={{
                                                 backgroundColor: event.type == "talk" ? "#FFAC1C" : event.type == "panel" ? "#1d427f" : "#7f1d44"
                                             }}>
                                                 {event.type.toUpperCase()}
                                             </p>
+                                            {
+                                                event.lang == "it" ? (
+                                                    <div className="h-[1.6rem] w-[2.4rem] rounded bg-red-400 bg-center bg-cover" style={{
+                                                        backgroundImage: "url('https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/320px-Flag_of_Italy.svg.png')"
+                                                    }}></div>
+                                                ) : ("")
+                                            }
                                         </div>
                                         {
                                             event.title != "" ? (
