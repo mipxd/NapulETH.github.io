@@ -39,6 +39,7 @@ import podcast1 from '@assets/2140 logo svg.svg'
 import ch from '@assets/Logo CryptoPub (1).png'
 import breaking from '@assets/Crypto-Breaking-News-Logo-Social-Profile.webp'
 import ETHKL from '@assets/ETHKL.png'
+import beincrypto from '@assets/beincrypto.svg'
 
 import { useTranslation } from "react-i18next";
 
@@ -71,6 +72,14 @@ function MediaPartners() {
                 {t('media')}
             </h5>
             <div className="hidden lg:grid lg:grid-cols-5 gap-4 col-span-8 lg:auto-rows-auto lg:w-10/12 items-center justify-center w-full h-fit relative my-4">
+                <Link href="https://it.beincrypto.com/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${beincrypto.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "55% 50%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
                 <Link href="https://www.howtoweb3.xyz/" target="_blank" className="p-0 w-full h-fit flex">
                     <div className="w-full h-28" style={{
                         backgroundImage: `url('${how.src}')`,
@@ -209,9 +218,24 @@ function MediaPartners() {
                 </Link>
 
 
+
             </div>
             <div className="w-full h-fit block lg:hidden">
                 <Carousel className="w-full h-fit block lg:hidden" showDots={false} renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://it.beincrypto.com/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-[2] bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${beincrypto.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
+
+                            </div>
+                        </div>
+                    </div>
                     <div className="w-full h-fit flex flex-row items-center justify-center">
                         <div className="w-10/12 flex flex-col items-center justify-center">
                             <div className="w-full flex-grow flex flex-col items-center justify-center" >
@@ -437,6 +461,7 @@ function MediaPartners() {
                             </div>
                         </div>
                     </div>
+
                     <div className="w-full h-fit flex flex-row items-center justify-center">
                         <div className="w-10/12 flex flex-col items-center justify-center">
                             <div className="w-full flex-grow flex flex-col items-center justify-center" >
@@ -451,6 +476,7 @@ function MediaPartners() {
                             </div>
                         </div>
                     </div>
+
 
                 </Carousel>
             </div>
