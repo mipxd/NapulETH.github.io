@@ -1606,6 +1606,7 @@ const Agenda = () => {
 
     const [typeFilter, setTypeFilter] = useState(['talk', 'panel', 'workshop']);
     const [languageFilter, setLanguageFilter] = useState(['it', 'en']);
+    const [searchString, setSearchString] = useState("");
 
     const [filteredEvents, setFilteredEvents] = useState(events);
 
@@ -1629,8 +1630,25 @@ const Agenda = () => {
         });
     }
 
+    function changeSearchString(s: string){
+        setSearchString(s);
+    }
+
     function filterEvents() {
-        return events.filter((event) => typeFilter.includes(event.type) && languageFilter.includes(event.lang));
+        if (searchString != "") {
+            return events.filter((event) =>
+                typeFilter.includes(event.type)
+                && languageFilter.includes(event.lang)
+                && (
+                    event.title.toLowerCase().includes(searchString.toLowerCase())
+                    || event.speakers.some((speaker) => speaker.name.toLowerCase().includes(searchString.toLowerCase()))
+                )
+            );
+        }
+        else {
+            return events.filter((event) => typeFilter.includes(event.type) && languageFilter.includes(event.lang));
+        }
+
     }
 
 
@@ -1646,17 +1664,23 @@ const Agenda = () => {
     useEffect(() => {
         console.log(typeFilter);
         console.log(filteredEvents);
-        console.log(languageFilter)
+        console.log(languageFilter);
+        console.log(searchString);
         const newFilteredEvents = filterEvents();
         setFilteredEvents(newFilteredEvents);
-    }, [typeFilter, languageFilter]);
+    }, [typeFilter, languageFilter, searchString]);
 
     return (
         <section className="w-10/12 mx-auto flex flex-col items-center justify-start mt-20 gap-2">
             <div className="w-10/12 h-fit flex flex-col items-center justify-start">
 
                 <div className="w-full h-fit flex flex-row items-center justify-stretch">
-                    <input type="text" className="w-full mx-auto bg-white border border-white p-4 rounded-md mb-4" placeholder="Search..." />
+                    <input
+                        type="text"
+                        className="w-full mx-auto bg-white border border-white p-4 rounded-md mb-4"
+                        placeholder="Search..."
+                        onChange={(e)=>{changeSearchString(e.target.value.toLowerCase())}}
+                    />
 
                 </div>
                 <div className="w-full h-fit flex flex-row items-center justify-between gap-4 mb-2 ">
@@ -1681,7 +1705,7 @@ const Agenda = () => {
                     <div className="w-10/12 h-fit bg-white rounded-md p-4 mb-2 flex flex-col items-start justify-start">
                         <div className="w-full h-fit flex flex-row items-center justify-between mb-3">
                             <p className="text-xl text-black Medium">Filters:</p>
-                            <p className="text-md text-blue-500 cursor-pointer" onClick={()=>{resetFilters()}}>Reset all</p>
+                            <p className="text-md text-blue-500 cursor-pointer" onClick={() => { resetFilters() }}>Reset all</p>
                         </div>
 
                         <p className="text-lg text-black Medium mb-2">Type:</p>
