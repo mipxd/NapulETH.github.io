@@ -1702,7 +1702,7 @@ const Agenda = () => {
             </div>
             {
                 filtersOpened ? (
-                    <div className="w-10/12 h-fit bg-white rounded-md p-4 mb-2 flex flex-col items-start justify-start">
+                    <div className="w-11/12 h-fit bg-white rounded-md p-4 mb-2 flex flex-col items-start justify-start">
                         <div className="w-full h-fit flex flex-row items-center justify-between mb-3">
                             <p className="text-xl text-black Medium">Filters:</p>
                             <p className="text-md text-blue-500 cursor-pointer" onClick={() => { resetFilters() }}>Reset all</p>
