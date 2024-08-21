@@ -1639,6 +1639,10 @@ const Agenda = () => {
         else setFiltersOpened(true)
     }
 
+    function resetFilters() {
+        setTypeFilter(['talk', 'panel', 'workshop']);
+        setLanguageFilter(['it', 'en']);
+    }
     useEffect(() => {
         console.log(typeFilter);
         console.log(filteredEvents);
@@ -1675,7 +1679,11 @@ const Agenda = () => {
             {
                 filtersOpened ? (
                     <div className="w-10/12 h-fit bg-white rounded-md p-4 mb-2 flex flex-col items-start justify-start">
-                        <p className="text-xl text-black Medium mb-3">Filters:</p>
+                        <div className="w-full h-fit flex flex-row items-center justify-between mb-3">
+                            <p className="text-xl text-black Medium">Filters:</p>
+                            <p className="text-md text-blue-500 cursor-pointer" onClick={()=>{resetFilters()}}>Reset all</p>
+                        </div>
+
                         <p className="text-lg text-black Medium mb-2">Type:</p>
                         <div className="w-full h-fit flex flex-row items-center justify-start gap-2 mb-3">
                             <button className={`py-1 px-3 rounded-full border border-black ${typeFilter.includes('talk') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleType('talk'); }}>Talks</button>
