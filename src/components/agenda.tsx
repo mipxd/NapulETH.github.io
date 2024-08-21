@@ -1570,7 +1570,8 @@ const Agenda = () => {
             <div className="w-10/12 h-fit flex flex-row items-start justify-center gap-2">
                 <div className="w-1/3 h-fit flex flex-col items-center justify-start gap-1">
                     {
-                        filteredEvents.filter(event => event.day === day && event.stage == "main").map((event, key) => {
+                        filteredEvents.filter(event => event.day === day).filter(event => event.stage == "main").map((event, key) => {
+                            console.log("column 1: "+event.id)
                             return (
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
                                     <div className="w-full bg-slate-100 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
@@ -1630,7 +1631,133 @@ const Agenda = () => {
                         })
                     }
                 </div>
-                
+                <div className="w-1/3 h-fit flex flex-col items-center justify-start gap-1">
+                    {
+                        filteredEvents.filter(event => event.day === day).filter(event => event.stage == "main").map((event, key) => {
+                            console.log("column 2 : "+event.id)
+                            return (
+                                <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
+                                    <div className="w-full bg-slate-100 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
+                                        <div className="w-full h-fit flex flex-row items-center justify-start gap-2">
+                                            <p className="text-sm text-black Medium mb-3">
+                                                {event.start + " - " + event.end}
+                                            </p>
+                                            <p className="text-sm px-2 py-1 rounded shadow text-white Medium mb-3" style={{
+                                                backgroundColor: event.type == "talk" ? "#FFAC1C" : event.type == "panel" ? "#1d427f" : "#7f1d44"
+                                            }}>
+                                                {event.type.toUpperCase()}
+                                            </p>
+                                        </div>
+                                        {
+                                            event.title != "" ? (
+                                                <p className="text-xl text-black Medium mb-2">{event.title}</p>
+                                            ) : (
+                                                <p className="text-xl text-gray-400 Medium italic mb-2">Title to be announced later...</p>
+                                            )
+                                        }
+                                        <div className="w-full h-fit flex flex-row items-center justify-start gap-1 mb-12">
+                                            <MdOutlinePlace size={20} color="#252525" />
+                                            <p className="text-xs text-black Medium">
+                                                {event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"}
+                                            </p>
+                                        </div>
+                                        {
+                                            event.speakers.length != 0 ? (
+                                                <p className="text-md text-gray-700 mb-2">
+                                                    Speakers: {
+                                                        event.speakers.map(speaker => speaker.name).join(', ')
+                                                    }
+                                                </p>
+                                            ) :
+                                                ("")
+                                        }
+
+                                        {
+                                            event.speakers.length != 0 ? (
+                                                <div className="flex flex-row items-center justify-start w-full h-fit">
+                                                    {
+                                                        event.speakers.map((speaker, speakerKey) => {
+                                                            return (
+                                                                <div key={speakerKey} className={`w-10 aspect-square rounded-full bg-white bg-center bg-cover bg-no-repeat shadow-lg `} style={{
+                                                                    marginLeft: `${speakerKey / 2 * 15 * -1}px`,
+                                                                    backgroundImage: speaker.image != "" ? `url('${speaker.image}')` : "url('https://media.istockphoto.com/id/1332100919/vector/man-icon-black-icon-person-symbol.jpg?s=612x612&w=0&k=20&c=AVVJkvxQQCuBhawHrUhDRTCeNQ3Jgt0K1tXjJsFy1eg=')"
+                                                                }}></div>
+                                                            )
+                                                        })
+                                                    }
+                                                </div>
+                                            ) : ("")
+                                        }
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+                <div className="w-1/3 h-fit flex flex-col items-center justify-start gap-1">
+                    {
+                        filteredEvents.filter(event => event.day === day).filter(event => event.stage == "main").map((event, key) => {
+                            console.log("column 3 :" + event.id)
+                            return (
+                                <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
+                                    <div className="w-full bg-slate-100 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
+                                        <div className="w-full h-fit flex flex-row items-center justify-start gap-2">
+                                            <p className="text-sm text-black Medium mb-3">
+                                                {event.start + " - " + event.end}
+                                            </p>
+                                            <p className="text-sm px-2 py-1 rounded shadow text-white Medium mb-3" style={{
+                                                backgroundColor: event.type == "talk" ? "#FFAC1C" : event.type == "panel" ? "#1d427f" : "#7f1d44"
+                                            }}>
+                                                {event.type.toUpperCase()}
+                                            </p>
+                                        </div>
+                                        {
+                                            event.title != "" ? (
+                                                <p className="text-xl text-black Medium mb-2">{event.title}</p>
+                                            ) : (
+                                                <p className="text-xl text-gray-400 Medium italic mb-2">Title to be announced later...</p>
+                                            )
+                                        }
+                                        <div className="w-full h-fit flex flex-row items-center justify-start gap-1 mb-12">
+                                            <MdOutlinePlace size={20} color="#252525" />
+                                            <p className="text-xs text-black Medium">
+                                                {event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"}
+                                            </p>
+                                        </div>
+
+                                        {
+                                            event.speakers.length != 0 ? (
+                                                <p className="text-md text-gray-700 mb-2">
+                                                    Speakers: {
+                                                        event.speakers.map(speaker => speaker.name).join(', ')
+                                                    }
+                                                </p>
+                                            ) :
+                                                ("")
+                                        }
+
+                                        {
+                                            event.speakers.length != 0 ? (
+                                                <div className="flex flex-row items-center justify-start w-full h-fit">
+                                                    {
+                                                        event.speakers.map((speaker, speakerKey) => {
+                                                            return (
+                                                                <div key={speakerKey} className={`w-10 aspect-square rounded-full bg-white bg-center bg-cover bg-no-repeat shadow-lg `} style={{
+                                                                    marginLeft: `${speakerKey / 2 * 15 * -1}px`,
+                                                                    backgroundImage: speaker.image != "" ? `url('${speaker.image}')` : "url('https://media.istockphoto.com/id/1332100919/vector/man-icon-black-icon-person-symbol.jpg?s=612x612&w=0&k=20&c=AVVJkvxQQCuBhawHrUhDRTCeNQ3Jgt0K1tXjJsFy1eg=')"
+                                                                }}></div>
+                                                            )
+                                                        })
+                                                    }
+                                                </div>
+                                            ) : ("")
+                                        }
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
             </div>
         </section>
     )
