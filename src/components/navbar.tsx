@@ -149,6 +149,16 @@ function Navbar() {
                         transition
                     >
                         <MenuItem>
+                            <Link href="/agenda" className="w-fit h-fit flex flex-row items-center justify-start">
+                                <div className="w-fit min-w-[10vw] flex flex-row items-center justify-start px-2 py-1">
+                                    <h5 className=" text-black text-xl whitespace-nowrap Medium">
+                                        {t("agenda")}
+                                    </h5>
+                                </div>
+                            </Link>
+                        </MenuItem>
+                        <div className="my-1 h-[0.5px] w-10/12 bg-black/80 mx-auto "></div>
+                        <MenuItem>
                             <Link href="/meetups" className="w-fit h-fit flex flex-row items-center justify-start">
                                 <div className="w-fit min-w-[10vw] flex flex-row items-center justify-start px-2 py-1">
                                     <h5 className=" text-black text-xl whitespace-nowrap Medium">
@@ -241,11 +251,11 @@ function Navbar() {
                     backgroundImage: `url('${menuIcon.src}')`
                 }}></div>
                 <MobileMenu isOpen={mobileMenuOpen} className="bg-white w-fit h-fit" id="burgerMenu">
-                    <div className="w-full h-full flex flex-col items-center justify-center gap-10">
-                        <div className="py-6 w-full px-4 flex flex-row items-center justify-end">
+                    <div className="w-full h-full flex flex-col items-center justify-start gap-4">
+                        <div className="pt-6 w-full px-4 flex flex-row items-center justify-end">
                             <IoCloseSharp color="#000000" size={35} onClick={() => { setMobileMenuOpen(false) }}></IoCloseSharp>
                         </div>
-                        <div className="w-fit h-fit flex flex-col items-center justify-center gap-6 mt-4">
+                        <div className="w-fit h-fit flex flex-col items-center justify-start gap-6">
                             <Link href={'/'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     {t('home')}
@@ -267,6 +277,12 @@ function Navbar() {
                             <Link href={'/speakers'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     {t('speakers')}
+                                </h5>
+                            </Link>
+                            <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
+                            <Link href={'/agenda'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
+                                <h5 className=" text-black text-3xl Medium text-center">
+                                    {t('agenda')}
                                 </h5>
                             </Link>
                             <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
