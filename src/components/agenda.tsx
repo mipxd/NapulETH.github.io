@@ -1970,35 +1970,20 @@ const Agenda = () => {
         <section className="w-full lg:w-10/12 mx-auto flex flex-col items-center justify-start mt-20 gap-2">
             <div className="w-11/12 lg:w-10/12 h-fit flex flex-col items-center justify-start">
 
-                <div className="w-full h-fit flex flex-row items-center justify-stretch">
+                <div className="w-full h-fit flex flex-row items-center justify-stretch gap-1 mb-4">
                     <input
                         type="text"
-                        className="w-full mx-auto bg-white border border-white p-4 rounded-md mb-4"
+                        className="w-full mx-auto bg-white border border-white p-4 rounded-md lg:w-[95%]"
                         placeholder="Search..."
                         onChange={(e) => { changeSearchString(e.target.value.toLowerCase()) }}
                     />
-
-                </div>
-                <div className="w-full h-fit flex flex-row items-center justify-between gap-4 mb-2 ">
-                    <div className="w-[95%] flex flex-row items-center justify-start gap-4">
-                        <Link href="" onClick={(e) => { e.preventDefault(); setDay(1) }}>
-                            <p className={`text-black text-xl Medium p-2 ${day == 1 ? 'bg-white shadow-md rounded-md' : ''}`}>Day 1</p>
-                        </Link>
-                        <Link href="" onClick={(e) => { e.preventDefault(); setDay(2) }}>
-                            <p className={`text-black text-xl Medium p-2 ${day == 2 ? 'bg-white shadow-md rounded-md' : ''} `}>Day 2</p>
-                        </Link>
-                        <Link href="" onClick={(e) => { e.preventDefault(); setDay(3) }}>
-                            <p className={`text-black text-xl Medium p-2 ${day == 3 ? 'bg-white shadow-md rounded-md' : ''}`}>Day 3</p>
-                        </Link>
-                    </div>
-                    <button className=" bg-white rounded-md py-2 px-3 lg:px-0 flex flex-row items-center justify-center flex-grow w-fit lg:w-[5%]" onClick={toggleFilters}>
+                    <button className=" bg-white rounded-md py-2 px-3 lg:px-0 flex flex-row items-center justify-center flex-grow w-fit lg:w-[5%] h-14" onClick={toggleFilters}>
                         <IoFilterOutline size={26} color="#252525" />
                     </button>
                 </div>
-            </div>
-            {
+                {
                 filtersOpened ? (
-                    <div className="w-11/12 lg:w-10/12 h-fit bg-white rounded-md p-4 mb-2 flex flex-col items-start justify-start">
+                    <div className="w-full h-fit bg-white rounded-md p-4 mb-4 flex flex-col items-start justify-start">
                         <div className="w-full h-fit flex flex-row items-center justify-between mb-3">
                             <p className="text-xl text-black Medium">Filters:</p>
                             <p className="text-md text-blue-500 cursor-pointer" onClick={() => { resetFilters() }}>Reset all</p>
@@ -2043,6 +2028,21 @@ const Agenda = () => {
                     </div>
                 ) : ("")
             }
+                <div className="w-full h-fit flex flex-row items-center justify-center gap-4 mb-2 bg-white shadow-md rounded-md border-4 border-[#eddb55]">
+                    <div className="w-fit flex flex-row items-center justify-center gap-4 pb-2">
+                        <Link href="" onClick={(e) => { e.preventDefault(); setDay(1) }}>
+                            <p className={`text-black text-2xl lg:text-xl Medium px-2 pt-2 pb-1 ${day == 1 ? 'bg-white border-b-4 border-b-black' : ''}`}>Day 1</p>
+                        </Link>
+                        <Link href="" onClick={(e) => { e.preventDefault(); setDay(2) }}>
+                            <p className={`text-black text-2xl lg:text-xl Medium px-2 pt-2 pb-1 ${day == 2 ? 'bg-white border-b-4 border-b-black' : ''} `}>Day 2</p>
+                        </Link>
+                        <Link href="" onClick={(e) => { e.preventDefault(); setDay(3) }}>
+                            <p className={`text-black text-2xl lg:text-xl Medium px-2 pt-2 pb-1 ${day == 3 ? 'bg-white border-b-4 border-b-black' : ''}`}>Day 3</p>
+                        </Link>
+                    </div>
+                    
+                </div>
+            </div>
             <div className="w-10/12 h-fit hidden lg:flex flex-row items-start justify-center gap-2">
                 <div className="flex w-1/3 py-2 flex-row items-center justify-center bg-white border-4 border-[#eddb55] text-black text-xl Medium">Main Stage</div>
                 <div className="flex w-1/3 py-2 flex-row items-center justify-center bg-white border-4 border-[#eddb55] text-black text-xl Medium">Stage 2</div>
@@ -2055,7 +2055,7 @@ const Agenda = () => {
                         filteredEvents.filter(event => event.day === day && event.stage == "main").map((event, key) => {
                             return (
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
-                                    <div className="w-full bg-slate-100 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
+                                    <div className="w-full bg-white rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
                                         <div className="w-full h-fit flex flex-row items-center justify-start gap-2 mb-3">
                                             <p className="text-sm text-black Medium ">
                                                 {event.start + " - " + event.end}
@@ -2135,7 +2135,7 @@ const Agenda = () => {
                         filteredEvents.filter(event => event.day === day && event.stage == "stage 2").map((event, key) => {
                             return (
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
-                                    <div className="w-full bg-slate-100 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
+                                    <div className="w-full bg-white rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
                                         <div className="w-full h-fit flex flex-row items-center justify-start gap-2 mb-3">
                                             <p className="text-sm text-black Medium">
                                                 {event.start + " - " + event.end}
@@ -2216,7 +2216,7 @@ const Agenda = () => {
 
                             return (
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
-                                    <div className="w-full bg-slate-100 rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
+                                    <div className="w-full bg-white rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
                                         <div className="w-full h-fit flex flex-row items-center justify-start gap-2 mb-3">
                                             <p className="text-sm text-black Medium">
                                                 {event.start + " - " + event.end}
