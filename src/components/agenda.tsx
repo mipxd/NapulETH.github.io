@@ -381,8 +381,8 @@ const Agenda = () => {
                     image: s2.src
                 },
                 {
-                    name: "MTG",
-                    image: ""
+                    name: "Marco Tullio Giordano",
+                    image: s10.src
                 }
             ],
             day: 1,
@@ -1230,8 +1230,8 @@ const Agenda = () => {
                     image: s12.src
                 },
                 {
-                    name: "MTG",
-                    image: ""
+                    name: "Marco Tullio Giordano",
+                    image: s10.src
                 }
             ],
             day: 2,
