@@ -1887,9 +1887,9 @@ const Agenda = () => {
 
     const [filtersOpened, setFiltersOpened] = useState(false);
 
-    const [typeFilter, setTypeFilter] = useState(['talk', 'panel', 'workshop', "break"]);
-    const [languageFilter, setLanguageFilter] = useState(['it', 'en', ""]);
-    const [topicFilter, setTopicFilter] = useState(['other','auditing', 'defi', 'ux', 'security', 'l2', 'scaling', 'marketing', 'education', 'community', 'ai', 'zk proofs', 'privacy', 'it', 'legal', 'digital identity', 'staking', 'rwa', 'gaming', 'quantum', 'art', 'nft', 'bitcoin']);
+    const [typeFilter, setTypeFilter] = useState<string[]>([]);
+    const [languageFilter, setLanguageFilter] = useState<string[]>([]);
+    const [topicFilter, setTopicFilter] = useState<string[]>([]);
     const [searchString, setSearchString] = useState("");
 
     const [filteredEvents, setFilteredEvents] = useState(events);
@@ -1928,23 +1928,36 @@ const Agenda = () => {
         setSearchString(s);
     }
 
-    function filterEvents() {
+    function filterEvents(events: any[]) {
         if (searchString != "") {
             return events.filter((event) =>
-                typeFilter.includes(event.type)
-                && languageFilter.includes(event.lang)
-                && event.topics.some((topic) => topicFilter.includes(topic))
-                && (
-                    event.title.toLowerCase().includes(searchString.toLowerCase())
-                    || event.speakers.some((speaker) => speaker.name.toLowerCase().includes(searchString.toLowerCase()))
-                )
+                event.title.toLowerCase().includes(searchString.toLowerCase())
+                || event.speakers.some((speaker: { name: string; image: string }) => speaker.name.toLowerCase().includes(searchString.toLowerCase()))
             );
         }
-        else {
-            return events.filter((event) => typeFilter.includes(event.type) && languageFilter.includes(event.lang) && event.topics.some((topic) => topicFilter.includes(topic)));
+        else if (typeFilter.length === 0 && languageFilter.length === 0 && topicFilter.length === 0 && searchString === "") {
+            return events;
         }
 
+        else return events.filter((event) => {
+            let matches = true;
+
+            if (typeFilter.length > 0 && !typeFilter.includes(event.type)) {
+                matches = false;
+            }
+
+            if (languageFilter.length > 0 && !languageFilter.includes(event.lang)) {
+                matches = false;
+            }
+
+            if (topicFilter.length > 0 && !event.topics.some((topic: string) => topicFilter.includes(topic))) {
+                matches = false;
+            }
+
+            return matches;
+        });
     }
+
 
 
     function toggleFilters() {
@@ -1953,16 +1966,17 @@ const Agenda = () => {
     }
 
     function resetFilters() {
-        setTypeFilter(['talk', 'panel', 'workshop']);
-        setLanguageFilter(['it', 'en']);
+        setTypeFilter([]);
+        setLanguageFilter([]);
     }
+    
     useEffect(() => {
         console.log(typeFilter);
         console.log(filteredEvents);
         console.log(languageFilter);
         console.log(searchString);
         console.log(topicFilter);
-        const newFilteredEvents = filterEvents();
+        const newFilteredEvents = filterEvents(events);
         setFilteredEvents(newFilteredEvents);
     }, [typeFilter, languageFilter, topicFilter, searchString]);
 
@@ -1982,52 +1996,52 @@ const Agenda = () => {
                     </button>
                 </div>
                 {
-                filtersOpened ? (
-                    <div className="w-full h-fit bg-white rounded-md p-4 mb-4 flex flex-col items-start justify-start">
-                        <div className="w-full h-fit flex flex-row items-center justify-between mb-3">
-                            <p className="text-xl text-black Medium">Filters:</p>
-                            <p className="text-md text-blue-500 cursor-pointer" onClick={() => { resetFilters() }}>Reset all</p>
-                        </div>
+                    filtersOpened ? (
+                        <div className="w-full h-fit bg-white rounded-md p-4 mb-4 flex flex-col items-start justify-start">
+                            <div className="w-full h-fit flex flex-row items-center justify-between mb-3">
+                                <p className="text-xl text-black Medium">Filters:</p>
+                                <p className="text-md text-blue-500 cursor-pointer" onClick={() => { resetFilters() }}>Reset all</p>
+                            </div>
 
-                        <p className="text-lg text-black Medium mb-2">Type:</p>
-                        <div className="w-full h-fit flex flex-row items-center justify-start gap-2 mb-3">
-                            <button className={`py-1 px-3 rounded-full border border-black ${typeFilter.includes('talk') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleType('talk'); }}>Talks</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${typeFilter.includes('panel') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleType('panel'); }}>Panels</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${typeFilter.includes('workshop') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleType('workshop'); }}>Workshops</button>
+                            <p className="text-lg text-black Medium mb-2">Type:</p>
+                            <div className="w-full h-fit flex flex-row items-center justify-start gap-2 mb-3">
+                                <button className={`py-1 px-3 rounded-full border border-black ${typeFilter.includes('talk') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleType('talk'); }}>Talks</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${typeFilter.includes('panel') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleType('panel'); }}>Panels</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${typeFilter.includes('workshop') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleType('workshop'); }}>Workshops</button>
+                            </div>
+                            <p className="text-lg text-black Medium mb-2">Language:</p>
+                            <div className="w-full hèfit flex flex-row items-center justify-start gap-2">
+                                <button className={`py-1 px-3 rounded-full border border-black ${languageFilter.includes('it') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleLang('it'); }}>Italian</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${languageFilter.includes('en') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleLang('en'); }}>English</button>
+                            </div>
+                            <p className="text-lg text-black Medium mb-2">Topics:</p>
+                            <div className="w-full hèfit flex flex-row items-center justify-start flex-wrap gap-2">
+                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('ai') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('ai'); }}>AI</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('art') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('art'); }}>Art</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('auditing') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('auditing'); }}>Auditing</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('bitcoin') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('bitcoin'); }}>Bitcoin</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('community') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('community'); }}>Community</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('defi') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('defi'); }}>Defi</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('digital identity') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('digital identity'); }}>Digital Identity</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('education') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('education'); }}>Education</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('gaming') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('gaming'); }}>Gaming</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('it') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('it'); }}>IT</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('legal') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('legal'); }}>legal</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('marketing') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('marketing'); }}>Marketing</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('nft') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('nft'); }}>NFT</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('privacy') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('privacy'); }}>Privacy</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('quantum') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('quantum'); }}>Quantum</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('rwa') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('rwa'); }}>RWA</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('scaling') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('scaling'); }}>Scaling</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('security') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('security'); }}>Security</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('staking') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('staking'); }}>Staking</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('ux') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('ux'); }}>UX</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('zk proofs') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('zk proofs'); }}>Zk Proofs</button>
+                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('other') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('other'); }}>Other</button>
+                            </div>
                         </div>
-                        <p className="text-lg text-black Medium mb-2">Language:</p>
-                        <div className="w-full hèfit flex flex-row items-center justify-start gap-2">
-                            <button className={`py-1 px-3 rounded-full border border-black ${languageFilter.includes('it') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleLang('it'); }}>Italian</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${languageFilter.includes('en') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleLang('en'); }}>English</button>
-                        </div>
-                        <p className="text-lg text-black Medium mb-2">Topics:</p>
-                        <div className="w-full hèfit flex flex-row items-center justify-start flex-wrap gap-2">
-                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('ai') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('ai'); }}>AI</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('art') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('art'); }}>Art</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('auditing') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('auditing'); }}>Auditing</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('bitcoin') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('bitcoin'); }}>Bitcoin</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('community') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('community'); }}>Community</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('defi') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('defi'); }}>Defi</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('digital identity') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('digital identity'); }}>Digital Identity</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('education') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('education'); }}>Education</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('gaming') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('gaming'); }}>Gaming</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('it') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('it'); }}>IT</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('legal') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('legal'); }}>legal</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('marketing') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('marketing'); }}>Marketing</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('nft') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('nft'); }}>NFT</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('privacy') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('privacy'); }}>Privacy</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('quantum') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('quantum'); }}>Quantum</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('rwa') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('rwa'); }}>RWA</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('scaling') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('scaling'); }}>Scaling</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('security') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('security'); }}>Security</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('staking') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('staking'); }}>Staking</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('ux') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('ux'); }}>UX</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('zk proofs') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('zk proofs'); }}>Zk Proofs</button>
-                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('other') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('other'); }}>Other</button>
-                        </div>
-                    </div>
-                ) : ("")
-            }
+                    ) : ("")
+                }
                 <div className="w-full h-fit flex flex-row items-center justify-center gap-4 mb-2 bg-white shadow-md rounded-md border-4 border-[#eddb55]">
                     <div className="w-fit flex flex-row items-center justify-center gap-4 pb-2">
                         <Link href="" onClick={(e) => { e.preventDefault(); setDay(1) }}>
@@ -2040,7 +2054,7 @@ const Agenda = () => {
                             <p className={`text-black text-2xl lg:text-xl Medium px-2 pt-2 pb-1 ${day == 3 ? 'bg-white border-b-4 border-b-black' : ''}`}>Day 3</p>
                         </Link>
                     </div>
-                    
+
                 </div>
             </div>
             <div className="w-10/12 h-fit hidden lg:flex flex-row items-start justify-center gap-2">
@@ -2055,16 +2069,20 @@ const Agenda = () => {
                         filteredEvents.filter(event => event.day === day && event.stage == "main").map((event, key) => {
                             return (
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
-                                    <div className="w-full bg-white rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
+                                    <div className={`w-full ${event.type == "break" ? " bg-[#F18681] " : "bg-white"} bg-white rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4`}>
                                         <div className="w-full h-fit flex flex-row items-center justify-start gap-2 mb-3">
-                                            <p className="text-sm text-black Medium ">
+                                            <p className={`text-sm ${event.type == "break" ? " text-white text-center w-full" : "text-black text-left"} Medium `}>
                                                 {event.start + " - " + event.end}
                                             </p>
-                                            <p className="text-sm px-2 py-1 rounded shadow text-white Medium" style={{
-                                                backgroundColor: event.type == "talk" ? "#FFAC1C" : event.type == "panel" ? "#1d427f" : event.type == "break" ? "#FF3232" : "#7f1d44" 
-                                            }}>
-                                                {event.type.toUpperCase()}
-                                            </p>
+                                            {
+                                                event.type != "break" ? (
+                                                    <p className="text-sm px-2 py-1 rounded shadow text-white Medium" style={{
+                                                        backgroundColor: event.type == "talk" ? "#49CCF7" : event.type == "panel" ? "#D870AD" : event.type == "break" ? "#F18681" : "#91CE35"
+                                                    }}>
+                                                        {event.type.toUpperCase()}
+                                                    </p>
+                                                ) : ("")
+                                            }
                                             {
                                                 event.lang == "it" ? (
                                                     <div className="h-[1.6rem] w-[2.4rem] rounded bg-red-400 bg-center bg-cover" style={{
@@ -2082,17 +2100,17 @@ const Agenda = () => {
                                         }
                                         {
                                             event.type == "break" ? (
-                                                <p className="text-xl text-black Medium my-2 w-full text-center">🍝🍕&nbsp;{event.title} &nbsp;🍕🍝</p>
+                                                <p className="text-xl text-white Medium my-2 w-full text-center">🍝🍕&nbsp;{event.title} &nbsp;🍕🍝</p>
                                             ) : ("")
                                         }
                                         {
                                             event.type != "break" ? (
                                                 <div className="w-full h-fit flex flex-row items-center justify-start gap-1 mb-12">
-                                            <MdOutlinePlace size={20} color="#252525" />
-                                            <p className="text-xs text-black Medium">
-                                                {event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"}
-                                            </p>
-                                        </div>
+                                                    <MdOutlinePlace size={20} color="#252525" />
+                                                    <p className="text-xs text-black Medium">
+                                                        {event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"}
+                                                    </p>
+                                                </div>
                                             ) : ""
                                         }
                                         {
@@ -2135,16 +2153,20 @@ const Agenda = () => {
                         filteredEvents.filter(event => event.day === day && event.stage == "stage 2").map((event, key) => {
                             return (
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
-                                    <div className="w-full bg-white rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
+                                    <div className={`w-full ${event.type == "break" ? " bg-[#F18681] " : "bg-white"} bg-white rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4`}>
                                         <div className="w-full h-fit flex flex-row items-center justify-start gap-2 mb-3">
-                                            <p className="text-sm text-black Medium">
+                                        <p className={`text-sm ${event.type == "break" ? " text-white text-center w-full" : "text-black text-left"} Medium `}>
                                                 {event.start + " - " + event.end}
                                             </p>
-                                            <p className="text-sm px-2 py-1 rounded shadow text-white Medium" style={{
-                                                backgroundColor: event.type == "talk" ? "#FFAC1C" : event.type == "panel" ? "#1d427f" : event.type == "break" ? "#FF3232" : "#7f1d44"
-                                            }}>
-                                                {event.type.toUpperCase()}
-                                            </p>
+                                            {
+                                                event.type != "break" ? (
+                                                    <p className="text-sm px-2 py-1 rounded shadow text-white Medium" style={{
+                                                        backgroundColor: event.type == "talk" ? "#49CCF7" : event.type == "panel" ? "#D870AD" : event.type == "break" ? "#F18681" : "#91CE35"
+                                                    }}>
+                                                        {event.type.toUpperCase()}
+                                                    </p>
+                                                ) : ("")
+                                            }
                                             {
                                                 event.lang == "it" ? (
                                                     <div className="h-[1.6rem] w-[2.4rem] rounded bg-red-400 bg-center bg-cover" style={{
@@ -2162,17 +2184,17 @@ const Agenda = () => {
                                         }
                                         {
                                             event.type == "break" ? (
-                                                <p className="text-xl text-black Medium my-2 w-full text-center">🍝🍕&nbsp;{event.title} &nbsp;🍕🍝</p>
+                                                <p className="text-xl text-white Medium my-2 w-full text-center">🍝🍕&nbsp;{event.title} &nbsp;🍕🍝</p>
                                             ) : ("")
                                         }
                                         {
                                             event.type != "break" ? (
                                                 <div className="w-full h-fit flex flex-row items-center justify-start gap-1 mb-12">
-                                            <MdOutlinePlace size={20} color="#252525" />
-                                            <p className="text-xs text-black Medium">
-                                                {event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"}
-                                            </p>
-                                        </div>
+                                                    <MdOutlinePlace size={20} color="#252525" />
+                                                    <p className="text-xs text-black Medium">
+                                                        {event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"}
+                                                    </p>
+                                                </div>
                                             ) : ""
                                         }
                                         {
@@ -2216,16 +2238,20 @@ const Agenda = () => {
 
                             return (
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
-                                    <div className="w-full bg-white rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4">
+                                    <div className={`w-full ${event.type == "break" ? " bg-[#F18681] " : "bg-white"} bg-white rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4`}>
                                         <div className="w-full h-fit flex flex-row items-center justify-start gap-2 mb-3">
-                                            <p className="text-sm text-black Medium">
+                                        <p className={`text-sm ${event.type == "break" ? " text-white text-center w-full" : "text-black text-left"} Medium `}>
                                                 {event.start + " - " + event.end}
                                             </p>
-                                            <p className="text-sm px-2 py-1 rounded shadow text-white Medium" style={{
-                                                backgroundColor: event.type == "talk" ? "#FFAC1C" : event.type == "panel" ? "#1d427f" : event.type == "break" ? "#FF3232" : "#7f1d44"
-                                            }}>
-                                                {event.type.toUpperCase()}
-                                            </p>
+                                            {
+                                                event.type != "break" ? (
+                                                    <p className="text-sm px-2 py-1 rounded shadow text-white Medium" style={{
+                                                        backgroundColor: event.type == "talk" ? "#49CCF7" : event.type == "panel" ? "#D870AD" : event.type == "break" ? "#F18681" : "#91CE35"
+                                                    }}>
+                                                        {event.type.toUpperCase()}
+                                                    </p>
+                                                ) : ("")
+                                            }
                                             {
                                                 event.lang == "it" ? (
                                                     <div className="h-[1.6rem] w-[2.4rem] rounded bg-red-400 bg-center bg-cover" style={{
@@ -2243,17 +2269,17 @@ const Agenda = () => {
                                         }
                                         {
                                             event.type == "break" ? (
-                                                <p className="text-xl text-black Medium my-2 w-full text-center">🍝🍕&nbsp;{event.title} &nbsp;🍕🍝</p>
+                                                <p className="text-xl text-white Medium my-2 w-full text-center">🍝🍕&nbsp;{event.title} &nbsp;🍕🍝</p>
                                             ) : ("")
                                         }
                                         {
                                             event.type != "break" ? (
                                                 <div className="w-full h-fit flex flex-row items-center justify-start gap-1 mb-12">
-                                            <MdOutlinePlace size={20} color="#252525" />
-                                            <p className="text-xs text-black Medium">
-                                                {event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"}
-                                            </p>
-                                        </div>
+                                                    <MdOutlinePlace size={20} color="#252525" />
+                                                    <p className="text-xs text-black Medium">
+                                                        {event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"}
+                                                    </p>
+                                                </div>
                                             ) : ""
                                         }
 
