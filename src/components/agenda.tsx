@@ -88,6 +88,8 @@ import s75 from '@assets/MartinLeclerq.jpg'
 import s76 from '@assets/StefanoGogioso.jpg'
 import s77 from '@assets/MortezaShahini.jpg.jpeg'
 import s78 from '@assets/GavinThomas.png'
+import s79 from '@assets/DanielePalombi.jpg'
+import s80 from '@assets/FilippoMoraschi.jpg'
 
 
 const Agenda = () => {
@@ -828,7 +830,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Daniele Palombi",
-                    image: ""
+                    image: s79.src
                 }
             ],
             day: 2,
@@ -945,7 +947,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Filippo Moraschi",
-                    image: ""
+                    image: s80.src
                 }
             ],
             day: 2,
@@ -1756,7 +1758,7 @@ const Agenda = () => {
                 },
                 {
                     name: "Daniele Palombi",
-                    image: ""
+                    image: s79.src
                 }
             ],
             day: 3,
