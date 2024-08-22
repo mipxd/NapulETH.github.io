@@ -77,6 +77,18 @@ import s65 from '@assets/Viktor.jpg'
 import s66 from '@assets/DavideMilani.jpg'
 import s67 from '@assets/DavidCarvalho.jpg'
 import lilic from '@assets/johnLilic.jpg'
+import s68 from '@assets/DavideCarboni.jpg'
+import s69 from '@assets/MicheleLotta.jpg'
+import s70 from '@assets/PhilippZahn.jpg'
+import s71 from '@assets/RosarioNapolano.jpg'
+import s72 from '@assets/cryptocuty.jpg'
+import s73 from '@assets/LaurenceKirk.jpg'
+import s74 from '@assets/CarloParisi.png'
+import s75 from '@assets/MartinLeclerq.jpg'
+import s76 from '@assets/StefanoGogioso.jpg'
+import s77 from '@assets/MortezaShahini.jpg.jpeg'
+import s78 from '@assets/GavinThomas.png'
+
 
 const Agenda = () => {
 
@@ -93,7 +105,8 @@ const Agenda = () => {
             end: "10:20",
             isWorkshop: false,
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ['other']
         },
         {
             id: 1,
@@ -111,7 +124,8 @@ const Agenda = () => {
             end: "10:40",
             isWorkshop: false,
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ['other']
         },
         {
             id: 2,
@@ -129,7 +143,8 @@ const Agenda = () => {
             end: "11:00",
             isWorkshop: false,
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ['other']
         },
         {
             id: 3,
@@ -147,7 +162,8 @@ const Agenda = () => {
             end: "11:20",
             isWorkshop: false,
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ['other']
         },
         {
             id: 4,
@@ -169,7 +185,22 @@ const Agenda = () => {
             end: "11:20",
             isWorkshop: false,
             type: "panel",
-            lang: "en"
+            lang: "en",
+            topics: ['other']
+        },
+        {
+            id: 544,
+            title: 'Lunch Break',
+            subtitle: "",
+            stage: "main",
+            speakers: [],
+            day: 1,
+            start: "12:00",
+            end: "14:00",
+            isWorkshop: false,
+            type: "break",
+            lang: "",
+            topics: ['other']
         },
         {
             id: 5,
@@ -187,7 +218,8 @@ const Agenda = () => {
             end: "14:20",
             isWorkshop: false,
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["marketing", "it"]
         },
         {
             id: 6,
@@ -205,7 +237,8 @@ const Agenda = () => {
             end: "14:40",
             isWorkshop: false,
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["community"]
         },
         {
             id: 86,
@@ -223,7 +256,8 @@ const Agenda = () => {
             end: "15:00",
             isWorkshop: false,
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["community"]
         },
         {
             id: 7,
@@ -249,7 +283,8 @@ const Agenda = () => {
             end: "16:00",
             isWorkshop: false,
             type: "panel",
-            lang: "en"
+            lang: "en",
+            topics: ["community"]
         },
         {
             id: 8,
@@ -267,7 +302,8 @@ const Agenda = () => {
             end: "16:20",
             isWorkshop: false,
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["community", "education"]
         },
         {
             id: 9,
@@ -285,7 +321,8 @@ const Agenda = () => {
             end: "16:40",
             isWorkshop: false,
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["community"]
         },
         {
             id: 9,
@@ -303,7 +340,8 @@ const Agenda = () => {
             end: "17:00",
             isWorkshop: false,
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ['other']
         },
 
         // Day 1, Stage 2
@@ -323,7 +361,8 @@ const Agenda = () => {
             end: "10:40",
             isWorkshop: false,
             type: "talk",
-            lang: "it"
+            lang: "it",
+            topics: ["legal", "it"]
         },
         {
             id: 11,
@@ -349,7 +388,8 @@ const Agenda = () => {
             isWorkshop: false,
             end: "11:20",
             type: "panel",
-            lang: "it"
+            lang: "it",
+            topics: ["legal", "it"]
         },
         {
             id: 12,
@@ -367,7 +407,8 @@ const Agenda = () => {
             isWorkshop: false,
             end: "11:40",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["legal", "it"]
         },
         {
             id: 13,
@@ -385,7 +426,22 @@ const Agenda = () => {
             isWorkshop: false,
             end: "12:00",
             type: "talk",
-            lang: "it"
+            lang: "it",
+            topics: ["legal", "it"]
+        },
+        {
+            id: 544,
+            title: 'Lunch Break',
+            subtitle: "",
+            stage: "stage 2",
+            speakers: [],
+            day: 1,
+            start: "12:00",
+            end: "14:00",
+            isWorkshop: false,
+            type: "break",
+            lang: "",
+            topics: ['other']
         },
         {
             id: 14,
@@ -403,7 +459,8 @@ const Agenda = () => {
             end: "14:20",
             isWorkshop: false,
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["security", "auditing"]
         },
         {
             id: 15,
@@ -421,7 +478,8 @@ const Agenda = () => {
             start: "14:20",
             end: "14:40",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["scaling", "l2"]
         },
         {
             id: 16,
@@ -439,7 +497,8 @@ const Agenda = () => {
             end: "15:00",
             isWorkshop: false,
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["security", "auditing"]
         },
         {
             id: 17,
@@ -457,7 +516,8 @@ const Agenda = () => {
             end: "15:20",
             isWorkshop: false,
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["scaling", "l2"]
         },
         {
             id: 18,
@@ -475,7 +535,8 @@ const Agenda = () => {
             end: "15:40",
             isWorkshop: false,
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["security", "auditing"]
         },
         {
             id: 19,
@@ -485,7 +546,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Davide Carboni",
-                    image: ""
+                    image: s68.src
                 }
             ],
             day: 1,
@@ -493,7 +554,8 @@ const Agenda = () => {
             end: "16:00",
             isWorkshop: false,
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["security", "auditing"]
         },
         {
             id: 20,
@@ -511,7 +573,8 @@ const Agenda = () => {
             end: "16:20",
             isWorkshop: false,
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["security", "auditing"]
         },
         {
             id: 21,
@@ -529,7 +592,8 @@ const Agenda = () => {
             end: "16:40",
             isWorkshop: false,
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["security", "defi"]
         },
         {
             id: 22,
@@ -547,7 +611,8 @@ const Agenda = () => {
             end: "17:00",
             isWorkshop: false,
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ['other']
         },
 
         // Day 1, Stage 3
@@ -575,7 +640,8 @@ const Agenda = () => {
             start: "10:40",
             end: "11:20",
             type: "panel",
-            lang: "en"
+            lang: "en",
+            topics: ["marketing"]
         },
         {
             id: 24,
@@ -593,7 +659,8 @@ const Agenda = () => {
             start: "10:20",
             end: "11:40",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["marketing"]
         },
         {
             id: 25,
@@ -611,11 +678,26 @@ const Agenda = () => {
             isWorkshop: false,
             end: "12:00",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["marketing"]
+        },
+        {
+            id: 544,
+            title: 'Lunch Break',
+            subtitle: "",
+            stage: "stage 3",
+            speakers: [],
+            day: 1,
+            start: "12:00",
+            end: "14:00",
+            isWorkshop: false,
+            type: "break",
+            lang: "",
+            topics: ['other']
         },
         {
             id: 26,
-            title: '',
+            title: 'Defi Workshop',
             subtitle: "",
             stage: "stage 3",
             isWorkshop: false,
@@ -629,7 +711,8 @@ const Agenda = () => {
             start: "14:20",
             end: "15:00",
             type: "workshop",
-            lang: "en"
+            lang: "en",
+            topics: ["defi"]
         },
         {
             id: 27,
@@ -651,7 +734,8 @@ const Agenda = () => {
             start: "15:00",
             end: "16:00",
             type: "workshop",
-            lang: "en"
+            lang: "en",
+            topics: ["defi"]
         },
         {
             id: 28,
@@ -669,7 +753,8 @@ const Agenda = () => {
             end: "16:40",
             isWorkshop: false,
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["staking"]
         },
 
         // Day 2, Stage 1 (Main)
@@ -689,7 +774,8 @@ const Agenda = () => {
             start: "10:20",
             end: "10:40",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ['other']
         },
         {
             id: 30,
@@ -700,7 +786,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Michele Lotta",
-                    image: ""
+                    image: s69.src
                 },
                 {
                     name: "Viktor",
@@ -711,17 +797,37 @@ const Agenda = () => {
             start: "10:40",
             end: "11:20",
             type: "panel",
-            lang: "en"
+            lang: "en",
+            topics: ["defi"]
         },
         {
-            id: 31,
-            title: '',
+            id: 311,
+            title: 'Lido Community Staking Module',
             subtitle: "",
             isWorkshop: false,
             stage: "main",
             speakers: [
                 {
-                    name: "Philipp Zahn",
+                    name: "Dmitry Chernukhin",
+                    image: s70.src
+                }
+            ],
+            day: 2,
+            start: "11:20",
+            end: "11:40",
+            type: "talk",
+            lang: "en",
+            topics: ["defi"]
+        },
+        {
+            id: 31,
+            title: 'Splitting the Block',
+            subtitle: "",
+            isWorkshop: false,
+            stage: "main",
+            speakers: [
+                {
+                    name: "Daniele Palombi",
                     image: ""
                 }
             ],
@@ -729,7 +835,22 @@ const Agenda = () => {
             start: "11:40",
             end: "12:00",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["defi"]
+        },
+        {
+            id: 544,
+            title: 'Lunch Break',
+            subtitle: "",
+            stage: "main",
+            speakers: [],
+            day: 2,
+            start: "12:00",
+            end: "14:00",
+            isWorkshop: false,
+            type: "break",
+            lang: "",
+            topics: ['other']
         },
         {
             id: 32,
@@ -747,7 +868,8 @@ const Agenda = () => {
             start: "14:00",
             end: "15:40",
             type: "talk",
-            lang: "it"
+            lang: "it",
+            topics: ['defi']
         },
         {
             id: 33,
@@ -762,7 +884,7 @@ const Agenda = () => {
                 },
                 {
                     name: "Rosario Napolano",
-                    image: ""
+                    image: s71.src
                 },
                 {
                     name: "Gianluca Di Bella",
@@ -773,7 +895,8 @@ const Agenda = () => {
             start: "14:40",
             end: "15:20",
             type: "panel",
-            lang: "en"
+            lang: "en",
+            topics: ["defi"]
         },
         {
             id: 34,
@@ -784,14 +907,15 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Cryptocuty",
-                    image: ""
+                    image: s72.src
                 }
             ],
             day: 2,
             start: "15:20",
             end: "15:40",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["defi"]
         },
         {
             id: 35,
@@ -802,14 +926,15 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Carlo Parisi",
-                    image: ""
+                    image: s74.src
                 }
             ],
             day: 2,
             start: "15:40",
             end: "16:00",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["defi"]
         },
         {
             id: 36,
@@ -827,7 +952,8 @@ const Agenda = () => {
             start: "16:00",
             end: "16:20",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["defi"]
         },
         {
             id: 37,
@@ -845,7 +971,8 @@ const Agenda = () => {
             start: "16:20",
             end: "16:40",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["defi"]
         },
         {
             id: 38,
@@ -867,7 +994,8 @@ const Agenda = () => {
             start: "16:40",
             end: "17:00",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["defi"]
         },
 
         // Day 2, Stage 2
@@ -888,7 +1016,8 @@ const Agenda = () => {
             start: "10:00",
             end: "10:20",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["rwa"]
         },
         {
             id: 40,
@@ -906,7 +1035,8 @@ const Agenda = () => {
             start: "10:20",
             end: "10:40",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["defi", "rwa"]
         },
         {
             id: 41,
@@ -936,7 +1066,8 @@ const Agenda = () => {
             start: "10:40",
             end: "11:20",
             type: "panel",
-            lang: "en"
+            lang: "en",
+            topics: ["rwa"]
         },
         {
             id: 42,
@@ -954,7 +1085,8 @@ const Agenda = () => {
             start: "11:20",
             end: "11:40",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["defi", "rwa"]
         },
         {
             id: 43,
@@ -972,7 +1104,22 @@ const Agenda = () => {
             start: "11:40",
             end: "12:00",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["defi", "rwa"]
+        },
+        {
+            id: 544,
+            title: 'Lunch Break',
+            subtitle: "",
+            stage: "stage 2",
+            speakers: [],
+            day: 2,
+            start: "12:00",
+            end: "14:00",
+            isWorkshop: false,
+            type: "break",
+            lang: "",
+            topics: ['other']
         },
         {
             id: 44,
@@ -990,7 +1137,8 @@ const Agenda = () => {
             start: "14:00",
             end: "14:20",
             type: "talk",
-            lang: "it"
+            lang: "it",
+            topics: ["digital identity", "it"]
         },
         {
             id: 45,
@@ -1008,7 +1156,8 @@ const Agenda = () => {
             start: "14:20",
             end: "14:40",
             type: "talk",
-            lang: "it"
+            lang: "it",
+            topics: ["legal", "it"]
         },
         {
             id: 46,
@@ -1026,7 +1175,8 @@ const Agenda = () => {
             start: "14:40",
             end: "15:00",
             type: "talk",
-            lang: "it"
+            lang: "it",
+            topics: ["education", "it"]
         },
         {
             id: 47,
@@ -1044,7 +1194,8 @@ const Agenda = () => {
             start: "15:00",
             end: "15:40",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["it"]
         },
         {
             id: 48,
@@ -1062,7 +1213,8 @@ const Agenda = () => {
             start: "15:40",
             end: "16:00",
             type: "talk",
-            lang: "it"
+            lang: "it",
+            topics: ["legal", "it"]
         },
         {
             id: 49,
@@ -1084,7 +1236,8 @@ const Agenda = () => {
             start: "16:00",
             end: "16:40",
             type: "panel",
-            lang: "en"
+            lang: "en",
+            topics: ["legal", "it"]
         },
 
         // Day 2, Stage 3
@@ -1105,7 +1258,8 @@ const Agenda = () => {
             start: "10:00",
             end: "11:00",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["ux"]
         },
         {
             id: 51,
@@ -1124,7 +1278,22 @@ const Agenda = () => {
             start: "11:00",
             end: "12:00",
             type: "workshop",
-            lang: "en"
+            lang: "en",
+            topics: ["ux"]
+        },
+        {
+            id: 544,
+            title: 'Lunch Break',
+            subtitle: "",
+            stage: "stage 3",
+            speakers: [],
+            day: 2,
+            start: "12:00",
+            end: "14:00",
+            isWorkshop: false,
+            type: "break",
+            lang: "",
+            topics: ['other']
         },
         {
             id: 52,
@@ -1135,27 +1304,34 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Laurence Kirk",
-                    image: ""
+                    image: s73.src
                 }
             ],
             day: 2,
             start: "14:00",
             end: "15:00",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["zk proofs"]
         },
         {
             id: 53,
-            title: 'HEVM Workshop',
+            title: 'Open Games meet HEVM',
             subtitle: "",
             stage: "stage 3",
             isWorkshop: true,
-            speakers: [],
+            speakers: [
+                {
+                    name: "Philipp Zahn",
+                    image: s70.src
+                }
+            ],
             day: 2,
             start: "15:00",
             end: "16:00",
             type: "workshop",
-            lang: "en"
+            lang: "en",
+            topics: ["gaming"]
         },
         {
             id: 54,
@@ -1166,14 +1342,15 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Martin Leclerq",
-                    image: ""
+                    image: s75.src
                 }
             ],
             day: 2,
             start: "16:00",
             end: "17:00",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["security"]
         },
 
         // Day 3 , Stage 1 (Main)
@@ -1194,7 +1371,8 @@ const Agenda = () => {
             start: "10:00",
             end: "10:20",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["quantum"]
         },
         {
             id: 56,
@@ -1212,7 +1390,8 @@ const Agenda = () => {
             start: "10:20",
             end: "10:40",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["quantum"]
         },
         {
             id: 57,
@@ -1238,7 +1417,8 @@ const Agenda = () => {
             start: "10:40",
             end: "11:20",
             type: "panel",
-            lang: "en"
+            lang: "en",
+            topics: ["quantum"]
         },
         {
             id: 58,
@@ -1249,14 +1429,15 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Stefano Gogioso",
-                    image: ""
+                    image: s76.src
                 }
             ],
             day: 3,
             start: "11:20",
             end: "11:40",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["quantum"]
         },
         {
             id: 59,
@@ -1274,7 +1455,22 @@ const Agenda = () => {
             start: "11:40",
             end: "12:00",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["quantum"]
+        },
+        {
+            id: 544,
+            title: 'Lunch Break',
+            subtitle: "",
+            stage: "main",
+            speakers: [],
+            day: 3,
+            start: "12:00",
+            end: "14:00",
+            isWorkshop: false,
+            type: "break",
+            lang: "",
+            topics: ['other']
         },
         {
             id: 60,
@@ -1292,7 +1488,8 @@ const Agenda = () => {
             start: "14:00",
             end: "14:20",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["nft", "bitcoin", "art"]
         },
         {
             id: 61,
@@ -1310,7 +1507,8 @@ const Agenda = () => {
             start: "14:20",
             end: "14:40",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["art"]
         },
         {
             id: 62,
@@ -1336,7 +1534,8 @@ const Agenda = () => {
             start: "14:40",
             end: "15:20",
             type: "panel",
-            lang: "en"
+            lang: "en",
+            topics: ["art"]
         },
         {
             id: 63,
@@ -1354,7 +1553,8 @@ const Agenda = () => {
             start: "15:20",
             end: "15:40",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["art"]
         },
         {
             id: 64,
@@ -1365,14 +1565,15 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Morteza Shahini",
-                    image: ""
+                    image: s77.src
                 }
             ],
             day: 3,
             start: "15:40",
             end: "16:00",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["gaming"]
         },
         {
             id: 65,
@@ -1385,7 +1586,8 @@ const Agenda = () => {
             start: "16:20",
             end: "17:00",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ['other']
         },
 
         // Day 3 , Stage 2
@@ -1406,7 +1608,8 @@ const Agenda = () => {
             start: "10:00",
             end: "10:20",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["art"]
         },
         {
             id: 67,
@@ -1424,7 +1627,8 @@ const Agenda = () => {
             start: "10:20",
             end: "10:40",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["art"]
         },
         {
             id: 68,
@@ -1442,7 +1646,8 @@ const Agenda = () => {
             start: "10:40",
             end: "11:20",
             type: "talk",
-            lang: "it"
+            lang: "it",
+            topics: ["art"]
         },
         {
             id: 69,
@@ -1460,7 +1665,8 @@ const Agenda = () => {
             start: "11:20",
             end: "11:40",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["art"]
         },
         {
             id: 70,
@@ -1478,7 +1684,22 @@ const Agenda = () => {
             start: "11:40",
             end: "12:00",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["art", "marketing", "it"]
+        },
+        {
+            id: 544,
+            title: 'Lunch Break',
+            subtitle: "",
+            stage: "stage 2",
+            speakers: [],
+            day: 3,
+            start: "12:00",
+            end: "14:00",
+            isWorkshop: false,
+            type: "break",
+            lang: "",
+            topics: ['other']
         },
         {
             id: 71,
@@ -1496,7 +1717,8 @@ const Agenda = () => {
             start: "14:00",
             end: "14:20",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["privacy", "ai"]
         },
         {
             id: 72,
@@ -1514,7 +1736,8 @@ const Agenda = () => {
             start: "14:20",
             end: "14:40",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["privacy"]
         },
         {
             id: 73,
@@ -1540,7 +1763,8 @@ const Agenda = () => {
             start: "14:40",
             end: "15:20",
             type: "panel",
-            lang: "en"
+            lang: "en",
+            topics: ["privacy", "zk proofs", "quantum"]
         },
         {
             id: 74,
@@ -1551,14 +1775,15 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Gavin Thomas",
-                    image: ""
+                    image: s78.src
                 }
             ],
             day: 3,
             start: "15:20",
             end: "15:40",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["privacy"]
         },
         {
             id: 75,
@@ -1576,7 +1801,8 @@ const Agenda = () => {
             start: "15:40",
             end: "16:00",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["zk proofs"]
         },
         {
             id: 76,
@@ -1594,7 +1820,62 @@ const Agenda = () => {
             start: "16:00",
             end: "16:20",
             type: "talk",
-            lang: "en"
+            lang: "en",
+            topics: ["privacy", "legal"]
+        },
+
+        // Day 3, Stage 3
+        {
+            id: 77,
+            title: 'Privacy in Machine Learning with zkML',
+            isWorkshop: false,
+            subtitle: "",
+            stage: "stage 3",
+            speakers: [
+                {
+                    name: "Laurence Kirk",
+                    image: s73.src
+                }
+            ],
+            day: 3,
+            start: "10:00",
+            end: "11:00",
+            type: "talk",
+            lang: "en",
+            topics: ["privacy"]
+        },
+        {
+            id: 78,
+            title: 'Guadagna con la Volatilità',
+            isWorkshop: false,
+            subtitle: "",
+            stage: "stage 3",
+            speakers: [
+                {
+                    name: "Stefano De Masi",
+                    image: ""
+                }
+            ],
+            day: 3,
+            start: "11:00",
+            end: "12:00",
+            type: "panel",
+            lang: "it",
+            topics: ["defi"]
+        },
+        {
+            id: 544,
+            title: 'Lunch Break',
+            subtitle: "",
+            stage: "stage 3",
+            speakers: [],
+            day: 3,
+            start: "12:00",
+            end: "14:00",
+            isWorkshop: false,
+            type: "break",
+            lang: "en",
+            topics: ['other']
         },
     ]
 
@@ -1604,8 +1885,9 @@ const Agenda = () => {
 
     const [filtersOpened, setFiltersOpened] = useState(false);
 
-    const [typeFilter, setTypeFilter] = useState(['talk', 'panel', 'workshop']);
-    const [languageFilter, setLanguageFilter] = useState(['it', 'en']);
+    const [typeFilter, setTypeFilter] = useState(['talk', 'panel', 'workshop', "break"]);
+    const [languageFilter, setLanguageFilter] = useState(['it', 'en', ""]);
+    const [topicFilter, setTopicFilter] = useState(['other','auditing', 'defi', 'ux', 'security', 'l2', 'scaling', 'marketing', 'education', 'community', 'ai', 'zk proofs', 'privacy', 'it', 'legal', 'digital identity', 'staking', 'rwa', 'gaming', 'quantum', 'art', 'nft', 'bitcoin']);
     const [searchString, setSearchString] = useState("");
 
     const [filteredEvents, setFilteredEvents] = useState(events);
@@ -1630,6 +1912,16 @@ const Agenda = () => {
         });
     }
 
+    function toggleTopic(topic: string) {
+        setTopicFilter((prevTopicFilter) => {
+            if (prevTopicFilter.includes(topic)) {
+                return prevTopicFilter.filter((top) => top !== topic);
+            } else {
+                return [...prevTopicFilter, topic];
+            }
+        });
+    }
+
     function changeSearchString(s: string) {
         setSearchString(s);
     }
@@ -1639,6 +1931,7 @@ const Agenda = () => {
             return events.filter((event) =>
                 typeFilter.includes(event.type)
                 && languageFilter.includes(event.lang)
+                && event.topics.some((topic) => topicFilter.includes(topic))
                 && (
                     event.title.toLowerCase().includes(searchString.toLowerCase())
                     || event.speakers.some((speaker) => speaker.name.toLowerCase().includes(searchString.toLowerCase()))
@@ -1646,7 +1939,7 @@ const Agenda = () => {
             );
         }
         else {
-            return events.filter((event) => typeFilter.includes(event.type) && languageFilter.includes(event.lang));
+            return events.filter((event) => typeFilter.includes(event.type) && languageFilter.includes(event.lang) && event.topics.some((topic) => topicFilter.includes(topic)));
         }
 
     }
@@ -1666,9 +1959,10 @@ const Agenda = () => {
         console.log(filteredEvents);
         console.log(languageFilter);
         console.log(searchString);
+        console.log(topicFilter);
         const newFilteredEvents = filterEvents();
         setFilteredEvents(newFilteredEvents);
-    }, [typeFilter, languageFilter, searchString]);
+    }, [typeFilter, languageFilter, topicFilter, searchString]);
 
     return (
         <section className="w-full lg:w-10/12 mx-auto flex flex-col items-center justify-start mt-20 gap-2">
@@ -1702,7 +1996,7 @@ const Agenda = () => {
             </div>
             {
                 filtersOpened ? (
-                    <div className="w-11/12 h-fit bg-white rounded-md p-4 mb-2 flex flex-col items-start justify-start">
+                    <div className="w-11/12 lg:w-10/12 h-fit bg-white rounded-md p-4 mb-2 flex flex-col items-start justify-start">
                         <div className="w-full h-fit flex flex-row items-center justify-between mb-3">
                             <p className="text-xl text-black Medium">Filters:</p>
                             <p className="text-md text-blue-500 cursor-pointer" onClick={() => { resetFilters() }}>Reset all</p>
@@ -1718,6 +2012,31 @@ const Agenda = () => {
                         <div className="w-full hèfit flex flex-row items-center justify-start gap-2">
                             <button className={`py-1 px-3 rounded-full border border-black ${languageFilter.includes('it') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleLang('it'); }}>Italian</button>
                             <button className={`py-1 px-3 rounded-full border border-black ${languageFilter.includes('en') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleLang('en'); }}>English</button>
+                        </div>
+                        <p className="text-lg text-black Medium mb-2">Topics:</p>
+                        <div className="w-full hèfit flex flex-row items-center justify-start flex-wrap gap-2">
+                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('ai') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('ai'); }}>AI</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('art') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('art'); }}>Art</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('auditing') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('auditing'); }}>Auditing</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('bitcoin') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('bitcoin'); }}>Bitcoin</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('community') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('community'); }}>Community</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('defi') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('defi'); }}>Defi</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('digital identity') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('digital identity'); }}>Digital Identity</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('education') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('education'); }}>Education</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('gaming') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('gaming'); }}>Gaming</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('it') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('it'); }}>IT</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('legal') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('legal'); }}>legal</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('marketing') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('marketing'); }}>Marketing</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('nft') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('nft'); }}>NFT</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('privacy') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('privacy'); }}>Privacy</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('quantum') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('quantum'); }}>Quantum</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('rwa') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('rwa'); }}>RWA</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('scaling') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('scaling'); }}>Scaling</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('security') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('security'); }}>Security</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('staking') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('staking'); }}>Staking</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('ux') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('ux'); }}>UX</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('zk proofs') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('zk proofs'); }}>Zk Proofs</button>
+                            <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('other') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('other'); }}>Other</button>
                         </div>
                     </div>
                 ) : ("")
@@ -1740,7 +2059,7 @@ const Agenda = () => {
                                                 {event.start + " - " + event.end}
                                             </p>
                                             <p className="text-sm px-2 py-1 rounded shadow text-white Medium" style={{
-                                                backgroundColor: event.type == "talk" ? "#FFAC1C" : event.type == "panel" ? "#1d427f" : "#7f1d44"
+                                                backgroundColor: event.type == "talk" ? "#FFAC1C" : event.type == "panel" ? "#1d427f" : event.type == "break" ? "#FF3232" : "#7f1d44" 
                                             }}>
                                                 {event.type.toUpperCase()}
                                             </p>
@@ -1753,18 +2072,27 @@ const Agenda = () => {
                                             }
                                         </div>
                                         {
-                                            event.title != "" ? (
+                                            event.title != "" && event.type != "break" ? (
                                                 <p className="text-xl text-black Medium mb-2">{event.title}</p>
-                                            ) : (
+                                            ) : event.title != "" && event.type != "break" ? (
                                                 <p className="text-xl text-gray-400 Medium italic mb-2">Title to be announced later...</p>
-                                            )
+                                            ) : ""
                                         }
-                                        <div className="w-full h-fit flex flex-row items-center justify-start gap-1 mb-12">
+                                        {
+                                            event.type == "break" ? (
+                                                <p className="text-xl text-black Medium my-2 w-full text-center">🍝🍕&nbsp;{event.title} &nbsp;🍕🍝</p>
+                                            ) : ("")
+                                        }
+                                        {
+                                            event.type != "break" ? (
+                                                <div className="w-full h-fit flex flex-row items-center justify-start gap-1 mb-12">
                                             <MdOutlinePlace size={20} color="#252525" />
                                             <p className="text-xs text-black Medium">
                                                 {event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"}
                                             </p>
                                         </div>
+                                            ) : ""
+                                        }
                                         {
                                             event.speakers.length != 0 ? (
                                                 <p className="text-md text-gray-700 mb-2">
@@ -1811,7 +2139,7 @@ const Agenda = () => {
                                                 {event.start + " - " + event.end}
                                             </p>
                                             <p className="text-sm px-2 py-1 rounded shadow text-white Medium" style={{
-                                                backgroundColor: event.type == "talk" ? "#FFAC1C" : event.type == "panel" ? "#1d427f" : "#7f1d44"
+                                                backgroundColor: event.type == "talk" ? "#FFAC1C" : event.type == "panel" ? "#1d427f" : event.type == "break" ? "#FF3232" : "#7f1d44"
                                             }}>
                                                 {event.type.toUpperCase()}
                                             </p>
@@ -1824,18 +2152,27 @@ const Agenda = () => {
                                             }
                                         </div>
                                         {
-                                            event.title != "" ? (
+                                            event.title != "" && event.type != "break" ? (
                                                 <p className="text-xl text-black Medium mb-2">{event.title}</p>
-                                            ) : (
+                                            ) : event.title != "" && event.type != "break" ? (
                                                 <p className="text-xl text-gray-400 Medium italic mb-2">Title to be announced later...</p>
-                                            )
+                                            ) : ""
                                         }
-                                        <div className="w-full h-fit flex flex-row items-center justify-start gap-1 mb-12">
+                                        {
+                                            event.type == "break" ? (
+                                                <p className="text-xl text-black Medium my-2 w-full text-center">🍝🍕&nbsp;{event.title} &nbsp;🍕🍝</p>
+                                            ) : ("")
+                                        }
+                                        {
+                                            event.type != "break" ? (
+                                                <div className="w-full h-fit flex flex-row items-center justify-start gap-1 mb-12">
                                             <MdOutlinePlace size={20} color="#252525" />
                                             <p className="text-xs text-black Medium">
                                                 {event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"}
                                             </p>
                                         </div>
+                                            ) : ""
+                                        }
                                         {
                                             event.speakers.length != 0 ? (
                                                 <p className="text-md text-gray-700 mb-2">
@@ -1883,7 +2220,7 @@ const Agenda = () => {
                                                 {event.start + " - " + event.end}
                                             </p>
                                             <p className="text-sm px-2 py-1 rounded shadow text-white Medium" style={{
-                                                backgroundColor: event.type == "talk" ? "#FFAC1C" : event.type == "panel" ? "#1d427f" : "#7f1d44"
+                                                backgroundColor: event.type == "talk" ? "#FFAC1C" : event.type == "panel" ? "#1d427f" : event.type == "break" ? "#FF3232" : "#7f1d44"
                                             }}>
                                                 {event.type.toUpperCase()}
                                             </p>
@@ -1896,18 +2233,27 @@ const Agenda = () => {
                                             }
                                         </div>
                                         {
-                                            event.title != "" ? (
+                                            event.title != "" && event.type != "break" ? (
                                                 <p className="text-xl text-black Medium mb-2">{event.title}</p>
-                                            ) : (
+                                            ) : event.title != "" && event.type != "break" ? (
                                                 <p className="text-xl text-gray-400 Medium italic mb-2">Title to be announced later...</p>
-                                            )
+                                            ) : ""
                                         }
-                                        <div className="w-full h-fit flex flex-row items-center justify-start gap-1 mb-12">
+                                        {
+                                            event.type == "break" ? (
+                                                <p className="text-xl text-black Medium my-2 w-full text-center">🍝🍕&nbsp;{event.title} &nbsp;🍕🍝</p>
+                                            ) : ("")
+                                        }
+                                        {
+                                            event.type != "break" ? (
+                                                <div className="w-full h-fit flex flex-row items-center justify-start gap-1 mb-12">
                                             <MdOutlinePlace size={20} color="#252525" />
                                             <p className="text-xs text-black Medium">
                                                 {event.stage == "main" ? "Main Stage" : event.stage == "stage 2" ? "Stage 2" : "Stage 3"}
                                             </p>
                                         </div>
+                                            ) : ""
+                                        }
 
                                         {
                                             event.speakers.length != 0 ? (
