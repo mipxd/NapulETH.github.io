@@ -99,7 +99,7 @@ function SideEvents() {
                         <div className="w-11/12 h-fit flex flex-col items-center justify-center lg:grid lg:grid-cols-2 lg:auto-rows-auto gap-4 px-10 lg:my-10">
 
                             {
-                                events.map((event, key) => {
+                                events.sort((a, b) => a.date.localeCompare(b.date)).map((event, key) => {
                                     return (
                                         <Link href={event.link && event.link != "none" ? event.link : "no-link"} target="_blank" className="w-full h-fit" onClick={(e) => { if (!event.link || event.link == "none") e.preventDefault() }}>
                                             <div key={key} className="w-full xl:w-auto h-fit flex flex-col justify-center items-center lg:flex-row lg:items-center lg:justify-stretch gap-3">
@@ -151,8 +151,12 @@ function SideEvents() {
                         t('belonqTitle')
                     } ⏳⌛
                 </h6>
-                <Image src={belonqMobile} alt="belonq merchandise napuleth event" width={100} height={80} className="block lg:hidden w-9/12 h-auto rounded-md shadow-2xl shadow-black"></Image>
-                <Image src={belonq} alt="belonq merchandise napuleth event" width={100} height={80} className="hidden lg:block w-7/12 h-auto rounded-md shadow-2xl shadow-black"></Image>
+                <Link href={"https://belonqevent.com/"} target="_blank" className="w-9/12 h-fit flex lg:hidden flex-row items-center justify-center">
+                    <Image src={belonqMobile} alt="belonq merchandise napuleth event" width={100} height={80} className="block lg:hidden w-full h-auto rounded-md shadow-2xl shadow-black"></Image>
+                </Link>
+                <Link href={"https://belonqevent.com/"} target="_blank" className="w-7/12 h-fit hidden lg:flex flex-row items-center justify-center">
+                    <Image src={belonq} alt="belonq merchandise napuleth event" width={100} height={80} className="hidden lg:block w-full h-auto rounded-md shadow-2xl shadow-black"></Image>
+                </Link>
                 <p className="block text-[#2E2E2E] Medium text-2xl lg:text-2xl text-center lg:px-28 leading-normal mt-10 lg:mb-4 lg:mt-14 w-11/12 lg:w-full">
                     {t('belonqPara')}
                 </p>
@@ -160,15 +164,15 @@ function SideEvents() {
                     Contact:
                 </p>
                 <p className="block text-[#2E2E2E] Medium text-2xl lg:text-2xl text-center lg:px-28 leading-normal mt-10 lg:mb-4 lg:mt-14 w-11/12 lg:w-full">
-                    Tel: <Link href={"tel:+393462146812"}><span className=" underline">+39 346 214 6812</span> </Link> 
+                    Tel: <Link href={"tel:+393462146812"} target="_blank"><span className=" underline">+39 346 214 6812</span> </Link>
                 </p>
                 <p className="block text-[#2E2E2E] Medium text-2xl lg:text-2xl text-center lg:px-28 leading-normal mt-10 lg:mb-4 lg:mt-14 w-11/12 lg:w-full">
-                    Telegram: <Link href={"https://t.me/IDbelonq"}> <span className=" underline">@IDbelonq</span></Link> 
+                    Telegram: <Link href={"https://t.me/IDbelonq"} target="_blank"> <span className=" underline">@IDbelonq</span></Link>
                 </p>
                 <p className="block text-[#2E2E2E] Medium text-2xl lg:text-2xl text-center lg:px-28 leading-normal mt-10 lg:mb-4 lg:mt-14 w-11/12 lg:w-full">
-                    Instagram: <Link href={" https://www.instagram.com/belonqcommunity/?igsh=MWV5aWZtb3ZlN2hxMA%3D%3D"}> <span className=" underline">@belonqcommunity</span> </Link> 
+                    Instagram: <Link href={"https://www.instagram.com/belonqcommunity"} target="_blank"> <span className=" underline">@belonqcommunity</span> </Link>
                 </p>
-               
+
             </section>
             <Footer />
         </main>
