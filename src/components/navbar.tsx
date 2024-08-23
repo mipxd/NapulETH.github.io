@@ -73,12 +73,12 @@ function Navbar() {
             </Link>
             <div className="w-fit h-fit flex flex-row items-center justify-end lg:gap-10">
                 <div className="w-fit h-fit hidden lg:flex flex-row items-center justify-end gap-10">
-                    <Link href={'/'} className=" relative z-50 p-0 w-fit h-fit">
+                    <Link href={'https://napul.eth.limo/'} className=" relative z-50 p-0 w-fit h-fit">
                         <h5 className=" text-black text-xl whitespace-nowrap Medium">
                             {t('home')}
                         </h5>
                     </Link>
-                    <Link href={'/tickets'} className=" relative z-50 p-0 w-fit h-fit">
+                    <Link href={'https://napul.eth.limo/tickets.html'} className=" relative z-50 p-0 w-fit h-fit">
                         <h5 className=" text-black text-xl whitespace-nowrap Medium">
                             {t('tickets')}
                         </h5>
@@ -101,7 +101,7 @@ function Navbar() {
                         transition
                     >
                         <MenuItem>
-                            <Link href="/about" className="w-fit h-fit flex flex-row items-center justify-start">
+                            <Link href="https://napul.eth.limo/about.html" className="w-fit h-fit flex flex-row items-center justify-start">
                                 <div className="w-fit min-w-[10vw] flex flex-row items-center justify-start px-2 py-1">
                                     <h5 className=" text-black text-xl whitespace-nowrap Medium">
                                         {t("team")}
@@ -111,7 +111,7 @@ function Navbar() {
                         </MenuItem>
                         <div className="my-1 h-[0.5px] w-10/12 bg-black/80 mx-auto "></div>
                         <MenuItem>
-                            <Link href="/speakers" className="w-fit h-fit flex flex-row items-center justify-start">
+                            <Link href="https://napul.eth.limo/speakers.html" className="w-fit h-fit flex flex-row items-center justify-start">
                                 <div className="w-fit min-w-[10vw] flex flex-row items-center justify-start px-2 py-1">
                                     <h5 className=" text-black text-xl whitespace-nowrap Medium">
                                         {t("speakers")}
@@ -121,7 +121,7 @@ function Navbar() {
                         </MenuItem>
                         <div className="my-1 h-[0.5px] w-10/12 bg-black/80 mx-auto "></div>
                         <MenuItem>
-                            <Link href="/artists" className="w-fit h-fit flex flex-row items-center justify-start">
+                            <Link href="https://napul.eth.limo/artists.html" className="w-fit h-fit flex flex-row items-center justify-start">
                                 <div className="w-fit min-w-[10vw] flex flex-row items-center justify-start px-2 py-1">
                                     <h5 className=" text-black text-xl whitespace-nowrap Medium">
                                         {t("artists")}
@@ -149,7 +149,7 @@ function Navbar() {
                         transition
                     >
                         <MenuItem>
-                            <Link href="/agenda" className="w-fit h-fit flex flex-row items-center justify-start">
+                            <Link href="https://napul.eth.limo/agenda.html" className="w-fit h-fit flex flex-row items-center justify-start">
                                 <div className="w-fit min-w-[10vw] flex flex-row items-center justify-start px-2 py-1">
                                     <h5 className=" text-black text-xl whitespace-nowrap Medium">
                                         {t("agenda")}
@@ -169,7 +169,7 @@ function Navbar() {
                         </MenuItem>
                         <div className="my-1 h-[0.5px] w-10/12 bg-black/80 mx-auto "></div>
                         <MenuItem>
-                            <Link href="/side-events" className="w-fit h-fit flex flex-row items-center justify-start">
+                            <Link href="https://napul.eth.limo/side-events.html" className="w-fit h-fit flex flex-row items-center justify-start">
                                 <div className="w-fit min-w-[10vw] flex flex-row items-center justify-start px-2 py-1">
                                     <h5 className=" text-black text-xl whitespace-nowrap Medium">
                                         {t("sideEventsRaw")}
@@ -179,7 +179,7 @@ function Navbar() {
                         </MenuItem>
                         <div className="my-1 h-[0.5px] w-10/12 bg-black/80 mx-auto "></div>
                         <MenuItem>
-                            <Link href="/pitch_battle" className="w-fit h-fit flex flex-row items-center justify-start">
+                            <Link href="https://napul.eth.limo/pitch_battle.html" className="w-fit h-fit flex flex-row items-center justify-start">
                                 <div className="w-fit min-w-[10vw] flex flex-row items-center justify-start px-2 py-1">
                                     <h5 className=" text-black text-xl whitespace-nowrap Medium">
                                         {t('pitchBattle')}
@@ -240,7 +240,7 @@ function Navbar() {
 
 
                 </Menu>
-                <Link href={'/join'} className=" hidden lg:block relative z-50 p-0 w-fit h-fit">
+                <Link href={'https://napul.eth.limo/join.html'} className=" hidden lg:block relative z-50 p-0 w-fit h-fit">
                     <div className="w-fit h-fit flex flex-row items-center justify-center py-4 px-12 bg-[#CA75AB] border-2 border-[#eddb55]">
                         <h5 className=" text-black Medium text-xl whitespace-nowrap">
                             {t('joinus')}
@@ -256,61 +256,61 @@ function Navbar() {
                             <IoCloseSharp color="#000000" size={35} onClick={() => { setMobileMenuOpen(false) }}></IoCloseSharp>
                         </div>
                         <div className="w-fit h-fit flex flex-col items-center justify-start gap-6">
-                            <Link href={'/'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
+                            <Link href={'https://napul.eth.limo/'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     {t('home')}
                                 </h5>
                             </Link>
                             <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
-                            <Link href={'/tickets'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
+                            <Link href={'https://napul.eth.limo/tickets.html'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className="text-center text-black text-3xl Medium">
                                     {t('tickets')}
                                 </h5>
                             </Link>
                             <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
-                            <Link href={'/about'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
+                            <Link href={'https://napul.eth.limo/about.html'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     {t('about')}
                                 </h5>
                             </Link>
                             <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
-                            <Link href={'/speakers'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
+                            <Link href={'https://napul.eth.limo/speakers.html'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     {t('speakers')}
                                 </h5>
                             </Link>
                             <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
-                            <Link href={'/agenda'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
+                            <Link href={'https://napul.eth.limo/agenda.html'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     {t('agenda')}
                                 </h5>
                             </Link>
                             <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
-                            <Link href={'/meetups'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
+                            <Link href={'https://napul.eth.limo/meetups.html'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     {t('meetupsPageTitle')}
                                 </h5>
                             </Link>
                             <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
-                            <Link href={'/side-events'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
+                            <Link href={'https://napul.eth.limo/side-events.html'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     {t("sideEventsRaw")}
                                 </h5>
                             </Link>
                             <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
-                            <Link href={'/pitch_battle'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
+                            <Link href={'https://napul.eth.limo/pitch_battle.html'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     {t('pitchBattle')}
                                 </h5>
                             </Link>
                             <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
-                            <Link href={'/artists'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
+                            <Link href={'https://napul.eth.limo/artists.html'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     {t("artists")}
                                 </h5>
                             </Link>
                             <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
-                            <Link href={'/join'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
+                            <Link href={'https://napul.eth.limo/join.html'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl text-center Medium">
                                     Join us
                                 </h5>
