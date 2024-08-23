@@ -2191,7 +2191,7 @@ const Agenda = () => {
                         filteredEvents.filter(event => event.day === day && event.stage == "main").map((event, key) => {
                             return (
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
-                                    <div className={`w-full ${event.type == "break" ? " bg-[#F18681] " : "bg-white"} bg-white rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4`}>
+                                    <div className={`w-full ${event.type == "break" ? " bg-[#F18681] " : "bg-white"} rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4`}>
                                         <div className="w-full h-fit flex flex-row items-center justify-start gap-2 mb-3">
                                             <p className={`text-sm ${event.type == "break" ? " text-white text-center w-full" : "text-black text-left"} Medium `}>
                                                 {event.start + " - " + event.end}
@@ -2288,7 +2288,7 @@ const Agenda = () => {
                         filteredEvents.filter(event => event.day === day && event.stage == "stage 2").map((event, key) => {
                             return (
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
-                                    <div className={`w-full ${event.type == "break" ? " bg-[#F18681] " : "bg-white"} bg-white rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4`}>
+                                    <div className={`w-full ${event.type == "break" ? " bg-[#F18681] " : "bg-white"} rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4`}>
                                         <div className="w-full h-fit flex flex-row items-center justify-start gap-2 mb-3">
                                             <p className={`text-sm ${event.type == "break" ? " text-white text-center w-full" : "text-black text-left"} Medium `}>
                                                 {event.start + " - " + event.end}
@@ -2385,7 +2385,7 @@ const Agenda = () => {
 
                             return (
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
-                                    <div className={`w-full ${event.type == "break" ? " bg-[#F18681] " : "bg-white"} bg-white rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4`}>
+                                    <div className={`w-full ${event.type == "break" ? " bg-[#F18681] " : "bg-white"} rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4`}>
                                         <div className="w-full h-fit flex flex-row items-center justify-start gap-2 mb-3">
                                             <p className={`text-sm ${event.type == "break" ? " text-white text-center w-full" : "text-black text-left"} Medium `}>
                                                 {event.start + " - " + event.end}
