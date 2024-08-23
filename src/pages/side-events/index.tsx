@@ -10,6 +10,8 @@ import p1 from "@assets/11.jpeg"
 import p2 from "@assets/12.jpeg"
 import p3 from "@assets/slider/p3.jpeg"
 import p4 from "@assets/slider/p4.jpeg"
+import belonq from '@assets/Belonq.png'
+import belonqMobile from '@assets/BelonqMobile.jpeg'
 import { useTranslation } from "react-i18next";
 
 import { IoLocationOutline, IoCalendarClear } from "react-icons/io5";
@@ -99,37 +101,37 @@ function SideEvents() {
                             {
                                 events.map((event, key) => {
                                     return (
-                                        <Link href={event.link && event.link != "none" ? event.link : "no-link"} target="_blank" className="w-full h-fit" onClick={(e)=>{if(!event.link || event.link == "none") e.preventDefault()}}>
+                                        <Link href={event.link && event.link != "none" ? event.link : "no-link"} target="_blank" className="w-full h-fit" onClick={(e) => { if (!event.link || event.link == "none") e.preventDefault() }}>
                                             <div key={key} className="w-full xl:w-auto h-fit flex flex-col justify-center items-center lg:flex-row lg:items-center lg:justify-stretch gap-3">
-                                            <div className=" w-full aspect-square lg:w-[12vw] lg:h-[12vw] shadow-sm rounded-md border" style={{
-                                                backgroundImage: `url('${event.image_url}')`,
-                                                backgroundPosition: "center",
-                                                backgroundRepeat: "no-repeat",
-                                                backgroundSize: "100% 100%"
-                                            }}>
+                                                <div className=" w-full aspect-square lg:w-[12vw] lg:h-[12vw] shadow-sm rounded-md border" style={{
+                                                    backgroundImage: `url('${event.image_url}')`,
+                                                    backgroundPosition: "center",
+                                                    backgroundRepeat: "no-repeat",
+                                                    backgroundSize: "100% 100%"
+                                                }}>
 
-                                            </div>
-                                            <div className="w-full lg:w-fit lg:max-w-7/12 flex flex-col lg:items-start lg:justify-between gap-1 lg:max-w-[30vw]">
-                                                <div className="flex w-full lg:w-fit h-fit flex-col items-start justify-center lg:items-start lg:justify-start">
-                                                    <h5 className=" text-black SemiBold text-xl mb-4 lg:mb-2 text-center w-full lg:w-fit lg:text-left">
-                                                        {event.title.slice(0, 20)+"..."}
-                                                    </h5>
-                                                    <h5 className=" text-black w-full Medium text-md lg:text-sm whitespace-nowrap text-left flex flex-row items-center justify-start gap-1">
-                                                        <TbLocationFilled size={16} color="#eddb55" /> {event.date}
-                                                    </h5>
-                                                    <h5 className=" text-black Medium text-md lg:text-sm text-left lg:mb-6 flex flex-row items-center justify-start gap-1">
-                                                        <IoCalendarClear size={16} color="#eddb55" /> {event.address.slice(0, 30) + "..."}
-                                                    </h5>
                                                 </div>
-                                                <div className="flex w-full lg:w-3/2 h-fit flex-col items-start justify-center lg:items-start lg:justify-start gap-1">
+                                                <div className="w-full lg:w-fit lg:max-w-7/12 flex flex-col lg:items-start lg:justify-between gap-1 lg:max-w-[30vw]">
+                                                    <div className="flex w-full lg:w-fit h-fit flex-col items-start justify-center lg:items-start lg:justify-start">
+                                                        <h5 className=" text-black SemiBold text-xl mb-4 lg:mb-2 text-center w-full lg:w-fit lg:text-left">
+                                                            {event.title.slice(0, 20) + "..."}
+                                                        </h5>
+                                                        <h5 className=" text-black w-full Medium text-md lg:text-sm whitespace-nowrap text-left flex flex-row items-center justify-start gap-1">
+                                                            <TbLocationFilled size={16} color="#eddb55" /> {event.date}
+                                                        </h5>
+                                                        <h5 className=" text-black Medium text-md lg:text-sm text-left lg:mb-6 flex flex-row items-center justify-start gap-1">
+                                                            <IoCalendarClear size={16} color="#eddb55" /> {event.address.slice(0, 30) + "..."}
+                                                        </h5>
+                                                    </div>
+                                                    <div className="flex w-full lg:w-3/2 h-fit flex-col items-start justify-center lg:items-start lg:justify-start gap-1">
 
-                                                    <h5 className="  text-gray-800 text-md lg:text-sm text-left h-fit w-full lg:w-9/12 mb-5 lg:mb-2 mt-2 lg:mt-0 ">
-                                                        {event.description.slice(0, 80) + "..."}
-                                                    </h5>
+                                                        <h5 className="  text-gray-800 text-md lg:text-sm text-left h-fit w-full lg:w-9/12 mb-5 lg:mb-2 mt-2 lg:mt-0 ">
+                                                            {event.description.slice(0, 80) + "..."}
+                                                        </h5>
+                                                    </div>
+
                                                 </div>
-
                                             </div>
-                                        </div>
                                         </Link>
                                     )
                                 })
@@ -142,9 +144,31 @@ function SideEvents() {
                         </div>
                     )
                 }
-
-
-
+            </section>
+            <section className="w-full h-fit relative flex flex-col items-center justify-start pt-4 lg:pt-6">
+                <h6 className="lg:w-1/2 w-10/12 mx-auto text-black p-4 bg-white border-4 border-[#eddb55] text-xl xl:text-2xl Medium leading-normal text-center mt-10 mb-10 lg:mb-8">
+                    {
+                        t('belonqTitle')
+                    } ⏳⌛
+                </h6>
+                <Image src={belonqMobile} alt="belonq merchandise napuleth event" width={100} height={80} className="block lg:hidden w-9/12 h-auto rounded-md shadow-2xl shadow-black"></Image>
+                <Image src={belonq} alt="belonq merchandise napuleth event" width={100} height={80} className="hidden lg:block w-7/12 h-auto rounded-md shadow-2xl shadow-black"></Image>
+                <p className="block text-[#2E2E2E] Medium text-2xl lg:text-2xl text-center lg:px-28 leading-normal mt-10 lg:mb-4 lg:mt-14 w-11/12 lg:w-full">
+                    {t('belonqPara')}
+                </p>
+                <p className="block text-[#2E2E2E] Bold text-2xl lg:text-2xl text-center lg:px-28 leading-normal mt-10 lg:mb-4 lg:mt-14 w-11/12 lg:w-full">
+                    Contact:
+                </p>
+                <p className="block text-[#2E2E2E] Medium text-2xl lg:text-2xl text-center lg:px-28 leading-normal mt-10 lg:mb-4 lg:mt-14 w-11/12 lg:w-full">
+                    Tel: <Link href={"tel:+393462146812"}><span className=" underline">+39 346 214 6812</span> </Link> 
+                </p>
+                <p className="block text-[#2E2E2E] Medium text-2xl lg:text-2xl text-center lg:px-28 leading-normal mt-10 lg:mb-4 lg:mt-14 w-11/12 lg:w-full">
+                    Telegram: <Link href={"https://t.me/IDbelonq"}> <span className=" underline">@IDbelonq</span></Link> 
+                </p>
+                <p className="block text-[#2E2E2E] Medium text-2xl lg:text-2xl text-center lg:px-28 leading-normal mt-10 lg:mb-4 lg:mt-14 w-11/12 lg:w-full">
+                    Instagram: <Link href={" https://www.instagram.com/belonqcommunity/?igsh=MWV5aWZtb3ZlN2hxMA%3D%3D"}> <span className=" underline">@belonqcommunity</span> </Link> 
+                </p>
+               
             </section>
             <Footer />
         </main>
