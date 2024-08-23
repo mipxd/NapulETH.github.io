@@ -97,6 +97,20 @@ const Agenda = () => {
     const events = [
         // Starting with Day 1, Stage 1 (Main)
         {
+            id: 544,
+            title: 'Breakfast',
+            subtitle: "",
+            stage: "main",
+            speakers: [],
+            day: 1,
+            start: "09:20",
+            end: "09:40",
+            isWorkshop: false,
+            type: "break",
+            lang: "",
+            topics: ['other']
+        },
+        {
             id: 0,
             title: 'Opening',
             subtitle: "Opening event of the NapulETH",
@@ -347,6 +361,20 @@ const Agenda = () => {
         },
 
         // Day 1, Stage 2
+        {
+            id: 544,
+            title: 'Breakfast',
+            subtitle: "",
+            stage: "stage 2",
+            speakers: [],
+            day: 1,
+            start: "09:20",
+            end: "09:40",
+            isWorkshop: false,
+            type: "break",
+            lang: "",
+            topics: ['other']
+        },
         {
             id: 10,
             title: 'Blockchain e Cybersecurity nella Pubblica Amminsitrazione',
@@ -619,6 +647,20 @@ const Agenda = () => {
 
         // Day 1, Stage 3
         {
+            id: 544,
+            title: 'Breakfast',
+            subtitle: "",
+            stage: "stage 3",
+            speakers: [],
+            day: 1,
+            start: "09:20",
+            end: "09:40",
+            isWorkshop: false,
+            type: "break",
+            lang: "",
+            topics: ['other']
+        },
+        {
             id: 23,
             title: 'Web3 Marketing: Strategies for B2B and B2C in the Decentralized Era',
             subtitle: "",
@@ -760,6 +802,20 @@ const Agenda = () => {
         },
 
         // Day 2, Stage 1 (Main)
+        {
+            id: 544,
+            title: 'Breakfast',
+            subtitle: "",
+            stage: "main",
+            speakers: [],
+            day: 2,
+            start: "09:40",
+            end: "10:00",
+            isWorkshop: false,
+            type: "break",
+            lang: "",
+            topics: ['other']
+        },
         {
             id: 29,
             title: '',
@@ -1001,7 +1057,20 @@ const Agenda = () => {
         },
 
         // Day 2, Stage 2
-
+        {
+            id: 544,
+            title: 'Breakfast',
+            subtitle: "",
+            stage: "stage 2",
+            speakers: [],
+            day: 2,
+            start: "09:20",
+            end: "09:40",
+            isWorkshop: false,
+            type: "break",
+            lang: "",
+            topics: ['other']
+        },
         {
             id: 39,
             title: 'How to Use Blockchain Tech for a Supply Chain System',
@@ -1243,7 +1312,20 @@ const Agenda = () => {
         },
 
         // Day 2, Stage 3
-
+        {
+            id: 544,
+            title: 'Breakfast',
+            subtitle: "",
+            stage: "stage 3",
+            speakers: [],
+            day: 2,
+            start: "09:20",
+            end: "09:40",
+            isWorkshop: false,
+            type: "break",
+            lang: "",
+            topics: ['other']
+        },
         {
             id: 50,
             title: 'Empowering Devs: A Practical Guide to User-Centric UI/UX Design in Web3',
@@ -1356,7 +1438,20 @@ const Agenda = () => {
         },
 
         // Day 3 , Stage 1 (Main)
-
+        {
+            id: 544,
+            title: 'Breakfast',
+            subtitle: "",
+            stage: "main",
+            speakers: [],
+            day: 3,
+            start: "09:40",
+            end: "10:00",
+            isWorkshop: false,
+            type: "break",
+            lang: "",
+            topics: ['other']
+        },
         {
             id: 55,
             title: 'Post-Quantum World: Are We Ready?',
@@ -1593,7 +1688,20 @@ const Agenda = () => {
         },
 
         // Day 3 , Stage 2
-
+        {
+            id: 544,
+            title: 'Breakfast',
+            subtitle: "",
+            stage: "stage 2",
+            speakers: [],
+            day: 3,
+            start: "09:20",
+            end: "09:40",
+            isWorkshop: false,
+            type: "break",
+            lang: "",
+            topics: ['other']
+        },
         {
             id: 66,
             title: 'Investigating the Prospects of Web3, NFTs, and the Metaverse',
@@ -1828,6 +1936,20 @@ const Agenda = () => {
 
         // Day 3, Stage 3
         {
+            id: 544,
+            title: 'Breakfast',
+            subtitle: "",
+            stage: "stage 3",
+            speakers: [],
+            day: 3,
+            start: "09:20",
+            end: "09:40",
+            isWorkshop: false,
+            type: "break",
+            lang: "",
+            topics: ['other']
+        },
+        {
             id: 77,
             title: 'Privacy in Machine Learning with zkML',
             isWorkshop: false,
@@ -1969,7 +2091,7 @@ const Agenda = () => {
         setTypeFilter([]);
         setLanguageFilter([]);
     }
-    
+
     useEffect(() => {
         console.log(typeFilter);
         console.log(filteredEvents);
@@ -2099,9 +2221,9 @@ const Agenda = () => {
                                             ) : ""
                                         }
                                         {
-                                            event.type == "break" ? (
-                                                <p className="text-xl text-white Medium my-2 w-full text-center">🍝🍕&nbsp;{event.title} &nbsp;🍕🍝</p>
-                                            ) : ("")
+                                            event.type == "break" && event.title == "Breakfast" ? (
+                                                <p className="text-xl text-white Medium my-2 w-full text-center">☕🥐&nbsp;{event.title} &nbsp;🥐☕</p>
+                                            ) : event.type == "break" && event.title != "Breakfast" ? (<p className="text-xl text-white Medium my-2 w-full text-center">🍝🍕&nbsp;{event.title} &nbsp;🍕🍝</p>) : ("")
                                         }
                                         {
                                             event.type != "break" ? (
@@ -2140,6 +2262,19 @@ const Agenda = () => {
                                                 </div>
                                             ) : ("")
                                         }
+
+                                        {
+                                            event.topics.length != 0 && event.type != "break" ? (
+                                                <>
+                                                    <div className="w-full h-[0.5px] bg-black/40 mx-auto mt-6 mb-4"></div>
+                                                    <p className="text-md text-gray-700 Bold mb-2">
+                                                        Topics: {
+                                                            event.topics.map(string => `#${string.toUpperCase()}`).join(', ')
+                                                        }
+                                                    </p>
+                                                </>
+                                            ) : ("")
+                                        }
                                     </div>
                                 </div>
                             )
@@ -2155,7 +2290,7 @@ const Agenda = () => {
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
                                     <div className={`w-full ${event.type == "break" ? " bg-[#F18681] " : "bg-white"} bg-white rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4`}>
                                         <div className="w-full h-fit flex flex-row items-center justify-start gap-2 mb-3">
-                                        <p className={`text-sm ${event.type == "break" ? " text-white text-center w-full" : "text-black text-left"} Medium `}>
+                                            <p className={`text-sm ${event.type == "break" ? " text-white text-center w-full" : "text-black text-left"} Medium `}>
                                                 {event.start + " - " + event.end}
                                             </p>
                                             {
@@ -2222,6 +2357,18 @@ const Agenda = () => {
                                                         })
                                                     }
                                                 </div>
+                                            ) : ("")
+                                        }
+                                        {
+                                            event.topics.length != 0 && event.type != "break" ? (
+                                                <>
+                                                    <div className="w-full h-[0.5px] bg-black/40 mx-auto mt-6 mb-4"></div>
+                                                    <p className="text-md text-gray-700 Bold mb-2">
+                                                        Topics: {
+                                                            event.topics.map(string => `#${string.toUpperCase()}`).join(', ')
+                                                        }
+                                                    </p>
+                                                </>
                                             ) : ("")
                                         }
                                     </div>
@@ -2240,7 +2387,7 @@ const Agenda = () => {
                                 <div key={key} className="w-full h-fit flex flex-row items-start justify-start gap-2">
                                     <div className={`w-full ${event.type == "break" ? " bg-[#F18681] " : "bg-white"} bg-white rounded-md shadow-sm flex flex-col items-start justify-start py-3 px-4`}>
                                         <div className="w-full h-fit flex flex-row items-center justify-start gap-2 mb-3">
-                                        <p className={`text-sm ${event.type == "break" ? " text-white text-center w-full" : "text-black text-left"} Medium `}>
+                                            <p className={`text-sm ${event.type == "break" ? " text-white text-center w-full" : "text-black text-left"} Medium `}>
                                                 {event.start + " - " + event.end}
                                             </p>
                                             {
@@ -2308,6 +2455,18 @@ const Agenda = () => {
                                                         })
                                                     }
                                                 </div>
+                                            ) : ("")
+                                        }
+                                        {
+                                            event.topics.length != 0 && event.type != "break" ? (
+                                                <>
+                                                    <div className="w-full h-[0.5px] bg-black/40 mx-auto mt-6 mb-4"></div>
+                                                    <p className="text-md text-gray-700 Bold mb-2">
+                                                        Topics: {
+                                                            event.topics.map(string => `#${string.toUpperCase()}`).join(', ')
+                                                        }
+                                                    </p>
+                                                </>
                                             ) : ("")
                                         }
                                     </div>
