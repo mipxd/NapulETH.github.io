@@ -91,7 +91,7 @@ function Sponsors() {
                 </div>
             </div>
             <div className='w-full h-fit block lg:hidden'>
-                <Carousel className="w-full h-fit block lg:hidden" showDots={false} renderDotsOutside renderButtonGroupOutside swipeable={false} autoPlay={false} arrows={false} infinite responsive={responsive}>
+                <Carousel className="w-full h-fit block lg:hidden" showDots={false} renderDotsOutside renderButtonGroupOutside swipeable={false} autoPlay={false} arrows={false} responsive={responsive}>
                     <Link href={"https://www.johnlilic.info/"} target="_blank" className="w-full h-fit">
                         <div className="w-full h-fit flex flex-row items-center justify-center">
                             <div className="w-full flex flex-col flex-grow items-center justify-center">
