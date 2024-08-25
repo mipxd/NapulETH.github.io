@@ -95,8 +95,8 @@ function Sponsors() {
                     <Link href={"https://www.johnlilic.info/"} target="_blank" className="w-full h-fit">
                         <div className="w-full h-fit flex flex-row items-center justify-center">
                             <div className="w-full flex flex-col flex-grow items-center justify-center">
-                                <div className="w-8/12 aspect-square bg-cover bg-top bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
-                                    backgroundImage: `url('${lilic.src}')`
+                                <div className="w-8/12 aspect-square bg-cover bg-top bg-no-repeat mb-2" style={{
+                                    backgroundImage: `url('${lilicCircle.src}')`
                                 }}></div>
                                 <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
                                     <h5 className=" text-black w-full SemiBold text-2xl text-center mb-2">
