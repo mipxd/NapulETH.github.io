@@ -2255,7 +2255,7 @@ const Agenda = () => {
                                                     {
                                                         event.speakers.map((speaker, speakerKey) => {
                                                             return (
-                                                                <div key={speakerKey} className={`w-10 aspect-square rounded-full bg-white bg-center bg-cover bg-no-repeat shadow-lg `} style={{
+                                                                <div key={speakerKey} className={`w-12 aspect-square rounded-full bg-white bg-center bg-cover bg-no-repeat shadow-lg `} style={{
                                                                     marginLeft: `${speakerKey / 2 * 15 * -1}px`,
                                                                     backgroundImage: speaker.image != "" ? `url('${speaker.image}')` : "url('https://media.istockphoto.com/id/1332100919/vector/man-icon-black-icon-person-symbol.jpg?s=612x612&w=0&k=20&c=AVVJkvxQQCuBhawHrUhDRTCeNQ3Jgt0K1tXjJsFy1eg=')"
                                                                 }}></div>
@@ -2357,7 +2357,7 @@ const Agenda = () => {
                                                     {
                                                         event.speakers.map((speaker, speakerKey) => {
                                                             return (
-                                                                <div key={speakerKey} className={`w-10 aspect-square rounded-full bg-white bg-center bg-cover bg-no-repeat shadow-lg `} style={{
+                                                                <div key={speakerKey} className={`w-12 aspect-square rounded-full bg-white bg-center bg-cover bg-no-repeat shadow-lg `} style={{
                                                                     marginLeft: `${speakerKey / 2 * 15 * -1}px`,
                                                                     backgroundImage: speaker.image != "" ? `url('${speaker.image}')` : "url('https://media.istockphoto.com/id/1332100919/vector/man-icon-black-icon-person-symbol.jpg?s=612x612&w=0&k=20&c=AVVJkvxQQCuBhawHrUhDRTCeNQ3Jgt0K1tXjJsFy1eg=')"
                                                                 }}></div>
@@ -2460,7 +2460,7 @@ const Agenda = () => {
                                                     {
                                                         event.speakers.map((speaker, speakerKey) => {
                                                             return (
-                                                                <div key={speakerKey} className={`w-10 aspect-square rounded-full bg-white bg-center bg-cover bg-no-repeat shadow-lg `} style={{
+                                                                <div key={speakerKey} className={`w-12 aspect-square rounded-full bg-white bg-center bg-cover bg-no-repeat shadow-lg `} style={{
                                                                     marginLeft: `${speakerKey / 2 * 15 * -1}px`,
                                                                     backgroundImage: speaker.image != "" ? `url('${speaker.image}')` : "url('https://media.istockphoto.com/id/1332100919/vector/man-icon-black-icon-person-symbol.jpg?s=612x612&w=0&k=20&c=AVVJkvxQQCuBhawHrUhDRTCeNQ3Jgt0K1tXjJsFy1eg=')"
                                                                 }}></div>
