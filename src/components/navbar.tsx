@@ -243,10 +243,10 @@ function Navbar() {
                 }}></div>
                 <MobileMenu isOpen={mobileMenuOpen} className="bg-white w-fit h-fit" id="burgerMenu">
                     <div className="w-full h-full flex flex-col items-center justify-start gap-4">
-                        <div className="pt-6 w-full px-4 flex flex-row items-center justify-end">
+                        <div className="pt-4 w-full px-4 flex flex-row items-center justify-end">
                             <IoCloseSharp color="#000000" size={35} onClick={() => { setMobileMenuOpen(false) }}></IoCloseSharp>
                         </div>
-                        <div className="w-fit h-fit flex flex-col items-center justify-start gap-6">
+                        <div className="w-fit h-fit flex flex-col items-center justify-start gap-5">
                             <Link href={'https://napul.eth.limo/'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     {t('home')}
