@@ -1095,14 +1095,14 @@ const Agenda = () => {
         },
         {
             id: 40,
-            title: 'On-chain Finance: One Block at a Time',
-            subtitle: "",
             isWorkshop: false,
+            title: ' Tokenization Unfolding: the Merge of TradFi and DeFi',
+            subtitle: "",
             stage: "stage 2",
             speakers: [
                 {
-                    name: "Lorenzo Rigatti",
-                    image: s13.src
+                    name: "Pietro Rossetto",
+                    image: s17.src
                 }
             ],
             day: 2,
@@ -1145,14 +1145,14 @@ const Agenda = () => {
         },
         {
             id: 42,
-            isWorkshop: false,
-            title: ' Tokenization Unfolding: the Merge of TradFi and DeFi',
+            title: 'On-chain Finance: One Block at a Time',
             subtitle: "",
+            isWorkshop: false,
             stage: "stage 2",
             speakers: [
                 {
-                    name: "Pietro Rossetto",
-                    image: s17.src
+                    name: "Lorenzo Rigatti",
+                    image: s13.src
                 }
             ],
             day: 2,
@@ -2140,7 +2140,7 @@ const Agenda = () => {
                                 <button className={`py-1 px-3 rounded-full border border-black ${languageFilter.includes('en') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleLang('en'); }}>English</button>
                             </div>
                             <p className="text-lg text-black Medium mb-2">Topics:</p>
-                            <div className="w-full hèfit flex flex-row items-center justify-start flex-wrap gap-2">
+                            <div className="w-full h-fit grid grid-cols-3 lg:grid-cols-8 grid-rows-8 lg:grid-rows-3 gap-2">
                                 <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('ai') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('ai'); }}>AI</button>
                                 <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('art') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('art'); }}>Art</button>
                                 <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('auditing') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('auditing'); }}>Auditing</button>
@@ -2321,7 +2321,12 @@ const Agenda = () => {
                                             ) : ""
                                         }
                                         {
-                                            event.type == "break" ? (
+                                            event.type == "break" && event.title == "Breakfast" ? (
+                                                <p className="text-xl text-white Medium my-2 w-full text-center">☕🥐&nbsp;{event.title} &nbsp;🥐☕</p>
+                                            ) : event.type == "break" && event.title != "Breakfast" ? (<p className="text-xl text-white Medium my-2 w-full text-center">🍝🍕&nbsp;{event.title} &nbsp;🍕🍝</p>) : ("")
+                                        }
+                                        {
+                                            event.type == "break" && event.title != "Breakfast" ? (
                                                 <p className="text-xl text-white Medium my-2 w-full text-center">🍝🍕&nbsp;{event.title} &nbsp;🍕🍝</p>
                                             ) : ("")
                                         }
@@ -2418,7 +2423,12 @@ const Agenda = () => {
                                             ) : ""
                                         }
                                         {
-                                            event.type == "break" ? (
+                                            event.type == "break" && event.title == "Breakfast" ? (
+                                                <p className="text-xl text-white Medium my-2 w-full text-center">☕🥐&nbsp;{event.title} &nbsp;🥐☕</p>
+                                            ) : event.type == "break" && event.title != "Breakfast" ? (<p className="text-xl text-white Medium my-2 w-full text-center">🍝🍕&nbsp;{event.title} &nbsp;🍕🍝</p>) : ("")
+                                        }
+                                        {
+                                            event.type == "break" && event.title != "Breakfast" ? (
                                                 <p className="text-xl text-white Medium my-2 w-full text-center">🍝🍕&nbsp;{event.title} &nbsp;🍕🍝</p>
                                             ) : ("")
                                         }
