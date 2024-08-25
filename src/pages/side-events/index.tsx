@@ -113,8 +113,14 @@ function SideEvents() {
                                                 </div>
                                                 <div className="w-full lg:w-fit lg:max-w-7/12 flex flex-col lg:items-start lg:justify-between gap-1 lg:max-w-[30vw]">
                                                     <div className="flex w-full lg:w-fit h-fit flex-col items-start justify-center lg:items-start lg:justify-start">
-                                                        <h5 className=" text-black SemiBold text-xl mb-4 lg:mb-2 text-center w-full lg:w-fit lg:text-left">
-                                                            {event.title.slice(0, 20) + "..."}
+                                                        <h5 className=" text-black SemiBold text-lg mb-4 lg:mb-2 text-center w-full lg:w-fit lg:text-left">
+                                                            
+                                                            <span className="lg:hidden block">
+                                                                {event.title}
+                                                            </span>
+                                                            <span className="hidden lg:block">
+                                                            {event.title.slice(0, 60) + "..."}
+                                                            </span>
                                                         </h5>
                                                         <h5 className=" text-black w-full Medium text-md lg:text-sm whitespace-nowrap text-left flex flex-row items-center justify-start gap-1">
                                                             <TbLocationFilled size={16} color="#eddb55" /> {event.date}
@@ -163,13 +169,13 @@ function SideEvents() {
                 <p className="block text-[#2E2E2E] Bold text-2xl lg:text-2xl text-center lg:px-28 leading-normal mt-10 lg:mb-4 lg:mt-14 w-11/12 lg:w-full">
                     Contact:
                 </p>
-                <p className="block text-[#2E2E2E] Medium text-2xl lg:text-2xl text-center lg:px-28 leading-normal mt-10 lg:mb-4 lg:mt-14 w-11/12 lg:w-full">
+                <p className="block text-[#2E2E2E] Medium text-xl lg:text-2xl text-center lg:px-28 leading-normal mt-10 w-11/12 lg:w-full">
                     Tel: <Link href={"tel:+393462146812"} target="_blank"><span className=" underline">+39 346 214 6812</span> </Link>
                 </p>
-                <p className="block text-[#2E2E2E] Medium text-2xl lg:text-2xl text-center lg:px-28 leading-normal mt-10 lg:mb-4 lg:mt-14 w-11/12 lg:w-full">
+                <p className="block text-[#2E2E2E] Medium text-xl lg:text-2xl text-center lg:px-28 leading-normal mt-4 w-11/12 lg:w-full">
                     Telegram: <Link href={"https://t.me/IDbelonq"} target="_blank"> <span className=" underline">@IDbelonq</span></Link>
                 </p>
-                <p className="block text-[#2E2E2E] Medium text-2xl lg:text-2xl text-center lg:px-28 leading-normal mt-10 lg:mb-4 lg:mt-14 w-11/12 lg:w-full">
+                <p className="block text-[#2E2E2E] Medium text-xl lg:text-2xl text-center lg:px-28 leading-normal mt-4 w-11/12 lg:w-full">
                     Instagram: <Link href={"https://www.instagram.com/belonqcommunity"} target="_blank"> <span className=" underline">@belonqcommunity</span> </Link>
                 </p>
 
