@@ -355,7 +355,7 @@ function Sponsors() {
                                 <Link href={'https://wovlabs.com/'} target="_blank" className=" w-full h-fit">
                                     <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                        <Image className=" w-auto h-20" alt="degate" src={wovlabs}></Image>
+                                        <Image className=" w-auto scale-125 h-20" alt="degate" src={wovlabs}></Image>
                                     </div>
                                 </Link>
 
@@ -450,7 +450,7 @@ function Sponsors() {
                                 <Link href={'https://www.chinlabo.com/'} target="_blank" className="w-full h-full">
                                     <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                        <Image className="w-auto h-20 scale-[2] rounded-full" alt="degate" src={chainLabo}></Image>
+                                        <Image className="w-auto h-20 scale-[6] rounded-full" alt="degate" src={chainLabo}></Image>
                                     </div>
                                 </Link>
 
@@ -463,7 +463,7 @@ function Sponsors() {
                                 <Link href={'https://www.lido.fi'} target="_blank" className="w-full h-full">
                                     <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                        <Image className="w-auto h-20 scale-[2] rounded-full" alt="degate" src={lido}></Image>
+                                        <Image className="w-auto h-20" alt="degate" src={lido}></Image>
                                     </div>
                                 </Link>
 
@@ -476,7 +476,7 @@ function Sponsors() {
                                 <Link href={'https://www.sella.it/banca-on-line'} target="_blank" className="w-full h-full">
                                     <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                        <Image className="w-auto h-20 scale-[2] rounded-full" alt="degate" src={sella}></Image>
+                                        <Image className="w-auto scale-90 h-20" alt="degate" src={sella}></Image>
                                     </div>
                                 </Link>
 
@@ -489,7 +489,7 @@ function Sponsors() {
                                 <Link href={'https://www.caffebarbera.com/en/?utm_source=google&utm_medium=cpc&utm_campaign=brand_dubai&gad_source=1&gclid=EAIaIQobChMIhJHBvJujhQMV8UZBAh15BQ6QEAAYASAAEgLkgfD_BwE'} target="_blank" className="w-full h-full">
                                     <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                        <Image className="w-auto h-20 scale-[2] rounded-full" alt="degate" src={gcm}></Image>
+                                        <Image className="w-auto h-20" alt="degate" src={gcm}></Image>
                                     </div>
                                 </Link>
 
@@ -502,7 +502,7 @@ function Sponsors() {
                                 <Link href={'https://theiainnovations.com/'} target="_blank" className="w-full h-full">
                                     <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                        <Image className="w-auto h-20 scale-[2] rounded-full" alt="degate" src={theia}></Image>
+                                        <Image className="w-auto h-20" alt="degate" src={theia}></Image>
                                     </div>
                                 </Link>
 
@@ -515,7 +515,7 @@ function Sponsors() {
                                 <Link href={'https://docs.xga.com/'} target="_blank" className="w-full h-full">
                                     <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                        <Image className="w-auto h-20 scale-[2] rounded-full" alt="degate" src={xga}></Image>
+                                        <Image className="w-auto scale-125 h-20" alt="degate" src={xga}></Image>
                                     </div>
                                 </Link>
 
