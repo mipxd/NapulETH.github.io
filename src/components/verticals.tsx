@@ -160,7 +160,11 @@ function Verticals() {
 
             </Carousel>
             </div>
-            
+            <h6 className=" xl:w-1/2 w-8/12 text-black p-4 bg-white border-4 border-[#eddb55] text-xl xl:text-2xl Medium leading-normal text-center my-6">
+                {
+                    t('manyMore')
+                }
+            </h6>
             
 
         </section>

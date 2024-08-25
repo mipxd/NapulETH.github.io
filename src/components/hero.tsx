@@ -51,12 +51,12 @@ function Hero() {
                 {t('hero3')}
             </p>
             <div className="w-fit h-fit flex flex-col xl:flex-row items-center justify-center gap-4 lg:gap-3 mt-6 lg:mt-10">
-                <Link href={'/join'} className=" relative z-50 p-0 w-fit h-fit">
+                <Link href={'https://napul.eth.limo/agenda.html'} className=" relative z-50 p-0 w-fit h-fit">
                     <div className="min-w-[85vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-[19vw] h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#CA75AB] border-4 border-[#eddb55] ">
 
 
                         <h5 className=" text-black Medium text-xl">
-                            {t('joinus')}
+                            Agenda
                         </h5>
                     </div>
                 </Link>
@@ -65,7 +65,7 @@ function Hero() {
 
 
                         <h5 className=" text-black Medium text-xl whitespace-nowrap">
-                        {t('gettickets')}
+                        {t('buyTicket')} - 25€
                         </h5>
                     </div>
                 </Link>

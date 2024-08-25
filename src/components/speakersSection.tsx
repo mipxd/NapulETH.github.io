@@ -32,19 +32,16 @@ import s5 from "@assets/VincenzoRana.png"
 import s6 from "@assets/SaraNoggler.jpg.jpeg"
 import s7 from "@assets/AlessandraBrandi.jpg"
 import s8 from "@assets/AndreaPaulillo.jpg"
-import s9 from '@assets/JenAlbert.png'
 import s10 from '@assets/MarcoTullioGiordano.jpeg'
 import s11 from "@assets/ExWhyZee.jpg"
 import s12 from "@assets/DavideZanichelli.png"
 import s13 from "@assets/LorenzoRigatti.jpg"
-import s14 from '@assets/IreneGuarnieri.jpg.jpeg'
 import s15 from '@assets/MarcoCastignoli.jpg'
 import s16 from '@assets/MarkRichardson.jpg'
 import s17 from '@assets/PietroRossetto.jpg.jpeg'
 import s18 from '@assets/StefanoDeAngelis.jpg.jpeg'
 import s19 from '@assets/HemillyRodrigues.jpg.jpeg'
 import s20 from '@assets/Alena.jpg'
-import s21 from '@assets/GabrieleAlagna.jpg'
 import s22 from '@assets/LucaBoiardi.jpg'
 import s23 from '@assets/GianfrancoLeone.jpg.jpeg'
 import s24 from '@assets/BrunoMiranda.jpg'
@@ -150,12 +147,6 @@ function Speakers() {
             aff: "eLoop"
         },
         {
-            link: "https://twitter.com/Here2DeFi",
-            img: s9.src,
-            name: "Jen Albert",
-            aff: "Bancor"
-        },
-        {
             link: "https://twitter.com/emmetiggi",
             img: s10.src,
             name: "Marco T. Giordano",
@@ -166,12 +157,6 @@ function Speakers() {
             img: s11.src,
             name: "Sundaram Jha",
             aff: "Eden Protocol"
-        },
-        {
-            link: "https://www.linkedin.com/in/davide-zanichelli/",
-            img: s12.src,
-            name: "Davide Zanichelli",
-            aff: ""
         },
         {
             link: "https://www.linkedin.com/in/lorenzo-rigatti-1a317994/",
@@ -208,12 +193,6 @@ function Speakers() {
             img: s19.src,
             name: "Hemilly Rodrigues",
             aff: "R&CO"
-        },
-        {
-            link: "https://twitter.com/alenka_w3",
-            img: s20.src,
-            name: "Alena",
-            aff: "TON Foundation"
         },
         {
             link: "https://thecryptogateway.it/",
@@ -349,12 +328,6 @@ function Speakers() {
             aff: "SpaghettETH"
         },
         {
-            link: "https://x.com/CryptoTraveler1",
-            img: s44.src,
-            name: "Frisco d'Anconia",
-            aff: "Africa Web3 Institute"
-        },
-        {
             link: "http://www.linkedin.com/in/vladyslav-dudchenko-b0b729227",
             img: s45.src,
             name: "Vladyslav Dudchenko",
@@ -365,12 +338,6 @@ function Speakers() {
             img: s46.src,
             name: "Qi Zhou",
             aff: "EthStorage"
-        },
-        {
-            link: "https://x.com/benedettobio",
-            img: s47.src,
-            name: "Benedetto Biondi",
-            aff: "folks.finance"
         },
         {
             link: "https://www.linkedin.com/in/silvio-ventre/",

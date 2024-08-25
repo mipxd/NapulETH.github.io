@@ -90,7 +90,10 @@ import s77 from '@assets/MortezaShahini.jpg.jpeg'
 import s78 from '@assets/GavinThomas.png'
 import s79 from '@assets/DanielePalombi.jpg'
 import s80 from '@assets/FilippoMoraschi.jpg'
-
+import s81 from '@assets/MTG Marco Tulio Giordano.png'
+import s82 from '@assets/Chef Pino.jpg'
+import s83 from '@assets/Ian Smith.jpg'
+import s84 from '@assets/Suning Yao.jpg'
 
 const Agenda = () => {
 
@@ -348,7 +351,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Suning Yao",
-                    image: ""
+                    image: s84.src
                 }
             ],
             day: 1,
@@ -410,7 +413,7 @@ const Agenda = () => {
                 },
                 {
                     name: "Marco Tullio Giordano",
-                    image: s10.src
+                    image: s81.src
                 }
             ],
             day: 1,
@@ -1220,7 +1223,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Giovanni Piccirillo",
-                    image: ""
+                    image: "https://moodglobalservices.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FPolygon9.2a45b724.png&w=256&q=75"
                 }
             ],
             day: 2,
@@ -1300,7 +1303,7 @@ const Agenda = () => {
                 },
                 {
                     name: "Marco Tullio Giordano",
-                    image: s10.src
+                    image: s81.src
                 }
             ],
             day: 2,
@@ -1503,7 +1506,7 @@ const Agenda = () => {
                 },
                 {
                     name: "Ian Smith",
-                    image: ""
+                    image: s83.src
                 },
                 {
                     name: "David Carvalho",
@@ -1545,7 +1548,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Ian Smith",
-                    image: ""
+                    image: s83.src
                 }
             ],
             day: 3,
@@ -1578,7 +1581,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Pino",
-                    image: ""
+                    image: s82.src
                 }
             ],
             day: 3,

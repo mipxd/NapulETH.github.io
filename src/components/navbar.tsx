@@ -78,9 +78,9 @@ function Navbar() {
                             {t('home')}
                         </h5>
                     </Link>
-                    <Link href={'https://napul.eth.limo/tickets.html'} className=" relative z-50 p-0 w-fit h-fit">
+                    <Link href={'https://napul.eth.limo/agenda.html'} className=" relative z-50 p-0 w-fit h-fit">
                         <h5 className=" text-black text-xl whitespace-nowrap Medium">
-                            {t('tickets')}
+                            {t('agenda')}
                         </h5>
                     </Link>
                     <Menu
@@ -148,15 +148,6 @@ function Navbar() {
                         className=' w-fit'
                         transition
                     >
-                        <MenuItem>
-                            <Link href="https://napul.eth.limo/agenda.html" className="w-fit h-fit flex flex-row items-center justify-start">
-                                <div className="w-fit min-w-[10vw] flex flex-row items-center justify-start px-2 py-1">
-                                    <h5 className=" text-black text-xl whitespace-nowrap Medium">
-                                        {t("agenda")}
-                                    </h5>
-                                </div>
-                            </Link>
-                        </MenuItem>
                         <div className="my-1 h-[0.5px] w-10/12 bg-black/80 mx-auto "></div>
                         <MenuItem>
                             <Link href="/meetups" className="w-fit h-fit flex flex-row items-center justify-start">
@@ -240,10 +231,10 @@ function Navbar() {
 
 
                 </Menu>
-                <Link href={'https://napul.eth.limo/join.html'} className=" hidden lg:block relative z-50 p-0 w-fit h-fit">
+                <Link href={'https://napuleth.mego.tickets/'} className=" hidden lg:block relative z-50 p-0 w-fit h-fit">
                     <div className="w-fit h-fit flex flex-row items-center justify-center py-4 px-12 bg-[#CA75AB] border-2 border-[#eddb55]">
                         <h5 className=" text-black Medium text-xl whitespace-nowrap">
-                            {t('joinus')}
+                            {t('buyTicket')} - 25€
                         </h5>
                     </div>
                 </Link>
@@ -262,9 +253,9 @@ function Navbar() {
                                 </h5>
                             </Link>
                             <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
-                            <Link href={'https://napul.eth.limo/tickets.html'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
-                                <h5 className="text-center text-black text-3xl Medium">
-                                    {t('tickets')}
+                            <Link href={'https://napul.eth.limo/agenda.html'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
+                                <h5 className=" text-black text-3xl Medium text-center">
+                                    {t('agenda')}
                                 </h5>
                             </Link>
                             <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
@@ -278,13 +269,7 @@ function Navbar() {
                                 <h5 className=" text-black text-3xl Medium text-center">
                                     {t('speakers')}
                                 </h5>
-                            </Link>
-                            <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
-                            <Link href={'https://napul.eth.limo/agenda.html'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
-                                <h5 className=" text-black text-3xl Medium text-center">
-                                    {t('agenda')}
-                                </h5>
-                            </Link>
+                            </Link>                            
                             <div className="w-7/12 mx-auto bg-black h-[0.5px] "></div>
                             <Link href={'https://napul.eth.limo/meetups.html'} className=" relative z-50 p-0 w-fit h-fit" onClick={() => { setMobileMenuOpen(false) }}>
                                 <h5 className=" text-black text-3xl Medium text-center">

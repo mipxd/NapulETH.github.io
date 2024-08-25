@@ -138,12 +138,6 @@ export default function Speakers() {
             aff: "eLoop"
         },
         {
-            link: "https://twitter.com/Here2DeFi",
-            img: s9.src,
-            name: "Jen Albert",
-            aff: "Bancor"
-        },
-        {
             link: "https://twitter.com/emmetiggi",
             img: s10.src,
             name: "Marco T. Giordano",
@@ -154,12 +148,6 @@ export default function Speakers() {
             img: s11.src,
             name: "Sundaram Jha",
             aff: "Eden Protocol"
-        },
-        {
-            link: "https://www.linkedin.com/in/davide-zanichelli/",
-            img: s12.src,
-            name: "Davide Zanichelli",
-            aff: ""
         },
         {
             link: "https://www.linkedin.com/in/lorenzo-rigatti-1a317994/",
@@ -196,12 +184,6 @@ export default function Speakers() {
             img: s19.src,
             name: "Hemilly Rodrigues",
             aff: "R&CO"
-        },
-        {
-            link: "https://twitter.com/alenka_w3",
-            img: s20.src,
-            name: "Alena",
-            aff: "TON Foundation"
         },
         {
             link: "https://thecryptogateway.it/",
@@ -337,12 +319,6 @@ export default function Speakers() {
             aff: "SpaghettETH"
         },
         {
-            link: "https://x.com/CryptoTraveler1",
-            img: s44.src,
-            name: "Frisco d'Anconia",
-            aff: "Africa Web3 Institute"
-        },
-        {
             link: "http://www.linkedin.com/in/vladyslav-dudchenko-b0b729227",
             img: s45.src,
             name: "Vladyslav Dudchenko",
@@ -353,12 +329,6 @@ export default function Speakers() {
             img: s46.src,
             name: "Qi Zhou",
             aff: "EthStorage"
-        },
-        {
-            link: "https://x.com/benedettobio",
-            img: s47.src,
-            name: "Benedetto Biondi",
-            aff: "folks.finance"
         },
         {
             link: "https://www.linkedin.com/in/silvio-ventre/",
@@ -483,6 +453,7 @@ export default function Speakers() {
         },
 
     ]
+
 
     const speakers = [...Rawspeakers].sort((a, b) => {
         const nameA = a.name.toUpperCase(); // ignore upper and lowercase

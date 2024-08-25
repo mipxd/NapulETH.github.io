@@ -16,7 +16,7 @@ import mego from '@assets/mego.svg'
 import mood from '@assets/mood.svg'
 import gate from '@assets/gate.svg'
 import canal from '@assets/LOGO CRYTOCANAL- horizontal (new - black).svg'
-import nexlabs from '@assets/nexlabs.webp'
+import nexlabs from '@assets/NEX logo.svg'
 import hg from '@assets/hg.png'
 import evLabs from '@assets/ev labs.webp'
 import niftyz from '@/assets/Niftyz.webp'
@@ -38,6 +38,7 @@ import giffoni from '@assets/giffoni.svg'
 import fana from '@assets/Fana.ai black.svg';
 import thrill from '@assets/THRILLD LABS (black text).svg'
 import spark from '@assets/logo-theSpark-01 (1).svg'
+import beincrypto from '@assets/beincrypto.svg'
 
 import { useTranslation } from "react-i18next";
 
@@ -86,6 +87,14 @@ function Partners() {
                         backgroundRepeat: "no-repeat"
                     }}></div>
                 </Link>
+                <Link href="https://it.beincrypto.com/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${beincrypto.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "55% 100%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
                 <Link href="https://wehub.it/" target="_blank" className="p-0 w-full h-fit flex">
                     <div className="w-full h-28" style={{
                         backgroundImage: `url('${wehub.src}')`,
@@ -122,7 +131,7 @@ function Partners() {
                     <div className="w-full h-28" style={{
                         backgroundImage: `url('${nexlabs.src}')`,
                         backgroundPosition: "center",
-                        backgroundSize: "33% 65%",
+                        backgroundSize: "65% 90%",
                         backgroundRepeat: "no-repeat"
                     }}></div>
                 </Link>
@@ -131,22 +140,6 @@ function Partners() {
                         backgroundImage: `url('${hg.src}')`,
                         backgroundPosition: "center",
                         backgroundSize: "50% 55%",
-                        backgroundRepeat: "no-repeat"
-                    }}></div>
-                </Link>
-                <Link href="https://www.3vlabs.io/" target="_blank" className="p-0 w-full h-fit flex">
-                    <div className="w-full h-28" style={{
-                        backgroundImage: `url('${evLabs.src}')`,
-                        backgroundPosition: "center",
-                        backgroundSize: "65% 80%",
-                        backgroundRepeat: "no-repeat"
-                    }}></div>
-                </Link>
-                <Link href="https://www.niftyz.io/" target="_blank" className="p-0 w-full h-fit flex">
-                    <div className="w-full h-28" style={{
-                        backgroundImage: `url('${niftyz.src}')`,
-                        backgroundPosition: "center",
-                        backgroundSize: "65% 80%",
                         backgroundRepeat: "no-repeat"
                     }}></div>
                 </Link>
@@ -209,14 +202,6 @@ function Partners() {
                 <Link href="https://www.sakebito.xyz/" target="_blank" className="p-0 w-full h-fit flex">
                     <div className="w-full h-28 invert" style={{
                         backgroundImage: `url('${sakebito.src}')`,
-                        backgroundPosition: "center",
-                        backgroundSize: "65% 80%",
-                        backgroundRepeat: "no-repeat"
-                    }}></div>
-                </Link>
-                <Link href="https://twitter.com/icphub_IT" target="_blank" className="p-0 w-full h-fit flex">
-                    <div className="w-full h-28" style={{
-                        backgroundImage: `url('${CH.src}')`,
                         backgroundPosition: "center",
                         backgroundSize: "65% 80%",
                         backgroundRepeat: "no-repeat"
@@ -304,6 +289,20 @@ function Partners() {
                     <div className="w-full h-fit flex flex-row items-center justify-center">
                         <div className="w-10/12 flex flex-col items-center justify-center">
                             <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://it.beincrypto.com/'} target="_blank" className="p-0 w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 scale-150 h-20 bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${beincrypto.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
                                 <Link href={'https://wehub.it/'} target="_blank" className="w-full h-fit">
                                     <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
@@ -359,8 +358,8 @@ function Partners() {
                             <div className="w-full flex-grow flex flex-col items-center justify-center" >
                                 <Link href={'https://www.nexlabs.io/'} target="_blank" className=" w-full h-fit">
                                     <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-                                        <div className="w-20 aspect-square bg-contain bg-center bg-no-repeat" style={{
-                                            backgroundImage: `url('${nexlabs.src}')`
+                                        <div className="w-40 h-20 aspect-square bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${nexlabs.src}')`,
                                         }}></div>
 
                                     </div>
@@ -376,32 +375,6 @@ function Partners() {
                                     <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
                                         <Image className="w-auto h-20" alt="degate" src={hg}></Image>
-                                    </div>
-                                </Link>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-full h-fit flex flex-row items-center justify-center">
-                        <div className="w-10/12 flex flex-col items-center justify-center">
-                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                <Link href={'https://www.3vlabs.io/'} target="_blank" className=" w-full h-fit">
-                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-
-                                        <Image className=" invert w-auto h-20" alt="degate" src={evLabs}></Image>
-                                    </div>
-                                </Link>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-full h-fit flex flex-row items-center justify-center">
-                        <div className="w-10/12 flex flex-col items-center justify-center">
-                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                <Link href={'https://www.niftyz.io/'} target="_blank" className="w-full h-full">
-                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-
-                                        <Image className="w-auto h-20" alt="degate" src={niftyz}></Image>
                                     </div>
                                 </Link>
 

@@ -32,7 +32,6 @@ export default function HomePage() {
 			</Head>
       <Navbar />
       <Hero />
-      <Pricing />
       <Verticals />
       <Where />
       <SpeakersSection />
