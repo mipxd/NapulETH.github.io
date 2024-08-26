@@ -39,6 +39,7 @@ import fana from '@assets/Fana.ai black.svg';
 import thrill from '@assets/THRILLD LABS (black text).svg'
 import spark from '@assets/logo-theSpark-01 (1).svg'
 import beincrypto from '@assets/beincrypto.svg'
+import belonq from '@assets/Belong community SVG.svg'
 
 import { useTranslation } from "react-i18next";
 
@@ -250,6 +251,14 @@ function Partners() {
                 <Link href="https://www.thesparkhub.it/" target="_blank" className="p-0 w-full h-fit flex">
                     <div className="w-full h-28" style={{
                         backgroundImage: `url('${spark.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "55% 100%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://belonqevent.com/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${belonq.src}')`,
                         backgroundPosition: "center",
                         backgroundSize: "55% 100%",
                         backgroundRepeat: "no-repeat"
@@ -576,6 +585,20 @@ function Partners() {
                                     <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
                                         <div className="w-28 h-20 scale-150 bg-contain bg-center bg-no-repeat" style={{
                                             backgroundImage: `url('${spark.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://belonqevent.com/'} target="_blank" className="p-0 w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-150 bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${belonq.src}')`
                                         }}></div>
                                     </div>
                                 </Link>

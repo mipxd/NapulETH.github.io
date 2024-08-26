@@ -73,21 +73,6 @@ function Sponsors() {
                             backgroundImage: `url('${lilicCircle.src}')`
                         }}></div>
                     </Link>
-                    <div className="w-full flex-grow flex flex-row items-center justify-between py-2 px-4 bg-white border-4 border-[#eddb55]">
-                        <div className="h-fit w-10/12 flex flex-col items-start justify-between">
-                            <h5 className=" text-black SemiBold text-md whitespace-nowrap text-left mb-2">
-                                John Lilic
-                            </h5>
-                            <h5 className=" text-[#EDDB55] Medium text-md">
-                                Seed Investor
-                            </h5>
-                        </div>
-                        <div className="h-full w-2/12 flex flex-col items-end justify-center gap-3">
-                            <Link href={"https://www.johnlilic.info/"} target="_blank"><BsGlobe color="#252525" size={26}></BsGlobe></Link>
-
-                        </div>
-
-                    </div>
                 </div>
             </div>
             <div className='w-full h-fit block lg:hidden'>
@@ -98,14 +83,7 @@ function Sponsors() {
                                 <div className="w-8/12 aspect-square bg-cover bg-top bg-no-repeat mb-2" style={{
                                     backgroundImage: `url('${lilicCircle.src}')`
                                 }}></div>
-                                <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
-                                    <h5 className=" text-black w-full SemiBold text-2xl text-center mb-2">
-                                        John Lilic
-                                    </h5>
-                                    <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
-                                        Seed Investor
-                                    </h5>
-                                </div>
+                                
                             </div>
                         </div>
                     </Link>

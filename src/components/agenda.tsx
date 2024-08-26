@@ -2326,11 +2326,6 @@ const Agenda = () => {
                                             ) : event.type == "break" && event.title != "Breakfast" ? (<p className="text-xl text-white Medium my-2 w-full text-center">🍝🍕&nbsp;{event.title} &nbsp;🍕🍝</p>) : ("")
                                         }
                                         {
-                                            event.type == "break" && event.title != "Breakfast" ? (
-                                                <p className="text-xl text-white Medium my-2 w-full text-center">🍝🍕&nbsp;{event.title} &nbsp;🍕🍝</p>
-                                            ) : ("")
-                                        }
-                                        {
                                             event.type != "break" ? (
                                                 <div className="w-full h-fit flex flex-row items-center justify-start gap-1 mb-12">
                                                     <MdOutlinePlace size={20} color="#252525" />
@@ -2426,11 +2421,6 @@ const Agenda = () => {
                                             event.type == "break" && event.title == "Breakfast" ? (
                                                 <p className="text-xl text-white Medium my-2 w-full text-center">☕🥐&nbsp;{event.title} &nbsp;🥐☕</p>
                                             ) : event.type == "break" && event.title != "Breakfast" ? (<p className="text-xl text-white Medium my-2 w-full text-center">🍝🍕&nbsp;{event.title} &nbsp;🍕🍝</p>) : ("")
-                                        }
-                                        {
-                                            event.type == "break" && event.title != "Breakfast" ? (
-                                                <p className="text-xl text-white Medium my-2 w-full text-center">🍝🍕&nbsp;{event.title} &nbsp;🍕🍝</p>
-                                            ) : ("")
                                         }
                                         {
                                             event.type != "break" ? (
