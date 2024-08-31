@@ -73,7 +73,7 @@ import s61 from '@assets/ValentinaMarzioni.png'
 import s62 from '@assets/QJ.jpeg'
 import s63 from '@assets/PhilippPieper.jpg'
 import s64 from '@assets/LorenzoAmoroso.jpg'
-import s65 from '@assets/Viktor.jpg'
+import s65 from '@assets/Victor Be In crypto.jpg'
 import s66 from '@assets/DavideMilani.jpg'
 import s67 from '@assets/DavidCarvalho.jpg'
 import lilic from '@assets/johnLilic.jpg'
@@ -94,6 +94,11 @@ import s81 from '@assets/MTG Marco Tulio Giordano.png'
 import s82 from '@assets/Chef Pino.jpg'
 import s83 from '@assets/Ian Smith.jpg'
 import s84 from '@assets/Suning Yao.jpg'
+import s85 from '@assets/Napul_ETH_logo.webp'
+import s86 from '@assets/PaoloSchiattarella.jpg'
+import s87 from '@assets/MarioLuigiFiglioli.jpg'
+import s88 from '@assets/MalekAlmsaddi.jpg'
+import s89 from '@assets/StefanoDeMasi.jpg'
 
 const Agenda = () => {
 
@@ -115,17 +120,22 @@ const Agenda = () => {
         },
         {
             id: 0,
-            title: 'Opening',
+            title: 'Opening NapulETH Core Team',
             subtitle: "Opening event of the NapulETH",
             stage: "main",
-            speakers: [],
+            speakers: [
+                {
+                    name: 'NapulETH',
+                    image: 'https://belonqevent.com/wp-content/uploads/2024/07/Logo_NapulETH.svg'
+                }
+            ],
             day: 1,
             start: "10:00",
             end: "10:20",
             isWorkshop: false,
             type: "talk",
             lang: "en",
-            topics: ['other']
+            topics: ['community']
         },
         {
             id: 1,
@@ -144,7 +154,7 @@ const Agenda = () => {
             isWorkshop: false,
             type: "talk",
             lang: "en",
-            topics: ['other']
+            topics: ['community']
         },
         {
             id: 2,
@@ -163,7 +173,7 @@ const Agenda = () => {
             isWorkshop: false,
             type: "talk",
             lang: "en",
-            topics: ['other']
+            topics: ['community', 'socialfi']
         },
         {
             id: 3,
@@ -182,7 +192,7 @@ const Agenda = () => {
             isWorkshop: false,
             type: "talk",
             lang: "en",
-            topics: ['other']
+            topics: ['education']
         },
         {
             id: 4,
@@ -205,7 +215,7 @@ const Agenda = () => {
             isWorkshop: false,
             type: "panel",
             lang: "en",
-            topics: ['other']
+            topics: ['community']
         },
         {
             id: 544,
@@ -238,7 +248,7 @@ const Agenda = () => {
             isWorkshop: false,
             type: "talk",
             lang: "en",
-            topics: ["marketing", "it"]
+            topics: ["marketing", "it", "community"]
         },
         {
             id: 6,
@@ -257,7 +267,7 @@ const Agenda = () => {
             isWorkshop: false,
             type: "talk",
             lang: "en",
-            topics: ["community"]
+            topics: ["community", "socialfi"]
         },
         {
             id: 86,
@@ -332,7 +342,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Paolo Schiattarella",
-                    image: ""
+                    image: s86.src
                 }
             ],
             day: 1,
@@ -360,7 +370,7 @@ const Agenda = () => {
             isWorkshop: false,
             type: "talk",
             lang: "en",
-            topics: ['other']
+            topics: ['digital identity']
         },
 
         // Day 1, Stage 2
@@ -645,7 +655,7 @@ const Agenda = () => {
             isWorkshop: false,
             type: "talk",
             lang: "en",
-            topics: ['other']
+            topics: ['security', 'auditing']
         },
 
         // Day 1, Stage 3
@@ -707,7 +717,7 @@ const Agenda = () => {
             end: "11:40",
             type: "talk",
             lang: "en",
-            topics: ["marketing"]
+            topics: ["marketing", "education"]
         },
         {
             id: 25,
@@ -759,7 +769,7 @@ const Agenda = () => {
             end: "15:00",
             type: "workshop",
             lang: "en",
-            topics: ["defi"]
+            topics: ["quantum", "defi"]
         },
         {
             id: 27,
@@ -850,7 +860,7 @@ const Agenda = () => {
                     image: s69.src
                 },
                 {
-                    name: "Viktor",
+                    name: "Victor",
                     image: s65.src
                 }
             ],
@@ -1044,11 +1054,11 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Mario Giovanni Figlioli",
-                    image: ""
+                    image: s87.src
                 },
                 {
                     name: "Malek Almsaddi",
-                    image: ""
+                    image: s88.src
                 }
             ],
             day: 2,
@@ -1110,7 +1120,7 @@ const Agenda = () => {
             end: "10:40",
             type: "talk",
             lang: "en",
-            topics: ["defi", "rwa"]
+            topics: ["rwa", "defi"]
         },
         {
             id: 41,
@@ -1160,7 +1170,7 @@ const Agenda = () => {
             end: "11:40",
             type: "talk",
             lang: "en",
-            topics: ["defi", "rwa"]
+            topics: ["rwa", "defi"]
         },
         {
             id: 43,
@@ -1179,7 +1189,7 @@ const Agenda = () => {
             end: "12:00",
             type: "talk",
             lang: "en",
-            topics: ["defi", "rwa"]
+            topics: ["rwa", "defi"]
         },
         {
             id: 544,
@@ -1344,7 +1354,7 @@ const Agenda = () => {
             day: 2,
             start: "10:00",
             end: "11:00",
-            type: "talk",
+            type: "workshop",
             lang: "en",
             topics: ["ux"]
         },
@@ -1980,13 +1990,13 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Stefano De Masi",
-                    image: ""
+                    image: s89.src
                 }
             ],
             day: 3,
             start: "11:00",
             end: "12:00",
-            type: "panel",
+            type: "workshop",
             lang: "it",
             topics: ["defi"]
         },
@@ -2140,29 +2150,30 @@ const Agenda = () => {
                                 <button className={`py-1 px-3 rounded-full border border-black ${languageFilter.includes('en') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleLang('en'); }}>English</button>
                             </div>
                             <p className="text-lg text-black Medium mb-2">Topics:</p>
-                            <div className="w-full h-fit grid grid-cols-3 lg:grid-cols-8 grid-rows-8 lg:grid-rows-3 gap-2">
-                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('ai') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('ai'); }}>AI</button>
-                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('art') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('art'); }}>Art</button>
-                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('auditing') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('auditing'); }}>Auditing</button>
-                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('bitcoin') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('bitcoin'); }}>Bitcoin</button>
-                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('community') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('community'); }}>Community</button>
-                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('defi') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('defi'); }}>Defi</button>
-                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('digital identity') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('digital identity'); }}>Digital Identity</button>
-                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('education') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('education'); }}>Education</button>
-                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('gaming') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('gaming'); }}>Gaming</button>
-                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('it') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('it'); }}>IT</button>
-                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('legal') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('legal'); }}>legal</button>
-                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('marketing') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('marketing'); }}>Marketing</button>
-                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('nft') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('nft'); }}>NFT</button>
-                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('privacy') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('privacy'); }}>Privacy</button>
-                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('quantum') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('quantum'); }}>Quantum</button>
-                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('rwa') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('rwa'); }}>RWA</button>
-                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('scaling') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('scaling'); }}>Scaling</button>
-                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('security') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('security'); }}>Security</button>
-                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('staking') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('staking'); }}>Staking</button>
-                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('ux') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('ux'); }}>UX</button>
-                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('zk proofs') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('zk proofs'); }}>Zk Proofs</button>
-                                <button className={`py-1 px-3 rounded-full border border-black ${topicFilter.includes('other') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('other'); }}>Other</button>
+                            <div className="w-full h-fit grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 auto-rows-auto gap-2">
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('ai') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('ai'); }}>AI</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('art') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('art'); }}>Art</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('auditing') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('auditing'); }}>Auditing</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('bitcoin') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('bitcoin'); }}>Bitcoin</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('community') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('community'); }}>Community</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('defi') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('defi'); }}>Defi</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('digital identity') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('digital identity'); }}>Digital Ide.</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('education') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('education'); }}>Education</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('gaming') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('gaming'); }}>Gaming</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('it') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('it'); }}>IT</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('legal') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('legal'); }}>legal</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('marketing') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('marketing'); }}>Marketing</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('nft') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('nft'); }}>NFT</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('privacy') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('privacy'); }}>Privacy</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('quantum') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('quantum'); }}>Quantum</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('rwa') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('rwa'); }}>RWA</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('scaling') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('scaling'); }}>Scaling</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('security') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('security'); }}>Security</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('socialfi') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('socialfi'); }}>SocialFi</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('staking') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('staking'); }}>Staking</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('ux') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('ux'); }}>UX</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('zk proofs') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('zk proofs'); }}>Zk Proofs</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('other') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('other'); }}>Other</button>
                             </div>
                         </div>
                     ) : ("")
