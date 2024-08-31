@@ -40,9 +40,9 @@ export default function HomePage() {
       <Sponsors />
       <Partners />
       <MediaPartners />
+      <Family />
       <Booths />
       <StamenTonerMap />
-      <Family />
       <Footer />
     </main>
   );

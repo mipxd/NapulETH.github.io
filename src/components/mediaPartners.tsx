@@ -87,6 +87,14 @@ function MediaPartners() {
                         backgroundRepeat: "no-repeat"
                     }}></div>
                 </Link>
+                <Link href="https://www.instagram.com/cryptoromaofficial/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${cryptorama.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "60% 100%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
                 <Link href="https://instagram.com/crypto_agora?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" className="p-0 w-full h-fit flex">
                     <div className="w-full h-28" style={{
                         backgroundImage: `url('${agora.src}')`,
@@ -127,6 +135,14 @@ function MediaPartners() {
                         backgroundRepeat: "no-repeat"
                     }}></div>
                 </Link>
+                <Link href="https://instagram.com/defi_italia_?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${defi.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "50% 80%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
                 <Link href="https://www.instagram.com/onchain_podcast?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" className="p-0 w-full h-fit flex">
                     <div className="w-full h-28" style={{
                         backgroundImage: `url('${onchain.src}')`,
@@ -140,6 +156,14 @@ function MediaPartners() {
                         backgroundImage: `url('${hrc.src}')`,
                         backgroundPosition: "center",
                         backgroundSize: "45% 90%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.spaziocrypto.com/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${spazio.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "75% 120%",
                         backgroundRepeat: "no-repeat"
                     }}></div>
                 </Link>
@@ -201,6 +225,20 @@ function MediaPartners() {
                                     <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
                                         <Image className=" invert w-auto h-20" alt="degate" src={sc}></Image>
+                                    </div>
+                                </Link>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.instagram.com/cryptoromaofficial/'} target="_blank" className="w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 bg-contain scale-150 bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${cryptorama.src}')`
+                                        }}></div>
                                     </div>
                                 </Link>
 
@@ -282,6 +320,20 @@ function MediaPartners() {
                     <div className="w-full h-fit flex flex-row items-center justify-center">
                         <div className="w-10/12 flex flex-col items-center justify-center">
                             <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://instagram.com/defi_italia_?igshid=OGQ5ZDc2ODk2ZA=='} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 scale-125 h-20 bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${defi.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
                                 <Link href={'https://www.instagram.com/onchain_podcast?igshid=OGQ5ZDc2ODk2ZA=='} target="_blank" className="w-full h-full">
                                     <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
                                         <div className="w-28 h-20 bg-contain bg-center bg-no-repeat invert" style={{
@@ -300,6 +352,20 @@ function MediaPartners() {
                                     <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
                                         <div className="w-28 h-20 scale-125 bg-contain bg-center bg-no-repeat" style={{
                                             backgroundImage: `url('${hrc.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.spaziocrypto.com/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-[2] bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${spazio.src}')`
                                         }}></div>
                                     </div>
                                 </Link>
@@ -364,9 +430,6 @@ function MediaPartners() {
                             </div>
                         </div>
                     </div>
-
-
-
                 </Carousel>
             </div>
 

@@ -15,7 +15,6 @@ import wehub from '@assets/wehub.svg'
 import mego from '@assets/mego.svg'
 import mood from '@assets/mood.svg'
 import gate from '@assets/gate.svg'
-import canal from '@assets/canal.svg'
 import nexlabs from '@assets/nexlabs.webp'
 import hg from '@assets/hg.png'
 import evLabs from '@assets/ev labs.webp'
@@ -40,7 +39,10 @@ import ch from '@assets/Logo CryptoPub (1).png'
 import breaking from '@assets/Crypto-Breaking-News-Logo-Social-Profile.webp'
 import ETHKL from '@assets/ETHKL.png'
 import singapore from '@assets/ETH SG 2024.svg'
-
+import bratislava from '@assets/ETHBratislava black.svg'
+import ethmilan from '@assets/ethmilan.svg'
+import bucharest from '@assets/BucharestBlack.svg'
+import canal from '@assets/canal.svg'
 import { useTranslation } from "react-i18next";
 
 function Family() {
@@ -72,30 +74,6 @@ function Family() {
                 {t('familyTitle')}
             </h5>
             <div className="hidden lg:grid lg:grid-cols-5 gap-4 col-span-8 lg:auto-rows-auto lg:w-10/12 items-center justify-center w-full h-fit relative my-4">
-                <Link href="https://www.instagram.com/cryptoromaofficial/" target="_blank" className="p-0 w-full h-fit flex">
-                    <div className="w-full h-28" style={{
-                        backgroundImage: `url('${cryptorama.src}')`,
-                        backgroundPosition: "center",
-                        backgroundSize: "60% 100%",
-                        backgroundRepeat: "no-repeat"
-                    }}></div>
-                </Link>
-                <Link href="https://instagram.com/defi_italia_?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" className="p-0 w-full h-fit flex">
-                    <div className="w-full h-28" style={{
-                        backgroundImage: `url('${defi.src}')`,
-                        backgroundPosition: "center",
-                        backgroundSize: "50% 80%",
-                        backgroundRepeat: "no-repeat"
-                    }}></div>
-                </Link>
-                <Link href="https://www.spaziocrypto.com/" target="_blank" className="p-0 w-full h-fit flex">
-                    <div className="w-full h-28" style={{
-                        backgroundImage: `url('${spazio.src}')`,
-                        backgroundPosition: "center",
-                        backgroundSize: "75% 120%",
-                        backgroundRepeat: "no-repeat"
-                    }}></div>
-                </Link>
                 <Link href="https://www.ethkl.org/" target="_blank" className="p-0 w-full h-fit flex">
                     <div className="w-full h-28" style={{
                         backgroundImage: `url('${ETHKL.src}')`,
@@ -112,55 +90,43 @@ function Family() {
                         backgroundRepeat: "no-repeat"
                     }}></div>
                 </Link>
-
+                <Link href="https://www.ethbratislava.com/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${bratislava.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "60% 65%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.ethmilan.xyz/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${ethmilan.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "100% 110%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.ethbucharest.xyz/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${bucharest.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "70% 100%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
+                <Link href="https://www.cryptocanal.org/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${canal.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "60% 65%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
 
 
             </div>
             <div className="w-full h-fit block lg:hidden">
                 <Carousel className="w-full h-fit block lg:hidden" showDots={false} renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
-
-                    <div className="w-full h-fit flex flex-row items-center justify-center">
-                        <div className="w-10/12 flex flex-col items-center justify-center">
-                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                <Link href={'https://www.instagram.com/cryptoromaofficial/'} target="_blank" className="w-full h-fit">
-                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-                                        <div className="w-28 h-20 bg-contain scale-150 bg-center bg-no-repeat" style={{
-                                            backgroundImage: `url('${cryptorama.src}')`
-                                        }}></div>
-                                    </div>
-                                </Link>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-full h-fit flex flex-row items-center justify-center">
-                        <div className="w-10/12 flex flex-col items-center justify-center">
-                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                <Link href={'https://instagram.com/defi_italia_?igshid=OGQ5ZDc2ODk2ZA=='} target="_blank" className="w-full h-full">
-                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-                                        <div className="w-28 scale-125 h-20 bg-contain bg-center bg-no-repeat" style={{
-                                            backgroundImage: `url('${defi.src}')`
-                                        }}></div>
-                                    </div>
-                                </Link>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-full h-fit flex flex-row items-center justify-center">
-                        <div className="w-10/12 flex flex-col items-center justify-center">
-                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                <Link href={'https://www.spaziocrypto.com/'} target="_blank" className="w-full h-full">
-                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-                                        <div className="w-28 h-20 scale-[2] bg-contain bg-center bg-no-repeat" style={{
-                                            backgroundImage: `url('${spazio.src}')`
-                                        }}></div>
-                                    </div>
-                                </Link>
-
-                            </div>
-                        </div>
-                    </div>
                     <div className="w-full h-fit flex flex-row items-center justify-center">
                         <div className="w-10/12 flex flex-col items-center justify-center">
                             <div className="w-full flex-grow flex flex-col items-center justify-center" >
@@ -181,6 +147,58 @@ function Family() {
                                     <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
                                         <div className="w-28 h-20 scale-[2] bg-contain bg-center bg-no-repeat" style={{
                                             backgroundImage: `url('${singapore.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.ethbratislava.com/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-150 bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${bratislava.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.ethmilan.xyz/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-[2] bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${ethmilan.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.ethbucharest.xyz/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-[2] bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${bucharest.src}')`
+                                        }}></div>
+                                    </div>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://www.cryptocanal.org/'} target="_blank" className="w-full h-full">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-[2] invert bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${canal.src}')`
                                         }}></div>
                                     </div>
                                 </Link>

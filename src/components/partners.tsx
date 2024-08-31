@@ -73,14 +73,7 @@ function Partners() {
                 {t('partners')}
             </h5>
             <div className="hidden lg:grid lg:grid-cols-5 gap-4 col-span-8 lg:auto-rows-auto lg:w-10/12 items-center justify-center w-full h-fit relative my-4">
-                <Link href="https://www.ethbucharest.xyz/" target="_blank" className="p-0 w-full h-fit flex">
-                    <div className="w-full h-28" style={{
-                        backgroundImage: `url('${bucharest.src}')`,
-                        backgroundPosition: "center",
-                        backgroundSize: "90% 120%",
-                        backgroundRepeat: "no-repeat"
-                    }}></div>
-                </Link>
+
                 <Link href="https://www.spaghett-eth.com/" target="_blank" className="p-0 w-full h-fit flex">
                     <div className="w-full h-28" style={{
                         backgroundImage: `url('${spaghett.src}')`,
@@ -121,14 +114,6 @@ function Partners() {
                         backgroundRepeat: "no-repeat"
                     }}></div>
                 </Link>
-                <Link href="https://www.cryptocanal.org/" target="_blank" className="p-0 w-full h-fit flex">
-                    <div className="w-full h-28" style={{
-                        backgroundImage: `url('${canal.src}')`,
-                        backgroundPosition: "center",
-                        backgroundSize: "70% 100%",
-                        backgroundRepeat: "no-repeat"
-                    }}></div>
-                </Link>
                 <Link href="https://www.nexlabs.io/" target="_blank" className="p-0 w-full h-fit flex">
                     <div className="w-full h-28" style={{
                         backgroundImage: `url('${nexlabs.src}')`,
@@ -145,14 +130,7 @@ function Partners() {
                         backgroundRepeat: "no-repeat"
                     }}></div>
                 </Link>
-                <Link href="https://www.ethmilan.xyz/" target="_blank" className="p-0 w-full h-fit flex">
-                    <div className="w-full h-28" style={{
-                        backgroundImage: `url('${ethmilan.src}')`,
-                        backgroundPosition: "center",
-                        backgroundSize: "90% 130%",
-                        backgroundRepeat: "no-repeat"
-                    }}></div>
-                </Link>
+
                 <Link href="https://app.banklessacademy.com/" target="_blank" className="p-0 w-full h-fit flex">
                     <div className="w-full h-28" style={{
                         backgroundImage: `url('${bankless.src}')`,
@@ -276,20 +254,7 @@ function Partners() {
             </div>
             <div className="w-full h-fit block lg:hidden">
                 <Carousel className="w-full h-fit block lg:hidden" showDots={false} renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
-                    <div className="w-full h-fit flex flex-row items-center justify-center">
-                        <div className="w-10/12 flex flex-col items-center justify-center">
-                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                <Link href={'https://www.ethbucharest.xyz/'} target="_blank" className="p-0 w-full h-fit">
-                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
-                                        <div className="w-28 scale-[2.5] h-20 bg-contain bg-center bg-no-repeat" style={{
-                                            backgroundImage: `url('${bucharest.src}')`
-                                        }}></div>
-                                    </div>
-                                </Link>
-
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div className="w-full h-fit flex flex-row items-center justify-center">
                         <div className="w-10/12 flex flex-col items-center justify-center">
                             <div className="w-full flex-grow flex flex-col items-center justify-center" >
@@ -358,19 +323,7 @@ function Partners() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full h-fit flex flex-row items-center justify-center">
-                        <div className="w-10/12 flex flex-col items-center justify-center">
-                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                <Link href={'https://www.cryptocanal.org/'} target="_blank" className="w-full h-fit">
-                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                        <Image className=" w-auto h-20  " alt="degate" src={canal}></Image>
-                                    </div>
-                                </Link>
-
-                            </div>
-                        </div>
-                    </div>
                     <div className="w-full h-fit flex flex-row items-center justify-center">
                         <div className="w-10/12 flex flex-col items-center justify-center">
                             <div className="w-full flex-grow flex flex-col items-center justify-center" >
@@ -399,19 +352,7 @@ function Partners() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full h-fit flex flex-row items-center justify-center">
-                        <div className="w-10/12 flex flex-col items-center justify-center">
-                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                <Link href={'https://www.ethmilan.xyz/'} target="_blank" className="w-full h-full">
-                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
-                                        <Image className="w-auto h-20 scale-[2] " alt="degate" src={ethmilan}></Image>
-                                    </div>
-                                </Link>
-
-                            </div>
-                        </div>
-                    </div>
                     <div className="w-full h-fit flex flex-row items-center justify-center">
                         <div className="w-10/12 flex flex-col items-center justify-center">
                             <div className="w-full flex-grow flex flex-col items-center justify-center" >
