@@ -103,7 +103,7 @@ function SideEvents() {
                                     return (
                                         <Link href={event.link && event.link != "none" ? event.link : "no-link"} target="_blank" className="w-full h-fit" onClick={(e) => { if (!event.link || event.link == "none") e.preventDefault() }}>
                                             <div key={key} className="w-full xl:w-auto h-fit flex flex-col justify-center items-center lg:flex-row lg:items-center lg:justify-stretch gap-3">
-                                                <div className=" w-full aspect-square lg:w-[12vw] lg:h-[12vw] shadow-sm rounded-md border" style={{
+                                                <div className=" w-full aspect-square lg:w-[13vw] lg:h-[13vw] shadow-sm rounded-md border" style={{
                                                     backgroundImage: `url('${event.image_url}')`,
                                                     backgroundPosition: "center",
                                                     backgroundRepeat: "no-repeat",
@@ -111,7 +111,7 @@ function SideEvents() {
                                                 }}>
 
                                                 </div>
-                                                <div className="w-full lg:w-fit lg:max-w-7/12 flex flex-col lg:items-start lg:justify-between gap-1 lg:max-w-[30vw]">
+                                                <div className=" bg-white rounded-md p-2 w-full lg:w-fit lg:max-w-7/12 lg:min-h-[13vw] flex flex-col lg:items-start lg:justify-between gap-1 lg:max-w-[30vw]">
                                                     <div className="flex w-full lg:w-fit h-fit flex-col items-start justify-center lg:items-start lg:justify-start">
                                                         <h5 className=" text-black SemiBold text-lg mb-4 lg:mb-2 text-center w-full lg:w-fit lg:text-left">
                                                             
