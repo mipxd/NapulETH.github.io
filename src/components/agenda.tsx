@@ -99,6 +99,8 @@ import s86 from '@assets/PaoloSchiattarella.jpg'
 import s87 from '@assets/MarioLuigiFiglioli.jpg'
 import s88 from '@assets/MalekAlmsaddi.jpg'
 import s89 from '@assets/StefanoDeMasi.jpg'
+import s90 from '@assets/ionut.jpeg'
+import s91 from '@assets/chiara.jpg'
 
 const Agenda = () => {
 
@@ -215,7 +217,13 @@ const Agenda = () => {
             isWorkshop: false,
             type: "panel",
             lang: "en",
-            topics: ['community']
+            topics: ['community'], 
+            moderators: [
+                {
+                    name: "Fabrizio Genovese",
+                    image: "https://napul.eth.limo/_next/static/media/FabrizioGenovese.bdcae4db.jpg"
+                }
+            ]
         },
         {
             id: 544,
@@ -313,7 +321,13 @@ const Agenda = () => {
             isWorkshop: false,
             type: "panel",
             lang: "en",
-            topics: ["community"]
+            topics: ["community"],
+            moderators: [
+                {
+                    name: "Raffaele Orefice",
+                    image: "https://napul.eth.limo/_next/static/media/raffa.c537576a.jpg"
+                }
+            ]
         },
         {
             id: 8,
@@ -432,7 +446,13 @@ const Agenda = () => {
             end: "11:20",
             type: "panel",
             lang: "it",
-            topics: ["legal", "it"]
+            topics: ["legal", "it"],
+            moderators: [
+                {
+                    name: "Ionut Gaucan",
+                    image: s90.src
+                }
+            ]
         },
         {
             id: 12,
@@ -698,7 +718,13 @@ const Agenda = () => {
             end: "11:20",
             type: "panel",
             lang: "en",
-            topics: ["marketing"]
+            topics: ["marketing"],
+            moderators: [
+                {
+                    name: "Dayana Aleksandrova ",
+                    image: s25.src
+                }
+            ]
         },
         {
             id: 24,
@@ -869,7 +895,17 @@ const Agenda = () => {
             end: "11:20",
             type: "panel",
             lang: "en",
-            topics: ["defi"]
+            topics: ["defi"],
+            moderators: [
+                {
+                    name: "Chiara Munaretto",
+                    image: s91.src
+                },
+                {
+                    name: "Gianluca Di Bella",
+                    image: "https://napul.eth.limo/_next/static/media/gianluca.ad2208c0.jpeg"
+                }
+            ]
         },
         {
             id: 311,
@@ -967,7 +1003,13 @@ const Agenda = () => {
             end: "15:20",
             type: "panel",
             lang: "en",
-            topics: ["defi"]
+            topics: ["defi"],
+            moderators: [
+                {
+                    name: "Chiara Munaretto",
+                    image: s91.src
+                }
+            ]
         },
         {
             id: 34,
@@ -1151,7 +1193,13 @@ const Agenda = () => {
             end: "11:20",
             type: "panel",
             lang: "en",
-            topics: ["rwa"]
+            topics: ["rwa"],
+            moderators: [
+                {
+                    name: "Ionut Gaucan",
+                    image: s90.src
+                }
+            ]
         },
         {
             id: 42,
@@ -1270,16 +1318,26 @@ const Agenda = () => {
             stage: "stage 2",
             speakers: [
                 {
-                    name: "Marina",
+                    name: "Marco Tulio Giordano",
+                    image: s81.src
+                },
+                {
+                    name: "Edoardo degli Innocenti",
                     image: ""
                 }
             ],
             day: 2,
             start: "15:00",
             end: "15:40",
-            type: "talk",
+            type: "panel",
             lang: "en",
-            topics: ["it"]
+            topics: ["it", "legal"],
+            moderators: [
+                {
+                    name: "Giovanni Piccirillo",
+                    image: "https://moodglobalservices.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FPolygon9.2a45b724.png&w=256&q=75"
+                }
+            ]
         },
         {
             id: 48,
@@ -2252,9 +2310,12 @@ const Agenda = () => {
                                         {
                                             event.speakers.length != 0 ? (
                                                 <p className="text-md text-gray-700 mb-2">
-                                                    Speakers: {
+                                                    Speakers:<br /> 
+                                                    <span className="Medium">
+                                                    {
                                                         event.speakers.map(speaker => speaker.name).join(', ')
                                                     }
+                                                    </span>
                                                 </p>
                                             ) :
                                                 ("")
@@ -2269,6 +2330,35 @@ const Agenda = () => {
                                                                 <div key={speakerKey} className={`w-12 aspect-square rounded-full bg-white bg-center bg-cover bg-no-repeat shadow-lg `} style={{
                                                                     marginLeft: `${speakerKey / 2 * 15 * -1}px`,
                                                                     backgroundImage: speaker.image != "" ? `url('${speaker.image}')` : "url('https://media.istockphoto.com/id/1332100919/vector/man-icon-black-icon-person-symbol.jpg?s=612x612&w=0&k=20&c=AVVJkvxQQCuBhawHrUhDRTCeNQ3Jgt0K1tXjJsFy1eg=')"
+                                                                }}></div>
+                                                            )
+                                                        })
+                                                    }
+                                                </div>
+                                            ) : ("")
+                                        }
+                                        {
+                                            event.moderators && event.moderators.length != 0 ? (
+                                                <p className="text-md text-gray-700 mt-4 mb-2">
+                                                    Moderators:<br /> 
+                                                    <span className="Medium">
+                                                    {
+                                                        event.moderators.map(mod => mod.name).join(', ')
+                                                    }
+                                                    </span>
+                                                </p>
+                                            ) :
+                                                ("")
+                                        }
+                                        {
+                                            event.moderators && event.moderators.length != 0 ? (
+                                                <div className="flex flex-row items-center justify-start w-full h-fit">
+                                                    {
+                                                        event.moderators.map((mod, modKey) => {
+                                                            return (
+                                                                <div key={modKey} className={`w-6 aspect-square rounded-full bg-white bg-center bg-cover bg-no-repeat shadow-lg `} style={{
+                                                                    marginLeft: `${modKey / 2 * 15 * -1}px`,
+                                                                    backgroundImage: mod.image != "" ? `url('${mod.image}')` : "url('https://media.istockphoto.com/id/1332100919/vector/man-icon-black-icon-person-symbol.jpg?s=612x612&w=0&k=20&c=AVVJkvxQQCuBhawHrUhDRTCeNQ3Jgt0K1tXjJsFy1eg=')"
                                                                 }}></div>
                                                             )
                                                         })
@@ -2349,9 +2439,12 @@ const Agenda = () => {
                                         {
                                             event.speakers.length != 0 ? (
                                                 <p className="text-md text-gray-700 mb-2">
-                                                    Speakers: {
+                                                    Speakers:<br /> 
+                                                    <span className="Medium">
+                                                    {
                                                         event.speakers.map(speaker => speaker.name).join(', ')
                                                     }
+                                                    </span>
                                                 </p>
                                             ) :
                                                 ("")
@@ -2366,6 +2459,35 @@ const Agenda = () => {
                                                                 <div key={speakerKey} className={`w-12 aspect-square rounded-full bg-white bg-center bg-cover bg-no-repeat shadow-lg `} style={{
                                                                     marginLeft: `${speakerKey / 2 * 15 * -1}px`,
                                                                     backgroundImage: speaker.image != "" ? `url('${speaker.image}')` : "url('https://media.istockphoto.com/id/1332100919/vector/man-icon-black-icon-person-symbol.jpg?s=612x612&w=0&k=20&c=AVVJkvxQQCuBhawHrUhDRTCeNQ3Jgt0K1tXjJsFy1eg=')"
+                                                                }}></div>
+                                                            )
+                                                        })
+                                                    }
+                                                </div>
+                                            ) : ("")
+                                        }
+                                        {
+                                            event.moderators && event.moderators.length != 0 ? (
+                                                <p className="text-md text-gray-700 mt-4 mb-2">
+                                                    Moderators:<br /> 
+                                                    <span className="Medium">
+                                                    {
+                                                        event.moderators.map(mod => mod.name).join(', ')
+                                                    }
+                                                    </span>
+                                                </p>
+                                            ) :
+                                                ("")
+                                        }
+                                        {
+                                            event.moderators && event.moderators.length != 0 ? (
+                                                <div className="flex flex-row items-center justify-start w-full h-fit">
+                                                    {
+                                                        event.moderators.map((mod, modKey) => {
+                                                            return (
+                                                                <div key={modKey} className={`w-6 aspect-square rounded-full bg-white bg-center bg-cover bg-no-repeat shadow-lg `} style={{
+                                                                    marginLeft: `${modKey / 2 * 15 * -1}px`,
+                                                                    backgroundImage: mod.image != "" ? `url('${mod.image}')` : "url('https://media.istockphoto.com/id/1332100919/vector/man-icon-black-icon-person-symbol.jpg?s=612x612&w=0&k=20&c=AVVJkvxQQCuBhawHrUhDRTCeNQ3Jgt0K1tXjJsFy1eg=')"
                                                                 }}></div>
                                                             )
                                                         })
@@ -2444,12 +2566,15 @@ const Agenda = () => {
                                             ) : ""
                                         }
 
-                                        {
+{
                                             event.speakers.length != 0 ? (
                                                 <p className="text-md text-gray-700 mb-2">
-                                                    Speakers: {
+                                                    Speakers:<br /> 
+                                                    <span className="Medium">
+                                                    {
                                                         event.speakers.map(speaker => speaker.name).join(', ')
                                                     }
+                                                    </span>
                                                 </p>
                                             ) :
                                                 ("")
@@ -2464,6 +2589,35 @@ const Agenda = () => {
                                                                 <div key={speakerKey} className={`w-12 aspect-square rounded-full bg-white bg-center bg-cover bg-no-repeat shadow-lg `} style={{
                                                                     marginLeft: `${speakerKey / 2 * 15 * -1}px`,
                                                                     backgroundImage: speaker.image != "" ? `url('${speaker.image}')` : "url('https://media.istockphoto.com/id/1332100919/vector/man-icon-black-icon-person-symbol.jpg?s=612x612&w=0&k=20&c=AVVJkvxQQCuBhawHrUhDRTCeNQ3Jgt0K1tXjJsFy1eg=')"
+                                                                }}></div>
+                                                            )
+                                                        })
+                                                    }
+                                                </div>
+                                            ) : ("")
+                                        }
+                                        {
+                                            event.moderators && event.moderators.length != 0 ? (
+                                                <p className="text-md text-gray-700 mt-4 mb-2">
+                                                    Moderators:<br /> 
+                                                    <span className="Medium">
+                                                    {
+                                                        event.moderators.map(mod => mod.name).join(', ')
+                                                    }
+                                                    </span>
+                                                </p>
+                                            ) :
+                                                ("")
+                                        }
+                                        {
+                                            event.moderators && event.moderators.length != 0 ? (
+                                                <div className="flex flex-row items-center justify-start w-full h-fit">
+                                                    {
+                                                        event.moderators.map((mod, modKey) => {
+                                                            return (
+                                                                <div key={modKey} className={`w-6 aspect-square rounded-full bg-white bg-center bg-cover bg-no-repeat shadow-lg `} style={{
+                                                                    marginLeft: `${modKey / 2 * 15 * -1}px`,
+                                                                    backgroundImage: mod.image != "" ? `url('${mod.image}')` : "url('https://media.istockphoto.com/id/1332100919/vector/man-icon-black-icon-person-symbol.jpg?s=612x612&w=0&k=20&c=AVVJkvxQQCuBhawHrUhDRTCeNQ3Jgt0K1tXjJsFy1eg=')"
                                                                 }}></div>
                                                             )
                                                         })
