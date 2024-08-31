@@ -60,7 +60,7 @@ function Hero() {
                         </h5>
                     </div>
                 </Link>
-                <Link href={'https://napul.eth.limo/map.html'} target="_blank" className=" relative z-50 p-0 w-fit h-fit">
+                <Link href={'https://napul.eth.limo/map.html'} className=" relative z-50 p-0 w-fit h-fit">
                     <div className="min-w-[85vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-[19vw] h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#CA75AB] border-4 border-[#eddb55]">
 
 
