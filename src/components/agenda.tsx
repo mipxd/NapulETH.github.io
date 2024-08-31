@@ -101,6 +101,8 @@ import s88 from '@assets/MalekAlmsaddi.jpg'
 import s89 from '@assets/StefanoDeMasi.jpg'
 import s90 from '@assets/ionut.jpeg'
 import s91 from '@assets/chiara.jpg'
+import s92 from '@assets/APEX.jpeg'
+import s93 from '@assets/EdoardoDegliInnocenti.jpg'
 
 const Agenda = () => {
 
@@ -864,7 +866,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "APEX",
-                    image: ""
+                    image: s92.src
                 }
             ],
             day: 2,
@@ -1180,8 +1182,8 @@ const Agenda = () => {
                     image: s64.src
                 },
                 {
-                    name: "Philipp Pieperi",
-                    image: ""
+                    name: "Philipp Pieper",
+                    image: s63.src
                 },
                 {
                     name: "Lorenzo Rigatti",
@@ -1323,7 +1325,7 @@ const Agenda = () => {
                 },
                 {
                     name: "Edoardo degli Innocenti",
-                    image: ""
+                    image: s93.src
                 }
             ],
             day: 2,
