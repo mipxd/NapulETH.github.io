@@ -8,8 +8,10 @@ import Where from "@/components/where";
 import Sponsors from "@/components/sponsors";
 import Partners from "@/components/partners";
 import MediaPartners from "@/components/mediaPartners";
+import Booths from "@/components/Boots";
 import Pricing from "@/components/pricing";
 import SpeakersSection from "@/components/speakersSection";
+import Family from "@/components/Family";
 import Footer from "@/components/footer";
 import Meetups from "@/components/meetups";
 import dynamic from "next/dynamic";
@@ -38,7 +40,9 @@ export default function HomePage() {
       <Sponsors />
       <Partners />
       <MediaPartners />
+      <Booths />
       <StamenTonerMap />
+      <Family />
       <Footer />
     </main>
   );

@@ -75,7 +75,26 @@ import s64 from '@assets/LorenzoAmoroso.jpg'
 import s65 from '@assets/Viktor.jpg'
 import s66 from '@assets/DavideMilani.jpg'
 import s67 from '@assets/DavidCarvalho.jpg'
-
+import s68 from '@assets/DavideCarboni.jpg'
+import s69 from '@assets/GavinThomas.png'
+import s70 from '@assets/MartinLeclerq.jpg'
+import s71 from '@assets/CarloParisi.png'
+import s72 from '@assets/MortezaShahini.jpg.jpeg'
+import s73 from '@assets/gianluca.jpeg'
+import s74 from '@assets/RosarioNapolano.jpg'
+import s75 from '@assets/MicheleLotta.jpg'
+import s76 from '@assets/StefanoGogioso.jpg'
+import s77 from '@assets/FilippoMoraschi.jpg'
+import s78 from '@assets/cryptocuty.jpg'
+import s79 from '@assets/lilicCircle.png'
+import s80 from '@assets/DanielePalombi.jpg'
+import s81 from '@assets/PhilippZahn.jpg'
+import s82 from '@assets/EdoardoDegliInnocenti.jpg'
+import s83 from '@assets/StefanoDeMasi.jpg'
+import s84 from '@assets/IvanBjelajac.jpg'
+import s85 from '@assets/PaoloSchiattarella.jpg'
+import s86 from '@assets/MarioLuigiFiglioli.jpg'
+import s87 from '@assets/MalekAlmsaddi.jpg'
 
 
 import { BsGlobe, BsLinkedin } from "react-icons/bs";
@@ -450,6 +469,127 @@ export default function Speakers() {
             img: s67.src,
             name: "David Carvalho",
             aff: "Naoris Protocol"
+        },
+        // Here
+        {
+            link: "https://x.com/digitaldavide",
+            img: s68.src,
+            name: "Davide Carboni",
+            aff: "Uncommon Digital"
+        },
+        {
+            link: "https://x.com/Gavin_Chain",
+            img: s69.src,
+            name: "Gavin Thomas",
+            aff: "TEN"
+        },
+        {
+            link: "https://x.com/martinlecl",
+            img: s70.src,
+            name: "Martin Leclerq",
+            aff: "iExec"
+        },
+        {
+            link: "https://x.com/ManInBlackie",
+            img: s71.src,
+            name: "Carlo Parisi",
+            aff: "TriWei"
+        },
+        {
+            link: "https://x.com/Mortiz_Shahini",
+            img: s72.src,
+            name: "Morteza Shahini",
+            aff: "Intraverse"
+        },
+        {
+            link: "https://www.linkedin.com/in/gdbmoodglobalservices?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+            img: s73.src,
+            name: "Gianluca Di Bella",
+            aff: "MGS"
+        },
+        {
+            link: "https://www.linkedin.com/in/napolano-rosario-94ab5a7b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+            img: s74.src,
+            name: "Rosario Napolano",
+            aff: "Banca Patrimoni Sella"
+        },
+        {
+            link: "https://www.linkedin.com/in/michele-lotta?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+            img: s75.src,
+            name: "Michele Lotta",
+            aff: "Bybit"
+        },
+        {
+            link: "https://x.com/StefanoGogioso",
+            img: s76.src,
+            name: "Stefano Gogioso",
+            aff: "Hashberg"
+        },
+        {
+            link: "https://x.com/f_moraschi",
+            img: s77.src,
+            name: "Filippo Moraschi",
+            aff: "folks.finance"
+        },
+        {
+            link: "https://x.com/cryptocuty",
+            img: s78.src,
+            name: "cryptocuty",
+            aff: "DeGate"
+        },
+        {
+            link: "https://x.com/ChiefOfTelos",
+            img: s79.src,
+            name: "John Lilic",
+            aff: "CodeToInspire"
+        },
+        {
+            link: "https://x.com/dpl0a",
+            img: s80.src,
+            name: "Daniele Palombi",
+            aff: "XGA"
+        },
+        {
+            link: "https://www.philipp-zahn.com/",
+            img: s81.src,
+            name: "Philipp Zahn",
+            aff: "20squares"
+        },
+        {
+            link: "https://www.linkedin.com/in/edoardodegliinnocenti/",
+            img: s82.src,
+            name: "Edoardo Degli Innocenti",
+            aff: "Pre. del Consiglio dei Ministri"
+        },
+        {
+            link: "https://m.youtube.com/@Stefano.Demasi",
+            img: s83.src,
+            name: "Stefano De Masi",
+            aff: "De Gate"
+        },
+        {
+            link: "https://x.com/instantfinality",
+            img: s84.src,
+            name: "Ivan Bjelajac",
+            aff: "Apex"
+        },
+        {
+            link: "https://www.linkedin.com/in/paoloschiattarella/",
+            img: s85.src,
+            name: "Paolo Schiattarella",
+            aff: "Ass. Napoli Blockchain"
+        },
+        {
+            link: "https://twitter.com/invtrondao",
+            img: s86.src,
+            name: "Mario Giovanni Figlioli",
+            aff: "Invtron DAO"
+        },
+        {
+            link: "https://twitter.com/invtrondao",
+            img: s87.src,
+            name: "Malek Almsaddi",
+            aff: "Invtron DAO"
         },
 
     ]

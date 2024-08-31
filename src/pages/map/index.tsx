@@ -31,12 +31,16 @@ export default function Map() {
                 <h5 className=" text-black z-50 text-4xl SemiBold text-center mb-3 lg:mb-6 lg:px-28 leading-normal mt-8 lg:mt-0 w-11/12 lg:w-full ">
                     {t('map')}
                 </h5>
-                <p className="block text-[#2E2E2E] z-50 Medium text-2xl lg:text-2xl text-center lg:px-28 leading-normal mt-8 lg:mb-4 lg:mt-0 w-11/12 lg:w-full">
-                    {t('mapPara')}
-                </p>
-                <div className="w-11/12 lg:w-10/12 h-fit">
-                <iframe src="https://magenta-zitella-49.tiiny.site" width="100%" allowFullScreen className="border-0 h-[80vh] lg:h-[155vh] mt-8 "></iframe>
-                </div>
+                <h6 className=" xl:w-1/2 w-10/12 text-white p-4 z-50 bg-white border-4 border-[#eddb55] text-xl xl:text-2xl SemiBold leading-normal text-center my-8 lg:my-6" style={{
+                    backgroundImage: 'linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/original-acrylic-painting-background-dlerick.jpg")',
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                }}>
+                    {
+                        t('mapSoon')
+                    } ⏳⌛
+                </h6>
             </section>
             <Footer />
         </main>
