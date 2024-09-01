@@ -69,15 +69,6 @@ function Hero() {
                         </h5>
                     </div>
                 </Link>
-                <Link href={'https://napuleth.mego.tickets/'} target="_blank" className=" relative z-50 p-0 w-fit h-fit">
-                    <div className="min-w-[85vw] md:min-w-[50vw] xl:min-w-[15vw] xl:w-[19vw] h-fit flex flex-row items-center justify-center gap-2 py-4 px-12 bg-[#CA75AB] border-4 border-[#eddb55]">
-
-
-                        <h5 className=" text-black Medium text-xl whitespace-nowrap">
-                        {t('buyTicket')} - 25€
-                        </h5>
-                    </div>
-                </Link>
             </div>
             <Image src={logo} alt="big logo" className=" lg:-mt-[55%] lg:scale-[.25] scale-[0.6] -mt-[10%] relative z-[60] w-11/12"></Image>
 
