@@ -1315,7 +1315,7 @@ const Agenda = () => {
         },
         {
             id: 47,
-            title: '',
+            title: 'MICAr dopo 3 mesi. Cosa succeede in Europa?',
             isWorkshop: false,
             subtitle: "",
             stage: "stage 2",
