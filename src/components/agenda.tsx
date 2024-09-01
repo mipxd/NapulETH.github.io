@@ -104,6 +104,7 @@ import s91 from '@assets/chiara.jpg'
 import s92 from '@assets/APEX.jpeg'
 import s93 from '@assets/EdoardoDegliInnocenti.jpg'
 import s94 from '@assets/maganes.jpeg'
+import s95 from '@assets/SoeHaghighi.jpg.jpeg'
 
 const Agenda = () => {
 
@@ -473,7 +474,7 @@ const Agenda = () => {
             isWorkshop: false,
             end: "11:40",
             type: "talk",
-            lang: "en",
+            lang: "it",
             topics: ["legal", "it"]
         },
         {
@@ -545,7 +546,7 @@ const Agenda = () => {
             end: "14:40",
             type: "talk",
             lang: "en",
-            topics: ["scaling", "l2"]
+            topics: ["security", "auditing"]
         },
         {
             id: 16,
@@ -875,11 +876,11 @@ const Agenda = () => {
             end: "10:40",
             type: "talk",
             lang: "en",
-            topics: ['other']
+            topics: ['defi']
         },
         {
             id: 30,
-            title: '',
+            title: 'Shaping Crypto: The Impact of TAPTAP Projects and the P2E Wave',
             subtitle: "",
             isWorkshop: false,
             stage: "main",
@@ -919,7 +920,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Dmitry Chernukhin",
-                    image: s70.src
+                    image: ""
                 }
             ],
             day: 2,
@@ -1146,7 +1147,7 @@ const Agenda = () => {
             end: "10:20",
             type: "talk",
             lang: "en",
-            topics: ["rwa"]
+            topics: ["rwa", "legal"]
         },
         {
             id: 40,
@@ -1165,7 +1166,7 @@ const Agenda = () => {
             end: "10:40",
             type: "talk",
             lang: "en",
-            topics: ["rwa", "defi"]
+            topics: ["rwa", "defi", "legal"]
         },
         {
             id: 41,
@@ -1196,7 +1197,7 @@ const Agenda = () => {
             end: "11:20",
             type: "panel",
             lang: "en",
-            topics: ["rwa"],
+            topics: ["rwa", "legal"],
             moderators: [
                 {
                     name: "Ionut Gaucan",
@@ -1221,7 +1222,7 @@ const Agenda = () => {
             end: "11:40",
             type: "talk",
             lang: "en",
-            topics: ["rwa", "defi"]
+            topics: ["rwa", "defi", "legal"]
         },
         {
             id: 43,
@@ -1240,7 +1241,7 @@ const Agenda = () => {
             end: "12:00",
             type: "talk",
             lang: "en",
-            topics: ["rwa", "defi"]
+            topics: ["rwa", "defi", "legal"]
         },
         {
             id: 544,
@@ -1445,7 +1446,7 @@ const Agenda = () => {
             day: 2,
             start: "14:00",
             end: "15:00",
-            type: "talk",
+            type: "workshop",
             lang: "en",
             topics: ["zk proofs"]
         },
@@ -1466,7 +1467,7 @@ const Agenda = () => {
             end: "16:00",
             type: "workshop",
             lang: "en",
-            topics: ["gaming"]
+            topics: ["gaming", "game theory"]
         },
         {
             id: 54,
@@ -1483,7 +1484,7 @@ const Agenda = () => {
             day: 2,
             start: "16:00",
             end: "17:00",
-            type: "talk",
+            type: "workshop",
             lang: "en",
             topics: ["security"]
         },
@@ -1549,8 +1550,8 @@ const Agenda = () => {
             stage: "main",
             speakers: [
                 {
-                    name: "Stefano",
-                    image: s18.src
+                    name: "Stefano Gogioso",
+                    image: s76.src
                 },
                 {
                     name: "Ian Smith",
@@ -1726,18 +1727,22 @@ const Agenda = () => {
                 {
                     name: "Morteza Shahini",
                     image: s77.src
+                },
+                {
+                    name: "Soe Haghighi",
+                    image: s95.src
                 }
             ],
             day: 3,
             start: "15:40",
-            end: "16:00",
+            end: "16:20",
             type: "talk",
             lang: "en",
             topics: ["gaming"]
         },
         {
             id: 65,
-            title: 'CLOSING + VINCITORE STARTUP',
+            title: 'Startup Winner',
             subtitle: "",
             isWorkshop: false,
             stage: "main",
@@ -1819,7 +1824,7 @@ const Agenda = () => {
             start: "10:40",
             end: "11:20",
             type: "talk",
-            lang: "it",
+            lang: "en",
             topics: ["art"]
         },
         {
@@ -2033,7 +2038,7 @@ const Agenda = () => {
             day: 3,
             start: "10:00",
             end: "11:00",
-            type: "talk",
+            type: "workshop",
             lang: "en",
             topics: ["privacy"]
         },
