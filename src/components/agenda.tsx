@@ -1169,7 +1169,7 @@ const Agenda = () => {
         },
         {
             id: 41,
-            title: '',
+            title: 'Real World Asset Tokenization: Merging Traditional Finance with Digital Innovation',
             subtitle: "",
             stage: "stage 2",
             isWorkshop: false,
