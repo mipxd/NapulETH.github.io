@@ -692,7 +692,7 @@ export default function Speakers() {
                                             <div className="w-full aspect-square bg-cover bg-top bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
                                                 backgroundImage: `url('${speaker.img}')`
                                             }}></div>
-                                            <div className="w-full h-fit min-h-[12vh] flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
+                                            <div className="w-full h-fit min-h-[12vh] flex flex-col items-center justify-center py-2 px-1 bg-white border-4 border-[#eddb55]">
                                                 <h5 className=" text-black w-full SemiBold text-md mx-auto text-center mb-2">
                                                     {speaker.name}
                                                 </h5>
