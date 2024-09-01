@@ -105,6 +105,7 @@ import s92 from '@assets/APEX.jpeg'
 import s93 from '@assets/EdoardoDegliInnocenti.jpg'
 import s94 from '@assets/maganes.jpeg'
 import s95 from '@assets/SoeHaghighi.jpg.jpeg'
+import s96 from '@assets/viktor.jpeg'
 
 const Agenda = () => {
 
@@ -890,8 +891,8 @@ const Agenda = () => {
                     image: s69.src
                 },
                 {
-                    name: "Victor",
-                    image: s65.src
+                    name: "Viktor",
+                    image: s96.src
                 }
             ],
             day: 2,
@@ -1824,7 +1825,7 @@ const Agenda = () => {
             start: "10:40",
             end: "11:20",
             type: "talk",
-            lang: "en",
+            lang: "it",
             topics: ["art"]
         },
         {
