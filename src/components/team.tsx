@@ -10,7 +10,7 @@ import t3 from '@assets/raffa.jpg'
 import t4 from '@assets/ionut.jpeg'
 import t5 from '@assets/gianluca.jpeg'
 import t6 from '@assets/lore.jpeg'
-import t7 from '@assets/masha.png' 
+import t7 from '@assets/newTeam.jpeg' 
 import t8 from '@assets/med.jpg'
 import t9 from '@assets/Foto Q.jpeg'
 import t10 from '@assets/Maria Maddalena.png'
@@ -131,9 +131,9 @@ function Team() {
                     }}></div>
                     <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
 
-                        <h5 className=" text-black SemiBold text-2xl text-center mb-2">Masha</h5>
+                        <h5 className=" text-black SemiBold text-2xl text-center mb-2">Caterina Marotta</h5>
                         <h5 className=" text-[#EDDB55] SemiBold text-center text-2xl">
-                            The Illustrator
+                            Graphic Designer
                         </h5>
                     </div>
                 </div>
@@ -277,9 +277,9 @@ function Team() {
                             }}></div>
                             <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
 
-                                <h5 className=" text-black SemiBold text-2xl text-center mb-2">Masha</h5>
+                                <h5 className=" text-black SemiBold text-2xl text-center mb-2">Caterina Marotta</h5>
                                 <h5 className=" text-[#EDDB55] SemiBold text-center text-2xl">
-                                    The Illustrator
+                                    Graphic Designer
                                 </h5>
                             </div>
                         </div>

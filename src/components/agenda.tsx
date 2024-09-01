@@ -1361,29 +1361,6 @@ const Agenda = () => {
             lang: "it",
             topics: ["legal", "it"]
         },
-        {
-            id: 49,
-            title: '',
-            subtitle: "",
-            isWorkshop: false,
-            stage: "stage 2",
-            speakers: [
-                {
-                    name: "Davide Zanichelli",
-                    image: s12.src
-                },
-                {
-                    name: "Marco Tullio Giordano",
-                    image: s81.src
-                }
-            ],
-            day: 2,
-            start: "16:00",
-            end: "16:40",
-            type: "panel",
-            lang: "en",
-            topics: ["legal", "it"]
-        },
 
         // Day 2, Stage 3
         {
