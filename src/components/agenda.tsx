@@ -1566,7 +1566,13 @@ const Agenda = () => {
             end: "11:20",
             type: "panel",
             lang: "en",
-            topics: ["quantum"]
+            topics: ["quantum"],
+            moderators: [
+                {
+                    name: "Fabrizio Genovese",
+                    image: "https://napul.eth.limo/_next/static/media/FabrizioGenovese.bdcae4db.jpg"
+                }
+            ]
         },
         {
             id: 58,
