@@ -105,7 +105,7 @@ import 'react-multi-carousel/lib/styles.css';
 
 export default function Speakers() {
 
-    const { t, i18n } = useTranslation();
+    const { t, i18n } = useTranslation(); 
 
     const Rawspeakers = [
         {
@@ -646,11 +646,6 @@ export default function Speakers() {
                 }
                 <span className="text-xl Medium text-[#252525]">&nbsp;(A-Z)</span>
             </h5>
-            <h6 className=" xl:w-1/2 w-8/12 text-black p-4 bg-white border-4 border-[#eddb55] text-xl xl:text-2xl Medium leading-normal text-center my-6">
-                {
-                    t('speakersSoon')
-                } ⏳⌛
-            </h6>
             <div className="grid-cols-5 auto-rows-auto w-11/12 hidden lg:grid">
                 {
                     speakers.map((speaker, index) => {
@@ -687,21 +682,21 @@ export default function Speakers() {
 
 
             <div className='w-full h-fit block lg:hidden'>
-                <Carousel className="w-full h-fit block lg:hidden" showDots renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
-                    {
+                <div className="grid grid-cols-2 auto-rows-auto w-[97%] mx-auto gap-x-[0.4rem] gap-y-4">
+                {
                         speakers.map((speaker, index) => {
                             return (
                                 <Link href={speaker.link} key={index} target="_blank" className="w-full h-fit">
                                     <div className="w-full h-fit flex flex-row items-center justify-center">
                                         <div className="w-full flex flex-col flex-grow items-center justify-center">
-                                            <div className="w-8/12 aspect-square bg-cover bg-top bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
+                                            <div className="w-full aspect-square bg-cover bg-top bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
                                                 backgroundImage: `url('${speaker.img}')`
                                             }}></div>
-                                            <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
-                                                <h5 className=" text-black w-full SemiBold text-2xl text-center mb-2">
+                                            <div className="w-full h-fit min-h-[15vh] flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
+                                                <h5 className=" text-black w-full SemiBold text-xl text-center mb-2">
                                                     {speaker.name}
                                                 </h5>
-                                                <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
+                                                <h5 className=" text-[#EDDB55] SemiBold text-center text-lg">
                                                     {speaker.aff}
                                                 </h5>
                                             </div>
@@ -711,8 +706,8 @@ export default function Speakers() {
                             )
                         })
                     }
-
-                </Carousel>
+                </div>
+                
             </div>
 
 
