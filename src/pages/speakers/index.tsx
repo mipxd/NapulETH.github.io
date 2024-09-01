@@ -682,7 +682,7 @@ export default function Speakers() {
 
 
             <div className='w-full h-fit block lg:hidden'>
-                <div className="grid grid-cols-2 auto-rows-auto w-[97%] mx-auto gap-x-[0.4rem] gap-y-4">
+                <div className="grid grid-cols-3 auto-rows-auto w-[97%] mx-auto gap-x-[0.4rem] gap-y-4">
                 {
                         speakers.map((speaker, index) => {
                             return (
@@ -692,11 +692,11 @@ export default function Speakers() {
                                             <div className="w-full aspect-square bg-cover bg-top bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
                                                 backgroundImage: `url('${speaker.img}')`
                                             }}></div>
-                                            <div className="w-full h-fit min-h-[15vh] flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
-                                                <h5 className=" text-black w-full SemiBold text-xl text-center mb-2">
+                                            <div className="w-full h-fit min-h-[12vh] flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
+                                                <h5 className=" text-black w-full SemiBold text-md mx-auto text-center mb-2">
                                                     {speaker.name}
                                                 </h5>
-                                                <h5 className=" text-[#EDDB55] SemiBold text-center text-lg">
+                                                <h5 className=" text-[#EDDB55] SemiBold text-center text-sm">
                                                     {speaker.aff}
                                                 </h5>
                                             </div>
