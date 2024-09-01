@@ -130,15 +130,6 @@ function Partners() {
                         backgroundRepeat: "no-repeat"
                     }}></div>
                 </Link>
-
-                <Link href="https://app.banklessacademy.com/" target="_blank" className="p-0 w-full h-fit flex">
-                    <div className="w-full h-28" style={{
-                        backgroundImage: `url('${bankless.src}')`,
-                        backgroundPosition: "center",
-                        backgroundSize: "65% 80%",
-                        backgroundRepeat: "no-repeat"
-                    }}></div>
-                </Link>
                 <Link href="https://t.me/Chilicommunity" target="_blank" className="p-0 w-full h-fit flex">
                     <div className="w-full h-28" style={{
                         backgroundImage: `url('${chilliBanks.src}')`,
@@ -147,14 +138,7 @@ function Partners() {
                         backgroundRepeat: "no-repeat"
                     }}></div>
                 </Link>
-                <Link href="https://www.ethbratislava.com/" target="_blank" className="p-0 w-full h-fit flex">
-                    <div className="w-full h-28" style={{
-                        backgroundImage: `url('${bratislava.src}')`,
-                        backgroundPosition: "center",
-                        backgroundSize: "65% 80%",
-                        backgroundRepeat: "no-repeat"
-                    }}></div>
-                </Link>
+
                 <Link href="https://www.regione.campania.it/" target="_blank" className="p-0 w-full h-fit flex">
                     <div className="w-full h-28" style={{
                         backgroundImage: `url('${regione.src}')`,
@@ -356,19 +340,6 @@ function Partners() {
                     <div className="w-full h-fit flex flex-row items-center justify-center">
                         <div className="w-10/12 flex flex-col items-center justify-center">
                             <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                <Link href={'https://app.banklessacademy.com/'} target="_blank" className="w-full h-full">
-                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-
-                                        <Image className="w-auto h-20 scale-125 " alt="degate" src={bankless}></Image>
-                                    </div>
-                                </Link>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-full h-fit flex flex-row items-center justify-center">
-                        <div className="w-10/12 flex flex-col items-center justify-center">
-                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
                                 <Link href={'https://t.me/Chilicommunity'} target="_blank" className="w-full h-full">
                                     <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
@@ -380,19 +351,6 @@ function Partners() {
                         </div>
                     </div>
                     
-                    <div className="w-full h-fit flex flex-row items-center justify-center">
-                        <div className="w-10/12 flex flex-col items-center justify-center">
-                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
-                                <Link href={'https://www.ethbratislava.com/'} target="_blank" className="w-full h-full">
-                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
-
-                                        <Image className="w-auto h-20 scale-[1.2] " alt="degate" src={bratislava}></Image>
-                                    </div>
-                                </Link>
-
-                            </div>
-                        </div>
-                    </div>
                     <div className="w-full h-fit flex flex-row items-center justify-center">
                         <div className="w-10/12 flex flex-col items-center justify-center">
                             <div className="w-full flex-grow flex flex-col items-center justify-center" >
