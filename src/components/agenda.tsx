@@ -103,6 +103,7 @@ import s90 from '@assets/ionut.jpeg'
 import s91 from '@assets/chiara.jpg'
 import s92 from '@assets/APEX.jpeg'
 import s93 from '@assets/EdoardoDegliInnocenti.jpg'
+import s94 from '@assets/maganes.jpeg'
 
 const Agenda = () => {
 
@@ -859,7 +860,7 @@ const Agenda = () => {
         },
         {
             id: 29,
-            title: '',
+            title: 'Federating Multichains: Scaling With Compliance and Existing Technology',
             subtitle: "",
             isWorkshop: false,
             stage: "main",
@@ -1008,8 +1009,8 @@ const Agenda = () => {
             topics: ["defi"],
             moderators: [
                 {
-                    name: "Chiara Munaretto",
-                    image: s91.src
+                    name: "Maria Maganes",
+                    image: s94.src
                 }
             ]
         },
@@ -1705,7 +1706,13 @@ const Agenda = () => {
             end: "15:20",
             type: "panel",
             lang: "en",
-            topics: ["art"]
+            topics: ["art"],
+            moderators: [
+                {
+                    name: "Victor",
+                    image: s65.src
+                }
+            ]
         },
         {
             id: 63,
@@ -1947,7 +1954,13 @@ const Agenda = () => {
             end: "15:20",
             type: "panel",
             lang: "en",
-            topics: ["privacy", "zk proofs", "quantum"]
+            topics: ["privacy", "zk proofs", "quantum"],
+            moderators: [
+                {
+                    name: "Gianluca Di Bella",
+                    image: "https://napul.eth.limo/_next/static/media/gianluca.ad2208c0.jpeg"
+                }
+            ]
         },
         {
             id: 74,
