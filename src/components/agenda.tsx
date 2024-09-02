@@ -1468,7 +1468,7 @@ const Agenda = () => {
             end: "16:00",
             type: "workshop",
             lang: "en",
-            topics: ["gaming", "game theory"]
+            topics: ["game theory"]
         },
         {
             id: 54,
@@ -2222,7 +2222,7 @@ const Agenda = () => {
                                 <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('digital identity') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('digital identity'); }}>Digital Ide.</button>
                                 <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('education') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('education'); }}>Education</button>
                                 <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('gaming') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('gaming'); }}>Gaming</button>
-                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('game theory') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('game theory'); }}>Game Theory</button>
+                                <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap text-center ${topicFilter.includes('game theory') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('game theory'); }}>Game Theory</button>
                                 <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('it') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('it'); }}>IT</button>
                                 <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('legal') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('legal'); }}>legal</button>
                                 <button className={`py-1 px-3 rounded-full border border-black whitespace-nowrap ${topicFilter.includes('marketing') ? "text-white bg-black" : "text-black bg-white"}`} onClick={() => { toggleTopic('marketing'); }}>Marketing</button>
