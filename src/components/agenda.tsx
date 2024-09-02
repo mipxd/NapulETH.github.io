@@ -1811,7 +1811,7 @@ const Agenda = () => {
         },
         {
             id: 68,
-            title: 'Le Fasi del Web dal 1990 al 2030',
+            title: 'The Phases of the Web from 1990 to 2030',
             subtitle: "",
             isWorkshop: false,
             stage: "stage 2",
@@ -1825,7 +1825,7 @@ const Agenda = () => {
             start: "10:40",
             end: "11:20",
             type: "talk",
-            lang: "it",
+            lang: "en",
             topics: ["art"]
         },
         {
