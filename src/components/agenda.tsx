@@ -1335,7 +1335,7 @@ const Agenda = () => {
             start: "15:00",
             end: "15:40",
             type: "panel",
-            lang: "en",
+            lang: "it",
             topics: ["it", "legal"],
             moderators: [
                 {
