@@ -1864,7 +1864,7 @@ const Agenda = () => {
             end: "12:00",
             type: "talk",
             lang: "en",
-            topics: ["art", "marketing", "it"]
+            topics: ["art", "marketing"]
         },
         {
             id: 544,
