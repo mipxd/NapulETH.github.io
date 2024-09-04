@@ -35,7 +35,7 @@ function Footer(){
                 </div>
                 <div className="h-[1px] w-8/12 lg:w-[3%] my-8 bg-white/50"></div>
                 <p className="text-base SemiBold text-white mt-0 lg:mt-0 text-center lg:text-left">
-                    {t('copy')} | {t('terms')}
+                    {t('copy')} | <Link href="https://napul.eth.limo/terms.html">{t('terms')}</Link>
                 </p>
             </div>
         </footer>
