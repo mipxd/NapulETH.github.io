@@ -205,32 +205,22 @@ const Agenda = () => {
         },
         {
             id: 4,
-            title: 'The Network State',
-            subtitle: "",
+            title: 'ECF Pensieve Mechanism',
+            subtitle: "Decentralised Collective Intelligence for Community Coordination",
             stage: "main",
             speakers: [
                 {
                     name: "QJ",
                     image: s62.src
-                },
-                {
-                    name: "Francesco Vincenti",
-                    image: s57.src
                 }
             ],
             day: 1,
-            start: "11:00",
-            end: "11:20",
+            start: "11:20",
+            end: "12:00",
             isWorkshop: false,
-            type: "panel",
+            type: "talk",
             lang: "en",
-            topics: ['community'], 
-            moderators: [
-                {
-                    name: "Fabrizio Genovese",
-                    image: "https://napul.eth.limo/_next/static/media/FabrizioGenovese.bdcae4db.jpg"
-                }
-            ]
+            topics: ['community']
         },
         {
             id: 544,
