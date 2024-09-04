@@ -129,8 +129,8 @@ const Agenda = () => {
         },
         {
             id: 0,
-            title: 'Opening NapulETH Core Team',
-            subtitle: "Opening event of the NapulETH",
+            title: 'Opening',
+            subtitle: "Opening event of NapulETH",
             stage: "main",
             speakers: [
                 {
@@ -1754,8 +1754,8 @@ const Agenda = () => {
         },
         {
             id: 65,
-            title: 'Startup Winner',
-            subtitle: "",
+            title: 'Closing',
+            subtitle: "Startup Winner",
             isWorkshop: false,
             stage: "main",
             speakers: [],
