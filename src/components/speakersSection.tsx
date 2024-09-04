@@ -643,11 +643,6 @@ function Speakers() {
                 }
                 <span className="text-xl Medium text-[#252525]">&nbsp;(A-Z)</span>
             </h5>
-            <h6 className=" xl:w-1/2 w-8/12 text-black p-4 bg-white border-4 border-[#eddb55] text-xl xl:text-2xl Medium leading-normal text-center my-6">
-                {
-                    t('speakersSoon')
-                } ⏳⌛
-            </h6>
             <div className="grid-cols-5 auto-rows-auto w-11/12 hidden lg:grid">
                 {
                     speakers.slice(0, 15).map((speaker, index) => {

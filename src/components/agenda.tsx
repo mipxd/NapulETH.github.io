@@ -1534,8 +1534,8 @@ const Agenda = () => {
             stage: "main",
             speakers: [
                 {
-                    name: "David Carvalho",
-                    image: s67.src
+                    name: "Lucas Bonnard",
+                    image: s98.src
                 }
             ],
             day: 3,
@@ -1580,7 +1580,7 @@ const Agenda = () => {
                     image: s83.src
                 },
                 {
-                    name: "Lucas Bonnaed",
+                    name: "Lucas Bonnard",
                     image: s98.src
                 }
             ],
