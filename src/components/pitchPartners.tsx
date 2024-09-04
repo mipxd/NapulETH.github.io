@@ -41,6 +41,7 @@ import grow from '@assets/grow3.svg'
 import bga from "@assets/BGA-logo-300x123.png"
 import semoto from '@assets/Semoto_logo_design.webp'
 import fidesieum from "@assets/fidesium-logo-white.143c3b4.png"
+import lisa from '@assets/Logo-Lisa.png'
 
 
 import { useTranslation } from "react-i18next";
@@ -114,6 +115,14 @@ function PitchPartners() {
                         backgroundRepeat: "no-repeat"
                     }}></div>
                 </Link>
+                <Link href="https://lisalab.it/" target="_blank" className="p-0 w-full h-fit flex">
+                    <div className="w-full h-28" style={{
+                        backgroundImage: `url('${lisa.src}')`,
+                        backgroundPosition: "center",
+                        backgroundSize: "60% 70%",
+                        backgroundRepeat: "no-repeat"
+                    }}></div>
+                </Link>
             </div>
             <div className="w-full h-fit block lg:hidden">
                 <Carousel className="w-full h-fit block lg:hidden" showDots={false} renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
@@ -178,6 +187,20 @@ function PitchPartners() {
                                     <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16  bg-white border-4 border-[#eddb55]">
 
                                         <Image className="w-auto h-20 invert" alt="degate" src={semoto}></Image>
+                                    </div>
+                                </Link>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
+                        <div className="w-10/12 flex flex-col items-center justify-center">
+                            <div className="w-full flex-grow flex flex-col items-center justify-center" >
+                                <Link href={'https://lisalab.it/'} target="_blank" className="p-0 w-full h-fit">
+                                    <div className="w-full h-full flex flex-row items-center justify-center py-10 px-16 bg-white border-4 border-[#eddb55]">
+                                        <div className="w-28 h-20 scale-[2] bg-contain bg-center bg-no-repeat" style={{
+                                            backgroundImage: `url('${lisa.src}')`
+                                        }}></div>
                                     </div>
                                 </Link>
 

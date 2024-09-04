@@ -40,7 +40,7 @@ import thrill from '@assets/THRILLD LABS (black text).svg'
 import spark from '@assets/logo-theSpark-01 (1).svg'
 import beincrypto from '@assets/beincrypto.svg'
 import belonq from '@assets/Belong community SVG.svg'
-import lisa from '@assets/Logo-Lisa.png'
+import lisa from '@assets/Logo-Lisa.png' 
 
 import { useTranslation } from "react-i18next";
 
