@@ -47,11 +47,11 @@ function PitchJury() {
 
     return (
         <section className="w-full flex flex-col items-center justify-start pt-24">
-            <h5 className=" text-black text-4xl mb-4 lg:mb-10 SemiBold leading-normal text-center">
+            <h5 className=" text-black text-4xl w-10/12 lg:w-fit mb-4 lg:mb-10 SemiBold leading-normal text-center">
                 {t('jury')}
             </h5>
-            <div className="h-fit hidden lg:flex flex-row items-stretch justify-between w-9/12 mb-12">
-                <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
+            <div className="h-fit flex flex-col lg:flex-row items-stretch justify-start lg:justify-between w-full lg:w-9/12 gap-2 lg:gap-0 mb-2 lg:mb-12">
+                <div className="w-full lg:w-1/3 flex flex-col flex-grow items-center justify-center">
                     <div className="w-10/12 h-fit flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
                         <h5 className=" text-black w-full SemiBold text-xl text-center mb-2">Giacomo Goria</h5>
                         <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
@@ -59,7 +59,7 @@ function PitchJury() {
                         </h5>
                     </div>
                 </div>
-                <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
+                <div className="w-full lg:w-1/3 flex flex-col flex-grow items-center justify-center">
                     <div className="w-10/12 h-fit flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
                         <h5 className=" text-black w-full SemiBold text-xl text-center mb-2">Valeria Kholostenko</h5>
                         <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
@@ -67,7 +67,7 @@ function PitchJury() {
                         </h5>
                     </div>
                 </div>
-                <div className="w-1/3 flex flex-grow flex-col items-center justify-center">
+                <div className="w-full lg:w-1/3 flex flex-grow flex-col items-center justify-center">
                     <div className="w-10/12 h-fit flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
                         <h5 className=" text-black SemiBold text-xl text-center mb-2">Joey Zhong</h5>
                         <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
@@ -77,8 +77,8 @@ function PitchJury() {
                 </div>
 
             </div>
-            <div className="h-fit hidden lg:flex flex-row items-stretch justify-between w-9/12 mb-12">
-                <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
+            <div className="h-fit flex flex-col lg:flex-row items-stretch justify-start lg:justify-between w-full lg:w-9/12 gap-2 lg:gap-0 mb-2 lg:mb-12">
+                <div className="w-full lg:w-1/3 flex flex-col flex-grow items-center justify-center">
                     <div className="w-10/12 h-fit flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
                         <h5 className=" text-black w-full SemiBold text-xl text-center mb-2">Federico Costa</h5>
                         <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
@@ -86,7 +86,7 @@ function PitchJury() {
                         </h5>
                     </div>
                 </div>
-                <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
+                <div className="w-full lg:w-1/3 flex flex-col flex-grow items-center justify-center">
                     <div className="w-10/12 h-fit flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
                         <h5 className=" text-black w-full SemiBold text-xl text-center mb-2">Marco</h5>
                         <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
@@ -94,7 +94,7 @@ function PitchJury() {
                         </h5>
                     </div>
                 </div>
-                <div className="w-1/3 flex flex-grow flex-col items-center justify-center">
+                <div className="w-full lg:w-1/3 flex flex-grow flex-col items-center justify-center">
                     <div className="w-10/12 h-fit flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
                         <h5 className=" text-black SemiBold text-xl text-center mb-2">Lorenzo</h5>
                         <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
@@ -104,8 +104,8 @@ function PitchJury() {
                 </div>
 
             </div>
-            <div className="h-fit hidden lg:flex flex-row items-stretch justify-between w-9/12 mb-12">
-                <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
+            <div className="h-fit flex flex-col lg:flex-row items-stretch justify-start lg:justify-between w-full lg:w-9/12 gap-2 lg:gap-0 mb-2 lg:mb-12">
+                <div className="w-full lg:w-1/3 flex flex-col flex-grow items-center justify-center">
                     <div className="w-10/12 h-fit flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
                         <h5 className=" text-black w-full SemiBold text-xl text-center mb-2">Gianluca Di Bella</h5>
                         <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
@@ -113,7 +113,7 @@ function PitchJury() {
                         </h5>
                     </div>
                 </div>
-                <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
+                <div className="w-full lg:w-1/3 flex flex-col flex-grow items-center justify-center">
                     <div className="w-10/12 h-fit flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
                         <h5 className=" text-black w-full SemiBold text-xl text-center mb-2">Lorenzo Ceppaluni</h5>
                         <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
@@ -121,7 +121,7 @@ function PitchJury() {
                         </h5>
                     </div>
                 </div>
-                <div className="w-1/3 flex flex-grow flex-col items-center justify-center">
+                <div className="w-full lg:w-1/3 flex flex-grow flex-col items-center justify-center">
                     <div className="w-10/12 h-fit flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
                         <h5 className=" text-black SemiBold text-xl text-center mb-2">Ricky Calenta</h5>
                         <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
@@ -130,88 +130,6 @@ function PitchJury() {
                     </div>
                 </div>
 
-            </div>
-
-            <div className='w-full h-fit block lg:hidden'>
-                <Carousel className="w-full h-fit block lg:hidden" showDots renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
-                    <div className="w-full h-fit flex flex-row items-center justify-center">
-                        <div className="w-full flex flex-col flex-grow items-center justify-center">
-                            <div className="w-8/12 aspect-square bg-cover bg-top bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
-                                backgroundImage: `url('${t1.src}')`
-                            }}></div>
-                            <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
-                                <h5 className=" text-black w-full SemiBold text-2xl text-center mb-2">Fabrizio R. Genovese</h5>
-                                <h5 className=" text-[#EDDB55] SemiBold text-center text-2xl">
-                                    {t('t1')}
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-full h-fit flex flex-row items-center justify-center">
-                        <div className="w-full flex flex-col flex-grow items-center justify-center">
-                            <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
-                                backgroundImage: `url('${t2.src}')`
-                            }}></div>
-                            <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
-                                <h5 className=" text-black w-full SemiBold text-2xl text-center mb-2">Andrea Paesano</h5>
-                                <h5 className=" text-[#EDDB55] SemiBold text-center text-2xl">
-                                    {t('t2')}
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-full h-fit flex flex-row items-center justify-center">
-                        <div className="w-full flex flex-col flex-grow items-center justify-center">
-                            <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
-                                backgroundImage: `url('${t3.src}')`
-                            }}></div>
-                            <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
-                                <h5 className=" text-black SemiBold text-2xl text-center mb-2">Raffaele Orefice</h5>
-                                <h5 className=" text-[#EDDB55] SemiBold text-center text-2xl">
-                                    {t('t3')}
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-full h-fit flex flex-row items-center justify-center">
-                        <div className="w-full flex flex-col flex-grow items-center justify-center">
-                            <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
-                                backgroundImage: `url('${t4.src}')`
-                            }}></div>
-                            <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
-                                <h5 className=" text-black w-full SemiBold text-2xl text-center mb-2">Ionut Gaucan</h5>
-                                <h5 className=" text-[#EDDB55] SemiBold text-center text-2xl">Business Dev.</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-full h-fit flex flex-row items-center justify-center">
-                        <div className="w-full flex flex-col flex-grow items-center justify-center">
-                            <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
-                                backgroundImage: `url('${t5.src}')`
-                            }}></div>
-                            <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
-                                <h5 className=" text-black w-full SemiBold text-2xl text-center mb-2">Gianluca Di Bella</h5>
-                                <h5 className=" text-[#EDDB55] SemiBold text-center text-2xl">
-                                    {t('t5')}
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-full h-fit flex flex-row items-center justify-center">
-                        <div className="w-full flex flex-col flex-grow items-center justify-center">
-                            <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
-                                backgroundImage: `url('${t6.src}')`
-                            }}></div>
-                            <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
-                                <h5 className=" text-black SemiBold text-2xl text-center mb-2">Lorenzo Ceppaluni</h5>
-                                <h5 className=" text-[#EDDB55] SemiBold text-center text-2xl">
-                                    {t('t6')}
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-
-                </Carousel>
             </div>
 
             {
