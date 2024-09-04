@@ -10,12 +10,13 @@ import t3 from '@assets/raffa.jpg'
 import t4 from '@assets/ionut.jpeg'
 import t5 from '@assets/gianluca.jpeg'
 import t6 from '@assets/lore.jpeg'
-import t7 from '@assets/masha.png' 
+import t7 from '@assets/masha.png'
 import t8 from '@assets/med.jpg'
 import t9 from '@assets/Foto Q.jpeg'
 import t10 from '@assets/Maria Maddalena.png'
 import { useState } from "react";
 import { useTranslation } from 'react-i18next';
+
 
 function PitchJury() {
 
@@ -49,85 +50,91 @@ function PitchJury() {
             <h5 className=" text-black text-4xl mb-4 lg:mb-10 SemiBold leading-normal text-center">
                 {t('jury')}
             </h5>
-            <div className="h-fit hidden lg:flex blur-xl flex-row items-stretch justify-between w-10/12 mb-12">
+            <div className="h-fit hidden lg:flex flex-row items-stretch justify-between w-9/12 mb-12">
                 <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
-                    <div className="w-8/12 aspect-square bg-cover bg-top bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
-                        backgroundImage: `url('${t1.src}')`
-                    }}></div>
-                    <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
-                        <h5 className=" text-black w-full SemiBold text-2xl text-center mb-2">Fabrizio R. Genovese</h5>
-                        <h5 className=" text-[#EDDB55] SemiBold text-center text-2xl">
-                            {
-                                t('t1')
-                            }
+                    <div className="w-10/12 h-fit flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
+                        <h5 className=" text-black w-full SemiBold text-xl text-center mb-2">Giacomo Goria</h5>
+                        <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
+                            CryptoCommercialista
                         </h5>
                     </div>
                 </div>
                 <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
-                    <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
-                        backgroundImage: `url('${t2.src}')`
-                    }}></div>
-                    <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
-                        <h5 className=" text-black w-full SemiBold text-2xl text-center mb-2">Andrea Paesano</h5>
-                        <h5 className=" text-[#EDDB55] SemiBold text-center text-2xl">
-                            {
-                                t('t2')
-                            }
+                    <div className="w-10/12 h-fit flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
+                        <h5 className=" text-black w-full SemiBold text-xl text-center mb-2">Valeria Kholostenko</h5>
+                        <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
+                            LBank Labs
                         </h5>
                     </div>
                 </div>
                 <div className="w-1/3 flex flex-grow flex-col items-center justify-center">
-                    <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
-                        backgroundImage: `url('${t3.src}')`
-                    }}></div>
-                    <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
-                        <h5 className=" text-black SemiBold text-2xl text-center mb-2">Raffaele Orefice</h5>
-                        <h5 className=" text-[#EDDB55] SemiBold text-center text-2xl">
-                            {t('t3')}
+                    <div className="w-10/12 h-fit flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
+                        <h5 className=" text-black SemiBold text-xl text-center mb-2">Joey Zhong</h5>
+                        <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
+                            Mask Network
                         </h5>
                     </div>
                 </div>
 
             </div>
-            <div className="h-fit hidden lg:flex flex-row blur-xl items-stretch justify-between w-10/12 mb-12">
+            <div className="h-fit hidden lg:flex flex-row items-stretch justify-between w-9/12 mb-12">
                 <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
-                    <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
-                        backgroundImage: `url('${t4.src}')`
-                    }}></div>
-                    <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
-                        <h5 className=" text-black w-full SemiBold text-2xl text-center mb-2">Ionut Gaucan</h5>
-                        <h5 className=" text-[#EDDB55] SemiBold text-center text-2xl">Business Dev.</h5>
+                    <div className="w-10/12 h-fit flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
+                        <h5 className=" text-black w-full SemiBold text-xl text-center mb-2">Federico Costa</h5>
+                        <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
+                        BGA
+                        </h5>
                     </div>
                 </div>
                 <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
-                    <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
-                        backgroundImage: `url('${t5.src}')`
-                    }}></div>
-                    <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
-                        <h5 className=" text-black w-full SemiBold text-2xl text-center mb-2">Gianluca Di Bella</h5>
-                        <h5 className=" text-[#EDDB55] SemiBold text-center text-2xl">
-                            {t('t5')}
+                    <div className="w-10/12 h-fit flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
+                        <h5 className=" text-black w-full SemiBold text-xl text-center mb-2">Marco</h5>
+                        <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
+                            Semoto
                         </h5>
                     </div>
                 </div>
                 <div className="w-1/3 flex flex-grow flex-col items-center justify-center">
-                    <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
-                        backgroundImage: `url('${t6.src}')`
-                    }}></div>
-                    <div className="w-8/12 h-1/3 flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
-                        <h5 className=" text-black SemiBold text-2xl text-center mb-2">Lorenzo Ceppaluni</h5>
-                        <h5 className=" text-[#EDDB55] SemiBold text-center text-2xl">
-                            {t('t6')}
+                    <div className="w-10/12 h-fit flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
+                        <h5 className=" text-black SemiBold text-xl text-center mb-2">Lorenzo</h5>
+                        <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
+                            Hercle
                         </h5>
                     </div>
                 </div>
 
+            </div>
+            <div className="h-fit hidden lg:flex flex-row items-stretch justify-between w-9/12 mb-12">
+                <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
+                    <div className="w-10/12 h-fit flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
+                        <h5 className=" text-black w-full SemiBold text-xl text-center mb-2">Gianluca Di Bella</h5>
+                        <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
+                        MGS
+                        </h5>
+                    </div>
+                </div>
+                <div className="w-1/3 flex flex-col flex-grow items-center justify-center">
+                    <div className="w-10/12 h-fit flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
+                        <h5 className=" text-black w-full SemiBold text-xl text-center mb-2">Lorenzo Ceppaluni</h5>
+                        <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
+                            MGS
+                        </h5>
+                    </div>
+                </div>
+                <div className="w-1/3 flex flex-grow flex-col items-center justify-center">
+                    <div className="w-10/12 h-fit flex flex-col items-center justify-center py-2 px-4 bg-white border-4 border-[#eddb55]">
+                        <h5 className=" text-black SemiBold text-xl text-center mb-2">Ricky Calenta</h5>
+                        <h5 className=" text-[#EDDB55] SemiBold text-center text-xl">
+                            Unisa
+                        </h5>
+                    </div>
+                </div>
 
             </div>
-            
+
             <div className='w-full h-fit block lg:hidden'>
                 <Carousel className="w-full h-fit block lg:hidden" showDots renderDotsOutside renderButtonGroupOutside swipeable autoPlay arrows={false} infinite responsive={responsive}>
-                    <div className="w-full blur-xl h-fit flex flex-row items-center justify-center">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
                         <div className="w-full flex flex-col flex-grow items-center justify-center">
                             <div className="w-8/12 aspect-square bg-cover bg-top bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
                                 backgroundImage: `url('${t1.src}')`
@@ -140,7 +147,7 @@ function PitchJury() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full blur-xl h-fit flex flex-row items-center justify-center">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
                         <div className="w-full flex flex-col flex-grow items-center justify-center">
                             <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
                                 backgroundImage: `url('${t2.src}')`
@@ -153,7 +160,7 @@ function PitchJury() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full blur-xl h-fit flex flex-row items-center justify-center">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
                         <div className="w-full flex flex-col flex-grow items-center justify-center">
                             <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
                                 backgroundImage: `url('${t3.src}')`
@@ -166,7 +173,7 @@ function PitchJury() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full blur-xl h-fit flex flex-row items-center justify-center">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
                         <div className="w-full flex flex-col flex-grow items-center justify-center">
                             <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
                                 backgroundImage: `url('${t4.src}')`
@@ -177,7 +184,7 @@ function PitchJury() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full blur-xl h-fit flex flex-row items-center justify-center">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
                         <div className="w-full flex flex-col flex-grow items-center justify-center">
                             <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
                                 backgroundImage: `url('${t5.src}')`
@@ -190,7 +197,7 @@ function PitchJury() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full blur-xl h-fit flex flex-row items-center justify-center">
+                    <div className="w-full h-fit flex flex-row items-center justify-center">
                         <div className="w-full flex flex-col flex-grow items-center justify-center">
                             <div className="w-8/12 aspect-square bg-cover bg-center bg-no-repeat border-4 border-[#eddb55] mb-2" style={{
                                 backgroundImage: `url('${t6.src}')`
@@ -203,7 +210,7 @@ function PitchJury() {
                             </div>
                         </div>
                     </div>
-                   
+
                 </Carousel>
             </div>
 

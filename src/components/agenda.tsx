@@ -106,6 +106,8 @@ import s93 from '@assets/EdoardoDegliInnocenti.jpg'
 import s94 from '@assets/maganes.jpeg'
 import s95 from '@assets/SoeHaghighi.jpg.jpeg'
 import s96 from '@assets/viktor.jpeg'
+import s97 from '@assets/Dmitry.jpeg'
+import s98 from '@assets/LucasBonnard.jpg'
 
 const Agenda = () => {
 
@@ -319,6 +321,10 @@ const Agenda = () => {
                     name: "Andrea Marsili",
                     image: s58.src
                 },
+                {
+                    name: "Limone.eth",
+                    image: s52.src
+                }
             ],
             day: 1,
             start: "15:00",
@@ -710,12 +716,8 @@ const Agenda = () => {
                     image: s26.src
                 },
                 {
-                    name: "Viktor",
+                    name: "Victor Tamer",
                     image: s65.src
-                },
-                {
-                    name: "Hemilly Rodrigues",
-                    image: s19.src
                 }
             ],
             day: 1,
@@ -861,6 +863,25 @@ const Agenda = () => {
             topics: ['other']
         },
         {
+            id: 290,
+            title: 'What is Bitomat?',
+            subtitle: "",
+            isWorkshop: false,
+            stage: "main",
+            speakers: [
+                {
+                    name: "Gianluca Di Bella",
+                    image: "https://napul.eth.limo/_next/static/media/gianluca.ad2208c0.jpeg"
+                }
+            ],
+            day: 2,
+            start: "10:00",
+            end: "10:20",
+            type: "talk",
+            lang: "en",
+            topics: ['defi']
+        },
+        {
             id: 29,
             title: 'Federating Multichains: Scaling With Compliance and Existing Technology',
             subtitle: "",
@@ -868,7 +889,7 @@ const Agenda = () => {
             stage: "main",
             speakers: [
                 {
-                    name: "APEX",
+                    name: "IIvan Bjelajac",
                     image: s92.src
                 }
             ],
@@ -921,7 +942,7 @@ const Agenda = () => {
             speakers: [
                 {
                     name: "Dmitry Chernukhin",
-                    image: ""
+                    image: s97.src
                 }
             ],
             day: 2,
@@ -1559,8 +1580,8 @@ const Agenda = () => {
                     image: s83.src
                 },
                 {
-                    name: "David Carvalho",
-                    image: s67.src
+                    name: "Lucas Bonnaed",
+                    image: s98.src
                 }
             ],
             day: 3,
@@ -1694,7 +1715,7 @@ const Agenda = () => {
             topics: ["art"],
             moderators: [
                 {
-                    name: "Victor",
+                    name: "Victor Tamer",
                     image: s65.src
                 }
             ]
@@ -1930,8 +1951,8 @@ const Agenda = () => {
                     image: s45.src
                 },
                 {
-                    name: " Daniele Pinna",
-                    image: s56.src
+                    name: "Laurence Kirk",
+                    image: s73.src
                 },
                 {
                     name: "Daniele Palombi",

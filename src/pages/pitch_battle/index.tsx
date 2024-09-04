@@ -48,14 +48,15 @@ function SideEvents() {
                     <Image src={steve} alt="stop watch napuleth startup pitch battle" className="hidden lg:block absolute z-10 -left-7 -top-1/2 w-[15vw] "></Image>
                     <div className="w-11/12 lg:w-10/12 relative z-50 h-fit flex flex-row items-center justify-center p-2 lg:p-6 bg-white border-4 border-[#eddb55]">
                         <p className="block text-[#2E2E2E] Medium text-xl lg:text-2xl text-center leading-loose w-full lg:w-full">
-                            {t("pitchPara")}
+                            {t("pitchPara")}<br />< br/>{t("pitchPara2")}
                         </p>
+                        
                     </div>
                     <Image src={italy} alt="stop watch napuleth startup pitch battle" className="hidden lg:block absolute z-10 -right-5 -top-1/2 w-[20vw] -rotate-3"></Image>
                 </div>
-                <PitchParticipants />
-                <PitchJury />
                 <PitchPartners />
+                <PitchJury />
+                
                 
             </section>
             <Footer />
