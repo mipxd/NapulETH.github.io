@@ -23,12 +23,12 @@ const ChatbotComponent = () => {
                         bottom: 16,
                         size: "medium",
                         iconColor: "white",
-                        customIconSrc: "https://dodaj.rs/images/mingcute_chat-2-line.png",
+                        customIconSrc: "https://fanauploads.blob.core.windows.net/fanauploads/mingcute_chat-2-line.png",
                                                         },
                     chatWindow: {
                         showTitle: true, // show/hide the title bar
                         title: "NapulETH AI",
-                        titleAvatarSrc: "https://dodaj.rs/images/bot-avatarb657967b86d39775.png",
+                        titleAvatarSrc: "https://fanauploads.blob.core.windows.net/fanauploads/napul-bot-avatar.png",
                         titleColor: "#ffffff", // This line sets the title color to white
                         welcomeMessage: "Hello! I'm NapulETH AI your web3 AI assistant, here to help you navigate the exciting world of NapulETH Open Village. How can I make your experience amazing today?",
                         backgroundColor: "#ffffff",
@@ -40,14 +40,14 @@ const ChatbotComponent = () => {
                             backgroundColor: "#f7f8ff",
                             textColor: "#303235",
                             showAvatar: true,
-                            avatarSrc: "https://dodaj.rs/images/bot-avatarb657967b86d39775.png",
+                            avatarSrc: "https://fanauploads.blob.core.windows.net/fanauploads/napul-bot-avatar.png",
                         },
                         userMessage: {
                             backgroundColor: "#ca75ab",
                             textColor: "#ffffff",
                             size: "small",
                             showAvatar: false,
-                            avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png",
+                            avatarSrc: "https://fanauploads.blob.core.windows.net/fanauploads/Napul_ETH_logo.png",
                         },
                         textInput: {
                             placeholder: "Ask me anything",
