@@ -93,7 +93,7 @@ export default function Map() {
                             <Image src={map1} alt="" className="w-full lg:w-7/12 h-auto mt-80 lg:mt-14"></Image>
                         </div>
                     ) : (
-                        <div className="w-full h-fit flex flex-col items-center justify-start gap-3 pt-8">
+                        <div className="w-full h-fit flex flex-col items-center justify-start gap-3 pt-8 lg:pt-0">
 
                             <div className="w-full h-fit flex flex-row items-center justify-center flex-wrap gap-14 lg:gap-36 lg:px-6 lg:mt-16 ">
                                 <div className="w-full lg:w-5/12 h-fit flex flex-col items-center justify-start">
