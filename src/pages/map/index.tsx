@@ -170,7 +170,7 @@ export default function Map() {
                                         <div className="flex flex-row items-center justify-start gap-2 w-fit">
                                             <div className="w-8 aspect-square bg-[#ffcdcd]"></div>
                                             <p className=" text-[#2E2E2E] Medium text-md lg:text-lg text-left leading-normal">
-                                                Startup Competion Room
+                                                Startup Competition Room
                                             </p>
                                         </div>
                                     </div>
