@@ -129,8 +129,8 @@ const Agenda = () => {
         },
         {
             id: 0,
-            title: 'Opening NapulETH Core Team',
-            subtitle: "Opening event of the NapulETH",
+            title: 'Opening',
+            subtitle: "Opening event of NapulETH",
             stage: "main",
             speakers: [
                 {
@@ -205,32 +205,22 @@ const Agenda = () => {
         },
         {
             id: 4,
-            title: 'The Network State',
-            subtitle: "",
+            title: 'ECF Pensieve Mechanism',
+            subtitle: "Decentralised Collective Intelligence for Community Coordination",
             stage: "main",
             speakers: [
                 {
                     name: "QJ",
                     image: s62.src
-                },
-                {
-                    name: "Francesco Vincenti",
-                    image: s57.src
                 }
             ],
             day: 1,
-            start: "11:00",
-            end: "11:20",
+            start: "11:20",
+            end: "12:00",
             isWorkshop: false,
-            type: "panel",
+            type: "talk",
             lang: "en",
-            topics: ['community'], 
-            moderators: [
-                {
-                    name: "Fabrizio Genovese",
-                    image: "https://napul.eth.limo/_next/static/media/FabrizioGenovese.bdcae4db.jpg"
-                }
-            ]
+            topics: ['community']
         },
         {
             id: 544,
@@ -746,7 +736,7 @@ const Agenda = () => {
                 }
             ],
             day: 1,
-            start: "10:20",
+            start: "11:20",
             end: "11:40",
             type: "talk",
             lang: "en",
@@ -764,7 +754,7 @@ const Agenda = () => {
                 }
             ],
             day: 1,
-            start: "10:40",
+            start: "11:40",
             isWorkshop: false,
             end: "12:00",
             type: "talk",
@@ -798,7 +788,7 @@ const Agenda = () => {
                 }
             ],
             day: 1,
-            start: "14:20",
+            start: "14:00",
             end: "15:00",
             type: "workshop",
             lang: "en",
@@ -999,7 +989,7 @@ const Agenda = () => {
             ],
             day: 2,
             start: "14:00",
-            end: "15:40",
+            end: "14:40",
             type: "talk",
             lang: "it",
             topics: ['defi']
@@ -1169,7 +1159,7 @@ const Agenda = () => {
             end: "10:20",
             type: "talk",
             lang: "en",
-            topics: ["rwa", "legal"]
+            topics: ["rwa"]
         },
         {
             id: 40,
@@ -1188,7 +1178,7 @@ const Agenda = () => {
             end: "10:40",
             type: "talk",
             lang: "en",
-            topics: ["rwa", "defi", "legal"]
+            topics: ["rwa", "defi"]
         },
         {
             id: 41,
@@ -1219,7 +1209,7 @@ const Agenda = () => {
             end: "11:20",
             type: "panel",
             lang: "en",
-            topics: ["rwa", "legal"],
+            topics: ["rwa"],
             moderators: [
                 {
                     name: "Ionut Gaucan",
@@ -1244,7 +1234,7 @@ const Agenda = () => {
             end: "11:40",
             type: "talk",
             lang: "en",
-            topics: ["rwa", "defi", "legal"]
+            topics: ["rwa", "defi"]
         },
         {
             id: 43,
@@ -1263,7 +1253,7 @@ const Agenda = () => {
             end: "12:00",
             type: "talk",
             lang: "en",
-            topics: ["rwa", "defi", "legal"]
+            topics: ["rwa", "defi"]
         },
         {
             id: 544,
@@ -1296,7 +1286,7 @@ const Agenda = () => {
             end: "14:20",
             type: "talk",
             lang: "it",
-            topics: ["digital identity", "it"]
+            topics: ["digital identity", "legal", "it"]
         },
         {
             id: 45,
@@ -1334,7 +1324,7 @@ const Agenda = () => {
             end: "15:00",
             type: "talk",
             lang: "it",
-            topics: ["education", "it"]
+            topics: ["education", "legal", "it"]
         },
         {
             id: 47,
@@ -1651,13 +1641,13 @@ const Agenda = () => {
         },
         {
             id: 60,
-            title: 'NFT on Bitcoin',
+            title: 'NFTs on Bitcoin',
             subtitle: "",
             stage: "main",
             isWorkshop: false,
             speakers: [
                 {
-                    name: "Pino",
+                    name: "ChefPino",
                     image: s82.src
                 }
             ],
@@ -1764,8 +1754,8 @@ const Agenda = () => {
         },
         {
             id: 65,
-            title: 'Startup Winner',
-            subtitle: "",
+            title: 'Closing',
+            subtitle: "Startup Winner",
             isWorkshop: false,
             stage: "main",
             speakers: [],
